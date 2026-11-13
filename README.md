@@ -1,8 +1,8 @@
-# NASA Space Apps Challenge 2026
+# EmberNova | NASA Space Apps Challenge 2026
 
 Team workspace for the [NASA Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/) on November 14–15.
 
-- **Team:** TBD
+- **Team:** EmberNova
 - **Selected challenge and official brief:** TBD
 - **Project name and one-sentence pitch:** TBD
 
