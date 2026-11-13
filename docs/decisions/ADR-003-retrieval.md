@@ -1,0 +1,22 @@
+# ADR-003: Hybrid two-level retrieval without GraphRAG
+
+- **Status:** Accepted (2026-11-13)
+- **Problem:** Rank investigations by genuine scientific relevance, and find evidence passages in 34 investigations, 93 documents and 3.2k pages.
+- **Options:**
+  - vector RAG
+  - hybrid BM25 + dense
+  - adding a cross-encoder reranker
+  - GraphRAG or a knowledge graph
+  - LLM-generated contextual chunks
+- **Decision:**
+  - Two levels: (A) curated investigation profiles, and (B) page-aware chunks with deterministic context headers.
+  - SQLite FTS5 BM25 plus `text-embedding-3-small`/512 dense vectors in numpy.
+  - RRF fusion, then facet and data-availability scores into an explainable score breakdown.
+  - No reranker, graph DB or HyDE.
+- **Reasons:**
+  - Exact identifiers (LCTF030, SIBAL, Kapton) need BM25, and paraphrases need embeddings.
+  - Published evidence shows that hybrid retrieval reduces retrieval failures.
+  - The relations are a few hundred explicit edges, so SQL serves them.
+  - The agent model reranks 8–12 passages itself.
+- **Consequences:** profile quality matters, so profiles are curated with evidence locators. The benchmark gates weight tuning.
+- **Reverse if:** benchmark R@5 < 0.85 or MRR < 0.7 after tuning. Then add LLM chunk contexts, then a reranker.

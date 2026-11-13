@@ -1,0 +1,20 @@
+table_id: PSI-25:bass2
+investigation_id: PSI-25
+file_id: 67a3a17b09ed061032c19775
+title: BASS-II material and gas conditions
+encoding: utf-8-sig
+run_label_column: 'Test #'
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MSG, fuel_class: solid_thin, value_kind: measured}
+evidence: {source: source_csv_header, note: 'Gas units explicit in header; fan display is not velocity; material retained verbatim. No pressure supplied.'}
+columns:
+  Fuel Sample Material: {role: run_field, field: sample_material}
+  Fan display: {role: run_field, field: fan_display_raw}
+  'Calibrated  initial O2 % by vol ': {role: condition, variable: o2_mole_fraction, unit: percent}
+  Calibrated final O2 % by vol: {role: measurement, quantity: o2_final, unit: percent}
+  Initial CO2 % by vol: {role: condition, variable: co2_mole_fraction, unit: percent}
+  Final CO2 % by vol: {role: measurement, quantity: co2_final, unit: percent}
+  Initial CO (ppm): {role: condition, variable: co_initial, unit: ppm}
+  Final CO (ppm): {role: measurement, quantity: co_final, unit: ppm}
+row_checks:
+  - {rule: greater_than, a: o2_final, b: o2_mole_fraction, margin: 0.01, flag: final_exceeds_initial}
+  - {rule: less_than, a: o2_final, b: o2_mole_fraction, margin: 0.05, flag: final_far_below_initial}

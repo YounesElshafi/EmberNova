@@ -1,0 +1,15 @@
+table_id: PSI-100:saffire3
+investigation_id: PSI-100
+file_id: 6792d422b7b6ff8e650381da
+title: Saffire-III large-scale fabric burn conditions
+encoding: utf-8-sig
+run_label_column: 'Sample Number '
+defaults: {gravity_regime: microgravity_cygnus, platform: Cygnus, hardware: Saffire flow duct, fuel_class: solid_fabric, value_kind: measured}
+evidence: {source: source_csv_cells, note: 'Units are written in each cell. Oxygen and pressure are not in this table; sensor time series are separate raw files not parsed in this build.'}
+columns:
+  Material: {role: run_field, field: sample_material}
+  Sample Thickness: {role: condition, variable: sample_thickness, unit: cm}
+  Sample Length: {role: condition, variable: sample_length, unit: cm}
+  Sample Width: {role: condition, variable: sample_width, unit: cm}
+  'Air Flow ': {role: condition, variable: flow_velocity, unit: cm/s}
+  Direction: {role: run_field, field: flow_direction}

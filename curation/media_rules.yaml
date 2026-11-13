@@ -1,0 +1,5 @@
+rules:
+  - {id: bass_test, investigation_id: PSI-25, pattern: 'TEST_(T\d+)'}
+  - {id: bass_short, investigation_id: PSI-25, pattern: '(T\d+)-post'}
+  - {id: flex_udp, investigation_id: PSI-69, pattern: 'udp___([A-Za-z0-9]+)'}
+policy: A filename association is inferred only if the extracted label resolves to a curated run. Unknown captions remain null.

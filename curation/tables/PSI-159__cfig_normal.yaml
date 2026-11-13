@@ -1,0 +1,19 @@
+table_id: PSI-159:cfig_normal
+investigation_id: PSI-159
+file_id: 691f7ea117f78b371b26f6fa
+title: CFI-G normal spherical flames (fuel from burner, oxygen in chamber)
+encoding: utf-8-sig
+run_label_column: Test
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: CIR-ACME, fuel_class: gaseous_spherical_burner, value_kind: measured}
+evidence: {source: source_csv_header, note: 'Normal flames: fuel flows from the porous spherical burner into an O2/N2 chamber, so "XO2 before test" is the ambient chamber oxygen mole fraction. The pressure header says "approx p (bar)"; values are flagged approximate. Adiabatic flame temperature and Zst are computed by the investigators and are not mapped.'}
+columns:
+  Fuel: {role: run_field, field: fuel_raw}
+  Flame Type: {role: run_field, field: flame_type}
+  ' XO2 before test': {role: condition, variable: o2_mole_fraction, unit: dimensionless}
+  approx p (bar): {role: condition, variable: total_pressure, unit: bar, quality_flags: [approximate_per_header]}
+  Xf: {role: condition, variable: burner_fuel_mole_fraction, unit: dimensionless}
+  mHC (mg/s): {role: condition, variable: fuel_mass_flow_rate, unit: mg/s}
+  Cool flame?: {role: run_field, field: cool_flame_raw}
+  Hot ignition: {role: run_field, field: ignition_outcome, canonical_map: {'yes': ignited, 'no': not_ignited, flash: flash_only}}
+  burn time (sec): {role: measurement, quantity: flame_burn_time, unit: s}
+  Self-ext or flow term: {role: run_field, field: termination_raw}

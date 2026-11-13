@@ -1,0 +1,16 @@
+table_id: PSI-101:same_r
+investigation_id: PSI-101
+file_id: 679a9e2209ed061032c0cd23
+title: SAME-R smoke generation and aging conditions
+encoding: utf-8-sig
+run_label_columns: [Sample Type, 'SAME Test #']
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MSG, fuel_class: aerosol_smoke_source, value_kind: measured}
+evidence: {source: source_csv_header, note: 'The run identifier combines sample type and test number because test 57 appears for both Lampwick and Teflon. Rt/R0 is the heater resistance ratio used to set sample heating; it is not a temperature. Rows ending in "a" are aged-smoke measurements of the preceding test. Particle-size results are in separate analyzed workbooks not parsed in this build.'}
+columns:
+  Sample Type: {role: run_field, field: sample_material}
+  Description: {role: run_field, field: test_description}
+  Inlet velocity (cm/s): {role: condition, variable: smoke_inlet_velocity, unit: cm/s}
+  Rt/R0: {role: condition, variable: heater_resistance_ratio, unit: dimensionless}
+  Duration (sec): {role: condition, variable: smoke_generation_duration, unit: s}
+  Primary aging time (sec): {role: condition, variable: smoke_aging_time_primary, unit: s}
+  Net aging time (sec): {role: condition, variable: smoke_aging_time_net, unit: s}

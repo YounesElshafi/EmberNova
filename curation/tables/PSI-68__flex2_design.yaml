@@ -1,0 +1,15 @@
+table_id: PSI-68:flex2_design
+investigation_id: PSI-68
+file_id: 67929004b7b6ff8e6502ecd0
+title: FLEX-2 design matrix (not measured runs)
+encoding: utf-8-sig
+run_label_column: Sample (Fuel Type)
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MDCA, fuel_class: liquid_droplet, value_kind: design}
+evidence: {source: source_csv_header, note: 'Lists/ranges are design space; combinations are not asserted to have been tested.'}
+columns:
+  Sample (Fuel Type): {role: run_field, field: fuel_raw}
+  Initial Droplet Diameter (mm): {role: condition, variable: droplet_initial_diameter, unit: mm}
+  Oxygen Mole Fraction: {role: condition, variable: o2_mole_fraction, unit: dimensionless}
+  Ambient Pressure (atm): {role: condition, variable: total_pressure, unit: atm}
+  ' Ambient Temperature (C)': {role: condition, variable: ambient_temperature, unit: degC}
+  Flow Velocity (cm/s): {role: condition, variable: flow_velocity, unit: cm/s}

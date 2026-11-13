@@ -21,3 +21,25 @@ data/raw/
 data/local/
 .DS_Store
 Thumbs.db
+
+# EmberNova corpus and build outputs (see docs/architecture/DATA_ARCHITECTURE.md §2)
+# Original NASA payloads are large and reproducible from data/DOWNLOAD_MANIFEST.csv.
+data/investigations/**/raw/
+data/challenge_resources/*.pdf
+data/DOWNLOAD_MANIFEST.csv
+data/indexes/DEFERRED_DOWNLOADS.csv
+data/indexes/MEDIA_INVENTORY.csv
+data/logs/psi/
+data/logs/ntrs/
+data/tools/__pycache__/
+# Generated knowledge base, analysis bundle, media derivatives, deploy bundle
+build/
+# Local app state
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.tsbuildinfo
+.ruff_cache/
+test-results/
+playwright-report/

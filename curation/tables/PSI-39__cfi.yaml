@@ -1,0 +1,18 @@
+table_id: PSI-39:cfi
+investigation_id: PSI-39
+file_id: 67a24ba209ed061032c107a6
+title: CFI droplet test conditions
+encoding: utf-8-sig
+run_label_column: Flex Number
+duplicate_policy: preserve_identical_source_rows
+duplicate_evidence: 'CSV rows 81-88 repeat rows 24-31 after CSV decoding. Retain @row locator records, exclude duplicate_row from analyses: 87 records, 79 distinct tests.'
+alt_label_columns: ['CIR ']
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MDCA, fuel_class: liquid_droplet, value_kind: measured}
+evidence: {source: source_csv_header, note: 'Pressure unit embedded in each cell; composition follows named gas columns. Outcomes require the separate DataSummary workbook.'}
+columns:
+  'Fuel ': {role: run_field, field: fuel_raw}
+  Fiber: {role: run_field, field: fiber_raw}
+  Pressure: {role: condition, variable: total_pressure, unit: atm}
+  Oxygen: {role: condition, variable: o2_mole_fraction, unit: dimensionless}
+  Nitrogen: {role: condition, variable: n2_mole_fraction, unit: dimensionless}
+  Helium: {role: condition, variable: he_mole_fraction, unit: dimensionless}

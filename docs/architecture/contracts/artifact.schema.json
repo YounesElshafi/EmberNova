@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://embernova/contracts/artifact.schema.json",
+  "title": "Artifact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["artifact_id", "type", "title", "status", "created_at", "session_id", "payload", "labels", "evidence_id", "reproducibility"],
+  "properties": {
+    "artifact_id": {"type": "string", "pattern": "^art_[0-9A-Z]{26}$"},
+    "type": {"enum": ["table", "chart", "timeseries", "comparison", "envelope", "media", "analysis_run", "si_illustration"]},
+    "title": {"type": "string"},
+    "status": {"enum": ["ok", "partial", "invalid_result", "timeout", "error"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "session_id": {"type": ["string", "null"]},
+    "turn_id": {"type": ["string", "null"]},
+    "parent_artifact_id": {"type": ["string", "null"]},
+    "evidence_id": {"type": ["string", "null"], "description": "null only for si_illustration"},
+    "labels": {
+      "type": "object", "additionalProperties": false, "required": ["si_generated", "selected_by_si", "data_origin"],
+      "properties": {
+        "si_generated": {"type": "boolean"},
+        "selected_by_si": {"type": "boolean"},
+        "data_origin": {"type": "string", "description": "e.g. 'NASA PSI measured data', 'NASA PSI design conditions', 'SI-generated illustration'"},
+        "watermarked": {"type": ["boolean", "null"]}
+      }
+    },
+    "payload": {
+      "oneOf": [
+        {"$ref": "#/$defs/TablePayload"}, {"$ref": "#/$defs/ChartPayload"}, {"$ref": "#/$defs/ComparisonPayload"},
+        {"$ref": "#/$defs/EnvelopePayload"}, {"$ref": "#/$defs/MediaPayload"}, {"$ref": "#/$defs/AnalysisRunPayload"},
+        {"$ref": "#/$defs/IllustrationPayload"}
+      ]
+    },
+    "reproducibility": {
+      "type": "object", "required": ["created_at", "build_version", "bundle_version", "tool", "args"],
+      "properties": {
+        "created_at": {"type": "string"}, "build_version": {"type": "string"}, "bundle_version": {"type": "string"},
+        "bundle_sha256": {"type": "string"}, "git_sha": {"type": "string"}, "tool": {"type": "string"}, "tool_version": {"type": "string"},
+        "args": {"type": "object"}, "input_files": {"type": "array", "items": {"type": "object"}},
+        "environment": {"type": "object"}, "llm": {"type": ["object", "null"]}
+      }
+    }
+  },
+  "$defs": {
+    "Axis": {
+      "type": "object", "additionalProperties": false, "required": ["field", "label", "unit", "display_unit", "scale"],
+      "properties": {"field": {"type": "string"}, "label": {"type": "string"}, "unit": {"type": ["string", "null"]},
+                     "display_unit": {"type": ["string", "null"]}, "scale": {"enum": ["linear", "log", "category"]}}
+    },
+    "ChartSpec": {
+      "type": "object", "additionalProperties": false,
+      "required": ["spec_version", "chart_type", "title", "x", "y", "series", "annotations", "notes", "provenance"],
+      "properties": {
+        "spec_version": {"const": "1"},
+        "chart_type": {"enum": ["scatter", "line", "box", "bar", "histogram", "envelope", "timeseries"]},
+        "title": {"type": "string"}, "subtitle": {"type": ["string", "null"]},
+        "x": {"$ref": "#/$defs/Axis"}, "y": {"$ref": "#/$defs/Axis"},
+        "series": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false, "required": ["name", "style", "points"],
+          "properties": {
+            "name": {"type": "string"},
+            "style": {"type": "object", "additionalProperties": false, "required": ["color_token", "symbol", "hollow"],
+                      "properties": {"color_token": {"type": "string"}, "symbol": {"type": "string"}, "hollow": {"type": "boolean"}, "line": {"type": ["boolean", "null"]}}},
+            "points": {"type": "object", "additionalProperties": false, "required": ["x", "y", "run_uid"],
+                       "properties": {"x": {"type": "array"}, "y": {"type": "array", "items": {"type": ["number", "null"]}},
+                                      "run_uid": {"type": "array", "items": {"type": ["string", "null"]}},
+                                      "error_x": {"type": ["array", "null"]}, "error_y": {"type": ["array", "null"]},
+                                      "hover": {"type": ["array", "null"], "items": {"type": "string"}}}}
+          }}},
+        "annotations": {"type": "array", "items": {"type": "object", "required": ["kind", "label"],
+          "properties": {"kind": {"enum": ["reference_line", "region", "point", "isoline"]}, "label": {"type": "string"}}}},
+        "notes": {"type": "array", "items": {"type": "string"}},
+        "provenance": {"type": "object", "required": ["bundle_version", "query_hash", "table_ids", "evidence_ids", "transform_steps"],
+          "properties": {"bundle_version": {"type": "string"}, "query": {"type": "object"}, "query_hash": {"type": "string"},
+                         "table_ids": {"type": "array", "items": {"type": "string"}}, "evidence_ids": {"type": "array", "items": {"type": "string"}},
+                         "transform_steps": {"type": "array", "items": {"type": "string"}}, "downsampling": {"type": ["string", "null"]}}}
+      }
+    },
+    "TablePayload": {"type": "object", "required": ["kind", "columns", "rows"],
+      "properties": {"kind": {"const": "table"}, "columns": {"type": "array"}, "rows": {"type": "array"}, "excluded": {"type": "object"}, "row_count": {"type": "integer"}}},
+    "ChartPayload": {"type": "object", "required": ["kind", "chart"],
+      "properties": {"kind": {"enum": ["chart", "timeseries"]}, "chart": {"$ref": "#/$defs/ChartSpec"}, "stats": {"type": ["object", "null"]}}},
+    "ComparisonPayload": {"type": "object", "required": ["kind", "groups", "condition_diff", "validity", "chart", "association_note"],
+      "properties": {
+        "kind": {"const": "comparison"},
+        "groups": {"type": "array", "items": {"type": "object", "required": ["label", "n", "summary"],
+          "properties": {"label": {"type": "string"}, "n": {"type": "integer"}, "run_uids": {"type": "array"}, "summary": {"type": "object"}}}},
+        "condition_diff": {"type": "array", "items": {"type": "object", "required": ["variable", "values", "differs"],
+          "properties": {"variable": {"type": "string"}, "values": {"type": "array"}, "differs": {"type": "boolean"}, "display_unit": {"type": ["string", "null"]}}}},
+        "validity": {"type": "object", "required": ["verdict", "checks"],
+          "properties": {"verdict": {"enum": ["comparable", "comparable_with_caveats", "not_comparable"]},
+            "checks": {"type": "array", "items": {"type": "object", "required": ["rule", "status", "detail"],
+              "properties": {"rule": {"type": "string"}, "status": {"enum": ["pass", "warn", "fail"]}, "detail": {"type": "string"},
+                             "evidence_ids": {"type": "array", "items": {"type": "string"}}}}}}},
+        "chart": {"$ref": "#/$defs/ChartSpec"},
+        "association_note": {"type": "string"}
+      }},
+    "EnvelopePayload": {"type": "object", "required": ["kind", "scenario", "coverage", "per_investigation", "gaps", "bracketing_runs", "gravity_note", "chart"],
+      "properties": {
+        "kind": {"const": "envelope"}, "scenario": {"type": "object"},
+        "coverage": {"enum": ["inside_tested_envelope", "partially_covered", "outside_envelope"]},
+        "per_investigation": {"type": "array", "items": {"type": "object", "required": ["investigation_id", "coverage"],
+          "properties": {"investigation_id": {"type": "string"}, "coverage": {"enum": ["inside", "partial", "outside"]}, "n_runs_in_range": {"type": "integer"}}}},
+        "gaps": {"type": "array", "items": {"type": "string"}},
+        "bracketing_runs": {"type": "array"},
+        "gravity_note": {"type": ["string", "null"]},
+        "chart": {"$ref": "#/$defs/ChartSpec"}
+      }},
+    "MediaPayload": {"type": "object", "required": ["kind", "items"],
+      "properties": {"kind": {"const": "media"}, "items": {"type": "array", "items": {"type": "object",
+        "required": ["media_id", "media_type", "stream_url", "thumb_url", "association", "is_representative", "credit"],
+        "properties": {"media_id": {"type": "string"}, "media_type": {"enum": ["video", "image"]}, "stream_url": {"type": "string"},
+          "thumb_url": {"type": ["string", "null"]}, "association": {"enum": ["from_metadata", "inferred_from_filename", "none"]},
+          "run_label": {"type": ["string", "null"]}, "is_representative": {"type": "boolean"}, "caption": {"type": ["string", "null"]},
+          "credit": {"type": ["string", "null"]}, "attribution_note": {"type": ["string", "null"]}}}}}},
+    "AnalysisRunPayload": {"type": "object", "required": ["kind", "cells", "result", "files", "container"],
+      "properties": {"kind": {"const": "analysis_run"},
+        "cells": {"type": "array", "items": {"type": "object", "required": ["code"], "properties": {"code": {"type": "string"}, "stdout": {"type": ["string", "null"]}, "stderr": {"type": ["string", "null"]}}}},
+        "result": {"type": ["object", "null"], "description": "validated analysis_result.schema.json"},
+        "validation_errors": {"type": "array", "items": {"type": "string"}},
+        "charts": {"type": "array", "items": {"$ref": "#/$defs/ChartSpec"}},
+        "files": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "sha256": {"type": "string"}, "url": {"type": "string"}, "si_generated": {"const": true}}}},
+        "container": {"type": "object", "properties": {"memory_limit": {"type": "string"}, "input_file_ids": {"type": "array"}, "bundle_sha256": {"type": "string"}}}}},
+    "IllustrationPayload": {"type": "object", "required": ["kind", "image_url", "prompt", "model", "watermark_text"],
+      "properties": {"kind": {"const": "si_illustration"}, "image_url": {"type": "string"}, "prompt": {"type": "string"}, "model": {"type": "string"},
+                     "watermark_text": {"const": "SI-GENERATED ILLUSTRATION — NOT EXPERIMENTAL DATA"}}}
+  }
+}

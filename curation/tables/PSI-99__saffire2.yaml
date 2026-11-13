@@ -1,0 +1,26 @@
+table_id: PSI-99:saffire2
+investigation_id: PSI-99
+file_id: 6792d000b7b6ff8e650380fc
+title: Saffire-II material flammability, microgravity and 1-g spread
+encoding: utf-8-sig
+run_label_column: Sample Number
+exclude_label_regex: '^(F\d|Note)'
+defaults: {gravity_regime: microgravity_cygnus, platform: Cygnus, hardware: Saffire flow duct, fuel_class: solid_thin, value_kind: measured}
+evidence:
+  source: source_csv_header_and_notes
+  note: 'Units are written in each cell. Table note 1: O2 percent is derived from measured CO2 production referenced to the ISS-reported initial O2. The column headed "?-g Spread Length" holds rates in mm/s and is mapped as a microgravity spread rate. Columns headed 1-g are normal-gravity ground comparison tests and are named as such. Thickness cells "037 mm" (samples 2-4, 2-5, 2-6) are likely transcription errors: the raw text is kept and the normalized value withheld. Blank material cells stay unknown. Ambient pressure is not in this table.'
+columns:
+  Material: {role: run_field, field: sample_material}
+  'Samle Thickness ': {role: condition, variable: sample_thickness, unit: mm, plausible_si: [0, 0.02], on_implausible: withhold}
+  'Sample Length ': {role: condition, variable: sample_length, unit: cm}
+  Sample Width (cm): {role: condition, variable: sample_width, unit: cm}
+  Air Flow (cm/s): {role: condition, variable: flow_velocity, unit: cm/s}
+  Percent O2 (Note 1): {role: condition, variable: o2_mole_fraction, unit: percent}
+  Ignition Power (W): {role: condition, variable: ignition_power, unit: W}
+  Ignition Time (s): {role: condition, variable: ignition_time, unit: s}
+  Burn Time (s): {role: measurement, quantity: sample_burn_time, unit: s}
+  Flow Direction: {role: run_field, field: flow_direction}
+  '?-g Burn Length': {role: measurement, quantity: burn_length_microgravity, unit: cm}
+  '?-g Spread Length': {role: measurement, quantity: flame_spread_rate_microgravity, unit: mm/s}
+  1-g Burn Length: {role: measurement, quantity: burn_length_normal_gravity, unit: cm}
+  1-g Spread Rate: {role: measurement, quantity: flame_spread_rate_normal_gravity, unit: mm/s}

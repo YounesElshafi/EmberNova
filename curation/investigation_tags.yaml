@@ -1,0 +1,190 @@
+# Fire-safety role of each investigation, used for objective filters, ranking facets
+# and the Fire-safety systems view.
+#
+# Every tag has a checkable basis:
+#   challenge: the official "Flame in Freefall" challenge text groups the investigation
+#              under that role (quoted phrase in `quote`);
+#   metadata:  `keyword` occurs in the investigation's NASA title, objectives or approach
+#              (verified by backend/tests/test_tags.py).
+# "fundamental" marks combustion science the challenge calls relevant "just not as strongly
+# or directly". Tags are a reviewed curation layer, not SI output.
+#
+# facility follows the challenge's hardware grouping: CIR-ACME, CIR-MDCA, MSG; Cygnus for
+# Saffire; ground for ground/modeling studies; planned for supplemental future experiments.
+
+PSI-25:
+  objectives: [prevention, suppression]
+  facility: MSG
+  basis:
+    - {objective: prevention, source: challenge, quote: "Flammability studies focus on solid materials such as fabrics and plastics, as studied in the Burning and Suppression of Solids (BASS and BASS-II)"}
+    - {objective: suppression, source: metadata, keyword: suppression}
+PSI-26:
+  objectives: [prevention, suppression]
+  facility: MSG
+  basis:
+    - {objective: prevention, source: challenge, quote: "Flammability studies focus on solid materials such as fabrics and plastics, as studied in the Burning and Suppression of Solids (BASS and BASS-II)"}
+    - {objective: suppression, source: metadata, keyword: Suppression}
+PSI-62:
+  objectives: [prevention]
+  facility: ground
+  basis:
+    - {objective: prevention, source: metadata, keyword: flame spread}
+PSI-68:
+  objectives: [suppression, fundamental]
+  facility: CIR-MDCA
+  basis:
+    - {objective: suppression, source: metadata, keyword: Extinguishment}
+    - {objective: fundamental, source: metadata, keyword: droplet combustion}
+PSI-69:
+  objectives: [suppression]
+  facility: CIR-MDCA
+  basis:
+    - {objective: suppression, source: challenge, quote: "Suppression was studied in the Flame Extinguishment Experiment (FLEX) through dilution of the chamber atmosphere with carbon dioxide and helium"}
+PSI-98:
+  objectives: [prevention]
+  facility: Cygnus
+  basis:
+    - {objective: prevention, source: challenge, quote: "Spacecraft Fire Safety Demonstration (Saffire-I, -II, and -III) investigations"}
+PSI-99:
+  objectives: [prevention]
+  facility: Cygnus
+  basis:
+    - {objective: prevention, source: challenge, quote: "Spacecraft Fire Safety Demonstration (Saffire-I, -II, and -III) investigations"}
+PSI-100:
+  objectives: [prevention]
+  facility: Cygnus
+  basis:
+    - {objective: prevention, source: challenge, quote: "Spacecraft Fire Safety Demonstration (Saffire-I, -II, and -III) investigations"}
+PSI-101:
+  objectives: [detection]
+  facility: MSG
+  basis:
+    - {objective: detection, source: challenge, quote: "Fire detection was tested in microgravity through the Smoke and Aerosol Measurement Experiment studies (SAME and SAME-R)"}
+PSI-102:
+  objectives: [detection]
+  facility: MSG
+  basis:
+    - {objective: detection, source: challenge, quote: "Fire detection was tested in microgravity through the Smoke and Aerosol Measurement Experiment studies (SAME and SAME-R)"}
+PSI-115:
+  objectives: [detection]
+  facility: ground
+  basis:
+    - {objective: detection, source: metadata, keyword: smoke}
+PSI-47:
+  objectives: [detection]
+  facility: MSG
+  basis:
+    - {objective: detection, source: challenge, quote: "One of the instruments used for smoke detection in the SAME and SAME-R studies was instead used to detect dust in the Dust and Aerosol Measurement Feasibility Test (DAFT and DAFT-2)"}
+PSI-179:
+  objectives: [detection]
+  facility: ISS cabin
+  basis:
+    - {objective: detection, source: metadata, keyword: aerosols}
+PSI-20:
+  objectives: [prevention, fundamental]
+  facility: CIR-ACME
+  basis:
+    - {objective: prevention, source: challenge, quote: "the Burning Rate Emulator (BRE) experiment of the Advanced Combustion via Microgravity Experiments (ACME) project was a study of materials flammability"}
+    - {objective: fundamental, source: metadata, keyword: burning}
+PSI-10:
+  objectives: [fundamental]
+  facility: CIR-ACME
+  basis:
+    - {objective: fundamental, source: metadata, keyword: soot}
+PSI-21:
+  objectives: [fundamental]
+  facility: CIR-ACME
+  basis:
+    - {objective: fundamental, source: metadata, keyword: diffusion flames}
+PSI-22:
+  objectives: [fundamental]
+  facility: CIR-ACME
+  basis:
+    - {objective: fundamental, source: challenge, quote: "Partial gravity was mimicked in ACME's Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames) experiment"}
+PSI-23:
+  objectives: [fundamental]
+  facility: CIR-ACME
+  basis:
+    - {objective: fundamental, source: metadata, keyword: Spherical Diffusion Flames}
+PSI-159:
+  objectives: [fundamental, prevention]
+  facility: CIR-ACME
+  basis:
+    - {objective: fundamental, source: metadata, keyword: cool diffusion flames}
+    - {objective: prevention, source: challenge, quote: "Microgravity tests with the highest oxygen concentrations were conducted as part of the ACME's Cool Flames Investigation with Gases (CFI-G)"}
+PSI-39:
+  objectives: [fundamental]
+  facility: CIR-MDCA
+  basis:
+    - {objective: fundamental, source: metadata, keyword: cool flame}
+PSI-117:
+  objectives: [fundamental]
+  facility: ground
+  basis:
+    - {objective: fundamental, source: metadata, keyword: Cool Flame}
+PSI-142:
+  objectives: [fundamental]
+  facility: ground
+  basis:
+    - {objective: fundamental, source: metadata, keyword: Cool Flame}
+PSI-60:
+  objectives: [fundamental]
+  facility: ground
+  basis:
+    - {objective: fundamental, source: metadata, keyword: soot}
+PSI-106:
+  objectives: [fundamental]
+  facility: MSG
+  basis:
+    - {objective: fundamental, source: metadata, keyword: diffusion flames}
+PSI-107:
+  objectives: [fundamental]
+  facility: MSG
+  basis:
+    - {objective: fundamental, source: metadata, keyword: smoke-point}
+SAFFIRE-IV:
+  objectives: [prevention]
+  facility: Cygnus
+  basis:
+    - {objective: prevention, source: metadata, keyword: Spacecraft Fire}
+SAFFIRE-V:
+  objectives: [prevention]
+  facility: Cygnus
+  basis:
+    - {objective: prevention, source: metadata, keyword: Spacecraft Fire}
+SAFFIRE-VI:
+  objectives: [prevention]
+  facility: Cygnus
+  basis:
+    - {objective: prevention, source: metadata, keyword: Spacecraft Fire}
+SOFIE-GEL:
+  objectives: [prevention]
+  facility: planned
+  basis:
+    - {objective: prevention, source: metadata, keyword: Solid Fuel Ignition}
+SOFIE-MIST:
+  objectives: [prevention, suppression]
+  facility: planned
+  basis:
+    - {objective: prevention, source: metadata, keyword: Material Ignition}
+    - {objective: suppression, source: metadata, keyword: Suppression}
+LUCI:
+  objectives: [prevention]
+  facility: planned
+  basis:
+    - {objective: prevention, source: challenge, quote: "We expect such data will be added in the future, for example from the Lunar-g Combustion Investigation (LUCI)"}
+FM2:
+  objectives: [prevention]
+  facility: planned
+  basis:
+    - {objective: prevention, source: metadata, keyword: Flammability of Materials}
+KC135-PARTIAL-G:
+  objectives: [prevention]
+  facility: ground
+  basis:
+    - {objective: prevention, source: metadata, keyword: Flame Spread}
+GRC-PARTIAL-G:
+  objectives: [prevention]
+  facility: ground
+  basis:
+    - {objective: prevention, source: metadata, keyword: Solid Fuel Ignition}

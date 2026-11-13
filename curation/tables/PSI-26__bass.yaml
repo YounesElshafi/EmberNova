@@ -1,0 +1,11 @@
+table_id: PSI-26:bass
+investigation_id: PSI-26
+file_id: 67a3768509ed061032c125fb
+title: BASS solid sample test log
+encoding: utf-8-sig
+run_label_columns: ['As Run Test #', 'Test #']
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MSG, fuel_class: solid_thin, value_kind: measured}
+evidence: {source: source_csv_header, note: 'Run log only: sample material per as-run test. As-run numbers 24, 85, 89, 90 and 91 each appear twice with different planned tests (e.g. 12-R and 12-R2), so the run identifier combines as-run and planned test numbers. Atmosphere, flow and outcomes are not in this table.'}
+columns:
+  Fuel Sample Material: {role: run_field, field: sample_material}
+  'Test #': {role: run_field, field: planned_test_number}

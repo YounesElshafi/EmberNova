@@ -1,0 +1,10 @@
+{
+  "project": "EmberNova",
+  "si_generated": true,
+  "scope": "SI-assisted application source code, architecture review, implementation documentation and generated research prose",
+  "original_nasa_measurements": {"si_generated": false, "policy": "Read-only originals, SHA-256 verified; raw values preserved"},
+  "deterministic_charts": {"si_generated": false, "policy": "Built by backend tools from source-linked measurements; SI selection labeled separately"},
+  "hosted_analysis_lab": {"si_generated": true, "policy": "Code and derived outputs labeled SI; exploratory, not new NASA measurements; isolated hosted execution only"},
+  "generated_conceptual_images": "Not implemented",
+  "review_status": "Independent Claude Code scientific and security review required"
+}

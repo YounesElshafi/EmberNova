@@ -1,0 +1,18 @@
+table_id: PSI-159:cfig_inverse
+investigation_id: PSI-159
+file_id: 691f7ea117f78b371b26f6fb
+title: CFI-G inverse spherical flames (oxygen from burner, fuel in chamber)
+encoding: utf-8-sig
+run_label_column: Test
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: CIR-ACME, fuel_class: gaseous_spherical_burner, value_kind: measured}
+evidence: {source: source_csv_header, note: 'Inverse flames: an O2/N2 stream flows OUT of the burner into a fuel/N2 chamber. XO2 is therefore the burner-stream oxygen fraction (up to 0.85), stored as burner_o2_mole_fraction and never as ambient o2_mole_fraction; chamber oxygen is not reported and stays unknown. Blank spreadsheet rows are skipped. Pressure is approximate per the header.'}
+columns:
+  Fuel: {role: run_field, field: fuel_raw}
+  Flame Type: {role: run_field, field: flame_type}
+  'Xf  before test': {role: condition, variable: ambient_fuel_mole_fraction, unit: dimensionless}
+  approx p (bar): {role: condition, variable: total_pressure, unit: bar, quality_flags: [approximate_per_header]}
+  XO2: {role: condition, variable: burner_o2_mole_fraction, unit: dimensionless}
+  O2 flow rate (mg/s): {role: condition, variable: oxidizer_mass_flow_rate, unit: mg/s}
+  Hot ignition: {role: run_field, field: ignition_outcome, canonical_map: {'yes': ignited, 'no': not_ignited, flash: flash_only}}
+  burn time (sec): {role: measurement, quantity: flame_burn_time, unit: s}
+  Self -ext or flow term: {role: run_field, field: termination_raw}

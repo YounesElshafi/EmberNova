@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://embernova/contracts/evidence.schema.json",
+  "title": "Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evidence_id", "kind", "investigation_ids", "title", "locator", "excerpt", "source", "value_kind"],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^ev_[a-z0-9]{12}$"},
+    "kind": {"enum": ["document_span", "data_rows", "investigation_record", "media", "derived_artifact"]},
+    "investigation_ids": {"type": "array", "items": {"type": "string"}},
+    "title": {"type": "string"},
+    "locator": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["type", "document_id", "page", "char_start", "char_end"],
+         "properties": {"type": {"const": "page_span"}, "document_id": {"type": "string"}, "page": {"type": "integer", "minimum": 1},
+                        "page_end": {"type": ["integer", "null"]}, "char_start": {"type": "integer"}, "char_end": {"type": "integer"}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "table_id", "run_uids", "quantities", "query_hash"],
+         "properties": {"type": {"const": "rows"}, "table_id": {"type": "string"}, "run_uids": {"type": "array", "items": {"type": "string"}},
+                        "quantities": {"type": "array", "items": {"type": "string"}}, "query_hash": {"type": "string"},
+                        "source_rows": {"type": "array", "items": {"type": "integer"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "investigation_id", "field"],
+         "properties": {"type": {"const": "record"}, "investigation_id": {"type": "string"}, "field": {"type": "string"}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "media_id"],
+         "properties": {"type": {"const": "media"}, "media_id": {"type": "string"}, "t_start_s": {"type": ["number", "null"]}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "artifact_id"],
+         "properties": {"type": {"const": "artifact"}, "artifact_id": {"type": "string"}}}
+      ]
+    },
+    "excerpt": {"type": "string", "maxLength": 2000},
+    "preview_rows": {
+      "type": ["array", "null"], "maxItems": 20,
+      "items": {"type": "object", "additionalProperties": false, "required": ["run_uid", "values"],
+        "properties": {"run_uid": {"type": "string"},
+          "values": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+            "required": ["name", "value_raw", "unit_raw", "display_value", "display_unit", "qualifier"],
+            "properties": {"name": {"type": "string"}, "value_raw": {"type": ["string", "null"]}, "unit_raw": {"type": ["string", "null"]},
+              "display_value": {"type": ["number", "null"]}, "display_unit": {"type": ["string", "null"]}, "qualifier": {"type": "string"},
+              "quality_flags": {"type": "array", "items": {"type": "string"}}}}}}}
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["file_id", "sha256", "doi", "ntrs_id", "source_url", "local_url"],
+      "properties": {
+        "file_id": {"type": ["string", "null"]}, "sha256": {"type": ["string", "null"]},
+        "doi": {"type": ["string", "null"]}, "ntrs_id": {"type": ["string", "null"]},
+        "source_url": {"type": ["string", "null"]}, "local_url": {"type": ["string", "null"]},
+        "file_version": {"type": ["string", "null"]}, "source_version": {"type": ["string", "null"]},
+        "is_psi": {"type": "boolean"}
+      }
+    },
+    "value_kind": {"enum": ["measured", "design", "derived", "modeled", "reported_in_publication", "metadata", "media"]},
+    "transform": {"type": ["array", "null"], "items": {"type": "string"}}
+  }
+}

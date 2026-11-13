@@ -1,0 +1,21 @@
+# ADR-007: Analysis Lab on OpenAI hosted Code Interpreter with explicit containers
+
+- **Status:** Accepted (2026-11-13). This is a P1 feature behind `FEATURE_ANALYSIS_LAB`.
+- **Problem:** Let the SI write and run Python against NASA data safely, given that we only have a small shared VPS.
+- **Options:**
+  - **OpenAI Code Interpreter**
+  - E2B microVMs
+  - Docker on the VPS
+  - Pyodide in the browser
+  - Anthropic code execution, which doesn't match our provider
+- **Decision:**
+  - Use Code Interpreter with **explicit containers** (`POST /v1/containers`) at the 1 GB tier. Create one lazily per session and recreate it after the 20-minute idle expiry.
+  - Upload the bundle once through the Files API.
+  - The model's code writes a `result.json` that follows our contract. The backend validates it and re-renders the charts itself.
+  - No model-generated code ever runs on the VPS.
+- **Reasons:**
+  - It gives strong isolation with no infrastructure, at $0.03 per 20-minute session.
+  - It's the same vendor as our LLM.
+  - Explicit containers avoid the reported billing issue with auto containers.
+- **Consequences:** M9 must smoke-test model support and the container `file_ids` API. The feature can be switched off without touching any P0 functionality.
+- **Reverse if:** Code Interpreter turns out to be unsupported or unreliable for the chosen model. Then switch to E2B with the same result contract, or drop the feature.

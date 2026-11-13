@@ -1,0 +1,5 @@
+fire_safety_objective: [prevention, detection, suppression, fundamental]
+fuel_class: [solid_thin, solid_thick, solid_fabric, liquid_droplet, gaseous_jet_coflow, gaseous_spherical_burner, gaseous_porous_burner, aerosol_smoke_source, dust]
+habitat_context: [spacecraft_cabin, space_station, lunar_surface_habitat, martian_surface_habitat, pressurized_rover, spacesuit]
+gravity_regime: [microgravity_iss, microgravity_cygnus, normal_gravity_ground, simulated_partial_g_aircraft, simulated_partial_g_centrifuge, modeled]
+value_kind: [measured, design, derived, reported_in_publication, metadata]

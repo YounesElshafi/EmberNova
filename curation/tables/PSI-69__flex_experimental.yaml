@@ -1,0 +1,25 @@
+table_id: PSI-69:flex_experimental
+investigation_id: PSI-69
+file_id: 6792be99b7b6ff8e65037e3a
+title: FLEX droplet combustion results
+encoding: cp1252
+run_label_column: 'FLEX Test #'
+alt_label_columns: [FLEX Identifier]
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MDCA, fuel_class: liquid_droplet, value_kind: measured}
+evidence: {document_id: 'doc:NTRS-20150023456-1', page: 26, definition_page: 25}
+columns:
+  Fuel: {role: run_field, field: fuel_raw, canonical_map: {Methanol: methanol, Heptane: n-heptane}}
+  Test end: {role: run_field, field: outcome_raw}
+  Test Date: {role: run_field, field: test_date}
+  'Ambient pressure; mmHg': {role: condition, variable: total_pressure, unit: mmHg, plausible_si: [50000, 400000]}
+  'O initial ambient composition; mole fraction': {role: condition, variable: o2_mole_fraction, unit: dimensionless}
+  'N initial ambient composition; mole fraction': {role: condition, variable: n2_mole_fraction, unit: dimensionless}
+  'CO initial ambient composition; mole fraction': {role: condition, variable: co2_mole_fraction, unit: dimensionless}
+  'He initial ambient composition; mole fraction': {role: condition, variable: he_mole_fraction, unit: dimensionless}
+  'Droplet initial diameter; mm': {role: condition, variable: droplet_initial_diameter, unit: mm}
+  'Visible flame extinction diameter; mm': {role: measurement, quantity: extinction_diameter, unit: mm}
+  'Burning rate; mm': {role: measurement, quantity: burning_rate_constant, unit: 'mm**2/s', unit_raw: mm, quality_flags: [unit_inferred_from_source_doc]}
+  'Burn time; s': {role: measurement, quantity: burn_time, unit: s}
+row_checks:
+  - {rule: composition_sum, variables: [o2_mole_fraction, n2_mole_fraction, co2_mole_fraction, he_mole_fraction], tolerance: 0.015}
+  - {rule: greater_than, a: extinction_diameter, b: droplet_initial_diameter, margin: 0, flag: extinction_exceeds_initial}

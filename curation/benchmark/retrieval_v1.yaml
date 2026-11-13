@@ -1,0 +1,129 @@
+# EmberNova retrieval benchmark v1. Architect-owned (Claude Code). Codex must NOT edit this file.
+# Relevance grades: 2 = primary investigation for the question, 1 = supporting/partially relevant.
+# Unlisted investigations count as 0. IDs are SOURCE_CATALOG source_id values.
+# gold_pages (optional): document_id + page that should appear in search_documents top-8.
+# Split: tune ranking weights on `dev` only; report `test` once per milestone.
+version: 1
+created: 2026-11-13
+questions:
+  - id: q01
+    split: dev
+    question: How effective is carbon dioxide or helium dilution at extinguishing burning fuel droplets in microgravity?
+    relevance: {PSI-69: 2, PSI-68: 2, PSI-39: 1}
+    gold_pages: [{document_id: "doc:NTRS-20150023456-1", page: 19}]
+  - id: q02
+    split: dev
+    question: Which experiments studied flame spread over solid materials such as PMMA and cotton-fiberglass fabric in low-speed airflow on the ISS?
+    relevance: {PSI-25: 2, PSI-26: 2, PSI-62: 1, SOFIE-GEL: 1}
+  - id: q03
+    split: dev
+    question: Large-scale spacecraft fire tests in an uncrewed cargo vehicle
+    relevance: {PSI-98: 2, PSI-99: 2, PSI-100: 2, SAFFIRE-IV: 2, SAFFIRE-V: 2, SAFFIRE-VI: 2}
+  - id: q04
+    split: dev
+    question: How do smoke particles from overheated spacecraft materials differ in microgravity, and what does that mean for smoke detectors?
+    relevance: {PSI-102: 2, PSI-101: 2, PSI-115: 1, PSI-47: 1, PSI-179: 1}
+  - id: q05
+    split: dev
+    question: Experiments with the highest oxygen concentrations in microgravity
+    relevance: {PSI-159: 2, PSI-10: 1, PSI-69: 1}
+  - id: q06
+    split: dev
+    question: Can an electric field change flame shape like gravity does?
+    relevance: {PSI-22: 2, PSI-21: 1}
+  - id: q07
+    split: dev
+    question: Burning rate emulator porous burner study of materials flammability in still air
+    relevance: {PSI-20: 2}
+  - id: q08
+    split: dev
+    question: Cool flames that continue burning after the visible flame goes out
+    relevance: {PSI-39: 2, PSI-69: 2, PSI-159: 2, PSI-117: 1, PSI-142: 1}
+  - id: q09
+    split: dev
+    question: Soot formation and smoke point of laminar jet flames in co-flowing air
+    relevance: {PSI-107: 2, PSI-60: 1, PSI-106: 1}
+  - id: q10
+    split: dev
+    question: Flame liftoff and structure of gas jet flames in coflow
+    relevance: {PSI-106: 2, PSI-107: 1, PSI-21: 1}
+  - id: q11
+    split: dev
+    question: What data exists about fires on the Moon or in lunar gravity?
+    relevance: {LUCI: 2, FM2: 2, GRC-PARTIAL-G: 2, KC135-PARTIAL-G: 1}
+  - id: q12
+    split: dev
+    question: Upward flame spread over thin solids at Martian gravity levels
+    relevance: {KC135-PARTIAL-G: 2, LUCI: 1}
+  - id: q13
+    split: dev
+    question: Which investigations used the Multi-user Droplet Combustion Apparatus?
+    relevance: {PSI-69: 2, PSI-68: 2, PSI-39: 2, PSI-117: 1}
+  - id: q14
+    split: dev
+    question: Experiments conducted in the Microgravity Science Glovebox with the SPICE flow duct
+    relevance: {PSI-25: 2, PSI-26: 2, PSI-107: 2, PSI-106: 2, PSI-60: 1, PSI-62: 1}
+  - id: q15
+    split: dev
+    question: Dust aerosol measurement on the ISS with handheld particle counters
+    relevance: {PSI-47: 2, PSI-179: 1, PSI-102: 1}
+  - id: q16
+    split: dev
+    question: Spherical diffusion flames and their extinction response
+    relevance: {PSI-23: 2, PSI-159: 1}
+  - id: q17
+    split: dev
+    question: What is the critical flow velocity below which flames extinguish radiatively in opposed flow?
+    relevance: {PSI-25: 2, PSI-26: 1}
+  - id: q18
+    split: dev
+    question: Flame design to minimize soot using inverse and normal flames with oxygen enrichment
+    relevance: {PSI-10: 2, PSI-159: 1}
+  - id: q19
+    split: dev
+    question: Concurrent flame spread over fabric in Saffire and fire growth inside a spacecraft cabin
+    relevance: {PSI-98: 2, PSI-100: 2, PSI-99: 1, SAFFIRE-IV: 1, SAFFIRE-VI: 1, PSI-62: 1}
+  - id: q20
+    split: dev
+    question: Extinction diameter of n-dodecane droplets versus pressure
+    relevance: {PSI-39: 2, PSI-117: 2}
+  - id: q21
+    split: test
+    question: Which NASA experiments are relevant to fire suppression in a pressurized rover?
+    relevance: {PSI-69: 2, PSI-68: 2, PSI-25: 1, PSI-26: 1, SOFIE-MIST: 1, PSI-39: 1}
+  - id: q22
+    split: test
+    question: Thermal precipitator and aerosol sampling of smoke from Kapton and silicone
+    relevance: {PSI-101: 2, PSI-102: 1}
+  - id: q23
+    split: test
+    question: Material flammability limits used for spacecraft material selection
+    relevance: {PSI-25: 2, PSI-26: 1, PSI-98: 1, PSI-99: 1, PSI-100: 1, SOFIE-GEL: 1, PSI-20: 1}
+  - id: q24
+    split: test
+    question: Modeling of smoke generation using SAME data
+    relevance: {PSI-115: 2, PSI-102: 1, PSI-101: 1}
+  - id: q25
+    split: test
+    question: Ethylene diffusion flames on a porous spherical burner at reduced oxygen
+    relevance: {PSI-20: 2, PSI-23: 1, PSI-159: 1}
+  - id: q26
+    split: test
+    question: Smoke detector response during a real spacecraft fire
+    relevance: {PSI-100: 2, PSI-99: 1, PSI-98: 1, SAFFIRE-IV: 1, PSI-102: 1, PSI-101: 1}
+  - id: q27
+    split: test
+    question: Heptane and methanol droplet burning rate constant in air at one atmosphere
+    relevance: {PSI-69: 2, PSI-68: 1}
+  - id: q28
+    split: test
+    question: Solid fuel ignition and extinction tests planned after BASS-II
+    relevance: {SOFIE-GEL: 2, SOFIE-MIST: 2, PSI-25: 1}
+  - id: q29
+    split: test
+    question: Two-color tomography comparison of concurrent flame spread simulations with BASS
+    relevance: {PSI-62: 2, PSI-26: 1, PSI-25: 1}
+  - id: q30
+    split: test
+    question: Coflow laminar diffusion flames of methane diluted with nitrogen
+    relevance: {PSI-21: 2, PSI-22: 1, PSI-106: 1}

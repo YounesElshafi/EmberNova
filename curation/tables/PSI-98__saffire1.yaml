@@ -1,0 +1,22 @@
+table_id: PSI-98:saffire1
+investigation_id: PSI-98
+file_id: 6792c46eb7b6ff8e65037f3e
+title: Saffire-I large-scale fabric burn conditions
+encoding: utf-8-sig
+run_label_column: 'Sample Number '
+exclude_label_regex: '^F\d'
+defaults: {gravity_regime: microgravity_cygnus, platform: Cygnus, hardware: Saffire flow duct, fuel_class: solid_fabric, value_kind: measured}
+evidence:
+  source: source_csv_header
+  note: 'Rows F1C1/F1C2 and F2C1/F2C2 are pre-test flow-visualization records, not burns, and are excluded. Units come from the headers. Length 40.6 cm and width 94 cm are kept as reported, although Saffire-III reports the same SIBAL sample as 94 cm long and 40.6 cm wide. Ambient pressure is not in this table.'
+columns:
+  Material: {role: run_field, field: sample_material}
+  Sample Thickness (cm): {role: condition, variable: sample_thickness, unit: cm}
+  Sample Length (cm): {role: condition, variable: sample_length, unit: cm}
+  Sample Width (cm): {role: condition, variable: sample_width, unit: cm}
+  Air Flow (cm/s): {role: condition, variable: flow_velocity, unit: cm/s}
+  Percent O2: {role: condition, variable: o2_mole_fraction, unit: percent}
+  Ignition Power (W): {role: condition, variable: ignition_power, unit: W}
+  Ignition Time (s): {role: condition, variable: ignition_time, unit: s}
+  Burn Time (s): {role: measurement, quantity: sample_burn_time, unit: s}
+  'Flow Direction ': {role: run_field, field: flow_direction}

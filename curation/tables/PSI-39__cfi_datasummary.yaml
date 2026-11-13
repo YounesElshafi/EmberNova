@@ -1,0 +1,21 @@
+table_id: PSI-39:cfi_datasummary
+investigation_id: PSI-39
+file_id: 683f4b7cda33c6f4c4cec615
+title: CFI hot and cool flame measurements (matched Flex Numbers)
+format: xlsx
+sheet: DATA
+run_label_column: Flex Number
+filter_keys_file_id: 67a24ba209ed061032c107a6
+filter_key_column: Flex Number
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MDCA, fuel_class: liquid_droplet, value_kind: measured}
+evidence:
+  source: DATA worksheet row 1 unit headers
+  note: 'Only Flex Numbers in the verified CFI experimental CSV are included. Hot-flame and cool-flame quantities retain distinct definitions. Fuel/oxygen are not invented or copied without a field-level join. HF Burn Time has no explicit header unit and remains unnormalized.'
+columns:
+  'D0 ( mm )': {role: condition, variable: droplet_initial_diameter, unit: mm}
+  'Dext, hot ( mm )': {role: measurement, quantity: hot_flame_extinction_diameter, unit: mm}
+  ' khot ( mm^2/s )': {role: measurement, quantity: hot_flame_burning_rate_constant, unit: 'mm**2/s'}
+  'kcool ( mm^2/s )': {role: measurement, quantity: cool_flame_burning_rate_constant, unit: 'mm**2/s'}
+  'Dext,cool ( mm )': {role: measurement, quantity: cool_flame_extinction_diameter, unit: mm}
+  Pressure (atm): {role: condition, variable: total_pressure, unit: atm}
+  HF Burn Time: {role: measurement, quantity: hot_flame_burn_time, unit: null}

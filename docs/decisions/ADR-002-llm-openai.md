@@ -1,0 +1,26 @@
+# ADR-002: LLM provider and models (OpenAI)
+
+- **Status:** Accepted (2026-11-13). The team chose the provider. The models were verified on developers.openai.com that day.
+- **Problem:** Which provider and models power the agent, ingestion and embeddings?
+- **Options:**
+  - Provider: OpenAI (team access), Anthropic, or Google.
+  - OpenAI model (price per 1M input/output tokens): `gpt-6-astra` ($10/$50), **`gpt-6.1-sol` ($2/$10)**, `gpt-6.1-terra` ($1/$5), `gpt-6-luna` ($0.10/$0.50).
+- **Decision:**
+  - **Agent:** `gpt-6.1-sol` on the Responses API, reasoning effort medium (high for analysis).
+  - **Fallback:** `gpt-6.1-terra`.
+  - **Bulk/offline:** `gpt-6-luna`.
+  - **Embeddings:** `text-embedding-3-small`, 512 dims.
+  - **Images (P2):** `gpt-image-1-mini`.
+  - **Integration:** the official `openai` Python SDK, a manual streaming loop and strict function tools. Model IDs are config.
+- **Reasons:**
+  - The team has the account.
+  - Sol balances quality against cost for a public demo that runs ~10 weeks.
+  - The 1.05M context makes long tool outputs safe.
+  - Prompt caching cuts the cost of the repeated prefix.
+  - Codex (OpenAI) is fluent in the SDK.
+- **Consequences:**
+  - No Anthropic-specific features are used, and the `claude-api` skill does not apply to product code.
+  - Code Interpreter support for Sol must be smoke-tested in M9.
+- **Reverse if:**
+  - Sol fails the agent evals (A1–A8 pass rate under 75%): try a higher effort, or use `gpt-6-astra` for featured recordings.
+  - API access is lost: Explorers and replays still work.

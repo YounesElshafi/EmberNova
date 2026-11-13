@@ -1,0 +1,13 @@
+table_id: PSI-102:same
+investigation_id: PSI-102
+file_id: 6797d223b7b6ff8e65038de3
+title: SAME smoke source conditions
+encoding: utf-8-sig
+run_label_column: 'Sample #'
+defaults: {gravity_regime: microgravity_iss, platform: ISS, hardware: MSG, fuel_class: aerosol_smoke_source, value_kind: measured}
+evidence: {source: source_csv_header, note: 'Samples 5-8 state "same conditions as 1-4" without per-sample values; those values stay unknown rather than being copied.'}
+columns:
+  'Sample Material  ': {role: run_field, field: sample_material}
+  Air Flow (cm/s): {role: condition, variable: smoke_inlet_velocity, unit: cm/s}
+  Weight loss rate (mg/min): {role: measurement, quantity: sample_mass_loss_rate, unit: mg/min}
+  Aging Duration (minutes): {role: condition, variable: smoke_aging_duration, unit: minute}
