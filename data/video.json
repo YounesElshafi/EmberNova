@@ -1,0 +1,223 @@
+{
+  "source": {
+    "title": "NASA ScienceCasts: The Power of Studying Combustion on the ISS",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=W1oXykoz9zg",
+    "year": 2018
+  },
+  "facts": [
+    {
+      "id": "V-01",
+      "timestamp": "Not Available",
+      "category": "other",
+      "statement": "The International Space Station orbits about 250 miles above Earth.",
+      "exact_quote": "about 250 miles above Earth, on the International Space Station (ISS).",
+      "numbers": [
+        {
+          "name": "altitude",
+          "value": "250",
+          "unit": "miles"
+        }
+      ]
+    },
+    {
+      "id": "V-02",
+      "timestamp": "Not Available",
+      "category": "fuel",
+      "statement": "About 85 percent of the energy humans use comes from combustion.",
+      "exact_quote": "About 85 percent of the energy we use comes from combustion - the burning of some sort of fuel.",
+      "numbers": [
+        {
+          "name": "energy from combustion",
+          "value": "85",
+          "unit": "percent"
+        }
+      ]
+    },
+    {
+      "id": "V-03",
+      "timestamp": "Not Available",
+      "category": "other",
+      "statement": "About 70 percent of the electricity used at home and work comes from power plants that use combustion.",
+      "exact_quote": "About 70% of the electricity we use at home and work comes from power plants that use combustion.",
+      "numbers": [
+        {
+          "name": "electricity from combustion",
+          "value": "70",
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "id": "V-04",
+      "timestamp": "Not Available",
+      "category": "hardware",
+      "statement": "Three series of combustion experiments take place on the Combustion Integration Rack on the ISS.",
+      "exact_quote": "Three series of combustion experiments taking place on the International Space Station's Combustion Integration Rack (CIR) are looking at combustion in very different ways.",
+      "numbers": [
+        {
+          "name": "series of experiments",
+          "value": "3",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "id": "V-05",
+      "timestamp": "Not Available",
+      "category": "fuel",
+      "statement": "The Flame Extinguishment Experiment examined the burning of a single droplet of fuel in microgravity.",
+      "exact_quote": "The Flame Extinguishment Experiment, or FLEX, examined the burning of a single droplet of fuel in the microgravity confines of the ISS.",
+      "numbers": [
+        {
+          "name": "fuel droplets",
+          "value": "1",
+          "unit": "single droplet"
+        }
+      ]
+    },
+    {
+      "id": "V-06",
+      "timestamp": "Not Available",
+      "category": "hardware",
+      "statement": "Droplet combustion experiments concluded in September 2017, and ACME began in November 2017.",
+      "exact_quote": "The last of the droplet combustion experiments were conducted in September 2017. ACME began in November 2017.",
+      "numbers": []
+    },
+    {
+      "id": "V-07",
+      "timestamp": "Not Available",
+      "category": "hardware",
+      "statement": "ACME is composed of six major experiments, with each taking about 5 months to complete.",
+      "exact_quote": "ACME is composed of six major experiments, with each taking about 5 months to complete.",
+      "numbers": [
+        {
+          "name": "major experiments",
+          "value": "6",
+          "unit": ""
+        },
+        {
+          "name": "duration per experiment",
+          "value": "5",
+          "unit": "months"
+        }
+      ]
+    },
+    {
+      "id": "V-08",
+      "timestamp": "Not Available",
+      "category": "fuel",
+      "statement": "ACME experiments examine how various gases burn without gravity affecting the flames.",
+      "exact_quote": "These experiments will examine how various gasses burn without gravity affecting the flames.",
+      "numbers": []
+    },
+    {
+      "id": "V-09",
+      "timestamp": "Not Available",
+      "category": "fuel",
+      "statement": "The Solid Fuel Ignition and Extinction experiment explores the properties of burning solid matter.",
+      "exact_quote": "The Solid Fuel Ignition and Extinction or SoFIE experiment, will explore the properties of burning solid matter.",
+      "numbers": []
+    },
+    {
+      "id": "V-10",
+      "timestamp": "Not Available",
+      "category": "flame_behavior",
+      "statement": "On Earth, candle flames flicker because hot rising gases and cooler incoming air create turbulence and instability.",
+      "exact_quote": "Hot gasses from the flame rise while cooler, denser air is pulled to the bottom of the flame. This flow occurs at high speeds, resulting in turbulence and instability.",
+      "numbers": []
+    },
+    {
+      "id": "V-11",
+      "timestamp": "Not Available",
+      "category": "flame_behavior",
+      "statement": "In microgravity on the ISS, flames do not flicker, enabling precise and consistent measurements.",
+      "exact_quote": "But on the ISS, there's no flicker which allows us to make more precise and consistent measurements.",
+      "numbers": []
+    },
+    {
+      "id": "V-12",
+      "timestamp": "Not Available",
+      "category": "earth_application",
+      "statement": "Precise combustion measurements can lead to burning fuel more efficiently, saving power generation costs and reducing soot.",
+      "exact_quote": "If we have precise measurements we get closer to learning how to burn more efficiently. More efficiency could lead to real cost savings for producing power. The research could also lead to reducing the production of soot and other pollutants.",
+      "numbers": []
+    },
+    {
+      "id": "V-13",
+      "timestamp": "Not Available",
+      "category": "safety",
+      "statement": "Space combustion experiments have contributed to Earth fire safety applications, such as a new type of fire extinguisher.",
+      "exact_quote": "Combustion experiments conducted in space have contributed to practical applications on Earth, especially in the field of fire safety. A new type of fire extinguisher is just one example.",
+      "numbers": []
+    }
+  ],
+  "experiments_mentioned": [
+    {
+      "name": "Flame Extinguishment Experiment (FLEX)",
+      "timestamp": "Not Available",
+      "what_it_studies": "Examined the burning of a single droplet of fuel in microgravity.",
+      "fuel": "liquid fuel (single droplet)",
+      "oxygen_percent": "Not Available",
+      "pressure": "Not Available",
+      "gravity": "microgravity"
+    },
+    {
+      "name": "Advanced Combustion via Microgravity Experiments (ACME)",
+      "timestamp": "Not Available",
+      "what_it_studies": "Examines how various gases burn without gravity affecting the flames.",
+      "fuel": "gases",
+      "oxygen_percent": "Not Available",
+      "pressure": "Not Available",
+      "gravity": "microgravity"
+    },
+    {
+      "name": "Solid Fuel Ignition and Extinction (SoFIE)",
+      "timestamp": "Not Available",
+      "what_it_studies": "Explores the properties of burning solid matter.",
+      "fuel": "solid matter",
+      "oxygen_percent": "Not Available",
+      "pressure": "Not Available",
+      "gravity": "microgravity"
+    },
+    {
+      "name": "Combustion Integration Rack (CIR)",
+      "timestamp": "Not Available",
+      "what_it_studies": "Facility hosting three series of combustion experiments looking at combustion in different ways.",
+      "fuel": "Not Available",
+      "oxygen_percent": "Not Available",
+      "pressure": "Not Available",
+      "gravity": "microgravity"
+    }
+  ],
+  "earth_benefits": [
+    {
+      "timestamp": "Not Available",
+      "benefit": "Finding newer and less polluting ways to burn fuel."
+    },
+    {
+      "timestamp": "Not Available",
+      "benefit": "Achieving higher fuel burning efficiency, leading to real cost savings for producing power."
+    },
+    {
+      "timestamp": "Not Available",
+      "benefit": "Reducing the production of soot and other environmental pollutants."
+    },
+    {
+      "timestamp": "Not Available",
+      "benefit": "Contributing to practical fire safety applications on Earth, such as a new type of fire extinguisher."
+    }
+  ],
+  "visual_notes": [
+    {
+      "timestamp": "Not Available",
+      "description": "Demonstration comparing a candle flame flickering on Earth due to buoyant turbulent flow versus a steady, non-flickering flame in microgravity on the ISS."
+    }
+  ],
+  "transcript": "[ MUSIC ]\nThe Power of Studying Combustion on the ISS - presented by Science@NASA\nIf you wanted to reduce the amount of pollution humans produce, where might you look?\nHere? Yep.\nHere? Sure.\nHere? Wait, what?\nThat's exactly where scientists and researchers are looking:\nabout 250 miles above Earth, on the International Space Station (ISS).\nHere, astronauts are working on a series of experiments to learn more about combustion.\nWhy combustion? Dennis Stocker, project scientist for the Advanced Combustion via Microgravity Experiments, or ACME, says\n\"Consider this. About 85 percent of the energy we use comes from combustion - the burning of some sort of fuel.\"\nAbout 70% of the electricity we use at home and work comes from power plants that use combustion.\nThe combustion of fuels powers the engines in many modes of transportation.\nStocker continues: \"If we can learn more about the process, we might be able to find newer and less polluting ways to burn fuel.\"\nThree series of combustion experiments taking place on the International Space Station's Combustion Integration Rack (CIR) are looking at combustion in very different ways.\nThe Flame Extinguishment Experiment, or FLEX, examined the burning of a single droplet of fuel in the microgravity confines of the ISS.\nThe last of the droplet combustion experiments were conducted in September 2017. ACME began in November 2017.\nACME is composed of six major experiments, with each taking about 5 months to complete.\nThese experiments will examine how various gasses burn without gravity affecting the flames.\nThe Solid Fuel Ignition and Extinction or SoFIE experiment, will explore the properties of burning solid matter.\nSo why study combustion in micro gravity?\nAs Stocker explains: \"On the ISS, you have conditions that you can't replicate on Earth.\nFor example, consider a candle when it's burning. The flame flickers.\nWhy? Hot gasses from the flame rise while cooler, denser air is pulled to the bottom of the flame.\nThis flow occurs at high speeds, resulting in turbulence and instability.\nThat instability makes it hard to study the properties of the flame.\nBut on the ISS, there's no flicker which allows us to make more precise and consistent measurements.\nIf we have precise measurements we get closer to learning how to burn more efficiently.\"\nMore efficiency could lead to real cost savings for producing power.\nThe research could also lead to reducing the production of soot and other pollutants.\nCombustion experiments conducted in space have contributed to practical applications on Earth, especially in the field of fire safety. A new type of fire extinguisher is just one example.\nAnd, as Stocker notes: \"I think we're in for a few more surprises as a result of these microgravity experiments.\"\nThat's because, not surprisingly, Stocker knew where to look for answers to reducing the amount of global pollution: He looked up.\nFor more from the International Space Station, go to www.nasa.gov/station.\nIf you're burning to learn more about other hot science topics, visit science.nasa.gov.",
+  "confidence_notes": [
+    "Exact timestamps (mm:ss) were set to 'Not Available' because explicit timing markers were omitted in the transcript text source.",
+    "Experimental conditions (oxygen percentage, pressure) for FLEX, ACME, SoFIE, and CIR were marked as 'Not Available' as they were not stated in the video narration.",
+    "All factual statements, percentages, dates, and quotes strictly reflect Dennis Stocker's narration and the Science@NASA transcript without extrapolation."
+  ]
+}

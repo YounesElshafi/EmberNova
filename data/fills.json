@@ -1,0 +1,73 @@
+{
+  "note": "Values filled from other NASA documents when the PSI page does not report them. PSI values always stay primary; fills are shown with a 'from guide/facts' label and a source. Nothing here is guessed.",
+  "fills": [
+    {
+      "psiId": "PSI-26",
+      "acronym": "BASS",
+      "field": "o2",
+      "min": 17,
+      "max": 21,
+      "unit": "%",
+      "source": { "document": "Researcher guide (Researcher_guide_json)", "entry": "BASS", "page": 21 },
+      "note": "Nominally 21% oxygen; nitrogen-diluted tests as low as 17%."
+    },
+    {
+      "psiId": "PSI-26",
+      "acronym": "BASS",
+      "field": "pressure",
+      "min": 1,
+      "max": 1,
+      "unit": "atm",
+      "psi": 14.696,
+      "source": { "document": "Researcher guide (Researcher_guide_json)", "entry": "BASS", "page": 21 },
+      "note": "Nominally 1 atmosphere."
+    },
+    {
+      "psiId": "PSI-69",
+      "acronym": "FLEX",
+      "field": "o2",
+      "min": 10,
+      "max": 50,
+      "unit": "%",
+      "originalValue": "0.10 to 0.50 mole fraction",
+      "source": { "document": "Flame Extinguishment Experiment (FLEX) via combustionjson", "page": 1 },
+      "note": "Mole fraction converted to percent (x100)."
+    }
+  ],
+  "alsoReported": [
+    {
+      "psiId": "PSI-69",
+      "acronym": "FLEX",
+      "field": "pressure",
+      "primaryFromPSI": { "min": 0.5, "max": 1.5, "unit": "atm" },
+      "other": [
+        { "min": 0.5, "max": 1.0, "unit": "atm", "source": { "document": "Flame Extinguishment Experiment (FLEX) via combustionjson", "page": 2 } },
+        { "min": 0, "max": 3, "unit": "atm", "source": { "document": "Researcher guide (Researcher_guide_json)", "entry": "FLEX", "page": 12 } }
+      ]
+    },
+    {
+      "psiId": "PSI-69",
+      "acronym": "FLEX",
+      "field": "o2",
+      "primaryFromFills": { "min": 10, "max": 50, "unit": "%" },
+      "other": [
+        { "max": 40, "unit": "%", "source": { "document": "Researcher guide (Researcher_guide_json)", "entry": "FLEX", "page": 12 }, "note": "Guide says 'up to 40 percent oxygen by volume'." }
+      ]
+    },
+    {
+      "psiId": "PSI-26",
+      "acronym": "BASS",
+      "field": "flow",
+      "primaryFromPSI": { "max": 40, "unit": "cm/s" },
+      "other": [
+        { "min": 5, "max": 50, "unit": "cm/s", "source": { "document": "Burning and Suppression of Solids (BASS) via combustionjson", "page": 3 } }
+      ]
+    }
+  ],
+  "doNotUseAsRanges": [
+    "FLEX Figure 2: 70% CO2, 21% O2 (single test example)",
+    "FLEX-2 Figure 3: 30% O2 at 2.4 atm (single test example)",
+    "BASS Figures 2c/11: 17% O2 at 10-12 cm/s (single test examples)",
+    "Flame Design Figure 6 and s-Flame Figure 7 (drop tower examples)"
+  ]
+}

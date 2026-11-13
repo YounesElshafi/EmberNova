@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>emberNova — Fire Safety Evidence Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="#hero">ember<b>Nova</b></a>
+  <div class="links">
+    <a href="#explorer">Evidence Explorer</a>
+    <a href="#how">How it works</a>
+    <span class="mono">Source: NASA Physical Sciences Informatics (PSI)</span>
+  </div>
+</nav>
+
+<div class="dots" id="dots">
+  <a href="#hero" class="on" aria-label="Intro"></a>
+  <a href="#explorer" aria-label="Explorer"></a>
+  <a href="#how" aria-label="How it works"></a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header id="hero">
+  <canvas id="flame"></canvas>
+  <div class="hero-copy">
+    <div class="mono">NASA Space Apps 2026 · Flame in Freefall</div>
+    <h1>Fire without <em>gravity</em></h1>
+    <p>Explore, rank and compare NASA microgravity combustion experiments — and see exactly what we still don't know about fire safety on the Moon and Mars.</p>
+    <a class="btn" href="#explorer">Explore the evidence <span>→</span></a>
+  </div>
+  <div class="g-panel">
+    <div class="g-top"><span class="mono">Gravity</span><span class="g-val" id="gVal">0.00 g</span></div>
+    <input type="range" id="gSlider" min="0" max="100" value="0" aria-label="Gravity">
+    <div class="g-note" id="gNote"></div>
+  </div>
+</header>
+
+<!-- ============ EXPLORER ============ -->
+<section class="page" id="explorer">
+  <div class="sec-head">
+    <div>
+      <div class="mono">Mission scenario explorer</div>
+      <h2>Where does the <em>evidence</em> reach?</h2>
+    </div>
+    <div class="mono">Ranks past experiments by how closely they match your scenario</div>
+  </div>
+
+  <div class="hud">
+    <!-- LEFT: scenario -->
+    <div class="stack">
+      <div class="panel">
+        <h3>Scenario presets</h3>
+        <div id="presets"></div>
+      </div>
+      <div class="panel">
+        <h3>Conditions</h3>
+        <div class="field"><label class="mono"><span>Oxygen</span><span id="o2Out"></span></label><input type="range" id="o2" min="15" max="100" step="1"></div>
+        <div class="field"><label class="mono"><span>Pressure</span><span id="pOut"></span></label><input type="range" id="p" min="3" max="15" step="0.1"></div>
+        <div class="field"><label class="mono"><span>Airflow</span><span id="fOut"></span></label><input type="range" id="f" min="0" max="40" step="1"></div>
+        <div class="field"><label class="mono" style="display:block;margin-bottom:8px">Fuel</label>
+          <select id="fuel">
+            <option value="any">Any fuel</option>
+            <option value="fabric">Solid · fabric</option>
+            <option value="plastic">Solid · plastic</option>
+            <option value="gas">Gas · hydrocarbon</option>
+            <option value="droplet">Liquid · droplet</option>
+          </select></div>
+        <div class="field"><label class="mono" style="display:block;margin-bottom:8px">Gravity</label>
+          <div class="seg" id="gravSeg">
+            <button data-g="micro">Micro</button><button data-g="moon">Moon ⅙ g</button><button data-g="earth">Earth</button>
+          </div></div>
+      </div>
+    </div>
+
+    <!-- CENTER: results -->
+    <div>
+      <div class="readouts" id="readouts"></div>
+      <div class="toolbar">
+        <div class="mono" id="count"></div>
+        <label class="chk"><input type="checkbox" id="onlyDirect"> Show only direct matches (≥ 85%)</label>
+      </div>
+      <div id="results"></div>
+      <div class="panel guide-panel">
+        <div class="toolbar">
+          <h3>Program guide</h3>
+          <div class="guide-filters">
+            <select id="guideRole" aria-label="Filter by fire safety role">
+              <option value="all">All roles</option>
+              <option value="prevention">Prevention</option>
+              <option value="detection">Detection</option>
+              <option value="suppression">Suppression</option>
+              <option value="fundamental science">Fundamental science</option>
+            </select>
+            <select id="guideStatus" aria-label="Filter by program status">
+              <option value="all">All statuses</option>
+              <option value="completed">Completed</option>
+              <option value="ongoing">Ongoing</option>
+              <option value="planned">Planned</option>
+            </select>
+          </div>
+        </div>
+        <div id="guideTable"></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: gap -->
+    <div class="stack">
+      <div class="panel">
+        <h3>Knowledge gap detector</h3>
+        <div id="statusChip"></div>
+        <svg id="gapMap" viewBox="0 0 320 250" width="100%" style="margin-top:14px"></svg>
+        <div class="mono" id="mapNote" style="margin-top:6px;font-size:10px"></div>
+        <div id="gapReport"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW ============ -->
+<section class="page" id="how">
+  <div class="sec-head">
+    <div>
+      <div class="mono">Method</div>
+      <h2>Evidence, <em>not</em> verdicts</h2>
+    </div>
+  </div>
+  <div class="cols">
+    <div class="panel"><div class="num">01 — TRACEABLE</div><h3>Every claim has a source</h3>
+      <p>Each insight links back to the experiment it came from. We separate raw measurements, published results and AI-written summaries, so nothing is presented as more certain than it is.</p></div>
+    <div class="panel"><div class="num">02 — TRANSPARENT</div><h3>Ranking you can inspect</h3>
+      <p>Relevance is a weighted similarity between your scenario and each experiment. Open "Why this rank" on any card to see the breakdown. Relevance is not the same as strength of evidence, so we show both separately.</p>
+      <div class="wts" id="weights"></div></div>
+    <div class="panel"><div class="num">03 — HONEST</div><h3>We show what's missing</h3>
+      <p>If no experiment matches your conditions, the gap detector says so, lists the closest evidence and suggests which test would close the gap. For example, there is no partial-gravity combustion data yet for lunar conditions.</p></div>
+  </div>
+  <div class="disclaimer"><b>Important.</b> emberNova helps researchers explore and compare existing evidence. It is not a safety certification and does not replace engineering safety testing. The flame animation is a simplified educational illustration, not a scientific simulation. Missing values are shown as <b>Not Available</b>; guide fills are labeled separately from PSI values.</div>
+</section>
+
+<footer>
+  <span class="mono">emberNova · NASA Space Apps Challenge 2026 · Giza</span>
+  <span class="mono">Data: NASA Physical Sciences Informatics (PSI) · guide and facts linked per record</span>
+</footer>
+
+<!-- compare bar + modal -->
+<div class="cmpbar" id="cmpbar"><span class="mono" id="cmpText"></span><button class="btn" id="cmpGo">Compare →</button><button class="btn ghost" id="cmpClear">Clear</button></div>
+<div class="modal" id="modal"><div class="box"><h3>Side-by-side comparison</h3><div id="cmpTable"></div><div style="margin-top:20px"><button class="btn ghost" id="cmpClose">Close</button></div></div></div>
+
+
+<!-- =====================================================================
+     DATA  ·  SAMPLE PLACEHOLDERS  ·  replace this array with real PSI data
+     Keep the same field names and everything else keeps working.
+     o2 = oxygen %, p = pressure in psi, flow = airflow cm/s,
+     gravity = 'micro' | 'earth'  (add 'moon' when partial-gravity data exists)
+     fuelCat = 'fabric' | 'plastic' | 'gas' | 'droplet'
+     ===================================================================== -->
+<script src="js/app.js"></script>
+
+<script src="js/flame.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Apollo 1",
+    "date": "Jan. 27, 1967",
+    "vehicle": "Apollo Command Module",
+    "whatHappened": "During a preflight test, a fire swept through the Command Module and rapidly built up temperature and pressure until the pressure vessel ruptured. The three crew members perished from asphyxia caused by carbon monoxide and toxic gases.",
+    "cause": "Although a specific ignition source could not be conclusively determined, evidence of arcing was found in several wires near the environment control system.",
+    "lessons": [
+      "Replaced the three-piece hatch with a unified hatch that could be opened from inside or outside within three seconds.",
+      "Severely restricted and controlled the quantity of combustible materials in the spacecraft.",
+      "Designed new spacesuits using fire-resistant materials."
+    ],
+    "fireSafetyRelevance": "The tragedy demonstrated how a pure oxygen atmosphere accelerates fire spread and emphasized the critical need for strict material controls and rapid egress mechanisms.",
+    "page": "1"
+  },
+  {
+    "name": "Fire Aboard Space Station Mir",
+    "date": "Feb. 24, 1997",
+    "vehicle": "Space Station Mir (Kvant-1 module)",
+    "whatHappened": "A solid-fuel oxygen generator canister ignited inside the Kvant-1 module, shooting a three-foot flame and filling the station with dense smoke. The crew donned oxygen masks and successfully suppressed the flame using foam fire extinguishers without suffering structural damage.",
+    "cause": "Investigators determined that hydrocarbons, most likely latex working glove material inadvertently introduced into the canister, increased the risk of problems and caused the generator to burst into flames.",
+    "lessons": [
+      "Instituted changes in crew emergency training and ground controller response procedures.",
+      "Implemented stricter quality controls in the ground preparation of solid-fuel oxygen generator canisters.",
+      "Equipped the International Space Station with dissimilar redundancies and enhanced safety measures for oxygen generation."
+    ],
+    "fireSafetyRelevance": "The incident highlighted the inherent fire hazards of chemical oxygen generation and the importance of active smoke clearance and crew fire suppression readiness.",
+    "page": "1"
+  },
+  {
+    "name": "Apollo 13",
+    "date": "1970",
+    "vehicle": "Apollo 13 Service Module",
+    "whatHappened": "On the third day of the mission, oxygen tank number two blew up in the Service Module, causing the subsequent failure of tank number one and forcing the cancellation of the lunar landing. The crew and Mission Control created new emergency procedures to use the Lunar Module as a lifeboat and return safely to Earth.",
+    "cause": "The explosion was determined to be the result of a combination of mistakes and a deficient design in the Service Module oxygen storage system.",
+    "lessons": [
+      "Redesigned the oxygen storage system by adding a third tank in a separate bay, upgrading thermostats, removing stirring fans, and sheathing electrical wiring in stainless steel.",
+      "Conducted a comprehensive review of all spacecraft subsystems using cryogenic oxygen.",
+      "Strengthened management structures to improve oversight of engineering and manufacturing processes."
+    ],
+    "fireSafetyRelevance": "The explosion underscored the combustion and structural hazards of electrical wiring failures within high-pressure cryogenic oxygen systems.",
+    "page": "1"
+  }
+]

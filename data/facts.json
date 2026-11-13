@@ -1,0 +1,826 @@
+[
+{
+"category": "prevention",
+"fact": "ACME conducts microgravity research on laminar, gaseous, non-premixed flames in the ISS Combustion Integrated Rack, with spacecraft fire prevention as a secondary objective.",
+"numbers": null,
+"relatedInvestigation": "ACME",
+"page": 1,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "prevention",
+"fact": "ACME's spacecraft fire prevention research aims to improve understanding of material extinction behavior and sustained combustion conditions while assessing existing spacecraft flammability test methods.",
+"numbers": null,
+"relatedInvestigation": "ACME",
+"page": 1,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "prevention",
+"fact": "The ACME Burning Rate Emulator (BRE) uses a flat porous burner fed with gaseous fuels to simulate the thermal feedback and burning of solid and liquid fuels like paper, plastic, and alcohol for spacecraft fire prevention.",
+"numbers": null,
+"relatedInvestigation": "BRE",
+"page": 2,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "finding",
+"fact": "In the CLD Flame experiment, sooty microgravity flames are taller, wider, and cooler than equivalent normal-gravity flames and exhibit soot volume fractions five to eight times higher.",
+"numbers": null,
+"relatedInvestigation": "CLD Flame",
+"page": 4,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "finding",
+"fact": "CLD Flame data demonstrated that highly diluted weak flames are more stable in microgravity than in normal gravity, extending dilution limits so lifted flames persist at lower fuel concentrations.",
+"numbers": null,
+"relatedInvestigation": "CLD Flame",
+"page": 4,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "other",
+"fact": "The ACME E-FIELD Flames experiment applies up to 10 kV between a burner and a circular mesh electrode to study how electric fields modify flame shape, soot, and flammability limits.",
+"numbers": "10 kV",
+"relatedInvestigation": "E-FIELD Flames",
+"page": 5,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "atmosphere",
+"fact": "The ACME Flame Design experiment tests spherical microgravity flames across varying ethylene or methane concentrations and oxygen-enriched atmospheres to determine soot inception and extinction limits.",
+"numbers": null,
+"relatedInvestigation": "Flame Design",
+"page": 5,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "finding",
+"fact": "The ACME s-Flame experiment investigates radiative and convective extinction limits and pulsating instabilities in spherical diffusion flames of hydrogen, methane, and ethylene.",
+"numbers": null,
+"relatedInvestigation": "s-Flame",
+"page": 6,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "history",
+"fact": "Cool diffusion flames were discovered during ISS droplet combustion experiments in 2012, motivating the ACME CFI-G study of steady spherical cool flames on porous burners.",
+"numbers": null,
+"relatedInvestigation": "CFI-G",
+"page": 6,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "finding",
+"fact": "Because buoyant entrainment is nearly absent, microgravity flames are much more sensitive to their surrounding atmosphere and exhibit a broader range of characteristics than normal-gravity flames.",
+"numbers": null,
+"relatedInvestigation": "ACME",
+"page": 8,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "other",
+"fact": "Ground-based drop facilities lasting 2.2 seconds or 5.18 seconds and parabolic aircraft flights providing about 20 seconds of reduced gravity are too short or vibrate too much to study quasi-steady soot and extinction limits.",
+"numbers": "2.2 seconds, 5.18 seconds, ~20 seconds",
+"relatedInvestigation": "ACME",
+"page": 8,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "prevention",
+"fact": "As a hazard control, ACME limits the amount of deficient reactant gas that can enter the combustion chamber by sometimes using bottles smaller than the standard 1, 2.25, and 3.8 liter sizes.",
+"numbers": "1 liter, 2.25 liters, 3.8 liters",
+"relatedInvestigation": "ACME",
+"page": 11,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "other",
+"fact": "ACME's gas delivery system limits maximum fuel flow to 2 slpm on a nitrogen basis while permitting oxidizer and nitrogen flows of 10 slpm for on-orbit dilution.",
+"numbers": "2 slpm, 10 slpm",
+"relatedInvestigation": "ACME",
+"page": 11,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "detection",
+"fact": "To detect the quenching of dim flames and measure thermal radiation, ACME uses three photomultiplier tube modules alongside thermopile radiometers spanning 0.2 to 11 microns.",
+"numbers": "0.2-11 microns",
+"relatedInvestigation": "ACME",
+"page": 17,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "atmosphere",
+"fact": "All ACME experiments are constant-volume tests in an approximately 90-liter chamber lasting 0.5 to 2 minutes, with a gas chromatograph analyzing oxygen, nitrogen, carbon dioxide, carbon monoxide, and fuel gases before and after each test.",
+"numbers": "90 liters, 0.5-2 minutes",
+"relatedInvestigation": "ACME",
+"page": 18,
+"document": "Advanced Combustion via Microgravity Experiments (ACME)"
+},
+{
+"category": "finding",
+"fact": "BASS tests the hypothesis that, with adequate ventilation, materials in microgravity burn as well as or better than identical materials in normal gravity under the same pressure, oxygen concentration, and temperature.",
+"numbers": null,
+"relatedInvestigation": "BASS",
+"page": 1,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "suppression",
+"fact": "Unlike on Earth where attacking a flame's base is most effective, a suppressant stream in microgravity can be ineffective or worsen a partially obstructed or wake-stabilized fire by entraining oxygen.",
+"numbers": null,
+"relatedInvestigation": "BASS",
+"page": 1,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "suppression",
+"fact": "BASS burned solid fuel samples including SIBAL cotton-fiberglass fabric, Nomex, Ultem, PMMA sheets and spheres, and wax candles while gradually increasing nitrogen suppressant flow until extinction.",
+"numbers": null,
+"relatedInvestigation": "BASS",
+"page": 1,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "atmosphere",
+"fact": "In BASS drop-tower testing, a 2-cm-diameter PMMA sphere burned in an atmosphere of 17% oxygen at 1 atm pressure with a 2 cm/s forced convective flow.",
+"numbers": "2 cm, 17% oxygen, 1 atm, 2 cm/s",
+"relatedInvestigation": "BASS",
+"page": 2,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "suppression",
+"fact": "In a zero-gravity facility test for BASS, a 2-cm-diameter PMMA sphere burning in a 30 cm/s airflow was extinguished 4 seconds after applying a nitrogen extinguishing agent.",
+"numbers": "2 cm, 30 cm/s, 4 s",
+"relatedInvestigation": "BASS",
+"page": 2,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "suppression",
+"fact": "During ISS BASS operations in the Microgravity Science Glovebox, crewmembers adjusted duct airflow from 5 to 50 cm/s and supplied nitrogen suppressant from 0 to 500 cc/min until the flame went out.",
+"numbers": "5 to 50 cm/s, 0 to 500 cc/min",
+"relatedInvestigation": "BASS",
+"page": 3,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "prevention",
+"fact": "NASA's standard spacecraft material screening test, NASA-STD-6001 Test 1, segregates materials based on normal-gravity behavior without accounting for low-gravity effects.",
+"numbers": null,
+"relatedInvestigation": "BASS",
+"page": 3,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "suppression",
+"fact": "BASS-II tested acrylic and SIBAL fabric samples across flat, rod, and spherical geometries to measure spread rates, regression rates, and extinction times as functions of ambient oxygen concentration and flow speed.",
+"numbers": null,
+"relatedInvestigation": "BASS-II",
+"page": 5,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "finding",
+"fact": "BASS-II microgravity tests revealed that computational models predicted higher flame spread rates than observed and allowed researchers to determine thin and thick fuel spread rates, heat release rates, and quenching boundaries.",
+"numbers": null,
+"relatedInvestigation": "BASS-II",
+"page": 6,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "prevention",
+"fact": "BASS-II sought to identify the minimum oxygen concentration and ventilation flow velocity required for materials to burn in space and compare worst-case space flammability against Earth's upward-burning test.",
+"numbers": null,
+"relatedInvestigation": "BASS-II",
+"page": 6,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "atmosphere",
+"fact": "In BASS-II operations, crewmembers adjusted duct airflow between 5 and 50 cm/s and vitiated the sealed MSG working volume with gaseous nitrogen at up to 500 cc/min before ignition.",
+"numbers": "5 to 50 cm/s, 500 cc/min",
+"relatedInvestigation": "BASS-II",
+"page": 7,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "finding",
+"fact": "In outer space microgravity, solid fuels burn as oval balls rather than the upward-pointed cone flames observed on Earth.",
+"numbers": null,
+"relatedInvestigation": "BASS-II",
+"page": 7,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "prevention",
+"fact": "BASS-M tested untreated control cotton textiles alongside ten flame-retardant-treated textiles by impinging flames from an ignited untreated piece onto an adjacent treated sample.",
+"numbers": null,
+"relatedInvestigation": "BASS-M",
+"page": 8,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "prevention",
+"fact": "BASS-M evaluated each treated textile's ability to self-extinguish across forced-convection airflow rates of 5 to 50 cm/s in microgravity compared to terrestrial upward-burning screening behavior.",
+"numbers": "5 to 50 cm/s",
+"relatedInvestigation": "BASS-M",
+"page": 9,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "finding",
+"fact": "BASS-M provides new data on how low gravity alters flame-retardant behavior in cotton textiles, as ground-based flammability screening tests do not account for microgravity.",
+"numbers": null,
+"relatedInvestigation": "BASS-M",
+"page": 9,
+"document": "Burning and Suppression of Solids (BASS)"
+},
+{
+"category": "other",
+"fact": "In the United States, combustion processes supply about 85% of delivered energy and are central to many industrial fabrication processes.",
+"numbers": "85%",
+"relatedInvestigation": null,
+"page": 1,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "finding",
+"fact": "Typical flame temperatures near 2,300 K compared to 300 K ambient gas create an eight-fold density change over 1 centimeter, driving buoyant flow fields that lift flames upward and cause flicker on Earth.",
+"numbers": "2,300 K, 300 K, 1 cm",
+"relatedInvestigation": null,
+"page": 2,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "finding",
+"fact": "Removing gravity suppresses buoyancy, simplifying combustion analyses to one-dimensional systems and making the ISS an important test-bed for studying spacecraft fire risk.",
+"numbers": null,
+"relatedInvestigation": null,
+"page": 2,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "other",
+"fact": "The Flammability of Materials on the Moon (FM2) experiment is the first combustion experiment planned for another planetary body, studying how materials burn at the Moon's 1/6 reduced gravity level.",
+"numbers": null,
+"relatedInvestigation": "FM2",
+"page": 3,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "finding",
+"fact": "Drop-tower centrifuge tests observed SIBAL cotton-fiberglass fabric burning in air under simulated lunar gravity.",
+"numbers": null,
+"relatedInvestigation": "FM2",
+"page": 4,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "prevention",
+"fact": "NASA mitigates manned spacecraft fire hazards using NASA-STD-6001, though some researchers believe its 1-g flame propagation test is not conservative in low gravity.",
+"numbers": null,
+"relatedInvestigation": "SoFIE",
+"page": 5,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "prevention",
+"fact": "The Solid Fuel Ignition and Extinction (SoFIE) investigation explores solid-fuel fire growth and fire safety techniques aboard the International Space Station.",
+"numbers": null,
+"relatedInvestigation": "SoFIE",
+"page": 5,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "prevention",
+"fact": "The international FLARE experiment aims to correlate normal-gravity and microgravity flammability limits so material flammability in space can be quantitatively estimated from ground test data.",
+"numbers": null,
+"relatedInvestigation": "FLARE",
+"page": 6,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "other",
+"fact": "ACME conducts fundamental microgravity combustion research primarily to improve efficiency and cut pollutant emissions in terrestrial combustion.",
+"numbers": null,
+"relatedInvestigation": "ACME",
+"page": 7,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "suppression",
+"fact": "The FLEX experiment was designed to quantify inert-gas suppressant effectiveness in microgravity and obtain the most conservative estimate of the limiting oxygen index for steady combustion.",
+"numbers": null,
+"relatedInvestigation": "FLEX",
+"page": 8,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "detection",
+"fact": "DAFT was designed to verify that a modified P-Trak particle counter would perform properly in microgravity for the Smoke Aerosol Measurement Experiment (SAME).",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 8,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "detection",
+"fact": "Spacecraft smoke detectors must detect distinct smoke types because hydrocarbon fuels typically generate soot while plastics emit droplets of recondensed polymer fragments.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 9,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "finding",
+"fact": "SPICE continued fundamental research on the mechanisms controlling jet diffusion flame stability and extinction that began with the Laminar Soot Processes (LSP) experiment on STS-94.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 9,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "suppression",
+"fact": "Housed in the Destiny laboratory module, the Combustion Integrated Rack (CIR) features a 100-liter combustion chamber launched in November 2008 to study combustion fundamentals, fire safety, and space fire suppression.",
+"numbers": "100 liters",
+"relatedInvestigation": "CIR",
+"page": 10,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "other",
+"fact": "The Multi-user Droplet Combustion Apparatus (MDCA) uses the CIR to provide cost-effective, extended microgravity access for droplet combustion experiments.",
+"numbers": null,
+"relatedInvestigation": "MDCA",
+"page": 12,
+"document": "Combustion Science - NASA"
+},
+{
+"category": "finding",
+"fact": "Smoke particles generated in microgravity can be larger than those formed on Earth, directly affecting spacecraft smoke detector calibration.",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 1,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "history",
+"fact": "Initiated after the Columbia accident, DAFT began on ISS Expedition 10 and was planned to finish during Expedition 13 using minimal upmass.",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 1,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "detection",
+"fact": "DAFT tested the P-Trak Ultrafine Particle Counter in microgravity, which condenses vaporous isopropyl alcohol onto ultrafine dust particles so they grow large enough to interrupt a laser beam and be counted.",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 1,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "detection",
+"fact": "The Smoke Aerosol Measurement Experiment (SAME) requires particle counts across the 0.2 to 1 micron size range.",
+"numbers": "0.2-1 micron",
+"relatedInvestigation": "SAME",
+"page": 1,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "finding",
+"fact": "DAFT measurements aboard the ISS showed lower particulate concentrations than on Space Shuttles, reflecting the station's smaller crew size and air filtration system.",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 1,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "finding",
+"fact": "DAFT found that average airborne particle sizes are larger on orbit than on Earth, possibly due to inefficiencies in the spacecraft's filter.",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 1,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "detection",
+"fact": "Determining the median particulate level throughout the ISS helps engineers design improved smoke detectors that can distinguish normal dust from dangerous smoke particles.",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 2,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "detection",
+"fact": "Smoke detectors developed using SAME data can also save lives in extreme terrestrial environments such as submarines and underwater laboratories.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 2,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "atmosphere",
+"fact": "Sensitivity to isopropyl alcohol vapor in the ISS cabin atmosphere limited P-Trak usage during DAFT to a maximum of three test points per day.",
+"numbers": null,
+"relatedInvestigation": "DAFT",
+"page": 2,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "other",
+"fact": "DAFT-1 and DAFT-2 required no external power and completed three test points in 80 minutes, whereas DAFT-3 and DAFT-4 used ISS gaseous nitrogen and added 15 minutes per test point.",
+"numbers": "80 minutes, 15 minutes",
+"relatedInvestigation": "DAFT",
+"page": 2,
+"document": "Dust and Aerosol Measurement Feasibility Test (DAFT)"
+},
+{
+"category": "suppression",
+"fact": "FLEX was designed to quantify the effectiveness of inert-gas suppressants in microgravity and determine the most conservative limiting oxygen index for steady combustion.",
+"numbers": null,
+"relatedInvestigation": "FLEX",
+"page": 1,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "atmosphere",
+"fact": "FLEX tested liquid fuel droplet combustion across ambient oxygen mole fractions from 0.10 to 0.50 in a chamber large enough to maintain essentially constant oxygen levels.",
+"numbers": "0.10 to 0.50 mole fraction",
+"relatedInvestigation": "FLEX",
+"page": 1,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "finding",
+"fact": "At high oxygen concentrations, fuel droplets burn to completion rather than extinguishing, making low-oxygen tests down to the Limiting Oxygen Index essential for verifying chemical mechanisms.",
+"numbers": null,
+"relatedInvestigation": "FLEX",
+"page": 1,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "atmosphere",
+"fact": "FLEX primarily used nitrogen as the non-suppressant diluent gas to match Earth and spacecraft atmospheres, along with a small number of helium diluent tests for baseline comparisons.",
+"numbers": null,
+"relatedInvestigation": "FLEX",
+"page": 1,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "suppression",
+"fact": "FLEX evaluated carbon dioxide and helium as gaseous suppressants at concentrations from 0.00 mole fraction up to 0.70, the expected flame extinction limit for the least active suppressant.",
+"numbers": "0.00 to 0.70 mole fraction",
+"relatedInvestigation": "FLEX",
+"page": 2,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "atmosphere",
+"fact": "FLEX tested ambient pressures between 0.5 and 1.0 atm to obtain verified suppressant data at low pressures relevant to extinguishing spacecraft fires by isolating and venting a habitat.",
+"numbers": "0.5 to 1.0 atm",
+"relatedInvestigation": "FLEX",
+"page": 2,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "finding",
+"fact": "Ambient pressure does not significantly affect the liquid droplet burning rate, although it does influence combustion chemistry at sufficiently low pressures.",
+"numbers": null,
+"relatedInvestigation": "FLEX",
+"page": 2,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "finding",
+"fact": "FLEX burned methanol and heptane droplets 2 to 5 mm in diameter; methanol contains a fuel-bound oxygen atom and produces a very dim blue, low-soot flame with distinct radiative behavior from heptane.",
+"numbers": "2 to 5 mm",
+"relatedInvestigation": "FLEX",
+"page": 2,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "finding",
+"fact": "FLEX-2 expanded droplet combustion research to bi-component and surrogate practical fuels, sub-buoyant convective flows, and binary droplet arrays to verify models of real transportation and industrial fuels.",
+"numbers": null,
+"relatedInvestigation": "FLEX-2",
+"page": 3,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "finding",
+"fact": "In the absence of gravity, fuel droplets 2 to 4 mm in diameter burn one-dimensionally as a ball-shaped flame roughly the size of a large olive centered around the droplet.",
+"numbers": "2 to 4 mm",
+"relatedInvestigation": "FLEX-2",
+"page": 3,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "other",
+"fact": "FLEX-2 organized its tests into pure fuel, fuel mixture, convective flow, and binary droplet array groupings, each involving 30 to 60 separate test runs.",
+"numbers": null,
+"relatedInvestigation": "FLEX-2",
+"page": 4,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "finding",
+"fact": "FLEX-2J, a joint NASA-JAXA experiment, measured droplet velocities, burning rates, and flame spread limits along a one-dimensional array of fixed and movable droplets on a silicon carbide fiber.",
+"numbers": null,
+"relatedInvestigation": "FLEX-2J",
+"page": 4,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "atmosphere",
+"fact": "FLEX-2J measured burning rate, burning time, flame spread, and droplet motion as functions of inter-droplet spacing, ambient pressure, and gas composition.",
+"numbers": null,
+"relatedInvestigation": "FLEX-2J",
+"page": 5,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "other",
+"fact": "FLEX-ICE-GA tested biofuel surrogate mixtures of equal-part n-heptane/ethanol and n-hexanol/n-decane inside the CIR in the FLEX-2 configuration.",
+"numbers": null,
+"relatedInvestigation": "FLEX-ICE-GA",
+"page": 5,
+"document": "Flame Extinguishment Experiment (FLEX)"
+},
+{
+"category": "detection",
+"fact": "SAME measured smoke particle sizes from spacecraft materials including Teflon, Kapton, cellulose, and silicone rubber to evaluate Space Shuttle ionization and ISS photoelectric smoke detectors.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 1,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "detection",
+"fact": "Smoke detectors used on the ISS and Space Shuttle are adapted from Earth-based detectors designed to sense different smoke particle sizes.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 1,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "detection",
+"fact": "During ISS Expedition 15, SAME tested 30 samples across Teflon, Kapton, silicone rubber, cellulose, and dibutyl-phthalate under varying airflows, heating temperatures, and smoke aging times.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 2,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "finding",
+"fact": "SAME found that Teflon smoke consists primarily of particles smaller than 1 micron, while a substantial portion of overall aerosol mass resides in particles larger than 1 micron.",
+"numbers": "1 micron",
+"relatedInvestigation": "SAME",
+"page": 2,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "finding",
+"fact": "Although smoke arithmetic mean diameters were 100 to 200 nm—and 227 nm for silicone rubber—nearly half of silicone rubber's particle mass exceeded 1,000 nm, strongly driving light-scattering signals.",
+"numbers": "100 to 200 nm, 227 nm, 1,000 nm",
+"relatedInvestigation": "SAME",
+"page": 2,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "finding",
+"fact": "Smoke aging in microgravity reflected particle coagulation with limited wall loss, substantially reducing total particle number counts while mass concentrations stayed relatively steady.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 2,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "detection",
+"fact": "While all tested spacecraft materials produced abundant sub-micron particles best sensed by ionization detectors, light-scattering detectors worked well in most cases, and sensors spanning a wider particle size spectrum offer more reliable pre-fire detection.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 2,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "detection",
+"fact": "Because spacecraft space is constrained, fire detection systems must target early pre-fire heating products rather than established flaming-fire soot and ash.",
+"numbers": null,
+"relatedInvestigation": "SAME",
+"page": 2,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "detection",
+"fact": "Conducted during Expedition 24 in 2010, SAME-R collected smoke particle moments and TEM samples from Teflon, Kapton, cotton, silicone rubber, and Pyrell alongside Shuttle and ISS smoke detectors.",
+"numbers": null,
+"relatedInvestigation": "SAME-R",
+"page": 4,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "finding",
+"fact": "Unburned pyrolysis products and recondensed polymer fragments dominate early smoldering and pyrolysis smoke, whereas soot particles dominate established flaming fires.",
+"numbers": null,
+"relatedInvestigation": "SAME-R",
+"page": 4,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "history",
+"fact": "Skylab carried roughly 30 line-of-sight UV fire detectors that had false-alarm difficulties, while Mercury, Gemini, and Apollo relied on crewmembers to rapidly spot fires due to cramped quarters and short missions.",
+"numbers": null,
+"relatedInvestigation": "SAME-R",
+"page": 4,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "detection",
+"fact": "Space Shuttle ionization detectors used an inertial separator to exclude particles larger than 1 to 2 microns, whereas ISS near-IR forward-scattering detectors are most sensitive to particles larger than 1 micron.",
+"numbers": "1 to 2 microns, 1 micron",
+"relatedInvestigation": "SAME-R",
+"page": 4,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "history",
+"fact": "Six overheating or component-failure events in the NASA Orbiter fleet, similar incidents on the ISS, and a 1997 oxygen generation system failure on Mir demonstrate the critical need for improved spacecraft fire detection.",
+"numbers": null,
+"relatedInvestigation": "SAME-R",
+"page": 5,
+"document": "Smoke Aerosol Measurement Experiment (SAME)"
+},
+{
+"category": "finding",
+"fact": "SPICE built on the STS-94 Laminar Soot Processes experiment to measure the laminar smoke point—the largest non-buoyant jet diffusion flame that does not emit soot—across different fuels and co-flow velocities.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 1,
+"document": "Smoke Point in Co-flow Experiment (SPICE)"
+},
+{
+"category": "prevention",
+"fact": "Previous experiments showed that soot dominates radiative heat emitted by flames in both normal gravity and microgravity, making heat emission control vital to preventing fire spread.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 1,
+"document": "Smoke Point in Co-flow Experiment (SPICE)"
+},
+{
+"category": "prevention",
+"fact": "SPICE examines soot emission onset in small gas-jet flames to improve microgravity heat-release predictions and material flammability criteria for next-generation spacecraft.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 1,
+"document": "Smoke Point in Co-flow Experiment (SPICE)"
+},
+{
+"category": "finding",
+"fact": "SPICE completed 250 microgravity combustion tests using fuels such as propylene, propane, and ethylene, identifying over 70 smoke points and estimating soot-forming conditions and flame dimensions.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 2,
+"document": "Smoke Point in Co-flow Experiment (SPICE)"
+},
+{
+"category": "finding",
+"fact": "SPICE data clarifies how microgravity and co-flowing air speed influence the smoke points and soot emission behavior of flames.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 2,
+"document": "Smoke Point in Co-flow Experiment (SPICE)"
+},
+{
+"category": "prevention",
+"fact": "Because current NASA material screening relies on Earth-based tests without microgravity effects, SPICE soot and heat-release data help extend NASA cone-calorimeter test data to performance-based spacecraft material selection.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 2,
+"document": "Smoke Point in Co-flow Experiment (SPICE)"
+},
+{
+"category": "other",
+"fact": "Because many practical flames in jet engines and furnaces are non-buoyant, SPICE improves heat-release predictions by characterizing how ambient flow interacts with the smoke point.",
+"numbers": null,
+"relatedInvestigation": "SPICE",
+"page": 2,
+"document": "Smoke Point in Co-flow Experiment (SPICE)"
+},
+{
+"category": "prevention",
+"fact": "Saffire investigates large-scale flame growth and material flammability limits inside departing Cygnus cargo vehicles before destructive reentry to inform spacecraft design and fire emergency protocols without endangering crew.",
+"numbers": null,
+"relatedInvestigation": "Saffire",
+"page": 1,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "history",
+"fact": "Prior to Saffire-I in July 2016, the largest fire experiment ever conducted in space was approximately the size of an index card.",
+"numbers": null,
+"relatedInvestigation": "Saffire-I",
+"page": 1,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "other",
+"fact": "Completed in July 2016, Saffire-I used a flow-duct enclosure measuring roughly 0.5 m wide by 1 m deep by 1.3 m long to remotely ignite a 0.4 m wide by 1 m long cotton-fiberglass sample.",
+"numbers": "0.5 m, 1 m, 1.3 m, 0.4 m, 1 m",
+"relatedInvestigation": "Saffire-I",
+"page": 1,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "other",
+"fact": "Completed in November 2016, Saffire-II remotely ignited nine material samples in Cygnus, including a cotton-fiberglass blend, Nomex, and the acrylic glass used for spacecraft windows.",
+"numbers": null,
+"relatedInvestigation": "Saffire-II",
+"page": 1,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "other",
+"fact": "Launched in April 2017, Saffire-III tested the same cotton-fiberglass blend burned in Saffire-I inside a departing Cygnus module, but at a higher flow velocity.",
+"numbers": null,
+"relatedInvestigation": "Saffire-III",
+"page": 2,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "atmosphere",
+"fact": "Ignited in May 2020, Saffire-IV burned the same materials as Saffire-II at different pressures and oxygen saturation levels, producing longer, stronger flames inside Cygnus.",
+"numbers": null,
+"relatedInvestigation": "Saffire-IV",
+"page": 2,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "finding",
+"fact": "During Saffire-IV, burning SIBAL cloth composed of 75% cotton and 25% fiberglass produced bright speckles of glowing char behind the spreading flame.",
+"numbers": "75% cotton, 25% fiberglass",
+"relatedInvestigation": "Saffire-IV",
+"page": 2,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "atmosphere",
+"fact": "Saffire-V examined large-scale fire growth in a departing Cygnus vehicle across the range of pressures and oxygen concentrations expected in future exploration spacecraft.",
+"numbers": null,
+"relatedInvestigation": "Saffire-V",
+"page": 2,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "detection",
+"fact": "Saffire-VI built on earlier Saffire tests to evaluate flammability at different oxygen levels while demonstrating fire detection, combustion product monitoring, and post-fire cleanup capabilities.",
+"numbers": null,
+"relatedInvestigation": "Saffire-VI",
+"page": 2,
+"document": "Spacecraft Fire Safety Demonstration (Saffire)"
+},
+{
+"category": "prevention",
+"fact": "Flame attachment to or detachment from a burner or solid fuel surface is vital to fire safety because the attachment point governs the stability of the entire trailing diffusion flame.",
+"numbers": null,
+"relatedInvestigation": "SLICE",
+"page": 1,
+"document": "Structure & Liftoff in Combustion Experiment (SLICE)"
+},
+{
+"category": "other",
+"fact": "SLICE served as a precursor to the ACME CLD Flame experiment by characterizing attached and lifted flame structures and liftoff velocity limits for methane and ethylene with nitrogen dilution.",
+"numbers": null,
+"relatedInvestigation": "SLICE",
+"page": 1,
+"document": "Structure & Liftoff in Combustion Experiment (SLICE)"
+},
+{
+"category": "history",
+"fact": "SLICE operated on ISS SPICE hardware derived from the Space Shuttle STS-87 Enclosed Laminar Flames (ELF) experiment, providing superior imaging and broader test conditions.",
+"numbers": null,
+"relatedInvestigation": "SLICE",
+"page": 1,
+"document": "Structure & Liftoff in Combustion Experiment (SLICE)"
+},
+{
+"category": "other",
+"fact": "Whereas standard SPICE tests fix air speed and raise fuel flow to reach the smoke point, SLICE held fuel flow fixed and incrementally increased air velocity until the diffusion flame detached and lifted off.",
+"numbers": null,
+"relatedInvestigation": "SLICE",
+"page": 2,
+"document": "Structure & Liftoff in Combustion Experiment (SLICE)"
+},
+{
+"category": "finding",
+"fact": "Because flame liftoff is very hard to capture in normal gravity, SLICE obtained transient photographic observations showing an outward fuel-lean flare at the base of lifted flames that can otherwise look attached.",
+"numbers": null,
+"relatedInvestigation": "SLICE",
+"page": 2,
+"document": "Structure & Liftoff in Combustion Experiment (SLICE)"
+}
+]

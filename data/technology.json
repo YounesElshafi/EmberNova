@@ -1,0 +1,23 @@
+[
+  {
+    "technology": "Brunswick Incipient Fire Detector",
+    "decade": "1970s",
+    "spaceOrigin": "It was developed as an early warning fire detection sensor for NASA's Space Shuttle Orbiter.",
+    "earthUse": "It is used in mines, factories, utility power plants, and aircraft to detect fire conditions before flames and smoke appear while avoiding false alarms from dust.",
+    "summary": "NASA created a fire detector for space shuttles that senses fires early without getting tripped up by dust."
+  },
+  {
+    "technology": "Lighter-weight Firefighter's Air Tanks",
+    "decade": "1970s",
+    "spaceOrigin": "The breathing system concepts and hardware were developed by NASA-Johnson for astronauts performing extravehicular space walks or working on the moon.",
+    "earthUse": "They provide firefighters with a lighter, 20-pound backpack air supply pressurized at 4,500 psi along with improved face masks and personalized warning alarms.",
+    "summary": "NASA adapted astronaut moonwalk breathing equipment to make lighter, safer air tanks for firefighters."
+  },
+  {
+    "technology": "Project FIRES Protective Ensemble",
+    "decade": "1980s",
+    "spaceOrigin": "The lightweight, fire-resistant, heat-protective materials were originally developed for astronaut space suits or Apollo spacecraft components requiring thermal protection.",
+    "earthUse": "They are used to create lightweight, heat-resistant suits, helmets, boots, and gloves to protect firefighters from injuries and fatalities.",
+    "summary": "NASA used space suit materials to design better protective suits and gear for firefighters on Earth."
+  }
+]
