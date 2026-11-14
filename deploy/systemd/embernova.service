@@ -1,0 +1,43 @@
+# /etc/systemd/system/embernova.service
+# EmberNova research API + built frontend (FastAPI/uvicorn) on 127.0.0.1:8020, behind nginx.
+# Layout: /var/www/embernova/{current -> releases/<sha>, shared/{build,state,.env}}. See docs/DEPLOYMENT.md.
+[Unit]
+Description=EmberNova NASA combustion research workspace (FastAPI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=embernova
+Group=embernova
+WorkingDirectory=/var/www/embernova/current
+EnvironmentFile=/var/www/embernova/shared/.env
+Environment=PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+# One worker on purpose: active research turns and their cancellation events live in-process.
+ExecStart=/var/www/embernova/current/.venv/bin/uvicorn embernova.main:app --host 127.0.0.1 --port 8020 --workers 1 --proxy-headers --forwarded-allow-ips 127.0.0.1 --timeout-graceful-shutdown 20 --no-server-header
+Restart=always
+RestartSec=5
+TimeoutStopSec=30
+
+# Resource limits: protect the other services on this host.
+MemoryHigh=1200M
+MemoryMax=1600M
+CPUQuota=150%
+TasksMax=256
+LimitNOFILE=8192
+
+# Hardening. The corpus build and code are read-only; only the state DB is writable.
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ReadWritePaths=/var/www/embernova/shared/state
+
+[Install]
+WantedBy=multi-user.target

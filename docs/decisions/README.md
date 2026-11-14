@@ -17,5 +17,6 @@
 | [013](ADR-013-si-labeling.md) | SI labeling and watermarking |
 | [014](ADR-014-repo-data-hygiene.md) | Read-only corpus, reproducible build |
 | [015](ADR-015-cinematic-frontend.md) | Cinematic site shell, lazy three.js intro, `/workspace` route |
+| [016](ADR-016-systemd-deployment.md) | systemd + shared nginx on the VPS (supersedes ADR-012's container) |
 
 To change a decision, add a new ADR that supersedes the old one and update the canonical architecture doc. Only the architect edits these files (AGENTS.md §6).

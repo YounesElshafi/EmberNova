@@ -20,7 +20,9 @@ export function ScientificChart({ chart }: { chart: ChartSpec }) {
     setReady(false);
     let resize: ResizeObserver | undefined;
     let purge: (() => void) | undefined;
-    import("plotly.js-dist-min")
+    // Cartesian partial bundle: covers every ChartSpec trace type (scatter, bar, box, histogram)
+// at about a third of the full bundle's size.
+import("plotly.js-cartesian-dist-min")
       .then(async ({ default: Plotly }) => {
         if (!element.current || !active) return;
         const node = element.current;

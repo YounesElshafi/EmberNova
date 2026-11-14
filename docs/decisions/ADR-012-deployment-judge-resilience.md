@@ -1,6 +1,6 @@
 # ADR-012: Single container on the team VPS, with Judge Mode
 
-- **Status:** Accepted (2026-11-13). The team chose the host.
+- **Status:** Accepted (2026-11-13). The team chose the host. **Partly superseded by [ADR-016](ADR-016-systemd-deployment.md):** production runs as a systemd service, not a container.
 - **Problem:** Keep a public, responsive demo alive until Jan 26 2027 on a small shared VPS while keeping API cost bounded.
 - **Decision:**
   - One lean Docker image behind the VPS reverse proxy at `embernova.khedmetak.com`. It needs at most 768 MB RAM and runs no local ML models. Data comes from a read-only deploy volume of about 600 MB.

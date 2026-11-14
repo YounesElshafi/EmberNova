@@ -7,6 +7,7 @@ backend/.venv/
 frontend/node_modules/
 frontend/e2e/
 docs/
+!docs/architecture/contracts/
 *.db
 *.sqlite
 *.parquet

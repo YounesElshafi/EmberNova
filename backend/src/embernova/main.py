@@ -793,7 +793,9 @@ def create_app(cfg: Settings | None = None) -> FastAPI:
 
     @app.get("/{path:path}", include_in_schema=False)
     def spa(path: str):
-        if path.startswith("api/") or not (dist / "index.html").exists():
+        if path.startswith("api/"):
+            raise HTTPException(404, "Unknown API endpoint. See /api/docs.")
+        if not (dist / "index.html").exists():
             raise HTTPException(
                 404, "Not found. Build the frontend or use the Vite development server."
             )

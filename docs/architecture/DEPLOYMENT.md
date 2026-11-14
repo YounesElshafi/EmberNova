@@ -2,6 +2,8 @@
 
 Canonical for: hosting, container, data shipping, Judge Mode operations, and the fallback. Rationale: [ADR-012](../decisions/ADR-012-deployment-judge-resilience.md).
 
+> **As deployed (2026-11-14):** the VPS has no Docker engine. Production runs as a systemd service behind the host's nginx ([ADR-016](../decisions/ADR-016-systemd-deployment.md)). The operations runbook is [docs/DEPLOYMENT.md](../DEPLOYMENT.md). §3–§4 and §7 below describe the original container plan and are kept as the alternative path. §5 (Judge Mode) and §6 (budget) still apply.
+
 ## 1. Target
 
 - **Primary:** the team's VPS at **`https://embernova.khedmetak.com`**. It is small and shared with other sites. TLS is terminated by the VPS's existing reverse proxy (nginx or Caddy).
