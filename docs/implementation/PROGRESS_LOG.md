@@ -133,14 +133,3 @@ Published the current frontend build at the user's explicit request. Created rol
 
 Public HTTPS index SHA-256 matches local build: a4bd4aa032c6c3c26bcb4db380662e71542bbe43bf422320af918769b4b166e9. Public /api/health reports status ok with knowledge_db, bundle and frontend true. Final production build passed after permission escalation. Full redesign and comprehensive accessibility/performance review remain outside this initial pass.
 `nProduction browser verification: npm exec playwright -- test -c playwright.prod.config.ts e2e/research.spec.ts — 15 passed (1.5m). Live-model tests were not run. Desktop/mobile disclosure checks, original-media byte ranges, citations, intro, dataset charts, comparison and envelope flows passed.
-
-## Observatory frontend redesign — 2026-11-14
-
-Rebuilt the landing experience with a split original-NASA-image hero, immediate question entry, research pathways, contrasting process section, original footage and suggested-question links. Introduced a lime/forest observatory design system across workspace, catalogs, datasets, comparison, envelope, media, recordings, capabilities and methods. Desktop data navigation is a fixed side rail; mobile retains scrollable tool navigation. Reworked explorer title/description hierarchy and capability layouts. No backend/data/architecture changes.
-
-Lazy-loaded the cinematic introduction: initial JS fell from 525.91 kB to 504.93 kB (gzip 162.06 to 155.26 kB). Large Plotly chunk warning remains; it is deferred. Browser test asserts introduction, space scene and Plotly are absent from initial landing resource requests.
-
-Validation: build/TypeScript and lint passed; 9 unit tests passed. 19 local interaction/responsive tests passed, followed by 5 final responsive/keyboard/deferred-loading tests after fixing header overlap found in screenshot review. Screenshots: build/eval/screens/observatory-{1440,768,390}-{0..12}.png. Reviewed desktop landing, catalog, workspace, envelope, tablet capabilities, mobile landing. This is basic accessibility verification, not a comprehensive WCAG audit. No live-provider calls in this run.
-
-Deployment: published hashed assets then atomically replaced index.html without restarting backend. Rollback archive: /var/www/embernova/shared/backups/frontend-20261114T055037Z.tar.gz. Public HTTPS index matches local SHA-256 53608558c049a0ecdd57ab626128f8b8abe3c6b9e5d765b009d739eca52d7cc3. Public API health is ok; databases, corpus and secrets untouched.
-Public production verification: 20 passed (3.3m), including all 13 routes at 1440/768/390px, no application page errors, keyboard skip link, original image loading and all existing research judge flows.
