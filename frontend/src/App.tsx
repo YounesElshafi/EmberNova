@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link, NavLink, Route, Routes, useLocation } from "react-router-dom";
 import {
   ArrowRight,
@@ -16,28 +16,91 @@ import {
 import { EvidenceMap, Systems } from "./pages/Systems";
 import { Workspace } from "./pages/Workspace";
 import { Dataset, Investigation, Investigations } from "./pages/Explorers";
-import { About, Comparison, Envelope, Featured, Media } from "./pages/ResearchTools";
+import {
+  About,
+  Comparison,
+  Envelope,
+  Featured,
+  Media,
+} from "./pages/ResearchTools";
 import { Home } from "./pages/Home";
 import { Capabilities } from "./pages/Capabilities";
 import { HowItWorks } from "./pages/HowItWorks";
 
+import { ExperienceBoundary } from "./education/ExperienceBoundary";
+const Universe = lazy(() =>
+  import("./education/Experiences").then((m) => ({ default: m.Universe })),
+);
+const Learn = lazy(() =>
+  import("./education/Experiences").then((m) => ({ default: m.Learn })),
+);
+const LabPage = lazy(() =>
+  import("./education/Experiences").then((m) => ({ default: m.LabPage })),
+);
+const Kids = lazy(() =>
+  import("./education/Experiences").then((m) => ({ default: m.Kids })),
+);
 export const EXPLORE = [
-  ["/systems", "Fire-safety systems", "Prevention, detection, suppression", ShieldCheck],
-  ["/evidence-map", "Evidence map", "What NASA has and has not tested", Grid3x3],
+  [
+    "/systems",
+    "Fire-safety systems",
+    "Prevention, detection, suppression",
+    ShieldCheck,
+  ],
+  [
+    "/evidence-map",
+    "Evidence map",
+    "What NASA has and has not tested",
+    Grid3x3,
+  ],
   ["/investigations", "Investigations", "Rank and search the catalog", Library],
-  ["/data/PSI-69:flex_experimental", "Datasets", "Raw and normalized measurements", Table2],
-  ["/compare", "Compare experiments", "Test groups with confounders", GitCompareArrows],
+  [
+    "/data/PSI-69:flex_experimental",
+    "Datasets",
+    "Raw and normalized measurements",
+    Table2,
+  ],
+  [
+    "/compare",
+    "Compare experiments",
+    "Test groups with confounders",
+    GitCompareArrows,
+  ],
   ["/envelope", "Habitat envelope", "Check an atmosphere against tests", Orbit],
   ["/media", "NASA media", "Original flight video and images", Images],
 ] as const;
 
-const EXPLORE_PREFIXES = ["/systems", "/evidence-map", "/investigations", "/data", "/compare", "/envelope", "/media"];
+const EXPLORE_PREFIXES = [
+  "/systems",
+  "/evidence-map",
+  "/investigations",
+  "/data",
+  "/compare",
+  "/envelope",
+  "/media",
+];
 
 function Mark() {
   return (
     <svg viewBox="0 0 32 32" aria-hidden="true" className="mark">
-      <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" strokeOpacity=".28" />
-      <ellipse cx="16" cy="16" rx="14.5" ry="5.2" fill="none" stroke="currentColor" strokeOpacity=".5" transform="rotate(-24 16 16)" />
+      <circle
+        cx="16"
+        cy="16"
+        r="14.5"
+        fill="none"
+        stroke="currentColor"
+        strokeOpacity=".28"
+      />
+      <ellipse
+        cx="16"
+        cy="16"
+        rx="14.5"
+        ry="5.2"
+        fill="none"
+        stroke="currentColor"
+        strokeOpacity=".5"
+        transform="rotate(-24 16 16)"
+      />
       <circle cx="16" cy="16" r="5.4" fill="url(#emb)" />
       <defs>
         <radialGradient id="emb" cx=".42" cy=".38" r=".7">
@@ -57,7 +120,8 @@ function ExploreMenu({ active }: { active: boolean }) {
   useEffect(() => setOpen(false), [location.pathname]);
   useEffect(() => {
     if (!open) return;
-    const close = (e: MouseEvent) => !ref.current?.contains(e.target as Node) && setOpen(false);
+    const close = (e: MouseEvent) =>
+      !ref.current?.contains(e.target as Node) && setOpen(false);
     const esc = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     document.addEventListener("mousedown", close);
     document.addEventListener("keydown", esc);
@@ -104,7 +168,9 @@ function SiteHeader({ workspace }: { workspace: boolean }) {
     window.addEventListener("scroll", on, { passive: true });
     return () => window.removeEventListener("scroll", on);
   }, []);
-  const exploring = EXPLORE_PREFIXES.some((p) => location.pathname.startsWith(p));
+  const exploring = EXPLORE_PREFIXES.some((p) =>
+    location.pathname.startsWith(p),
+  );
   return (
     <header className={`site-header ${scrolled || workspace ? "solid" : ""}`}>
       <Link to="/" className="brand" aria-label="EmberNova home">
@@ -116,9 +182,17 @@ function SiteHeader({ workspace }: { workspace: boolean }) {
       <nav className="primary-nav" aria-label="Main navigation">
         <NavLink
           to="/workspace"
-          className={({ isActive }) => `nav-link ${isActive || location.pathname.startsWith("/s/") ? "active" : ""}`}
+          className={({ isActive }) =>
+            `nav-link ${isActive || location.pathname.startsWith("/s/") ? "active" : ""}`
+          }
         >
           Research workspace
+        </NavLink>
+        <NavLink to="/learn" className="nav-link">
+          Learn
+        </NavLink>
+        <NavLink to="/kids" className="nav-link">
+          Play
         </NavLink>
         <ExploreMenu active={exploring} />
         <NavLink to="/featured" className="nav-link">
@@ -148,8 +222,12 @@ function SiteHeader({ workspace }: { workspace: boolean }) {
       {drawer && (
         <div className="drawer" role="dialog" aria-label="Site menu">
           <nav aria-label="Mobile navigation">
-            <NavLink to="/" end>Mission</NavLink>
+            <NavLink to="/" end>
+              Mission
+            </NavLink>
             <NavLink to="/workspace">Research workspace</NavLink>
+            <NavLink to="/learn">Learn</NavLink>
+            <NavLink to="/kids">Play</NavLink>
             <NavLink to="/featured">Recorded demos</NavLink>
             <NavLink to="/capabilities">Capabilities</NavLink>
             <NavLink to="/how-it-works">How it works</NavLink>
@@ -176,7 +254,10 @@ function ExploreBar() {
           key={to}
           to={to}
           className={({ isActive }) =>
-            isActive || (to.startsWith("/data/") && location.pathname.startsWith("/data/")) ? "active" : ""
+            isActive ||
+            (to.startsWith("/data/") && location.pathname.startsWith("/data/"))
+              ? "active"
+              : ""
           }
         >
           <Icon size={14} /> {label}
@@ -198,8 +279,9 @@ function SiteFooter() {
             </span>
           </Link>
           <p>
-            Team EmberNova's entry for NASA Space Apps 2026, challenge “Flame in Freefall: SI-Powered Fire Safety Insights
-            from Microgravity Combustion Data”.
+            Team EmberNova's entry for NASA Space Apps 2026, challenge “Flame in
+            Freefall: SI-Powered Fire Safety Insights from Microgravity
+            Combustion Data”.
           </p>
         </div>
         <nav aria-label="Footer">
@@ -212,9 +294,11 @@ function SiteFooter() {
         </nav>
       </div>
       <p className="footer-fine">
-        NASA PSI data is CC0-1.0; cite each investigation's DOI. Media are original NASA files, with credit shown.
-        Introduction visuals are illustrations. EmberNova is not a NASA product and is not endorsed by NASA. SI-written
-        content is labeled <span className="si-badge">SI</span>.
+        NASA PSI data is CC0-1.0; cite each investigation's DOI. Media are
+        original NASA files, with credit shown. Introduction visuals are
+        illustrations. EmberNova is not a NASA product and is not endorsed by
+        NASA. SI-written content is labeled <span className="si-badge">SI</span>
+        .
       </p>
     </footer>
   );
@@ -222,50 +306,86 @@ function SiteFooter() {
 
 export default function App() {
   const location = useLocation();
-  const workspace = location.pathname === "/workspace" || location.pathname.startsWith("/s/");
+  const workspace =
+    location.pathname === "/research" ||
+    location.pathname === "/workspace" ||
+    location.pathname.startsWith("/s/");
   const home = location.pathname === "/";
-  const exploring = EXPLORE_PREFIXES.some((p) => location.pathname.startsWith(p));
+  const exploring = EXPLORE_PREFIXES.some((p) =>
+    location.pathname.startsWith(p),
+  );
   useEffect(() => {
     if (!location.hash) window.scrollTo({ top: 0 });
   }, [location.pathname, location.hash]);
   return (
-    <div className={`site ${workspace ? "is-workspace" : ""} ${home ? "is-home" : ""}`}>
+    <div
+      className={`site ${workspace ? "is-workspace" : ""} ${home ? "is-home" : ""}`}
+    >
       <a href="#main" className="skip-link">
         Skip to content
       </a>
       <SiteHeader workspace={workspace} />
       <div className="site-main" id="main" tabIndex={-1}>
         {exploring && <ExploreBar />}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/workspace" element={<Workspace />} />
-          <Route path="/s/:sessionId" element={<Workspace />} />
-          <Route path="/capabilities" element={<Capabilities />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/systems" element={<Systems />} />
-          <Route path="/evidence-map" element={<EvidenceMap />} />
-          <Route path="/investigations" element={<Investigations />} />
-          <Route path="/investigations/:id" element={<Investigation />} />
-          <Route path="/data/:tableId" element={<Dataset />} />
-          <Route path="/compare" element={<Comparison />} />
-          <Route path="/envelope" element={<Envelope />} />
-          <Route path="/media" element={<Media />} />
-          <Route path="/featured" element={<Featured />} />
-          <Route path="/about" element={<About />} />
-          <Route
-            path="*"
-            element={
-              <main className="page not-found">
-                <p className="eyebrow ember">404</p>
-                <h1 className="display-sm">This page drifted out of range.</h1>
-                <p className="lede">The address does not match any EmberNova page.</p>
-                <Link to="/" className="btn btn-ghost">
-                  Return to mission home
-                </Link>
+        <ExperienceBoundary key={location.pathname}>
+          <Suspense
+            fallback={
+              <main className="page" role="status">
+                Preparing your experience...
               </main>
             }
-          />
-        </Routes>
+          >
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  new URLSearchParams(location.search).get("intro") === "1" ? (
+                    <Home />
+                  ) : (
+                    <Universe />
+                  )
+                }
+              />
+              <Route path="/research-overview" element={<Home />} />
+              <Route path="/research" element={<Workspace />} />
+              <Route path="/learn" element={<Learn />} />
+              <Route path="/learn/lab" element={<LabPage />} />
+              <Route path="/kids" element={<Kids />} />
+              <Route path="/kids/missions" element={<Kids />} />
+              <Route path="/workspace" element={<Workspace />} />
+              <Route path="/s/:sessionId" element={<Workspace />} />
+              <Route path="/capabilities" element={<Capabilities />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/systems" element={<Systems />} />
+              <Route path="/evidence-map" element={<EvidenceMap />} />
+              <Route path="/investigations" element={<Investigations />} />
+              <Route path="/investigations/:id" element={<Investigation />} />
+              <Route path="/data/:tableId" element={<Dataset />} />
+              <Route path="/compare" element={<Comparison />} />
+              <Route path="/envelope" element={<Envelope />} />
+              <Route path="/media" element={<Media />} />
+              <Route path="/featured" element={<Featured />} />
+              <Route path="/about" element={<About />} />
+              <Route
+                path="*"
+                element={
+                  <main className="page not-found">
+                    <p className="eyebrow ember">404</p>
+                    <h1 className="display-sm">
+                      This page drifted out of range.
+                    </h1>
+                    <p className="lede">
+                      The address does not match any EmberNova page.
+                    </p>
+                    <Link to="/" className="btn btn-ghost">
+                      Return to mission home
+                    </Link>
+                  </main>
+                }
+              />
+            </Routes>
+          </Suspense>
+        </ExperienceBoundary>
       </div>
       {!workspace && <SiteFooter />}
     </div>
