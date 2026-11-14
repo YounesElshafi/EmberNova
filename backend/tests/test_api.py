@@ -200,3 +200,18 @@ def test_replay_citations_resolve_on_fresh_state(tmp_path, cfg):
                 assert client.get("/api/artifacts/" + match).status_code == 200
             # Replaying twice must be idempotent.
             assert client.get("/api/replays/" + meta["replay_id"]).status_code == 200
+
+
+def test_web_server_does_not_load_build_only_libraries():
+    """Pillow/openpyxl/PyMuPDF parse files only during the offline corpus build."""
+    import subprocess
+    import sys
+
+    probe = (
+        "import sys, embernova.main; "
+        "print(sorted(m for m in ('PIL', 'openpyxl', 'fitz', 'pymupdf') if m in sys.modules))"
+    )
+    out = subprocess.run(
+        [sys.executable, "-c", probe], capture_output=True, text=True, check=True
+    ).stdout.strip()
+    assert out.endswith("[]"), out

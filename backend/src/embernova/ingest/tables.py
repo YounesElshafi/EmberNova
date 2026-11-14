@@ -6,7 +6,6 @@ from collections import Counter
 
 import pandas as pd
 import yaml
-from openpyxl import load_workbook
 
 from embernova.config import ROOT, Settings
 from embernova.ingest.cellparse import parse_cell
@@ -46,6 +45,10 @@ def row_checks(checks: list[dict], values: dict) -> list[str]:
 
 
 def build_tables(cfg: Settings, db: sqlite3.Connection, sources: dict) -> dict:
+    # Imported here so the web server (which imports CHECK_MESSAGES via export.py) never loads
+    # openpyxl, and through it Pillow; workbooks are only read by the offline corpus build.
+    from openpyxl import load_workbook
+
     runs, conditions, measurements, findings, provenance = [], [], [], [], []
     for path in sorted((ROOT / "curation/tables").glob("*.yaml")):
         mapping = yaml.safe_load(path.read_text(encoding="utf-8"))

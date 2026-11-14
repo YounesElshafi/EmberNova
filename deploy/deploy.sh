@@ -33,7 +33,7 @@ ssh "$HOST" "set -e
   readlink $APP/current > $APP/previous_release 2>/dev/null || true
   ln -sfn $APP/releases/$SHA $APP/current.new && mv -Tf $APP/current.new $APP/current
   systemctl restart embernova
-  for i in \$(seq 1 30); do curl -fsS http://127.0.0.1:8020/api/health >/dev/null && break; sleep 1; done
+  for i in \$(seq 1 30); do curl -fs http://127.0.0.1:8020/api/health >/dev/null 2>&1 && break; sleep 1; done
   curl -fsS http://127.0.0.1:8020/api/health"
 echo
 echo "==> Deployed $SHA. Previous release recorded in $APP/previous_release (rollback: docs/DEPLOYMENT.md)."

@@ -1,6 +1,8 @@
 # EmberNova documentation map
 
-Start with **[EXECUTIVE_SUMMARY.md](EXECUTIVE_SUMMARY.md)**. Codex starts with **[implementation/HANDOFF_TO_CODEX.md](implementation/HANDOFF_TO_CODEX.md)**.
+**Judges and new visitors:** start with **[JUDGING_GUIDE.md](JUDGING_GUIDE.md)**, then [ARCHITECTURE.md](ARCHITECTURE.md), [SCIENTIFIC_METHODOLOGY.md](SCIENTIFIC_METHODOLOGY.md), [DATA_SOURCES.md](DATA_SOURCES.md), [TESTING.md](TESTING.md), [LIMITATIONS.md](LIMITATIONS.md) and [DEPLOYMENT.md](DEPLOYMENT.md). These are short summaries of the release and link to the canonical documents below.
+
+Team members: start with **[EXECUTIVE_SUMMARY.md](EXECUTIVE_SUMMARY.md)**. Codex starts with **[implementation/HANDOFF_TO_CODEX.md](implementation/HANDOFF_TO_CODEX.md)**.
 
 ## Ownership
 

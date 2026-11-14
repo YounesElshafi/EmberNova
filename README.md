@@ -1,103 +1,144 @@
-# EmberNova | NASA Space Apps Challenge 2026
+# EmberNova
 
-Local research application for the [NASA Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/). No deployment has been performed.
+**Evidence-grounded SI research workspace for spacecraft and habitat fire safety, built on NASA microgravity combustion data.**
 
-- **Team:** EmberNova
-- **Challenge:** [Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data](https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/)
-- **Pitch:** EmberNova is an evidence-grounded SI research workspace. It finds the NASA microgravity combustion experiments relevant to a spacecraft or habitat fire-safety question, compares their measured data with explicit validity checks, and cites every number back to NASA sources.
-- **Local application:** `http://127.0.0.1:8000` after starting the backend with a built frontend.
+NASA Space Apps Challenge 2026 · Challenge: [Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data](https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/) · Team **EmberNova**
 
-## Start here
+**Live demo: https://embernova.khedmetak.com** · Judges: start with the [Judging Guide](docs/JUDGING_GUIDE.md).
 
-| You are | Read |
+---
+
+## The problem
+
+Fire behaves differently without gravity. There is no buoyant convection, so flames are slower, cooler and longer-lived, and some materials burn in microgravity under conditions where they would self-extinguish on Earth. NASA has flown decades of combustion experiments on the ISS and other platforms (FLEX, CFI, BASS, Saffire, SAME, ACME and others) and published the data through the [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/) system and the NASA Technical Reports Server.
+
+That evidence is hard to use. It is spread over hundreds of spreadsheets, PDFs and videos with inconsistent units and column conventions. Burning rate is K in mm²/s. "O/N/CO" means O₂/N₂/CO₂ mole fractions. Pressure appears in mmHg, atm or psi. An engineer asking *"What do NASA experiments say about fire in a 34% O₂, ~10 psi lunar-habitat atmosphere?"* must find the right investigations, read the right tables correctly, and avoid the classic mistakes: treating microgravity as lunar gravity, confusing design matrices with measurements, or mixing up O₂ fraction and O₂ partial pressure.
+
+## The solution
+
+EmberNova lets a researcher ask that question in plain language. A single OpenAI agent plans the research, but **every number comes from deterministic backend tools** that query a curated, unit-normalized copy of the NASA data. Each claim is cited back to a NASA page, table row or video:
+
+1. **Find:** hybrid retrieval ranks the 34 relevant NASA investigations and explains each match (study type, matching and differing conditions, unrecorded parameters).
+2. **Measure:** typed tools query 1,161 curated test runs from 13 NASA tables, with raw and SI values side by side, and build charts only from source rows.
+3. **Check:** comparisons name their confounders, the *Applicability Envelope* shows which NASA tests bracket a target atmosphere, and evidence is classified as direct, indirect or insufficient.
+4. **Cite:** citation markers resolve to an evidence ledger holding the NASA file SHA-256, page or row locator and transformation. Invalid citations are removed visibly, and unsupported numbers are flagged.
+
+It deliberately does **not** produce fire-risk scores or lunar or Martian predictions. PSI contains no partial-gravity run data, and the app says so.
+
+## Main features
+
+All of the following are implemented and running on the live site:
+
+| Feature | Where |
 | --- | --- |
-| Anyone | [docs/EXECUTIVE_SUMMARY.md](docs/EXECUTIVE_SUMMARY.md), [docs/README.md](docs/README.md) |
-| Codex, the implementer | [AGENTS.md](AGENTS.md) → [docs/implementation/HANDOFF_TO_CODEX.md](docs/implementation/HANDOFF_TO_CODEX.md) |
-| Claude Code, the architect and reviewer | [CLAUDE.md](CLAUDE.md) |
-| Demo and submission owner | [docs/product/DEMO_STRATEGY.md](docs/product/DEMO_STRATEGY.md), [docs/submission.md](docs/submission.md) |
+| SI research chat with streaming tool activity, inline ranking cards, charts, comparisons and page-level citations | `/workspace` |
+| Recorded demonstrations that replay without any API call (three deterministic, two recorded live) | `/featured` |
+| Investigation explorer (34 investigations) with NASA PSI and DOI links | `/investigations` |
+| Dataset explorer: raw ⇄ normalized toggle, source rows, CSV export with file hashes | `/data/PSI-69:flex_experimental` |
+| Run comparison with named confounders | `/compare` |
+| Habitat Applicability Envelope (atmosphere coverage ≠ gravity coverage) | `/envelope` |
+| Fire-safety systems view and evidence-coverage map | `/systems`, `/evidence-map` |
+| Original NASA video and images with byte-range streaming | `/media` |
+| Evidence inspector: source excerpt, full PDF page text, SHA-256, link to the original source | Any citation |
+| Analysis Lab: SI-written Python run only in an OpenAI-hosted, network-disabled container, never on the server | Composer toggle |
+| d²-law consistency check, suppression overview, model-ready data export | Tools and API |
 
-## Data
+## Architecture
 
-The NASA PSI corpus snapshot lives in `data/`. It is read-only, and the large payloads are gitignored. See [data/README.md](data/README.md) and the verified [dataset audit](docs/research/DATASET_AUDIT.md). PSI investigation data is CC0-1.0. Cite the investigation DOIs listed in `data/SOURCE_CATALOG.csv`.
-
-## Working together
-
-This assignment keeps all changes local and uncommitted. No GitHub operations, production connections or deployment are authorized. Keep credentials in the ignored root `.env`; use `.env.example` as the configuration reference. Read the [independent audit](docs/implementation/CODEX_ARCHITECTURE_AUDIT.md), [progress](docs/implementation/CODEX_PROGRESS.md), and [review handoff](docs/implementation/CODEX_REVIEW_HANDOFF.md).
-
-## Run locally (Windows PowerShell)
-
-Requirements: Python 3.12 through uv, Node 20+, npm, and ffmpeg on PATH for the NASA transport-stream derivatives. The original corpus must already exist under `data/`. The build copies PDFs/media and verifies original hashes; allow about 2 GB free for dependencies, caches and outputs. Existing Chrome is used for browser tests.
-
-For the environment prepared in this workspace:
-
-```powershell
-# Terminal 1, from the repository root
-cd backend
-.venv/Scripts/python.exe -I -X utf8 -m uvicorn embernova.main:app --host 127.0.0.1 --port 8000
+```mermaid
+flowchart LR
+  U[Browser: React SPA] -->|HTTPS| N[nginx: TLS, rate limits, static assets]
+  N --> A[FastAPI app, uvicorn]
+  A -->|Responses API, tool calls| O[(OpenAI gpt-6.1-sol)]
+  A --> T[Deterministic science tools]
+  T --> K[(knowledge.db: SQLite + FTS5, read-only)]
+  T --> B[(Analysis Bundle: Parquet via DuckDB)]
+  T --> E[(embeddings.npy: 512-d)]
+  A --> S[(app.db: sessions, evidence ledger, budget)]
+  A --> M[NASA PDFs and media]
 ```
 
-Open `http://127.0.0.1:8000`. The production frontend build is served locally by FastAPI. For frontend development, open another terminal:
+The model plans and explains. Tools search, query, convert units (pint), compare and chart. The evidence ledger links every displayed number to its source. Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-```powershell
-cd frontend
-npm.cmd run dev
+## Technology stack
+
+- **Backend:** Python 3.12, FastAPI, uvicorn, Pydantic v2, pandas, DuckDB, PyArrow/Parquet, SQLite (FTS5), pint, NumPy, tiktoken. The offline corpus build uses PyMuPDF, openpyxl and Pillow.
+- **SI:** OpenAI Responses API with strict function tools and streaming. Agent model `gpt-6.1-sol` (fallback `gpt-6.1-terra`), embeddings `text-embedding-3-small` at 512 dimensions, OpenAI hosted Code Interpreter for the optional Analysis Lab.
+- **Frontend:** Vite, React 18, TypeScript, Tailwind CSS, TanStack Query, Zustand, React Router, Plotly (cartesian bundle), three.js (intro scene), react-markdown.
+- **Tooling:** uv, pytest, ruff, Vitest, ESLint, Playwright.
+- **Hosting:** Ubuntu 24.04 VPS, systemd, nginx, Let's Encrypt ([ADR-016](docs/decisions/ADR-016-systemd-deployment.md)).
+
+## Data sources
+
+NASA PSI combustion investigations (FLEX, FLEX-2, CFI, CFI-G, BASS, BASS-II, Saffire I–III, SAME, SAME-R, ACME and others), 93 NASA documents (3,187 pages, including NASA/TP-2015-216046), and 39 original NASA media items. All were retrieved on 2026-11-13 and verified by SHA-256. PSI investigation data is released under CC0-1.0. Cite the investigation DOIs. Full provenance and licensing: [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+
+## Scientific and SI methodology
+
+- Column meanings are curated in `curation/tables/*.yaml`, each with an evidence locator. Unknown values stay `null` and are displayed as unknown.
+- Units are converted only through `embernova.science.units` (pint), and raw values are preserved next to SI values.
+- Measured results, published conclusions, derived analyses and SI interpretation are labeled separately. Design matrices (FLEX-2) are never presented as measurements.
+- Charts of measured data are built by backend code from the Analysis Bundle. The model never writes chart data.
+- Every SI-generated element carries an "SI" badge. NASA measurements are never SI-generated.
+
+See [docs/SCIENTIFIC_METHODOLOGY.md](docs/SCIENTIFIC_METHODOLOGY.md) for retrieval, citation validation, the numeric-grounding audit and the hallucination safeguards.
+
+## Run locally
+
+Requirements: Python 3.12 with [uv](https://docs.astral.sh/uv/), Node 20+, and the prebuilt corpus in `build/` (see [Known limitations](#known-limitations) for how to obtain it).
+
+```bash
+git clone https://github.com/YounesElshafi/EmberNova.git && cd EmberNova
+cp .env.example .env                 # optional: add OPENAI_API_KEY for live SI research
+
+cd frontend && npm ci && npm run build && cd ..   # build the UI served by FastAPI
+cd backend && uv sync                              # Python 3.12 environment from uv.lock
+uv run uvicorn embernova.main:app --port 8000      # open http://127.0.0.1:8000
 ```
 
-Vite serves `http://127.0.0.1:5173` and proxies `/api` to port 8000. `npm.cmd` avoids the Windows execution-policy block on `npm.ps1`.
+Without `OPENAI_API_KEY`, the explorers, scientific tools and recorded demonstrations all work, and live chat explains that it is unavailable. For frontend development, run `npm run dev` in `frontend/` (port 5173, proxying `/api` to 8000).
 
-For a fresh dependency installation and corpus build:
+## Environment configuration
 
-```powershell
-# From the repository root, with uv installed
-cd backend
-uv sync
-uv run python -I -m embernova.ingest.build all --fake-embeddings
-cd ../frontend
-npm.cmd ci
-npm.cmd run generate
-npm.cmd run build
+Configuration is read from environment variables or a root `.env` file. See [.env.example](.env.example); it contains placeholders only. Key settings: `OPENAI_API_KEY`, `AGENT_MODEL`, `DAILY_BUDGET_USD` (default $2), `MAX_TURN_COST_USD`, `PER_IP_TURNS_PER_HOUR`, `ANALYSIS_LAB`, and for production `SECURE_COOKIES=true`, `TRUSTED_PROXY=true`, `BUILD_DIR`, `STATE_DIR`.
+
+## Testing
+
+```bash
+cd backend && uv run pytest -q && uv run ruff check . && uv run ruff format --check .
+cd frontend && npm run test && npm run lint && npm run typecheck && npm run build
+cd frontend && npx playwright test                       # 15 judge-flow browser tests, local server
+cd frontend && npx playwright test -c playwright.prod.config.ts e2e/research.spec.ts   # against the live site
 ```
 
-If uv is not on PATH in this prepared workspace, use `build/bootstrap/bin/uv.exe` with `--cache-dir build/uv-cache` and `UV_PYTHON_INSTALL_DIR` pointing at `build/python`. Stop the API before rebuilding its knowledge store or Analysis Bundle.
+Results for this release: [docs/TESTING.md](docs/TESTING.md).
 
-The keyless build uses real NASA evidence and lexical retrieval. `--fake-embeddings` is a compatibility flag; fake vectors are never exposed as semantic search. To build the optional real semantic index:
+## Deployment
 
-```powershell
-cd backend
-.venv/Scripts/python.exe -I -m embernova.ingest.build embed
-```
+Production runs as a hardened systemd service behind nginx on a shared VPS, using release directories and one-command rollback. Runbook: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
-Set `OPENAI_API_KEY` only in the root `.env` or server environment. Keyless explorers, scientific tools and recorded demonstrations work without it. Live chat uses the configured model; actual account verification is recorded in `build/eval/livecheck.json`. Configured token prices provide estimates, not provider billing controls. Defaults bound research turns to six tool rounds, 120 seconds and approximately $0.30 per turn, with a $2 daily application budget.
+## Known limitations
 
-Analysis Lab is optional: set `ANALYSIS_LAB=true` only after `scripts/smoke_hosted_sandbox.py` passes, then enable it for a thread in the composer. It uploads only hash-verified CSV exports of the Analysis Bundle to a hosted 1 GB container with network disabled. It never executes generated code on this computer. Results, units and CSVs are validated; empty/invalid outputs remain visibly invalid. Container/file deletion is requested after each turn, with container expiry as fallback if cleanup fails. This costs a container charge per enabled turn and intentionally favors isolation over session reuse.
+- **No partial-gravity data.** PSI holds no lunar or Martian run data. Lunar questions get *atmosphere* coverage only, clearly labeled. Ground and simulated partial-g sources (LUCI, KC-135, GRC) are labeled as supplemental.
+- **Numeric curation covers 13 tables.** These come from FLEX, CFI, CFI-G, BASS, BASS-II, Saffire I–III, SAME and SAME-R, plus the FLEX-2 design matrix. Other investigations are searchable as documents only.
+- **Citation validation checks IDs, not entailment.** The numeric audit has known false positives, such as page numbers and user-supplied filter values.
+- **Retrieval benchmark.** On the held-out test split, recall@5 is 0.74, MRR 0.88 and nDCG@10 0.72.
+- **Rebuilding the corpus from scratch.** Raw NASA payloads (~1 GB) and the download manifest are not stored in git ([ADR-014](docs/decisions/ADR-014-repo-data-hygiene.md)). The repository includes the processed text and tables, source catalog and build code. The prebuilt runtime corpus (~530 MB) must be obtained from the team.
+- **Live SI is budget-capped.** The cap is $2/day and 20 turns per visitor per hour. When it is reached, the recorded demos and all explorers keep working.
 
-## Verify and reproduce
+Full list: [docs/LIMITATIONS.md](docs/LIMITATIONS.md).
 
-```powershell
-cd backend
-.venv/Scripts/python.exe -I -m pytest -q
-.venv/Scripts/ruff.exe check .
-.venv/Scripts/ruff.exe format --check .
-.venv/Scripts/python.exe -I -c "from embernova.evaluation import demos; demos()"
-.venv/Scripts/python.exe -I -c "from embernova.evaluation import retrieval; retrieval()"
-cd ../frontend
-npm.cmd run test
-npm.cmd run lint
-npm.cmd run typecheck
-npm.cmd run build
-npm.cmd exec playwright -- test
-```
+## Team
 
-Browser tests start their own local server on port 8011 and disable live API calls. `EMBERNOVA_LIVE_E2E=1` enables the separately marked live browser test and uses the local server key. Browser screenshots and evaluation reports go to `build/eval/`. Generated artifacts export their query, source hashes, row evidence and computation record; Analysis Lab exports include `analysis.py` labeled SI-generated.
+Team **EmberNova**, NASA Space Apps Challenge 2026. Team members are listed on the team's Space Apps project page.
 
-## Available evidence and limits
+## SI use and credits
 
-The current build indexes 34 investigations, 93 documents, 3,187 physical pages/extracted parts, and 39 original media items. Numeric curation covers FLEX, BASS-II, CFI conditions and matched hot/cool-flame workbook values, and the FLEX-2 design matrix. CFI's 87 CSV records include eight duplicate rows: 79 distinct test identifiers are retained for analysis. Unmapped investigations remain searchable as documents and source metadata.
+The architecture, code and documentation were developed with SI assistance (Claude Code as architect and reviewer, Codex as implementer); see [SI_DISCLOSURE.json](SI_DISCLOSURE.json). SI output inside the product is badged. No NASA logos or insignia are used.
 
-Core tools provide unit-aware queries, descriptive statistics, source-built charts, run-group comparisons, the Applicability Envelope, and a d²-law consistency check. Missing conditions remain unknown. A lunar atmosphere overlap is not lunar-gravity evidence or a safety certification. The strict ≤10.2 psi reference can have no jointly matching FLEX rows even though nearby reduced-pressure tests exist.
+Credits:
 
-Retrieval benchmark recall remains below the architecture target; see `build/eval/retrieval.json` and the review handoff. Citation-ID validation does not prove semantic entailment or complete numerical grounding. Saffire telemetry, additional CFI-G/ACME/SPICE numerical parsers, reviewed synthesized investigation profiles, conceptual illustrations, a validated predictive model, and deployment are not part of the verified build.
+- NASA Physical Sciences Informatics and the principal investigators of each investigation (DOIs in `data/SOURCE_CATALOG.csv`)
+- NASA Technical Reports Server for the reports; original NASA media is credited per item in the media viewer
+- The open-source projects listed above
 
-## SI use
-
-The project architecture and code were developed with SI assistance (Claude Code as architect and reviewer, Codex as implementer). The product's SI outputs are labeled in the app. See the SI disclosure in [docs/research/NASA_CHALLENGE_ANALYSIS.md §4](docs/research/NASA_CHALLENGE_ANALYSIS.md).
+No software license has been chosen for the source code yet. NASA data keeps its own terms (see [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)).
