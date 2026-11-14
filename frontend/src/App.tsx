@@ -34,9 +34,7 @@ const Learn = lazy(() =>
 const LabPage = lazy(() =>
   import("./education/Experiences").then((m) => ({ default: m.LabPage })),
 );
-const Kids = lazy(() =>
-  import("./education/Experiences").then((m) => ({ default: m.Kids })),
-);
+const Kids = lazy(() => import("./kids/SpaceAcademy"));
 export const EXPLORE = [
   [
     "/systems",
@@ -307,6 +305,7 @@ export default function App() {
     location.pathname === "/research" ||
     location.pathname === "/workspace" ||
     location.pathname.startsWith("/s/");
+  const kids = location.pathname.startsWith("/kids");
   const home = location.pathname === "/";
   const exploring = EXPLORE_PREFIXES.some((p) =>
     location.pathname.startsWith(p),
@@ -375,7 +374,7 @@ export default function App() {
           </Suspense>
         </ExperienceBoundary>
       </div>
-      {!workspace && <SiteFooter />}
+      {!workspace && !kids && <SiteFooter />}
     </div>
   );
 }
