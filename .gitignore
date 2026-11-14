@@ -43,3 +43,4 @@ build/
 .ruff_cache/
 test-results/
 playwright-report/
+.vite/
