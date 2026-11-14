@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-98",
+    "file_id": "683f4a58746db1c87dcebeea",
+    "filename": "PSI-98_Engineering Documents_SAFFIRE-I Operations.pdf",
+    "relative_local_path": "investigations/PSI-98_SAFFIRE_I/raw/documents/PSI-98_Engineering Documents_SAFFIRE-I Operations.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a58746db1c87dcebeea&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "doi": "10.60555/0t15-1z43",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "01f812143679acbd31d7013404e3a8b8752ad554cf93b40a96845ebf37ffe882",
+    "source_key": "psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE-I Operations.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "SAFFIRE-I Operations\n\nOperational Requirements and Protocols\n\nThe Saffire experiments are conducted in three consecutive flights of the Cygnus vehicle. Since Cygnus undergoes a\ndestructive re-entry, three Saffire experiment units (Saffire-I, -II, and –III) are constructed and all data must be\ndownlinked. Even with these three flight opportunities, the experiment is very limited in the amount of data and test\nconditions that can be investigated. In Saffire-I and –III, the sample material is a single large sample (approx. 0.4 m\nwide by 0.94 m tall) to demonstrate the development and spread of a large-scale low-gravity fire. Once started, the\nentire burn of each of these samples is recorded, the data compressed, and downlinked. Nine smaller samples are\nburned on Saffire-II each having a dimension of 5 cm wide x 25 cm long. These are burned sequentially with the\ncamera recording images only from the sample being burned. Once started, these experiments run automatically.\nBecause of limitations in time available for downlinking, a maximum of 20 gigabits of data can be downlinked.\n\nThe Saffire-I experiment begins only after Cygnus is unberthed from the ISS. Prior to unberthing, the crew must\ncheck that the inlet and outlet ends of the flow duct be clear of any stowage bags being deorbited.\n\nSaffire-I mission operations begin when Cygnus unberths from the ISS. The Cygnus Flight Operations Team (FOT)\nestablishes the vehicle in a lower, circular orbit. Based on this new orbit, ground station contact times are calculated\nand the experiment start is confirmed and coordinated with the Saffire FOT. From Cygnus undock until experiment\nstart takes about 1 day.\n\nThe experiment operations are be conducted in two phases. The first phase consists of turning on power to the\nexperiment avionics, checking the experiment is initialized successfully, starting the experiment run, and recording\nand compressing the resulting data. The second phase consists of downloading all experiment data via downlink\npasses at various ground sites. The data is examined for quality and files are retransmitted if necessary. When a\ncomplete set of data files has been successfully retrieved, or the timeline has reached a predetermined maximum\nduration, the experiment avionics power is switched off and the Cygnus vehicle deorbits.\n\nCygnus burns up on re-entry into the Earth's atmosphere. Consequently, the flight unit is permanently disposed of\nduring this process. No specific disposal processes are expected if the experiment hardware is burned up upon re-\nentry.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

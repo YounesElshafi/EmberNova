@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-106",
+    "file_id": "66eb9831c6ad4bdc12fc3a25",
+    "filename": "3193_3195.pdf",
+    "relative_local_path": "investigations/PSI-106_SLICE/raw/documents/3193_3195.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=66eb9831c6ad4bdc12fc3a25&version=1&studyVersion=3&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "doi": "10.60555/pm12-rg61",
+    "source_version": "3",
+    "file_version": "1",
+    "sha256": "1935feb2ce8c05c9b8556e5d8f92de810e93d8b7572c1765c5ff2609d22fcb1d",
+    "source_key": "psi-data/PSI-106/Raw Data/3193_3195.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    }
+  ]
+}

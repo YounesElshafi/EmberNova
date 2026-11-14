@@ -1,0 +1,127 @@
+{
+  "source_id": "PSI-100",
+  "title": "Spacecraft Fire Experiment-III",
+  "source_type": "psi_investigation",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+  "priority": "A",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Latest PSI file tree inventoried.",
+  "acronym": "SAFFIRE-III",
+  "scientific_category": "Combustion Science",
+  "subcategory": "Spacecraft Fire Safety",
+  "research_program": "Saffire",
+  "objectives": "The objectives of this investigation were to:\n(1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+  "approach": "The Saffire-III experiments were performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. As a follow on to the Saffire 1 investigation, the Saffire III investigation also used SIBAL as the sample material. However, the experiments were conducted at a flow velocity of 30 cm/s compared to 20 cm/s during Saffire I. The flow was either concurrent or opposed.  Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked. Details related to samples and experimental parameters are provided in the Experimental Details file in the Science document folder.",
+  "platform": "International Space Station (ISS)",
+  "project_type": "Microgravity Investigation",
+  "hardware": "Saffire III enclosure in Cygnus",
+  "hardware_url": "https://www1.grc.nasa.gov/space/iss-research/msg/saffire/",
+  "institution": "NASA GRC",
+  "principal_investigator": "David L. Urban",
+  "nasa_center": "Glenn Research Center (GRC)",
+  "investigation_start": "04-18-2017",
+  "investigation_end": null,
+  "initial_release_date": "18-Sep-2024",
+  "version_modified_date": "05-Jun-2025",
+  "source_version": 4,
+  "doi": "10.60555/040q-4h36",
+  "license": "CC0-1.0",
+  "license_url": "https://spdx.org/licenses/CC0-1.0.html",
+  "related_investigations": [
+    "PSI-99",
+    "PSI-98"
+  ],
+  "file_count": 87,
+  "repeated_tree_entries": 0,
+  "inventoried_bytes": 35210765052,
+  "reported_dataset_bytes": 35210765052,
+  "file_types": ".csv;.docx;.pdf;.xlsx;.zip",
+  "publication_count": 3,
+  "metadata_path": "investigations/PSI-100_SAFFIRE_III/metadata.json",
+  "relevance": "Direct spacecraft fire safety",
+  "version_history_path": "logs/psi/PSI-100-versions.json",
+  "inventory_snapshot_path": "logs/psi/PSI-100-files.json",
+  "principal_investigators": [
+    {
+      "name": "David L. Urban",
+      "institution": "NASA GRC"
+    }
+  ],
+  "publications": [
+    {
+      "authorList": "JE Niehaus, PV Ferkul, SA Gokoglu, GA Ruff",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire), 45th International Conference on Environmental Systems ICES-2015-[293] 12-16 July 2015, Bellevue, Washington"
+    },
+    {
+      "authorList": "W Schoren, GA Ruff, DL Urban",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "l87xqHQEQuC4rNfO31zRSVlRomoXfQjaWFyzxZZZ",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": ""
+      },
+      "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status"
+    },
+    {
+      "authorList": "https://ntrs.nasa.gov/citations/20170000230",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire), 46th International Conference on Environmental Systems (ICES), July 2016"
+    }
+  ],
+  "representative_media": [],
+  "experimental_tables": [
+    {
+      "_id": {
+        "$oid": "6792d422b7b6ff8e650381da"
+      },
+      "date_created": {
+        "$date": 1737675810283
+      },
+      "date_modified": {
+        "$date": 1737675810283
+      },
+      "file_name": "PSI-100_Experimental table_SAFFIRE-3.csv",
+      "file_size": 239,
+      "remote_path": "/Home/psi-data/PSI-100/Experimental table/PSI-100_Experimental table_SAFFIRE-3.csv",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-100/Experimental table/PSI-100_Experimental table_SAFFIRE-3.csv",
+      "resource_id": {
+        "$oid": "66cf53d46f1142c964b2e0a8"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-100/Experimental table/PSI-100_Experimental table_SAFFIRE-3.csv",
+      "s3_version_id": "AQXs1TocpP6NKs8L3qWuMYbRHZo8Wgbl",
+      "study_id": {
+        "$oid": "6841ac438970fb41b9cebbfc"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "experiments": [],
+  "upstream_metadata_path": "logs/psi/PSI-100-detail.json",
+  "inventory_errors": {}
+}

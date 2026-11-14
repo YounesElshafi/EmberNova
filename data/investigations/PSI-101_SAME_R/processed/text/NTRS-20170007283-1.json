@@ -1,0 +1,408 @@
+{
+  "source": {
+    "investigation_id": "PSI-101",
+    "file_id": "NTRS-20170007283-1",
+    "filename": "20170007283.pdf",
+    "relative_local_path": "investigations/PSI-101_SAME_R/raw/publications/NTRS-20170007283/20170007283.pdf",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20170007283/downloads/20170007283.pdf",
+    "source_record_url": "https://ntrs.nasa.gov/citations/20170007283",
+    "doi": "",
+    "source_version": "",
+    "file_version": "",
+    "sha256": "3338abaeec4d5cdfa08d496a84cfa9effd055fd8da528bba1ae0abe16ab8d25f",
+    "source_key": ""
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": " Spacecraft Fire Safety Research\n NASA Glenn Research Center\n                  By\n               Marit Meyer\n\nCombustion Systems and Reacting Processes Branch\n               Cleveland, Ohio USA\n                 August 2016\n\n\n\n\n\n                                                                                           1",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "NASA Glenn Research Center\n       Cleveland, Ohio\n\n\n\n\n\n                                                       2",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "NASA Glenn,\n Cleveland\n\n\n\n\n\n                       3",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": "                 Toronto\n\n             Detroit\n\nChicago\n\n\n                          NASA Glenn,\n                                  Cleveland\n\n\n\n\n\n                                                                                4",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "Jargon Spacecraft Fire Safety terms\n\n\nAerosols are tiny particles suspended in\nthe air.\nAerosols in Earth's atmosphere include\npollution, smoke, dust, pollen as well as\nparticles from many other natural and\nman-made materials.\n\n\nWe breathe in aerosols all day long.\n\n\n\n\n                                                                                                5",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "Jargon Spacecraft Fire Safety terms\n\n\n1 nanometer is a billionth of a meter\n\n\n\n\n\n                                                                                                6",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "Jargon Spacecraft Fire Safety terms\n\n\nI overheat materials to make smoke…\nCalled pyrolysis (like smoldering)\n    --No flames (no combustion)\n\n\nWhen smoke is concentrated, it ‘ages’\n     --individual particles stick together\n        =agglomeration\n\n\n\n                                                                                                7",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "Fire Facts\n\n• Almost 20% of home fire deaths resulted from fires\n  beginning with upholstered furniture\n• Over 40% of home fires are caused by cooking\n equipment\n• Fire safety systems here on Earth have been developed\n based on extensive study of typical fires\n     • Established body of research characterizes smoke from\n      building fires and forest fires (flaming combustion)\n• Current fire detection systems in space were developed\n  without spacecraft fire data\n     • International Space Station has no cooking, no couches that\n     can catch on fire\n     • A need existed for a comprehensive study of smoke from\n      typical spacecraft materials\n\n\n\n                                                                                                   8\n                                     Statistics source: National Fire Protection Association (NFPA) Fire Analysis and Research Fact Sheet, April 2013.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "Outline\n\n• Background Information\n    • Fire and Spacecraft\n    • Smoke Aerosol Measurement Experiment (SAME)\n• Smoke-in-drums Experiment\n• GASP laboratory study on early smoke detection\n• Morphology of selected smoke particles\n• SAFFIRE Experiment\n\n\n\n\n\n                                                                                                   9",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "                                     1g            0g\n   Fire in Space\n\n\n\n\n\n• Materials in spacecraft are non-flammable, but can\n  still overheat and smoke\n• With the absence of gravity smoke does not rise\n• Most likely source of a fire is overheating electronic\n equipment\n• Goal: detect smoke before a flame develops\n    • Research smoke from pyrolysis, not flames (combustion)\n                                                                                                     10",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "International Space Station\n\n\n\n\n\n                                                                             11",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "Destiny Module, a.k.a. U.S. Lab\n\n\n\n\n\n                                                                                 12",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "Destiny Module, aka U.S. Lab\n\n\n\n\n\n     ‘Dirty air’ pulled through HEPA filters here\n\n\n\n\n\n                                                                                13\n            Simulation results courtesy of John Brooker, ‘ISS Destiny Laboratory Smoke Detection Model,’ DOI: 10.4271/2007-01-3076",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "Destiny Module, a.k.a. U.S. Lab\n\n\n\n\n\n               Low-gravity\n\n\n\n\n\n             Normal-gravity\n                                                                                 14\n               Simulation results courtesy of John Brooker, ‘ISS Destiny Laboratory Smoke Detection Model,’ DOI: 10.4271/2007-01-3076",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "Avoid false alarms:\nTurn off smoke detectors while vacuuming\n\n\n\n\n\n                                                                                             15",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "  Smoke Aerosol Measurement Experiment\n                (SAME)\n\n• On ISS in 2007 and 2010\n• Experiment designed to generate\n  pyrolysis smoke in low gravity\n     • Common spacecraft materials\n     • Ability to concentrate and age smoke\n       in space\n     • Measure with small, cheap\n      instruments\n           • The best choices at the time\n     • Collect smoke particles to bring back\n      for microscopy\n\n\n\n\n\n                                                                                                   16",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "Smoke Aerosol Measurement Experiment\n              (SAME)\n\n\n\n\n\n                                                                                             17",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": "        SAME Spacecraft Materials\n\n\n            Pyrell® (flame retardant\n         polyurethane foam), used to\n                                                   Lamp wick (cellulose)        cushion payloads during launch\n                                                              represents clothing & paper\n\n\n\n\n\nTeflon® is used in wire\n                                                                                 Silicone rubber, used in insulation, sampling\n                                                                            gaskets & adhesives  bags, space suits &\n     cargo liners\n\n\n\n\n                                                                     Kapton® film, a\n                                                                      polyimide used for thin-\n                                                                                   film heaters, wire\n                                                                                  insulation, tape, space\n                                                                                              suits\n                                                                                                      18",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "Microgravity Science Glovebox (MSG)\n\n\n\n\n\n                                                                                         19",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "      Ground Unit - SAME Hardware in MSG\n\n\n\nData\n                                                                               AgingAcquisition and\n                                                                       ChamberControl Unit\n\n\n\n\n        Fluids                                                               Sample\n        Control                                                                                 Diluter\n        Unit\n                                                                                                   Instrument\n                                                                                       Boxes\n\n\n\n\n                                                                                  Tubing\n                                                                               Bundle\n\n\n\n\n                                Sample                                                             Particle\n                                    Carousel                                                            collector\n\n                                                                                                          20",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "SAME Smoke Particles from ISS\n\n\n Teflon                                                Pyrell\n\n\n\n\n\n Lamp wick                                 Kapton\n                                                                                   21\n                     scale bars = 2 μm",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 22,
+      "page_label": null,
+      "text": "    Smoke-in-drums Ground Experiment\n\n• Goal\n    • Make SAME smoke in a lab\n    • Measure with returned ISS instruments—AND—a high\n      fidelity reference instrument (which is too heavy and\n     complex to fly)\n• Dilute the smoke by sending it into a large 55 gallon\n drum\n    • Stops coagulation (aging) of the smoke particles during\n    measurements\n\n\n\n\n\n                                                                                                 22",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 23,
+      "page_label": null,
+      "text": "         Smoke-in-drums Experiment\n\n\n\n\n                                                                                         Instruments are\nSAME smoke generation                                                                          units returned\nhardware is ground                                                                 from ISS\nengineering hardware\n(identical to ISS setup)\n\n\n\n\n\n                                                                                                     23",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 24,
+      "page_label": null,
+      "text": "                                                   Hood for purged smoke\n\n  Smoke-in-Drums Experiment\n\nSAME\nengineering HW                    Small instruments\nmakes smoke                    returned from ISS\n\n\n\n\n\n                                                          Reference\n                                                          instrument\n\n\n\n\n                                            Two drums for aged &\n                                                  unaged smoke                                                                                                         24",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 25,
+      "page_label": null,
+      "text": "Compare Particle Size Distribution: Pyrell\n\n                    249 nm\n\n                        364 nm\n\n\n\n\n\n                                                                      unaged\n\n\n\n • ISS flight, 242 °C\n • Smoke-in-drums, 234 °C\n\n\n\n                                                                                             25\n\n                               Meyer et al. 2015, ‘Smoke Characterization and Feasibility of the Moment Method for Spacecraft Fire Detection,’ DOI: 10.1080/02786826.2015.1025124",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 26,
+      "page_label": null,
+      "text": "Gases and Aerosols from Smoldering\nPolymers (GASP) Laboratory\n\n\n\n\n\n• Two vented enclosures cover all instruments\n• Tube furnace heats materials in a ceramic ‘boat’\n• Safety permit = 1.5 years\n\n\n\n                                                                                                 26",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 27,
+      "page_label": null,
+      "text": "       One Recent GASP Experiment\n\n• Test a miniaturized particle sensor for early\n detection of smoke from spacecraft materials\n    • Compact Optical Dust Sensor (COTS)\n          • Has potential for use in spacecraft fire detection?\n          • Output response correlated to aerosol mass concentration for\n          incense smoke (Yang et al. 2015)\n\n\n                            4.6 cm x 3 cm, 16 g\n\n\n\n\n\n                    COTS=Commercial-off-the-shelf                                 27",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 28,
+      "page_label": null,
+      "text": "GASP Fuels\n\n            Nomex, a heat and flame-resistant woven textile,\n             used for acoustic insulation, cargo bags, thermal\n                          blankets & pressure suits\n\n\n\n\n\n                                                            28",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 29,
+      "page_label": null,
+      "text": "             GASP Fuels\n\n                 Tobacco                  Teflon piece\n\n\n\n\n\n                Components             Bulk Kapton\n\n\n\n\n\n Components: several thin film resistors, a\ntantalum capacitor, an inductor and a resin-\n encapsulated LED with the leads removed\n\n\n                                                                                                     29",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 30,
+      "page_label": null,
+      "text": "   GASP Experiments: Early Fire Detection\n\n\n\n\n\n                                                                                                ISS smoke detector alarm\n                                                                                         threshold = 2 mg/m3\n\n\n\n                                                                                                         Teflon smoke\n                                                                                             generated would\n                                                                                              never trigger\n                                                                                               alarm\n\n\n\n\n\nDetection times from 1 minute to 6 minutes (Teflon is infinity)\n                      Too slow!\n                                                                                                30\n                              PCB is ‘printed circuit board’ (bare FR-4)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 31,
+      "page_label": null,
+      "text": "   Circuit board & Components\n\n\n\n                                             ~ 350 nm\n\n\n\n\n\n200 to 400 nm\n\n\n\n\n\n                                                                                        31\n\n                                                          Images and microscopy data courtesy of RJ Lee Group",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 32,
+      "page_label": null,
+      "text": "Circuit board & Components\n\n\n\n\n\n                                                                  Crustal particle\n\n\n\n\n\n                                                                                             32\n\n                                                                   Microscopy courtesy of RJ Lee Group",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 33,
+      "page_label": null,
+      "text": "Wire Insulation Smoke Particles\n(partially fluorinated polyimide, PFPI)\n\n\n\n\n                    0.1mm\n\n\n                             0.5mm\n\n\n       0.2mm\n\n\n\n                                                               Crystalline particles\n\n\n\n\n\n                                                                                                         33\n\n                                                                                   Images courtesy of RJ Victoria Bryg/NSCER",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 34,
+      "page_label": null,
+      "text": "Teflon Smoke Particles\n\n\n                                       700 nm\n\n\n\n\n\n                               50 nm\n\n\n          250 nm\n\n\n\n\n\n                                                 25 nm\n\n\n                                                                                                 34\n\n                                                                                                                                              Images courtesy of RJ Lee Group and Victoria Bryg/NSCER",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 35,
+      "page_label": null,
+      "text": "Kapton Smoke Particles\n\n\n\n\n\n                                                  •  Thermal decomposition of Kapton\n                                                 results in liquid aromatic products\n                                                  •  The general spherical shape of the\n                                                 particles observed is consistent with\n                                         the particles starting as a liquid\n                                              solution with many components\n                                                  •  Chain-like agglomerates, 100 to 350 nm\n                                            primaries\n\n\n                                                                                                 35\n\n                                                                Images courtesy of RJ Lee Group and Victoria Bryg/NCSER",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 36,
+      "page_label": null,
+      "text": "Nomex Char Particles\n\n\n\n\n\n                                                                                                 36\n\n                                                                            Microscopy courtesy of RJ Lee Group",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 37,
+      "page_label": null,
+      "text": "Nomex Tar Balls\n\n\n\n\n\n                                                                                                 37\n\n                                                                           Images courtesy of RJ Lee Group",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 38,
+      "page_label": null,
+      "text": "We need a ‘big burn’!\n\n• Past NASA combustion research\n    • Burning 3mm fuel droplets\n    • Small samples\n\n\n\n\n\n   FAA full scale aircraft          Naval Research            Controlled\n              test                     Laboratory            burns of\n                             Ex-USS Shadwell           structures\n\n      Most U.S. agencies responsible for large\n   transportation systems conduct full-scale fire tests\n                                                                                                    38",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 39,
+      "page_label": null,
+      "text": " SAFFIRE: Spacecraft Fire Safety\n Demonstration\n\n• Use a disposable cargo\n  vehicle for a fire experiment\n  just before de-orbit and\n  destruction\n• SAFFIRE I, II, III\n    • Orbital Cygnus vehicle\n• SAFFIRE IV, V, VI\n    • SpaceX Dragon vehicle\n\n\n\n\n\n                                                                                                    39",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 40,
+      "page_label": null,
+      "text": "SAFFIRE: Spacecraft Fire Safety Demonstration\n\n\n\nThe video below can be found at: https://www.youtube.com/watch?v=0JkQ12JluJ0\n\n\n\n\n\n                                                                                                       40",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 41,
+      "page_label": null,
+      "text": " Summary\n\n\n• Ongoing work at NASA Glenn Research Center is performed to\n  characterize smoke aerosols for improving spacecraft fire safety\n    • Oxidative pyrolysis experiments\n    • Variables affecting smoke production\n          • Database of spacecraft smoke properties\n                 • Detection\n                 •  Post-fire cleanup\n    • SAFFIRE\n          • Tests 1 through 3 –combustion emphasis\n          • Tests 4 through 6 –smoke detection emphasis\n                 • GASP lab will support with fuel experiments and instrument down-\n                 selection\n                 • New smoke ‘room’ under construction at Glenn\n\n\n\n\n\n                                                                                                      41",
+      "headings": [
+        {
+          "level": null,
+          "title": " Summary\n\n"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 42,
+      "page_label": null,
+      "text": "Questions?\n\n\n\n\n\n                                                                      42",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 43,
+      "page_label": null,
+      "text": "Other Fire Research at NASA Glenn Research Center\n Why Study Combustion in Reduced Gravity ?\n  •   To enable space exploration\n  •   To advance science\n  •   To enable technologies on earth\n The Combustion Integrated Rack (CIR) is an ISS Rack in the Destiny module\n dedicated to combustion research on the ISS\n  •   Study combustion in a range of ambient environments\n  •   Study liquid, gaseous and solid fuel combustion\n  •   Modular and upgradeable to improve capabilities as technologies mature\n  •   Capable of remote, nearly autonomous operation\n The ISS Experiment manifest\n  •  Droplet Combustion – FLEX (2009 – 2016)\n  •  Gaseous Combustion – ACME (2017 – 2018)\n  •  Solid Combustion – SoFIE (2019 – 2020)\n\n Flame Extinguishment Experiment (FLEX) results revealed a unique two-\n  stage burning event: Cool Flames\n  •  Hot flame radiatively extinguishes -> initiates cool flame burning\n  •  Observation not possible without long-duration microgravity\n  •  Originally thought to be ‘impossible’\n  •  Near-term applications to new engine (e.g., HCCI) technologies - lower\n    emissions and higher efficiencies\n  •  Spacecraft safety procedures based only on considerations of hot flames\n   may be inadequate for assuring safety under all conditions.\n\n                                                                                                         43",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 44,
+      "page_label": null,
+      "text": "Links for more Saffire information\n\n\n•  http://www.theverge.com/2016/3/16/11244364/nasa-saffire-test-fire-orbital-atk-cygnus-iss-\n   resupply-mission (links to Saffire animation)\n•  http://phys.org/news/2016-03-nasa-space-unmanned-orbiting-craft.html\n•   http://m.voanews.com/a/nasa-plans-to-light-large-fire-in-space/3240548.html\n•  http://www.sciencealert.com/nasa-is-going-to-start-a-large-fire-in-space-in-the-name-of-\n   science (Has a video of FLEX.)\n•  http://www.computerworld.com/article/3044797/space-technology/nasa-intends-to-start-a-\n   large-scale-fire-in-space.html#tk.rss_all (Quotes Astronaut Dan Tani and also links to Saffire\n   animation video)\n•  http://en.people.cn/n3/2016/0317/c90000-9031350.html\n•  https://www.rt.com/usa/335874-nasa-fire-space-cygnus/ (Another link to Saffire video)\n•  http://www.independent.co.uk/news/science/nasa-to-set-a-ship-on-fire-in-space-to-test-safety-\n   in-emergencies-a6934081.html (Shows the ISS)\n•  https://www.yahoo.com/news/nasa-test-fire-space-burning-unmanned-orbiting-craft-\n   081545440.html\n•  http://spaceflightnow.com/2016/03/16/scientists-to-start-fire-in-discarded-spacecraft-for-\n   weightless-flames-study/\n\n\n                                                                                                 44",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 45,
+      "page_label": null,
+      "text": "45",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 46,
+      "page_label": null,
+      "text": "                      Fire Basics\n\n\nDiffusion flame: fuel is on one side and the oxidizer is on the other side. Examples are forest\nfires, a candle flame, industrial scale furnace and a flame spreading across a piece of paper\n\n\n\n\n\n                                                               Air\n                           Expts by Shannon\n                              Lucid on Mir\n\n\n\n\n\n                                                                         Fuel\n\n\n\n\n           1g                0g",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 47,
+      "page_label": null,
+      "text": "                     Basics\n\n\n                     What makes a fire grow or die?\n\n\n               Heat Generation Rate > Heat Loss Rate: Fire persists\n\n               Heat Generation Rate < Heat Loss Rate: Extinguishes\n\nHeat Generation Rate\n• Concentration of Fuel, Concentration of Oxygen, Temperature (exponential\n  dependence), Pressure, Type of fuel\n\nHeat Loss Rate\n•  Radiation, Conduction, Convection – all functions of temperature difference between\n   fire and surroundings\n\n\n\n\n     To first order, gravity affects the rate of supply of oxygen and rate of convective\n                                        loss of heat…\n\n                         but there are lots of other effects",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 48,
+      "page_label": null,
+      "text": "          Microgravity Behavior\n\n\n\n\n\nLower temperature, but it melts faster… it doesn’t drip…",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

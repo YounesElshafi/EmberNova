@@ -1,0 +1,3407 @@
+{
+  "source": {
+    "investigation_id": "PSI-25",
+    "file_id": "6924805f7f6aa6a83021067e",
+    "filename": "PSI-25_Engineering Documents_BASS-II_Ops.docx",
+    "relative_local_path": "investigations/PSI-25_BASS_II/raw/documents/PSI-25_Engineering Documents_BASS-II_Ops.docx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=6924805f7f6aa6a83021067e&version=2&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "doi": "10.60555/4qc4-de67",
+    "source_version": "4",
+    "file_version": "2",
+    "sha256": "76fb21a7c94b6f64dd8419a1993980b694ea8e8403e75268e8890a866e1c8d4a",
+    "source_key": "psi-data/PSI-25/Engineering Documents/PSI-25_Engineering Documents_BASS-II_Ops.docx"
+  },
+  "method": "OOXML paragraph text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "paragraph_number": 1,
+      "text": "OBJECTIVE:",
+      "style": "ItemizedListListTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 2,
+      "text": "Conduct BASS-2 (Burning and Suppression of Solids-2) operations by adding GN2 to the WV to reduce the O2 partial pressure in order to get a stable blue flame for longer periods of time.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 4,
+      "text": "TOOLS:",
+      "style": "ItemizedListListTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 5,
+      "text": "CSA-CP",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 6,
+      "text": "CDM",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 7,
+      "text": "Tweezers (if needed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 8,
+      "text": "Mini-Maglite",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 10,
+      "text": "PARTS:",
+      "style": "ItemizedListListTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 11,
+      "text": "BASS-2 Samples per BASS-2 Test Matrix",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 12,
+      "text": "Digital Tape Case P/N 96M53038-1",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 15,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 16,
+      "text": "1.Steps 7, 8 and 9 will be repeated as required to complete multiple tests on a given day per PI direction. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 18,
+      "text": "2.Steps 9 requires S-Band and KU-Band for the PI to assist with test parameters.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 20,
+      "text": "3.The fan calibration (step 11) and the video tape exchange (step 12) are only required after the last flame test for the day has been completed.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 23,
+      "text": "1.MSG FACILITY CONFIG",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 25,
+      "text": "1.1✓All operator rings, watches removed",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 27,
+      "text": "CMP1.2EXPERIMENT POWER OUTLETS",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 28,
+      "text": "sw OUTLET 1 +5V, +12V, +28V → ON (Hold switch in place for 1 second and manually return to center.)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 29,
+      "text": "✓OUTLET 1 +5V, +12V, +28V ON LED (three)  On (green)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 31,
+      "text": "1.3✓FUNCTIONS AIR CIRC ON LED  On (green)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 32,
+      "text": "✓FUNCTIONS WV ILLUM ON LED  On (green)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 34,
+      "text": "WV rear wall1.4✓GN2  CLOSE ()",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 36,
+      "text": "SPICE Exp. Assy1.5✓FUEL  OFF (toward front of WV)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 38,
+      "text": "BASS Control Box1.6✓IGN ENA  OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 39,
+      "text": "✓GN2 ENA  OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 40,
+      "text": "✓DATA REC  OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 42,
+      "text": "1.7Remove front MSG Glove Ring Assembly (two).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 44,
+      "text": "2.SAMPLE REMOVAL",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 46,
+      "text": "CAUTION",
+      "style": "CautionTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 47,
+      "text": "To prevent degraded/blurred video image, avoid touching the lexan covers during sample removal.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 50,
+      "text": "SPICE Exp. Assy2.1Release access window latches (two).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 51,
+      "text": "Lower front lexan cover.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 56,
+      "text": "Figure 1. - BASS Flat Sample.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 1"
+      ]
+    },
+    {
+      "paragraph_number": 59,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 60,
+      "text": "Previously burned BASS Samples may have some soot accumulation and should be removed from the SPICE Experiment Assembly using a Dry Wipe.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 63,
+      "text": "2.2~~If BASS flat sample installed,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 64,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 65,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 66,
+      "text": "Disconnect ignitor wire and remove from Sample Frame Assembly [Dry Wipe] (Figure 1).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 67,
+      "text": "Stow BASS flat sample in original packaging and trash Dry Wipe.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 68,
+      "text": "Go to step 3",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 69,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 70,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 71,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 73,
+      "text": "2.3~~If BASS Ignitor installed,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 74,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 75,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 76,
+      "text": "Remove BASS Ignitor (gently pull upwards).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 77,
+      "text": "Place BASS Ignitor inside MSG WV (to preserve ignitor wire and bent configuration) [Kapton Tape].",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 78,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 79,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 80,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 82,
+      "text": "2.4~~If BASS Sample installed,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 83,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 84,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 85,
+      "text": "Remove BASS Sample from Sample Frame Assembly [Dry Wipe].",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 86,
+      "text": "Remove soot from BASS Sample [Dry Wipe].",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 87,
+      "text": "Stow BASS Sample in original packaging and trash Dry Wipe.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 88,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 89,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 90,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 92,
+      "text": "3.SAMPLE INSTALLATION ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 94,
+      "text": "3.1✓POIC for PI enablement, Sample Number and Test Point",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 96,
+      "text": "3.2Install BASS Sample X onto the Sample Frame Assembly per BASS Test Matrix .",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 97,
+      "text": "✓Sample orientation per BASS Test Matrix Ignition Type (front or wake)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 99,
+      "text": "3.3Install BASS Ignitor X (Ignitor tip towards the right so that the Ignitor leads are clear of the imaging views) onto SPICE Experiment Assembly per BASS Test Matrix.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 101,
+      "text": "3.4IGNITOR lever → Pull forward",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 102,
+      "text": "✓Ignitor wire is as close to the leading edge of the BASS Sample as possible without touching (within 1 mm).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 105,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 106,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 107,
+      "text": "***",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 109,
+      "text": "~~If ignitor touches the BASS Sample,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 110,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 111,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 112,
+      "text": "reposition the BASS Ignitor until the ignitor wire is within 1 mm of the surface of the sample without touching [Tweezers and/or Fingers].",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 113,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 114,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 115,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 116,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 117,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 119,
+      "text": "3.5Close front lexan cover on SPICE Experiment Assembly, engage latches.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 121,
+      "text": "4.STILL CAMERA SETUP",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 126,
+      "text": "Figure 2. - Still Camera.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 2"
+      ]
+    },
+    {
+      "paragraph_number": 129,
+      "text": "WV4.1✓Still Camera Power Switch  ON (Figure 2)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 134,
+      "text": "Figure 3. - Still Camera - Rear View.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 3"
+      ]
+    },
+    {
+      "paragraph_number": 137,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 138,
+      "text": "The Still Camera can be removed for better access to the rear display, crew preference. The Still Camera is also displayed on MSG Video Monitor 2.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 141,
+      "text": "4.2~~If Still Camera needs to be removed to perform camera settings:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 142,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 143,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 144,
+      "text": "Pull and hold plunger on Still Camera. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 145,
+      "text": "Remove Still Camera from SPICE Still Camera Mount and orient camera per Figure 3. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 146,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 147,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 148,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 150,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 151,
+      "text": "It is highly possible that the date displayed on the MSG Video Monitor 1 is one day off from the actual date. It is very important that the date on the Still Camera match the displayed date. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 154,
+      "text": "4.3Date and Time set per date displayed on MSG Video Monitor 1:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 155,
+      "text": "Press Still Camera MENU button (Figure 3).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 157,
+      "text": "✓SETUP MENU Screen is displayed",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 159,
+      "text": "~~If SETUP MENU not displayed,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 160,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 161,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 162,
+      "text": "Using the Still Camera UP/DOWN Multi-Selector (MS) Button select the SETUP MENU Screen.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 163,
+      "text": "Press the RIGHT MS Button to select.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 164,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 165,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 166,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 167,
+      "text": "Using the UP/DOWN MS Button highlight TIME ZONE AND DATE.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 168,
+      "text": "Press the RIGHT MS Button to select.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 170,
+      "text": "Press UP/DOWN to select DATE AND TIME.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 171,
+      "text": "Using the RIGHT MS Button select the desired parameter and use the UP/DOWN MS Button to change the parameter. Date should be entered as YYYY/MM/DD and Time should be current GMT as display on MSG Video Monitor 1 ±5 seconds.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 172,
+      "text": "Press OK to accept.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 174,
+      "text": "Press the LEFT MS Button to return to SETUP MENU Screen.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 175,
+      "text": "Press the LEFT MS Button to access the left column menu bar.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 177,
+      "text": "4.4CL Mode Shooting Speed check (1fps): ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 178,
+      "text": "Using the Still Camera UP/DOWN MS button, select CUSTOM SETTING MENU screen.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 179,
+      "text": "pb RIGHT MS → to select",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 180,
+      "text": "sel SHOOTING/DISPLAY",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 181,
+      "text": "pb RIGHT MS → to select",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 182,
+      "text": "✓CL MODE SHOOTING SPEED  1(fps)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 185,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 186,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 187,
+      "text": "***",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 189,
+      "text": "~~If CL MODE SHOOTING SPEED is not 1fps,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 190,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 191,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 192,
+      "text": "pb RIGHT MS → to select sub-menu",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 193,
+      "text": "pb UP/DOWN MS to select → 1fps",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 194,
+      "text": "pb RIGHT MS to select → OK",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 195,
+      "text": "Press LEFT MS Button to exit and return to SHOOTING/DISPLAY",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 196,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 197,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 198,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 199,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 200,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 202,
+      "text": "4.5File Number Sequence check ON:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 203,
+      "text": "Using the Still Camera UP/DOWN MS Button, ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 204,
+      "text": "✓FILE NO. SEQUENCE  ON",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 207,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 208,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 209,
+      "text": "***",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 211,
+      "text": "~~If OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 212,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 213,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 214,
+      "text": "pb RIGHT MS → to select sub-menu",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 215,
+      "text": "pb UP/DOWN MS to select → ON",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 216,
+      "text": "pb RIGHT MS to select → OK",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 217,
+      "text": "Press LEFT MS Button to exit and return to SHOOTING/DISPLAY",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 218,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 219,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 220,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 221,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 222,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 224,
+      "text": "4.6Press MENU button until back LCD is blank.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 229,
+      "text": "Figure 4. - Still Camera top LCD - FRAMES Available.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 4"
+      ]
+    },
+    {
+      "paragraph_number": 235,
+      "text": "Figure 5. - Still Camera Photo Display (Full Metadata) on Video Monitor.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 5"
+      ]
+    },
+    {
+      "paragraph_number": 238,
+      "text": "4.7Verify FRAMES Available on Microdrive = 146 (Figure 4)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 240,
+      "text": "4.8Verify Full Metadata camera display mode:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 242,
+      "text": "pb SHUTTER → Press firmly and hold for 5 seconds",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 243,
+      "text": "✓Image data is displayed on the back LCD with the word \"RAW\" in the bottom right. (Figure 5)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 246,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 247,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 248,
+      "text": "***",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 250,
+      "text": "~~If camera display mode is not Full Metadata,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 251,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 252,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 253,
+      "text": "pb UP/DOWN → to select (See Figure 6)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 258,
+      "text": "Figure 6. - Still Camera Photo Display (Partial Metadata) on Video Monitor.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 6"
+      ]
+    },
+    {
+      "paragraph_number": 260,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 261,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 262,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 263,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 264,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 266,
+      "text": "4.9~~If Still Camera was previously removed,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 267,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 268,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 269,
+      "text": " Install Still Camera onto SPICE Still Camera Mount. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 270,
+      "text": "✓Spring Plunger  fully engaged (Still Camera)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 271,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 272,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 273,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 275,
+      "text": "5.DARK FRAME CALIBRATION AND TEST POINT SETUP",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 277,
+      "text": "5.1~~If first test of the day,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 278,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 279,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 280,
+      "text": "Install Still Camera lens cap.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 281,
+      "text": "Perform steps 5.2 through 5.9 per the BASS Test Matrix, Dark Frame Calibration. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 282,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 283,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 284,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 289,
+      "text": "Figure 7. - Still Camera - Bracket Display (Top LCD).",
+      "style": null,
+      "figure_table_references": [
+        "Figure 7"
+      ]
+    },
+    {
+      "paragraph_number": 292,
+      "text": "5.2pb Still Camera Fn or Pv button → Press and Hold (near bottom front of camera between grip and lens)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 293,
+      "text": "✓BKT display appears on Still Camera LCD (Figure 7)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 294,
+      "text": "✓9F on top left of display indicates 9 Frames will be taken for Bracket Sequence (Figure 7)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 297,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 298,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 299,
+      "text": "***",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 301,
+      "text": "~~If 'BKT' icon does not appear on Still Camera LCD, ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 302,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 303,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 304,
+      "text": "pb Fn or Pv → Press, Hold while rotating Main Command dial until 'BKT' display appears on LCD",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 305,
+      "text": "✓POIC if any problems encountered",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 306,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 307,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 308,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 309,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 310,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 312,
+      "text": "5.3~~While pressing and holding Fn or Pv on Still Camera,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 313,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 314,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 315,
+      "text": "Rotate Still Camera Main Command Dial (top left of camera while mounted, Figure 2) until appropriate Bracketing Frames value appears on LCD per BASS Test Matrix (Figure 7).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 316,
+      "text": "Release Fn or Pv button.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 317,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 318,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 319,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 321,
+      "text": "5.4~~While pressing and holding Fn or Pv button on Still Camera,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 322,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 323,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 324,
+      "text": "Rotate Camera Sub-command Dial (bottom left of camera while mounted, Figure 2) until appropriate Exposure Bracket Value appears on LCD per BASS Test Matrix (Figure 7). ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 325,
+      "text": "Release Fn or Pv button.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 326,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 327,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 328,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 333,
+      "text": "Figure 8. - Still Camera - Exposure Mode Adjustment.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 8"
+      ]
+    },
+    {
+      "paragraph_number": 336,
+      "text": "5.5pb Still Camera MODE button (Figure 8) → Rotate Main Command Dial to set Exposure Mode per BASS Test Matrix.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 337,
+      "text": "Release MODE button.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 342,
+      "text": "Figure 9. - Still Camera - Exposure Compensation (EV Setting).",
+      "style": null,
+      "figure_table_references": [
+        "Figure 9"
+      ]
+    },
+    {
+      "paragraph_number": 345,
+      "text": "5.6~~If Camera Exposure Mode is A or S per the BASS Test Matrix,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 346,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 347,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 348,
+      "text": "pb Exposure Compensation Button (Figure 9) → Press and Hold (EV setting will display on top LCD, Figure 9)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 349,
+      "text": "While pressing Exposure Compensation Button adjust the Main Command Dial (Figure 9 above -- top left of Camera while mounted) to Exposure Compensation Value (EV) per BASS Test Matrix.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 350,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 351,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 352,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 354,
+      "text": "5.7~~If Camera Exposure Mode is M per the BASS Test Matrix,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 355,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 356,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 357,
+      "text": "Rotate Main Command Dial (Figure 8) → Shutter Speed (per BASS Test Matrix)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 358,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 359,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 360,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 362,
+      "text": "5.8Rotate Still Camera Sub-Command Dial (Figure 2)→F-Stop Value (per BASS Test Matrix)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 367,
+      "text": "Figure 10. - Still Camera - Release Modes: S=Single, CL=Continuous Low, CH=Continuous High.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 10"
+      ]
+    },
+    {
+      "paragraph_number": 370,
+      "text": "5.9~~While pressing the MODE Release button,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 371,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 372,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 373,
+      "text": "rotate Release Mode Selection per the BASS Test Matrix (Figure 10)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 374,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 375,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 376,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 378,
+      "text": "Still Camera5.10✓SPICE Feedthrough Cable P43 | SHUTTER J43 (left side)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 380,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 381,
+      "text": "Camera exposure is optimally configured for the upcoming flame tests and as a result the deployed scale may not be visible in the image.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 384,
+      "text": "SLICE Control Box Assy5.11pb SHUTTER → Press firmly and hold for 5 seconds",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 385,
+      "text": "✓Camera fires BKT sequence in rapid succession",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 386,
+      "text": "Release Shutter after timed count.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 387,
+      "text": "✓Image data appears on MSG Video Monitor 2",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 392,
+      "text": "Figure 11. - Still Camera - Bracketing Progress Indicator Full.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 11"
+      ]
+    },
+    {
+      "paragraph_number": 395,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 396,
+      "text": "In Figure 11 the bracketing is FULL when the BKT indicator is at zero. Figure 11 shows each of the four bracket settings at FULL.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 399,
+      "text": "5.12On Still Camera top LCD,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 400,
+      "text": "✓Bracketing Progress Indicator  full (ready for new sequence)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 401,
+      "text": "Figure 11.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 11"
+      ]
+    },
+    {
+      "paragraph_number": 404,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 405,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 406,
+      "text": "***",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 408,
+      "text": "~~If Bracketing Progress Indicator is not full,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 409,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 410,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 411,
+      "text": "pb SHUTTER → Press firmly and release",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 412,
+      "text": "Repeat as necessary until Bracketing Progress Indicator is full.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 413,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 414,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 415,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 416,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 417,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 419,
+      "text": "5.13~~If first test of the day,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 420,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 421,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 422,
+      "text": "Remove Still Camera lens cover, place on MSG Long Velcro Strip.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 423,
+      "text": "Repeat step 5.2 to step 5.12 to setup the Still Camera for the next planned Test Point per the BASS Test Matrix.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 424,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 425,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 426,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 431,
+      "text": "Figure 12. - Still Camera Filter.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 12"
+      ]
+    },
+    {
+      "paragraph_number": 434,
+      "text": "5.14Install or remove Still Camera Filter on the Still Camera (Figure 12) per the BASS Test Matrix.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 435,
+      "text": "Stow Still Camera Filter on MSG Long Velcro Strip, if required.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 440,
+      "text": "Figure 13. - Still Camera - LCD illuminator display.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 13"
+      ]
+    },
+    {
+      "paragraph_number": 446,
+      "text": "Figure 14. - LCD Output on Rear Display and MSG Video Monitor 2.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 14"
+      ]
+    },
+    {
+      "paragraph_number": 449,
+      "text": "Still Camera5.15Rotate Main Power switch momentarily clockwise to activate LCD illuminator display (Figure 13 and 14).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 451,
+      "text": "6.FAN FLOW CONSTRICTOR CONFIGURATION",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 453,
+      "text": "SPICE Exp. Assembly6.1Install or remove Fan Flow Constrictor(s) on the SPICE Experiment Assembly Fan Inlet, per the BASS Test Matrix.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 454,
+      "text": "Stow Fan Flow Constrictor(s) on MSG Long Velcro Strip if required.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 456,
+      "text": "SPICE Exp. Assembly6.2✓Fan Inlet and Filter Outlet are clear of obstructions.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 458,
+      "text": "7.TEST PREP",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 460,
+      "text": "SPICE Exp. Assy7.1✓Front lexan cover closed (latches engaged)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 462,
+      "text": "7.2Activating the CSA-CP and CDM:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 464,
+      "text": "MSG WV7.2.1Place CSA-CP and CDM on MSG Velcro Mounting Pad.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 466,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 467,
+      "text": "1.Audible beeps occur when the MODE pushbutton is pressed during unit activation. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 469,
+      "text": "2.Wait approximately 1 minute while unit runs self-check routine. A single beep occurs when the self-check routine is complete.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 472,
+      "text": "CSA-CP CDM7.2.2pb MODE → Press (hold until 'RELEASE' displayed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 474,
+      "text": "7.2.3Wait 1 minute.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 475,
+      "text": "On CSA-CP, verify display indicates readings for OXYGEN, HCN, HCL and CO.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 476,
+      "text": "On CDM, verify display indicates readings for CO2.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 478,
+      "text": "7.3Place Mini-Maglite on MSG Long Velcro Strip.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 480,
+      "text": "MSG WV7.4Install front MSG Glove Ring Assembly (two)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 481,
+      "text": "✓MSG Gloves are out of the FOV of the cameras.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 483,
+      "text": "7.5✓All operator rings, watches removed",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 485,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 486,
+      "text": "MSG Air Circ must be OFF during GN2 fill and flame test.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 489,
+      "text": "CMP7.6sw FUNCTIONS AIR CIRC → OFF (Hold switch in place for 1 second and manually return to center.)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 490,
+      "text": "✓FUNCTIONS AIR CIRC OFF LED  On (green, air circulation disabled)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 492,
+      "text": "BASS Control Box7.7FAN FLOW → 10.0",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 493,
+      "text": "GN2 FLOW → ✓POIC",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 495,
+      "text": "WV7.8Using front right MSG Glove Ring Assembly,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 496,
+      "text": "GN2 → OPEN (CCW, approx 2 turns)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 498,
+      "text": "SPICE Exp. Assy7.9sw FUEL → ON (push toward rear of WV to enable GN2 flow)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 500,
+      "text": "7.10✓DATA REC  OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 501,
+      "text": "✓IGN ENA  OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 503,
+      "text": "sw GN2 ENA → ON",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 505,
+      "text": "7.11Notify POIC with the following:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 506,
+      "text": "GMT time of GN2 flow start",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 507,
+      "text": "CSA-CP OXYGEN reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 508,
+      "text": "CSA-CP CO reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 509,
+      "text": "CDM CO2 reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 511,
+      "text": "7.12Using MSG Glove Ring Assembly, power off CSA-CP and CDM:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 512,
+      "text": "pb MODE → Press (hold until 'RELEASE' displayed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 513,
+      "text": "✓CSA-CP Off",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 514,
+      "text": "✓CDM Off",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 516,
+      "text": "7.13✓MSG Front Stray Light Cover is installed.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 517,
+      "text": "Peel off middle viewing window.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 519,
+      "text": "7.14Wait 25-225 minutes for WV to fill with GN2 per OSTPV.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 521,
+      "text": "8.TEST PREP CONCLUDE",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 523,
+      "text": "8.1✓POIC for PI enablement and live video",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 525,
+      "text": "BASS Control Box8.2sw GN2 ENA → OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 527,
+      "text": "8.3Notify POIC with GMT time of GN2 flow off. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 529,
+      "text": "8.4FAN FLOW → 0.0",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 531,
+      "text": "8.5Powering the CSA-CP and CDM using the MSG Glove Ring Assembly:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 533,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 534,
+      "text": "1.Audible beeps occur when the MODE pushbutton is pressed during unit activation. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 536,
+      "text": "2.Wait approximately 1 minute while unit runs self-check routine. A single beep occurs when the self-check routine is complete.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 539,
+      "text": "CSA-CP CDM8.5.1pb MODE → Press (hold until 'RELEASE' displayed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 541,
+      "text": "8.5.2Wait 1 minute.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 542,
+      "text": "On CSA-CP, verify display indicates readings for OXYGEN, HCN, HCL and CO.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 543,
+      "text": "On CDM, verify display indicates readings for CO2.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 545,
+      "text": "8.5.3Notify POIC with the following:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 546,
+      "text": "CSA-CP OXYGEN reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 547,
+      "text": "CSA-CP CO reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 548,
+      "text": "CDM CO2 reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 550,
+      "text": "8.5.4Power off CSA-CP and CDM:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 551,
+      "text": "pb MODE → Press (hold until 'RELEASE' displayed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 552,
+      "text": "✓CSA-CP Off",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 553,
+      "text": "✓CDM Off",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 555,
+      "text": "CMP8.6sw FUNCTIONS WV ILLUM → OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 558,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 559,
+      "text": "Steps 9 requires S-Band and KU-Band for the PI to talk directly to the crew and provide all guidance from this point. These steps, included in the procedure for situational awareness, will be repeated as required to complete multiple tests on a given day per PI direction. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 562,
+      "text": "9.FLAME TESTS",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 564,
+      "text": "9.1GN2 FLOW → rotate to value (per BASS Test Matrix)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 565,
+      "text": "FAN FLOW → rotate to value (per BASS Test Matrix)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 567,
+      "text": "9.2sw IGN ENA → ON",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 568,
+      "text": "✓GN2 ENA  OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 570,
+      "text": "9.3Review step 9.4 for hardware location and sequence order.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 571,
+      "text": "This step must be performed without delay or loss of science will occur.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 573,
+      "text": "CAUTION",
+      "style": "CautionTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 574,
+      "text": "1.The following step will initiate the Still Camera to take an image once every second. A maximum of 100 images may be taken before the camera stops. Releasing the SHUTTER will also cause the camera to stop taking images.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 576,
+      "text": "2.The SLICE Ignitor takes time to cool after Ignition; to avoid damage to the ignitor or front window release the IGNITOR lever only to the point that the ignitor is not glowing for 10 seconds before fully releasing. In order to hold the IGNITOR lever and push the SHUTTER button simultaneously, Step 9.4 will be performed with right hand in the right MSG Glove Ring Assembly and the left hand on the SHUTTER button.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 582,
+      "text": "Figure 15. - SPICE Experiment Assembly - Flame Ignition.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 15"
+      ]
+    },
+    {
+      "paragraph_number": 585,
+      "text": "SPICE Exp. Assy9.4Locate ignitor lever (Figure 15).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 586,
+      "text": "IGNITOR lever → Pull forward and hold (ignitor glows)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 587,
+      "text": "Allow the IGNITOR lever to move backward until the ignitor is not glowing when flame appears on MSG Video Monitor 1 (up to 60 seconds).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 589,
+      "text": "BASS Control Boxpb SHUTTER → Press firmly and lock.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 591,
+      "text": "Hold IGNITOR lever at mid-point for 10 seconds for ignitor to cool, and then fully release.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 594,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 595,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 596,
+      "text": "***",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 598,
+      "text": "~~If ignitor does not glow or flame does not appear:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 599,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 600,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 601,
+      "text": "Unlock and release SHUTTER button.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 603,
+      "text": "On BASS Control Box,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 604,
+      "text": "sw IGN ENA → OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 605,
+      "text": "✓GN2 ENA  OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 606,
+      "text": "✓POIC for re-iginition or ignitor reposition.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 607,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 608,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 609,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 610,
+      "text": "*",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 611,
+      "text": "***************************************************************************************************",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 613,
+      "text": "9.5Adjust RADIOMETER GAIN until RAD value on MSG Video Monitor 1 is at highest value possible but RAD ≤ 1.0",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 615,
+      "text": "9.6After burning for approximately one minute, attempt to extinguish flame per PI direction.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 617,
+      "text": "~~If extinguishing the flame by terminating air flow,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 618,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 619,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 620,
+      "text": "Set FAN FLOW to 0.00",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 621,
+      "text": "Wait for flame to extinguish.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 622,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 623,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 624,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 626,
+      "text": "~~If extinguishing the flame using GN2,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 627,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 628,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 629,
+      "text": "sw GN2 ENA → ON",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 630,
+      "text": "Increase GN2 flow by one turn.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 631,
+      "text": "Observe flame for destabilization or extinction (wait 5 seconds).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 632,
+      "text": "Repeat until flame extinguishes.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 633,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 634,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 635,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 637,
+      "text": "BASS Control Box9.7sw IGN ENA → OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 638,
+      "text": "sw GN2 ENA → OFF",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 640,
+      "text": "9.8Set FAN FLOW to maximum.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 641,
+      "text": "Unlock and release SHUTTER button.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 643,
+      "text": "WV rear wall9.9GN2 → CLOSE (CW)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 645,
+      "text": "9.10Report RADIOMETER GAIN from step 9.5.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 647,
+      "text": "9.11Powering the CSA-CP and CDM using the MSG Glove Ring Assembly:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 649,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 650,
+      "text": "1.Audible beeps occur when the MODE pushbutton is pressed during unit activation. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 652,
+      "text": "2.Wait approximately 1 minute while unit runs self-check routine. A single beep occurs when the self-check routine is complete.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 655,
+      "text": "CSA-CP CDM9.11.1pb MODE → Press (hold until 'RELEASE' displayed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 657,
+      "text": "9.11.2Wait 1 minute.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 658,
+      "text": "On CSA-CP, verify display indicates readings for OXYGEN, HCN, HCL and CO.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 659,
+      "text": "On CDM, verify display indicates readings for CO2.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 661,
+      "text": "9.11.3Notify POIC with the following:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 662,
+      "text": "CSA-CP OXYGEN reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 663,
+      "text": "CSA-CP CO reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 664,
+      "text": "CDM CO2 reading",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 666,
+      "text": "9.11.4Power off CSA-CP and CDM:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 667,
+      "text": "pb MODE → Press (hold until 'RELEASE' displayed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 668,
+      "text": "✓CSA-CP Off",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 669,
+      "text": "✓CDM Off",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 671,
+      "text": "9.12Photographing the Sample Post-Burn using the BASS Still Camera:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 673,
+      "text": "NOTE",
+      "style": "NoteTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 674,
+      "text": "The MSG Stray Light Cover can be removed or folded down per crew preference to complete step 9.12.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 677,
+      "text": "9.12.1Using MSG Glove Ring Assembly, illuminate BASS sample [Mini-Maglite].",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 679,
+      "text": "BASS Control Box9.12.2pb SHUTTER → Press",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 681,
+      "text": "9.12.3Review image on MSG Video Monitor 2.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 683,
+      "text": "9.12.4 If needed, adjust Mini-Maglite angle and retake photo to capture/highlight sample details.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 685,
+      "text": "10.MSG WV PURGE",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 687,
+      "text": "WARNING",
+      "style": "WarningTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 688,
+      "text": "The MSG WV must be purged for 3 minutes after every ten BASS burns because of the concern of combustion byproducts from the Freon in the cabin air. ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 691,
+      "text": "SPICE Exp. Assy10.1sw FUEL → OFF (pull toward front of WV)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 693,
+      "text": "CMP10.2sw FUNCTIONS AIR CIRC → ON (Hold switch in place for 1 second and manually return to center.)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 694,
+      "text": "✓FUNCTIONS AIR CIRC ON LED  ON (green)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 696,
+      "text": "10.3Remove front MSG Glove Ring Assembly (two) (MSG goes to OPEN mode)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 698,
+      "text": "10.4Wait 3 minutes while Work Volume clears of combustion products before accessing the WV.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 700,
+      "text": "10.5While waiting an additional 6 minutes with FAN FLOW at maximum for touch temperature,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 701,
+      "text": "Per PI direction, perform 2.007 BASS FLASH CARD EXCHANGE, steps 2 to 4 (US PODF: MSG BASS)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 703,
+      "text": "SPICE Exp. Assy10.6If required, adjust sample distance and/or BASS Ignitor per PI direction for next test point.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 705,
+      "text": "10.7Install front MSG Glove Ring Assembly (two).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 707,
+      "text": "10.8sw FUNCTIONS AIR CIRC → OFF (Hold switch in place for 1 second and manually return to center.)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 708,
+      "text": "✓FUNCTIONS AIR CIRC OFF LED  On (green, air circulation disabled)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 710,
+      "text": "10.9~~If additional reduced O2 tests planned for the day,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 711,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 712,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 713,
+      "text": "Perform step 7 then exit procedure.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 714,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 715,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 716,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 718,
+      "text": "~~If additional test in normal air planned for the day,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 719,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 720,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 721,
+      "text": "Go to step 8.5",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 722,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 723,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 724,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 726,
+      "text": "~~If all tests complete for the day,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 727,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 728,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 729,
+      "text": "Go to step 11",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 730,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 731,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 732,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 734,
+      "text": "11.FAN CALIBRATION",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 736,
+      "text": "SPICE Exp Assy11.1✓Front Lexan Window closed (engage latches)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 741,
+      "text": "Figure 16. - Fan Inlet/ Filter Outlet.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 16"
+      ]
+    },
+    {
+      "paragraph_number": 744,
+      "text": "11.2✓POIC for Fan Flow Constrictor configuration (zero, one, or two installed)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 746,
+      "text": "11.3✓Fan Inlet and Filter Outlet are clear of obstructions. (Figure 16)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 748,
+      "text": "CMP11.4sw FUNCTIONS AIR CIRC → OFF (Hold switch in place for 1 second and manually return to center.)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 749,
+      "text": "✓FUNCTIONS AIR CIRC OFF LED  On (green, air circulation disabled)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 753,
+      "text": "Figure 17. - FAN FLOW Adjustment Knob. Value shown here is 2.36.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 17"
+      ]
+    },
+    {
+      "paragraph_number": 756,
+      "text": "Figure 18. - MSG Video Monitor 1 Display.",
+      "style": null,
+      "figure_table_references": [
+        "Figure 18"
+      ]
+    },
+    {
+      "paragraph_number": 760,
+      "text": "BASS Control Box11.5Rotate FAN FLOW → 10.0 (Figure 17)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 762,
+      "text": "Video Monitor 1✓POIC with AIR and FAN value on monitor after value stabilizes (approximately 1 minute) (Figure 18).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 765,
+      "text": "Repeat with FAN FLOW of 8.0, 6.0, 4.0, 2.0 and 0.0.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 767,
+      "text": "12.MSG VIDEO TAPE EXCHANGE",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 769,
+      "text": "MSG Vid Drawer12.1Exchange the digital video tapes in MSG Video Recorders 1 and 2. Note video tape barcodes.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 771,
+      "text": "~~If procedure steps needed,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 772,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 773,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 774,
+      "text": "✓MAIN POWER ON LED  On",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 776,
+      "text": "✓RECORDERS 1,2 LED  On",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 778,
+      "text": "Slide MSG Video Drawer fully open.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 780,
+      "text": "Release MSG Video Drawer lid latching mechanisms (two), ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 781,
+      "text": "Slide lid, secure.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 783,
+      "text": "Open MSG Video Recorder 1,2 lid.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 785,
+      "text": "On MSG Video Recorder 1,2,",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 786,
+      "text": "EJECT → Slide in direction of arrow",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 788,
+      "text": "Remove, lock Digital Video Tape (two).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 790,
+      "text": "Label Digital Tapes with BASS and GMT date [Fine Point Sharpie].",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 792,
+      "text": "Stow BASS Digital Tapes in \"MSG/BASS Used Tapes\" Ziplock Bag.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 794,
+      "text": "Remove blank Digital Tape (two) from Digital Tape Case.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 796,
+      "text": "Note tape barcode to report to POIC.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 798,
+      "text": "Insert tape into MSG Video Recorder 1,2.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 800,
+      "text": "pb TC Reset → press",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 802,
+      "text": "Close MSG Video Recorder 1,2 lid.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 804,
+      "text": "Pull MSG Video Drawer lid forward.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 805,
+      "text": "Secure MSG Video Drawer lid latching mechanisms (two).",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 807,
+      "text": "Close, lock MSG Video Drawer.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 808,
+      "text": "~~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 809,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 810,
+      "text": "~",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 812,
+      "text": "12.2Notify POIC of blank video tape barcode number.",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 814,
+      "text": "12.3Stow:",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 815,
+      "text": "CSA-CP",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 816,
+      "text": "CDM",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 820,
+      "text": "Ground should update IMS for the following parts:",
+      "style": "ItemizedListListTitle",
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 821,
+      "text": "BASS Used Sample To: Stow (step 2.4)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 822,
+      "text": "BASS New Sample To: MSG (step 3.2)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 825,
+      "text": "Table 1. Procedure Hazard Control List.",
+      "style": "TableTitle",
+      "figure_table_references": [
+        "Table 1"
+      ]
+    },
+    {
+      "paragraph_number": 826,
+      "text": "Hazard Report Number",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 827,
+      "text": "Hazard Control Number",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 828,
+      "text": "Procedure Step(s)",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 829,
+      "text": "STD-BASS-01",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 830,
+      "text": "14/14b.6",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 831,
+      "text": "Go to step 1.6, step 7.10, step 9.2, step 9.7 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 832,
+      "text": "STD-BASS-01",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 833,
+      "text": "14/14b.8",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 834,
+      "text": "Go to step 9.4 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 835,
+      "text": "BASS-U1",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 836,
+      "text": "2/2.2",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 837,
+      "text": " Warning Box prior to step 10.1, step 10.2, step 10.3, step 10.4 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 838,
+      "text": "BASS-U3",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 839,
+      "text": "2/2.1",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 840,
+      "text": "Go to step 10.4, step 10.5",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 841,
+      "text": "BASS-U4",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 842,
+      "text": "1/1.1",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 843,
+      "text": "Go to step 1.6, step 7.10, step 9.2, step 9.7 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 844,
+      "text": "BASS-U4",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 845,
+      "text": "1/1.2",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 846,
+      "text": "Go to step 9.4 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 847,
+      "text": "BASS-U4",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 848,
+      "text": "1/1.3",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 849,
+      "text": "Go to step 3.5, step 7.1 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 850,
+      "text": "BASS-U4",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 851,
+      "text": "2/2.1",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 852,
+      "text": "Go to step 9.6 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 853,
+      "text": "BASS-U4",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 854,
+      "text": "2/2.2",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 855,
+      "text": "Go to step 9.6 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 856,
+      "text": "MSG-Int-BASS-05",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 857,
+      "text": "1/1.2",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 858,
+      "text": "Warning Box prior to step 10.1 and  step 10.4 ",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 859,
+      "text": "MSG-FL4",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 860,
+      "text": "1/1.2",
+      "style": null,
+      "figure_table_references": []
+    },
+    {
+      "paragraph_number": 861,
+      "text": " Warning Box prior to step 10.1and step 10.4 ",
+      "style": null,
+      "figure_table_references": []
+    }
+  ]
+}

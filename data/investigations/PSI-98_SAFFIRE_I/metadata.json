@@ -1,0 +1,170 @@
+{
+  "source_id": "PSI-98",
+  "title": "Spacecraft Fire Safety Experiment-I",
+  "source_type": "psi_investigation",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+  "priority": "A",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Latest PSI file tree inventoried.",
+  "acronym": "SAFFIRE-I",
+  "scientific_category": "Combustion Science",
+  "subcategory": "Spacecraft Fire, Smoke Distribution",
+  "research_program": "Saffire",
+  "objectives": "The objectives of this investigation were to:\n(1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal\ngravity material flammability screening test.",
+  "approach": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked.",
+  "platform": "International Space Station (ISS)",
+  "project_type": "Microgravity Investigation",
+  "hardware": "Saffire 1 enclosure in Cygnus",
+  "hardware_url": "https://www1.grc.nasa.gov/space/iss-research/msg/saffire/",
+  "institution": "NASA GRC",
+  "principal_investigator": "David L. Urban",
+  "nasa_center": "Glenn Research Center (GRC)",
+  "investigation_start": "03-02-2001",
+  "investigation_end": "02-28-2008",
+  "initial_release_date": "18-Sep-2024",
+  "version_modified_date": "03-Jun-2025",
+  "source_version": 4,
+  "doi": "10.60555/0t15-1z43",
+  "license": "CC0-1.0",
+  "license_url": "https://spdx.org/licenses/CC0-1.0.html",
+  "related_investigations": [
+    "PSI-99",
+    "PSI-100",
+    "PSI-26"
+  ],
+  "file_count": 76,
+  "repeated_tree_entries": 0,
+  "inventoried_bytes": 12250600201,
+  "reported_dataset_bytes": 12250600201,
+  "file_types": ".csv;.docx;.pdf;.xlsx;.zip",
+  "publication_count": 6,
+  "metadata_path": "investigations/PSI-98_SAFFIRE_I/metadata.json",
+  "relevance": "Direct spacecraft fire safety",
+  "version_history_path": "logs/psi/PSI-98-versions.json",
+  "inventory_snapshot_path": "logs/psi/PSI-98-files.json",
+  "principal_investigators": [
+    {
+      "name": "David L. Urban",
+      "institution": "NASA GRC"
+    }
+  ],
+  "publications": [
+    {
+      "authorList": "W Schoren, GA Ruff, DL Urban",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "l87xqHQEQuC4rNfO31zRSVlRomoXfQjaWFyzxZZZ",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": ""
+      },
+      "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status"
+    },
+    {
+      "authorList": "JE Niehaus, PV Ferkul, SA Gokoglu, GA Ruff",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)"
+    },
+    {
+      "authorList": "Urban David L., Ferkul Paul, Olson Sandra, Ruff Gary A., Easton John, T'ien James S., Liao Ya-Ting T., Li Chengyao, Fernandez-Pello Carlos, Torero Jose L., Legros Guillaume, Eigenbrod Christian, Smirnov Nickolay, Fujita Osamu, Rouvreau Sébastien, Toth Balazs, Jomaas Grunde",
+      "comments": [],
+      "doi": "10.1016/j.combustflame.2018.10.012",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Flame spread: Effects of microgravity and scale"
+    },
+    {
+      "authorList": "Li Chengyao, Liao Ya-Ting T., T'ien James S., Urban David L., Ferkul Paul, Olson Sandra, Ruff Gary A., Easton John",
+      "comments": [],
+      "doi": "10.1016/j.proci.2018.05.168",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity – Model versus experiment"
+    },
+    {
+      "authorList": "Jomaas Grunde, Torero Jose L., Eigenbrod Christian, Niehaus Justin, Olson Sandra L., Ferkul Paul V., Legros Guillaume, Fernandez-Pello A. Carlos, Cowlard Adam J., Rouvreau Sebastien, Smirnov Nickolay, Fujita Osamu, T׳ien James S., Ruff Gary A., Urban David L.",
+      "comments": [],
+      "doi": "10.1016/j.actaastro.2014.11.025",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Fire safety in space – beyond flammability testing of small samples"
+    },
+    {
+      "authorList": "Gary A. Ruff and David L. Urban.",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)"
+    }
+  ],
+  "representative_media": [],
+  "experimental_tables": [
+    {
+      "_id": {
+        "$oid": "6792c46eb7b6ff8e65037f3e"
+      },
+      "date_created": {
+        "$date": 1737671790269
+      },
+      "date_modified": {
+        "$date": 1737671790269
+      },
+      "file_name": "PSI-98_Experimental table_SAFFIRE-1.csv",
+      "file_size": 469,
+      "remote_path": "/Home/psi-data/PSI-98/Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-98/Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv",
+      "resource_id": {
+        "$oid": "66cf53d46f1142c964b2e0a8"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-98/Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv",
+      "s3_version_id": "_eNG2ATl_BkM8A7pV_lFCVUo5ptKZk3G",
+      "study_id": {
+        "$oid": "683f4a58746db1c87dcebf3d"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "experiments": [],
+  "upstream_metadata_path": "logs/psi/PSI-98-detail.json",
+  "inventory_errors": {}
+}

@@ -1,0 +1,591 @@
+{
+  "source": {
+    "investigation_id": "LUCI",
+    "file_id": "NTRS-20250010653-1",
+    "filename": "ASGSR 2025-LUCI-Ferkul-Presentation-v2-20250010653.pdf",
+    "relative_local_path": "investigations/LUCI/raw/publications/NTRS-20250010653/ASGSR 2025-LUCI-Ferkul-Presentation-v2-20250010653.pdf",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20250010653/downloads/ASGSR%202025-LUCI-Ferkul-Presentation-v2-20250010653.pdf",
+    "source_record_url": "https://ntrs.nasa.gov/citations/20250010653",
+    "doi": "",
+    "source_version": "",
+    "file_version": "",
+    "sha256": "bb0aadd2f9543483467b86796e6aa19f4e13c3f8169eec96134015f95ed61d79",
+    "source_key": ""
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "Lunar Combustion Investigation: Flammability Results\n         from a Rotating Sounding Rocket\n\n\n\n\n    Paul V. Ferkul1, Michael C. Johnston2, Nathan Kralik3, and Ya-Ting Liao3\n                      Universities Space Research Association1\n                NASA Johnson Space Center 2\n                     Case Western Reserve University 3\n\n\n\n\n\n                                   2025 Annual Meeting\n\n                                          Phoenix, Arizona\n\n                                   December 3-6, 2025",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 1:  Lunar Combustion Investigation: Flammability Results from a Rotating Sounding Rocket    Paul V. Ferkul1, Michael C. Johnston2, Nathan Kralik3, and Ya-Ting Liao3  Universities Space Research Association1 NASA Johnson Space Center 2  Case Western "
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "Lunar Combustion Investigation: Flammability Results from a Rotating Sounding Rocket\n\n\n\nObjectives\nDemonstrate the feasibility of conducting material flammability experiments in partial-g on the spinning Blue Origin\nNew Shepard vehicle which simulates Lunar gravity with centrifugal force\n\nObtain data from the flight that will support other simulated Lunar-g experiments in drop towers and parabolic\nflight, actual Lunar-g experiments, and computer models.\n\n\nOutcome\nThe LUCI scientific objectives were achieved. Material flammability testing at partial-g is feasible using a spinning\nvehicle. Conducting large scale flammability testing would require additional programmatic support. This might be\nconsidered should more Lunar-g flights become available using New Shepard.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 2"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "                                       Overview\n\n\nConduct partial-g fire tests on the Blue Origin sounding rocket.\n\n\nHypothesis: some materials burning in partial-g are more flammable than on Earth. This has\nimportant implications for the current 1-g material screening method used by NASA.\n\n\nFuel samples burned in pairs; cameras and other sensors record flame characteristics.\n\n\nOxygen limits for upward and downward spread at partial-g will be compared to 1-g values.\n\n\nMeasured flame characteristics in 1-g and partial-g will be compared to detailed model predictions.\nThese comparisons will refine pressure-gravity scaling relations and will be applied to other g-levels.\n\n\nThe work directly addresses knowledge gaps in flammability and crew safety as defined in several\nNASA strategic documents.\n\n\n\n\n                                                                                                                                                                           Page 3",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 3"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": "                                                               Locker\nSchematic\n                                                                Combustion enclosure/chamber\n                                                                             Flame\n                                                                              Edge view\nCentrifugal gravity is into the page; this\nwould be looking outward from the\naxis of rotation of the vehicle toward\nthe cylindrical hull of the rocket. The\nflames would generally rise out of the\npage, or towards the axis of rotation.\n\nTwo samples: Fabric 5 cm wide x 30 cm\nlong and 4-mm-DIA acrylic, (PMMA);\nignited with slight pause between\nthem.\n                                                Flame\n                                                      Front view\nSensors: Chamber oxygen\nconcentration, pressure, temperature,\nand centrifugal acceleration.\n                                                                                                                   Sensors",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 4"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "                                                               Locker\nSchematic\n                                                                Combustion enclosure/chamber\n                                                                                           Burning Fabric\n                                                                                    Edge view\nCentrifugal gravity is into the page; this\nwould be looking outward from the\naxis of rotation of the vehicle toward\nthe cylindrical hull of the rocket. The\nflames would generally rise out of the\npage, or towards the axis of rotation.\n\n                                                                                                Sample #2: Acrylic\nTwo samples: Fabric 5 cm wide x 30 cm                                          (PMMA) Rod\nlong and 4-mm-DIA acrylic, (PMMA);\nignited with slight pause between                                                                       Burning Rod\n                                                             Burning Fabric\nthem.                                                      Front view\n\nSensors: Chamber oxygen\nconcentration, pressure, temperature,\nand centrifugal acceleration.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 5"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "                                Hardware\n\n\nGlenn Research Center\n                                                            Chamber Assembly\n        EMI Shielding\n                                 Top Level Assembly\n\n\n\n\n\n      Blue Origin Locker                                                       Lid Assembly\n\n     ZIN Technologies\n                                                                                                                                                                  6",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 6: Hardware"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "                          Top Level Assembly\n\n\nGlenn Research Center\n\n\n\n\n\n                           In Payload Locker                      Out of Payload Locker\n\n     ZIN Technologies\n                                                                                                                                                                  7",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 7: Top Level Assembly"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "                     Combustion Chamber Lid Assembly\n\n\nGlenn Research Center\n\n\n\n\n\n                                                                       Lid is the main attachment point for\n                                                                                     All Payload Avionics and Diagnostics\n\n     ZIN Technologies\n                                                                                                                                                                  8",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 8: Combustion Chamber Lid Assembly  "
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "Page 9",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 9"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "The effective floor of our hardware (orientated so that the\ncentrifugal g-vector points downward toward the floor)\nmeasures about 41 cm x 48 cm. The available height in the\ng-direction is about 53 cm.\n\nNOTE: How we orient our samples depends on the specific\nlocker location.  It is required that the principle vertical\naxes of the burn samples be aligned with the radial lines.\n\n\n\n\n\n                                                                                                                                                                           Page 10",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 10"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "+z\n      +y\n\n\n\n\n\n           +x",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 11"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "•  Blue Origin New Shepard sounding rocket yields Lunar gravity by using centrifugal acceleration.\n\n•  These are the first-ever, extended-duration (greater than 25 seconds) combustion tests performed in simulated Lunar gravity.\n\n•  A steady vehicle rotation of 11 RPM is established, with an effective radius of rotation of 1.22 m at the experiment location.\n\n•  Two samples are burned simultaneously in air at normal pressure: Cotton-fiberglass composite fabric sheet and a 4-mm diameter\n   rod of acrylic plastic (polymethyl methacrylate).\n\n•  Flame images from two orthogonal cameras are used to determine flame spread and growth rates, and the burn lasts for over\n   two and a half minutes.\n\n•  The oxygen concentration in the chamber is measured. As the burns progress, the oxygen concentration drops, enabling a\n    limiting value for extinction to be defined.\n\n•  The effect of Coriolis force is discussed.\n\n•   Results from this experiment are compared to related 1-g work, drop tower tests, aircraft experiments, and modeling.\n\n•  The results are applicable to NASA’s exploration efforts in that they guide the selection of fire-safe materials and environments\n   and ensure safety of future spacecraft and Lunar habitats. The data also provides fundamental understanding of fires.\n\n•   Finally, the experiment is a steppingstone to the ultimate goal of performing burn tests on the Lunar surface in the Flammability\n   of Materials on the Moon (FM2) experiment which is planned to launch in late 2026.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 12"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "History\n     • ZIN technologies brought on board October 2021\n     •  Initial Planned launch was Spring 2023, Launch provider delay initially delayed launch into late Summer early Fall 2024, until\n             it finally launched Feb 4 2025\n     •  First mission sequence test was performed in July 2023\n          • Due to launch slip some improvements were made and last mission sequence test was ran in February 2024 before\n            being shelved prior to flight.\nObjectives\n     • Burn SIBAL fabric & PMMA\n     • Conduct first-ever, long duration observation and measurement of flame spread in a partial-g environment\n          •  Verify this platform is a viable means to obtain material flammability data in Lunar-g and will include an assessment of\n            the Coriolis force on results\n          • Provide guidance for sample selection and test definition for a Lunar in-situ experiment\nData\n     •  First Flight\n          • Measurements of flame spread rate and output of other diagnostics, including g-level vs. time for the two samples\n          • Sample closeout photos and photos before and after each test\n          • Data from 1-g burns",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 13"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 14"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 15"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "LUCI samples 30 s after ignition. Left: Edge view of SIBAL fabric (cotton-fiberglass blend) burning downward in Lunar-g 30 s\nafter ignition. The flame spread for over a minute. Right:4-mm-diameter PMMA rod burning upward in air in Lunar-g, 30 s\nafter ignition. The flame eventually grows to engulf the entire rod.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 16"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "PMMA rod after 90 seconds of burning in Lunar g.\nTwo orthogonal camera views are shown. The one on\nthe right demonstrates how the Coriolis force pulls the\nflame away from the axis of the fuel, which is aligned\nwith the direction of the centrifugal acceleration.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 17"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": "Potential Follow-on Objectives\n     • Evaluate the hypothesis that some materials burning in partial-g environments may be more flammable\n      compared to 1-g.\n          • Compare upward and downward oxygen limits to 1-g values\n          • Evaluate flame size, strength, intensity, and spread compared to 1-g\n     • Develop a numerical model\n          • Assess the applicability of the model by comparing to the test data obtained.\n          • Determine applicability of the pressure-gravity scaling relations for upward spread rates.\n          • Refine model using experiment results\n     • Provide a bridge between current 1-g material screen method and actual behavior in reduced gravity.\nData\n     • Flammability limits (%O2) for a subset of materials in Lunar-g\n     • Measurements of the flame spread rate over materials in exploration atmospheres\n     • Sample closeout photos, and photos before and after each test\n     • Data from 1-g burns",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 18"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "LUCI: SIBAL fabric\n\n\n\n\n\n                                                                                         •  Flame base spread rate = .92 mm/s.\n                                                                                         •  Flame tip spread rate = 1.1 mm/s\n                                                                                         •  Flame tip spreads very slightly faster\n                                                                  than flame base, indicating a slowly\n                                                                     shrinking flame length.\n                                                                                         •  Spread rates for char front, flame base,\n                                                           and flame tip are all linear (steady state\n                                                                         spread).",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 19: LUCI: SIBAL fabric"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\nLUCI: PMMA                                                                                                            𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n                                                                                               •  Flame length increases\n                                                                              ~linearly until flame tip becomes\n                                                                   obscured by sample holder\n                                                                           (could not measure flame length\n                                                                            accurately beyond this point).\n                                                                                               •  Total base spread of ~6cm until\n                                                                                   extinction.\n                                                                                               •  Flame base spread rate is not\n                                                                       constant; steady spread was not\n                                                                          achieved.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 20: LUCI: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\nLUCI: PMMA                                                                                                            𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n\n\n                                                                                               •  Flame tip spread is\n                                                                         approximately linear.\n                                                                                               •  Flame spread rate = 1.5\n                                                              mm/s.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 21: LUCI: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 22,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\nLUCI: PMMA                                                                                                            𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n\n                                                                                                   • O2% decreases from 20% to\n                                                                        14.3%.\n                                                                                                   • O2% rises back to 15.8%\n                                                                                                  likely due to the decrease in\n                                                                                          gravity (and thus buoyant\n                                                                                     flow) which occurred at 125s.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 22: LUCI: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 23,
+      "page_label": null,
+      "text": "LUCI 1-G Updates\n\n• Results have been obtained and plotted with partial-g results for\n comparison.\n\n• Fits of the data were created where possible and useful, and more\n  fits can be created in the future if necessary.\n\n• Results are not as clean as partial-g, the program does not read\n the flame spread as cleanly, and the flame burns out much\n  quicker, resulting in fewer total data points.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 23: LUCI 1-G Updates"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 24,
+      "page_label": null,
+      "text": "1-G Results: SIBAL fabric\n\n\n\n\n\n                                                                                          •  Flame length is not completely\n                                                                       constant; flame shrinks more than\n                                                                                  partial-g burn.\n                                                                                          •  Flame width decreases suddenly at\n                                                             ~24 seconds, and goes to 0 within 4\n                                                                  seconds.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 24: 1-G Results: SIBAL fabric"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 25,
+      "page_label": null,
+      "text": "1-G Results: SIBAL fabric\n\n\n\n\n\n                                                                                                  •  Flame tip spread rate is\n                                                                      ~double flame base spread\n                                                                                            rate.\n\n                                                                                                  •  Small fluctuations in the\n                                                                                  tracking result in inexact fits\n                                                                                           for the spread data, therefore\n                                                                                         this is only an approximate\n                                                                                     relationship.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 25: 1-G Results: SIBAL fabric"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 26,
+      "page_label": null,
+      "text": "1-G Results: SIBAL\n\n\n\n\n\n                                                                                                       •  Gravity (in g’s) remains\n                                                                              constant at Earth’s gravity.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 26: 1-G Results: SIBAL"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 27,
+      "page_label": null,
+      "text": "1-G Results: SIBAL\n\n\n\n\n\n                                                                                                  • O2% varies slightly but is\n                                                                              roughly constant at 20%.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 27: 1-G Results: SIBAL"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 28,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\n1-G Results: PMMA                                                                                   𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n\n                                                                                                    •  Base was not accurately\n                                                                               tracked towards the end of\n                                                                              the experiment; from\n                                                                              observation it remained at a\n                                                                           ~constant location.\n                                                                                                    •  Flame tip spread was\n                                                                                     ~linear until tip becomes\n                                                                       obscured by sample holder.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 28: 1-G Results: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 29,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\n1-G Results: PMMA                                                                                   𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n                                                                                                 •  Flame tip grows at a rate of\n                                                                  ~ 3.95 mm/s at the beginning\n                                                                                   of the burn.\n\n                                                                                                 •  Flame base location is\n                                                                            ~constant, so this can be\n                                                                       approximated as flame\n                                                                        growth rate (flame length).",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 29: 1-G Results: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 30,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\n1-G Results: PMMA                                                                                   𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n\n\n\n                                                                                                 •  Gravity remains constant at\n                                                                                  Earth’s gravity for duration of\n                                                                             burn.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 30: 1-G Results: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 31,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\nResults: PMMA                                                                                                   𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n\n\n\n                                                                                                 • O2% rises quickly in the\n                                                                              beginning, then decreases\n                                                                                      ~linearly from 21% to 14.5%.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 31: Results: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 32,
+      "page_label": null,
+      "text": "Combined Results: SIBAL",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 32: Combined Results: SIBAL"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 33,
+      "page_label": null,
+      "text": "SIBAL Flame Spread Fit Comparison\n\n\n\n\n\n                                                                  Flame Spread Rates (from linear fits):\n                                                                                             Partial-  1-G      Ratio\n                                                      G       (mm/s)\n                                                                        (mm/s)\n                                                               Flame     .9        1.5        .6\n                                                               Base\n\n                                                               Flame    1.1       2.8       .39\n                                                                               Tip",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 33: SIBAL Flame Spread Fit Comparison"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 34,
+      "page_label": null,
+      "text": "SIBAL Flame Width Comparison\n\n\n\n\n\n                                                                                                            •  Flame extinction for 1-g\n                                                                                experiment occurs quicker\n                                                                                     (flame width decrease is\n                                                                                    steeper than partial-g).\n\n                                                                                                            •  1-g extinction happens ~ 45\n                                                                          seconds sooner than partial-g\n                                                                                            extinction",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 34: SIBAL Flame Width Comparison"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 35,
+      "page_label": null,
+      "text": "Combined Results: PMMA",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 35: Combined Results: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 36,
+      "page_label": null,
+      "text": "                                                                                                                           g\n\n                                                                                                                                                                   𝑉𝑓\n                                                                                                                                                                        𝑥𝑓𝑡               𝑥𝑓𝑏PMMA Flame Tip Comparison\n\n                                                                                                                          Sample\n\n                                                                                                                                                Flame\n\n                                                                                                                                                                                                                𝑙𝑓\n\n\n                                                                    Flame Tip Spread (from linear fits):\n\n                                                                                   Partial-G  1-G       Ratio\n                                                                              (cm/s)    (cm/s)\n\n                                                                                  .15        .40        .38",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 36: PMMA Flame Tip Comparison"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 37,
+      "page_label": null,
+      "text": "The LUCI project achieved the first-ever, extended duration combustion tests (greater than 25 seconds) in simulated\nLunar gravity. The results are applicable to NASA’s exploration efforts in that they guide the selection of fire-safe\nmaterials and environments and ensure safety of future spacecraft and Lunar habitats. The data also provides\nfundamental understanding of fires burning at reduced gravity for comparison to sophisticated numerical models.\nFinally, the experiment is a steppingstone to the ultimate goal of performing burn tests on the Lunar surface in the\nFlammability of Materials on the Moon (FM2) experiment which will fly on a SpaceX Human Lander System\nunmanned test flight.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 37"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 38,
+      "page_label": null,
+      "text": "Backups",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 38"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 39,
+      "page_label": null,
+      "text": "LUCI Partial-G Recap: SIBAL\n\n\n\n\n\n                                                                                        •  Semi-steady spread is achieved,\n                                                                       during which the constant flame\n                                                               width and length are observed (~3.2\n                                               cm and ~1.5 cm respectively).\n                                                                                        •  Flame length and width both\n                                                                decrease during extinction (final ~40\n                                                                    seconds).\n                                                                                        •  Char propagation and flame base\n                                                                    propagation are ~parallel, indicating\n                                                               ~constant preheat length.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 39: LUCI Partial-G Recap: SIBAL"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 40,
+      "page_label": null,
+      "text": "LUCI Partial-G Recap: SIBAL\n\n\n\n\n\n                                                                                       •  Preheat Length: difference between\n                                                            flame base and char front fit\n                                                                      equations.\n                                                                                       •  Both flame length and preheat length\n                                                            decrease very slowly over time (~ 1.25\n                                              cm and ~0.4 cm total respectively).\n                                                                                       •  Preheat length shrink rate = -0.094\n                                                         mm/s.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 40: LUCI Partial-G Recap: SIBAL"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 41,
+      "page_label": null,
+      "text": "LUCI Partial-G Recap: SIBAL\n\n\n\n\n\n                                                                                                  •  Gravity (in g’s) remains\n                                                                          constant at lunar gravity.\n\n                                                                                                  •  Flame extinction must be\n                                                                   caused by other factors.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 41: LUCI Partial-G Recap: SIBAL"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 42,
+      "page_label": null,
+      "text": "LUCI: SIBAL fabric\n\n\n\n\n\n                                                                                                     • O2 concentration\n                                                                     decreases from ~20% to\n                                                                    ~18%.\n                                                                                                     • O2% decreases at a roughly\n                                                                             constant rate over the entire\n                                                                              experiment.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 42: LUCI: SIBAL fabric"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 43,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\nLUCI: PMMA                                                                                                            𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n\n                                                                                               •  Flame base spread is\n                                                                     approximately quadratic.\n                                                                                               •  Instantaneous spread rate\n                                                                                 (red line) is plotted derivative\n                                                                                 of fit equation (linear\n                                                                                         relation).\n                                                                                               •  Flame spread rate increases\n                                                                                       linearly from 0 to ~.6 mm/s\n                                                                               (before gravity starts dropping\n                                                                                 at t = 125s)",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 43: LUCI: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 44,
+      "page_label": null,
+      "text": "                                                                                                                 g\n\n                                                                                                                                                      𝑉𝑓\nLUCI: PMMA                                                                                                            𝑥𝑓𝑡               𝑥𝑓𝑏                                                                                                               Sample\n\n                                                                                                                                     Flame\n\n                                                                                                                                                                                                𝑙𝑓\n\n\n\n\n                                                                                                  •  Gravity remains ~constant for\n                                                                               duration of the burn.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 44: LUCI: PMMA"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

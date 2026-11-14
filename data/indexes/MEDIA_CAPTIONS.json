@@ -1,0 +1,37 @@
+{
+  "NASA-MEDIA-1": {
+    "caption": "NASA outreach video showing the Saffire-VI PMMA experiment. Edited presentation.",
+    "credit": "NASA",
+    "test_id": null
+  },
+  "NASA-MEDIA-2": {
+    "caption": "NASA article caption identifies this as fabric burning in Saffire-IV. The upstream filename references Saffire-VI preflight. Preserve both and verify the attribution before run-level use.",
+    "credit": "NASA",
+    "test_id": null
+  },
+  "NASA-MEDIA-3": {
+    "caption": "Still image of plastic rod and cotton-fiberglass fabric burning during a LUCI ground test.",
+    "credit": "Voyager Technologies",
+    "test_id": null
+  },
+  "NASA-MEDIA-4": {
+    "caption": "NASA image showing SIBAL burning in simulated lunar gravity in a drop-tower centrifuge.",
+    "credit": "NASA",
+    "test_id": null
+  },
+  "NASA-MEDIA-5": {
+    "caption": "NASA reference image comparing candle flames in microgravity, simulated 1/6 g, and Earth gravity.",
+    "credit": "NASA",
+    "test_id": null
+  },
+  "NASA-MEDIA-6": {
+    "caption": "External view of FM2 engineering hardware.",
+    "credit": "NASA",
+    "test_id": null
+  },
+  "NASA-MEDIA-7": {
+    "caption": "Internal view of FM2 engineering hardware.",
+    "credit": "NASA",
+    "test_id": null
+  }
+}

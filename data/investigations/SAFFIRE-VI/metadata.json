@@ -1,0 +1,14 @@
+{
+  "source_id": "SAFFIRE-VI",
+  "title": "Spacecraft Fire Experiment VI",
+  "source_type": "supplemental_investigation",
+  "source_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+  "priority": "A",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Final flight experiment completed in January 2024. Public reports located. No PSI accession in the search snapshot.",
+  "metadata_path": "investigations/SAFFIRE-VI/metadata.json",
+  "research_program": "Saffire",
+  "platform": "Cygnus",
+  "scientific_category": "Combustion Science",
+  "principal_investigator": "David Urban"
+}

@@ -445,6 +445,35 @@ export function About() {
               </div>
             ))}
       </div>
+      <div className="team-grid">
+        <div>
+          <p className="eyebrow ember">The challenge</p>
+          <h3>Flame in Freefall</h3>
+          <p>
+            NASA Space Apps 2026 asks teams to use SI to summarize, rank and
+            interpret microgravity combustion findings for fire safety in
+            spacecraft, stations, lunar and Martian bases, and pressurized
+            rovers.
+          </p>
+        </div>
+        <div>
+          <p className="eyebrow ember">The team</p>
+          <h3>Team EmberNova</h3>
+          <p>
+            The team made the product decisions, curated the data and owns the
+            submission. SI tools helped with architecture and code, as
+            disclosed below.
+          </p>
+        </div>
+        <div>
+          <p className="eyebrow ember">The data</p>
+          <h3>NASA Physical Sciences Informatics</h3>
+          <p>
+            Local, hash-verified snapshot of PSI combustion investigations
+            (CC0-1.0), with supplemental NASA sources labeled as such.
+          </p>
+        </div>
+      </div>
       <div className="overview-grid">
         <section className="content-card">
           <h2>Scientific method</h2>

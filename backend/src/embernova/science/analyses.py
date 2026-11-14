@@ -284,6 +284,7 @@ def envelope(bundle: Bundle, args: dict, evidence_ids: list, names: dict | None 
         [
             "Atmosphere overlap does not establish safety. Design matrices excluded from joint measured coverage."
         ],
+        allow_empty=True,
     )
     if oxygen and pressure:
         chart["annotations"].append(
@@ -394,10 +395,10 @@ def envelope_headline(by_class, gravity_match, gravity) -> str:
     parts = []
     for c in by_class:
         if c["n_runs_in_range"]:
-            parts.append(f"{c['label']}: {c['n_runs_in_range']} measured tests in range")
+            parts.append(f"{c['label']}: {c['n_runs_in_range']} measured source records in range")
         elif c["n_runs_with_known_conditions"]:
             parts.append(
-                f"{c['label']}: none of {c['n_runs_with_known_conditions']} tests with known conditions in range"
+                f"{c['label']}: none of {c['n_runs_with_known_conditions']} source records with known conditions in range"
             )
         else:
             parts.append(f"{c['label']}: conditions not recorded per test")
@@ -445,10 +446,10 @@ PRESSURE_BANDS = [
 ]
 LUNAR_CELL = ("30-36% (lunar habitat reference)", "8-10.2 psi (lunar habitat reference)")
 COVERAGE_NOTE = (
-    "Counts are measured tests in this local PSI snapshot, by ambient oxygen mole fraction "
-    "and total pressure. An empty cell means no test there, not that the condition is safe or "
-    "unsafe. All tests are microgravity (ISS or Cygnus); no lunar or Martian gravity test "
-    "exists in PSI. Design matrices are excluded."
+    "Counts are measured source records in this local PSI snapshot, by ambient oxygen mole fraction "
+    "and total pressure. Linked CFI tables can describe the same physical experiment. An empty cell means no local record there, not that the condition is safe or "
+    "unsafe. Flight tests in this snapshot are microgravity (ISS or Cygnus), but some recorded Saffire columns are 1-g ground comparisons; no lunar or Martian gravity test "
+    "exists in this curated snapshot. Design matrices are excluded."
 )
 
 
@@ -521,7 +522,7 @@ def coverage_grid(bundle: Bundle, evidence_ids: list) -> dict:
                 if (c["o2_band"], c["pressure_band"]) == LUNAR_CELL
             )
         )
-        + " measured tests in this snapshot."
+        + " measured source records in this snapshot."
     ]
     for fc in classes:
         near = sum(
@@ -531,7 +532,7 @@ def coverage_grid(bundle: Bundle, evidence_ids: list) -> dict:
         )
         if near:
             findings.append(
-                f"{fc['label']}: {near} tests at 30-36% O2 just above the 10.2 psi reference (10.2-12 psi)."
+                f"{fc['label']}: {near} source records at 30-36% O2 just above the 10.2 psi reference (10.2-12 psi)."
             )
     solid = data[data.fuel_class.str.startswith("solid")]
     solid_joint = int((solid.o2_mole_fraction.notna() & solid.total_pressure.notna()).sum())

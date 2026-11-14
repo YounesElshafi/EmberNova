@@ -52,6 +52,27 @@ The weights live in `config.retrieval` and get tuned once against the benchmark 
 
 FTS top 50 + dense top 50 → RRF → optional filter → return the top `limit` (default 8, max 20). Each result carries the chunk text (≤ 1,200 chars, trimmed at a sentence boundary), its context header, its evidence ID and score components. Adjacent chunks from the same page are merged when both are selected.
 
+## 3a. Scientific facet reranking (2026-11-13)
+
+The final investigation score is the weighted mean of two signals:
+
+- text RRF (`RETRIEVAL_TEXT_WEIGHT`, 0.7);
+- curated scientific-facet agreement (`RETRIEVAL_SCIENCE_WEIGHT`, 0.5).
+
+Facet agreement compares the query's interpreted phenomenon, fuel class, material, environment and parameters with `curation/investigation_facets.yaml`. Every facet value there has a NASA-text basis keyword checked by `tests/test_facets.py`. Core dimensions weigh double. The status weights are match 1, partial 0.5, not recorded 0.25 and differs 0.
+
+The weight was tuned on the dev split only, with the test split reported once:
+
+| Mode | Split | Recall@5 | MRR | nDCG@10 |
+|---|---|---|---|---|
+| hybrid | dev | 0.615 → 0.748 | 0.818 → 0.879 | 0.777 → 0.832 |
+| hybrid | test | 0.741 → 0.738 | 0.900 → 0.875 | 0.654 → 0.724 |
+| offline | test | 0.674 → 0.721 | 0.933 → 0.925 | 0.682 → 0.743 |
+
+Caveat: the facets and the benchmark were authored by the same architect, so the test split is not fully independent.
+
+The displayed 0–100 value is the **Scientific Relevance Score**, never a probability, evidence strength or fire risk.
+
 ## 4. Why not rerank, graph or HyDE
 
 - **Reranking.** The agent model reads 8–12 passages and selects among them, which is effectively LLM reranking at no extra infrastructure. Revisit only if benchmark MRR is below 0.7.

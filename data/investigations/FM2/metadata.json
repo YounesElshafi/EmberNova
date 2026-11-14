@@ -1,0 +1,20 @@
+{
+  "source_id": "FM2",
+  "title": "Flammability of Materials on the Moon",
+  "source_type": "supplemental_investigation",
+  "source_url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+  "priority": "D",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "NASA documents the experiment and preparatory research. A completed lunar-surface test or public dataset was not verified.",
+  "metadata_path": "investigations/FM2/metadata.json",
+  "scientific_category": "Combustion Science",
+  "acronym": "FM2",
+  "platform": "Planned lunar-surface experiment",
+  "principal_investigator": "Paul Ferkul",
+  "institution": "Universities Space Research Association",
+  "references": [
+    "https://ntrs.nasa.gov/citations/20240015307",
+    "https://ntrs.nasa.gov/citations/20260001966"
+  ],
+  "gravity_context": "Lunar surface is the intended platform. NASA reference imagery includes simulated lunar gravity."
+}

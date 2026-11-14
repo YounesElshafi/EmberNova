@@ -1,0 +1,132 @@
+{
+  "source": {
+    "investigation_id": "PSI-22",
+    "file_id": "67a27d2e09ed061032c12373",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "relative_local_path": "investigations/PSI-22_ACME_E_FIELD_Flames/raw/datasets/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=67a27d2e09ed061032c12373&version=2&studyVersion=7&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "doi": "10.60555/se5a-8c73",
+    "source_version": "7",
+    "file_version": "2",
+    "sha256": "69090c357b83ae38d161d29001d1d32b40fd77b13324ca6585ee990cdceef524",
+    "source_key": "psi-data/PSI-22/Experimental table/PSI-22_Experimental table_ACME E-FIELD Flames.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 32,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Test Type",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Test Day",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Year",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Month",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Date",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Mesh Polarity",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fuel Bottle",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Fuel Conc",
+            "header_unit": null,
+            "type_counts": {
+              "text": 32
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Flames Ignited",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Notes",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 28,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

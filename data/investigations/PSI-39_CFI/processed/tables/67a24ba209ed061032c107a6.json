@@ -1,0 +1,133 @@
+{
+  "source": {
+    "investigation_id": "PSI-39",
+    "file_id": "67a24ba209ed061032c107a6",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "relative_local_path": "investigations/PSI-39_CFI/raw/datasets/PSI-39_Experimental table_CFI.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=67a24ba209ed061032c107a6&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+    "doi": "10.60555/m6pj-a914",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "fb898e28762353aa132c16b886dbd207a024b1dd3c9bed5928d70d8036d2ec7e",
+    "source_key": "psi-data/PSI-39/Experimental table/PSI-39_Experimental table_CFI.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-39_Experimental table_CFI.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 87,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Flex Number",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Test Date",
+            "header_unit": null,
+            "type_counts": {
+              "text": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Local Time",
+            "header_unit": null,
+            "type_counts": {
+              "text": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "CIR ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Pressure",
+            "header_unit": null,
+            "type_counts": {
+              "text": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Oxygen",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Nitrogen",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Helium",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 73,
+              "numeric": 14
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Fiber",
+            "header_unit": null,
+            "type_counts": {
+              "text": 78
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Fuel ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 87
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

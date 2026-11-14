@@ -1,0 +1,109 @@
+{
+  "source": {
+    "investigation_id": "PSI-117",
+    "file_id": "6a28273bd9d7246402cb43eb",
+    "filename": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+    "relative_local_path": "investigations/PSI-117_Effect_of_External_Thermo_Convective_Perturbation/raw/datasets/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+    "doi": "10.60555/gz0q-b577",
+    "source_version": "2",
+    "file_version": "1",
+    "sha256": "2ed485fec6fad15c1409cd9b5c558ecf7bee262df29c832e9a54f3befc9c2e46",
+    "source_key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Dext.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+        "header_assumption": "first record",
+        "header_verified": false,
+        "row_count": 9,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Model",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Pressure",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3,
+              "integer": 2
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Dext_cool",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 4,
+              "integer": 1
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Dext_hot",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 5
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Expt",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Pressure",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 6,
+              "integer": 3
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Dext_cool_Expt",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 9
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

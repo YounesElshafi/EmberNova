@@ -1,0 +1,9 @@
+2026-11-13 local retrieval
+PSI public repository search returned 133 latest investigation records. Scope includes all 23 Combustion Science records and PSI-179 as aerosol support.
+Each included record's latest file tree and version history was requested through the public PSI repository.
+The raw file trees preserve repeated source nodes. The manifest keeps each distinct accession, file ID, revision and source key once.
+HTTP 404 on selected PSI files was reproduced after PSI successfully resolved the file link. The object store returned NoSuchKey on the examined failures.
+No PSI email job was submitted. NASA's documented ZIP delivery applies to multi-file selections above 1 GB. The available C: capacity is insufficient for the complete 13.50 TB inventory.
+The official challenge page response required a certificate-trust diagnostic fetch. Its ten Resources-tab links and separate Details-tab video were extracted. NASA scientific file requests retained certificate verification.
+2026-11-13 coverage follow-up
+Audited document, experiment table, data, image, video, archive and metadata availability for each investigation. Prioritized one or more representative objects where the source listed a category missing locally. The coverage CSV distinguishes standalone media and member names inside verified archives. Archive image spot checks decoded a representative image from each applicable archive. Counts of listed categories describe the recorded sources and are not a claim that no other publication or media exists.

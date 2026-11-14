@@ -1,0 +1,16 @@
+{
+  "source_id": "KC135-PARTIAL-G",
+  "title": "Upward Flame Spread Over Thin Solids in Partial Gravity",
+  "source_type": "supplemental_investigation",
+  "source_url": "https://ntrs.nasa.gov/citations/20010059376",
+  "priority": "D",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "KC-135 simulated partial gravity study includes simulated lunar and Martian levels. Public paper located.",
+  "metadata_path": "investigations/KC135-PARTIAL-G/metadata.json",
+  "scientific_category": "Combustion Science",
+  "platform": "NASA KC-135 reduced-gravity aircraft and normal-gravity tests",
+  "references": [
+    "https://ntrs.nasa.gov/citations/20010059376"
+  ],
+  "gravity_context": "Paper reports simulated 0.1 g, 0.16 g, and 0.38 g."
+}

@@ -6,12 +6,16 @@ describe("research state", () => {
     useWorkspace
       .getState()
       .apply({ seq: 0, turn_id: "turn", t_ms: 0, ...event });
-  it("records evidence before validating a completed answer and opens the first artifact", () => {
+  it("records evidence before validating a completed answer and keeps artifacts inline", () => {
     send({ event: "turn.started", replay: true });
     send({ event: "evidence.added", evidence: { evidence_id: "ev_real" } });
     send({
       event: "artifact.created",
-      artifact: { artifact_id: "art_real", title: "NASA measurements" },
+      artifact: {
+        artifact_id: "art_real",
+        type: "chart",
+        title: "NASA measurements",
+      },
     });
     send({
       event: "text.completed",
@@ -24,7 +28,8 @@ describe("research state", () => {
     const state = useWorkspace.getState();
     expect(state.running).toBe(false);
     expect(state.replay).toBe(true);
-    expect(state.selected?.artifact_id).toBe("art_real");
+    expect(state.artifacts.map((a) => a.artifact_id)).toContain("art_real");
+    expect(state.selected).toBeNull();
     expect(state.evidence.ev_real).toBeDefined();
   });
   it("surfaces failed tools and terminal errors", () => {

@@ -1,0 +1,14 @@
+{
+  "source_id": "SOFIE-MIST",
+  "title": "Solid Fuel Ignition and Extinction – Material Ignition and Suppression Test",
+  "source_type": "supplemental_investigation",
+  "source_url": "https://science.nasa.gov/biological-physical/investigations/sofie-mist-solid-fuel-ignition-and-extinction-material-ignition-and-suppression-test/",
+  "priority": "A",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "ISS investigation. No PSI accession in the search snapshot.",
+  "metadata_path": "investigations/SOFIE-MIST/metadata.json",
+  "research_program": "SoFIE",
+  "platform": "ISS",
+  "hardware": "Combustion Integrated Rack",
+  "scientific_category": "Combustion Science"
+}

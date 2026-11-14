@@ -3,6 +3,17 @@ import type { Artifact } from "./api/generated/Artifact";
 import type { Evidence } from "./api/generated/Evidence";
 import type { StreamEvent } from "./api/client";
 
+const INLINE_KINDS = new Set([
+  "investigation_ranking",
+  "evidence_assessment",
+  "chart",
+  "timeseries",
+  "comparison",
+  "envelope",
+  "table",
+  "media",
+]);
+
 type WorkspaceState = {
   artifacts: Artifact[];
   evidence: Record<string, Evidence>;
@@ -73,7 +84,10 @@ export const useWorkspace = create<WorkspaceState>((set) => ({
         case "artifact.created":
           return {
             artifacts: [...s.artifacts, event.artifact],
-            selected: s.selected || event.artifact,
+            // Typed research blocks render inline; others (e.g. hosted analysis runs) open the panel.
+            selected:
+              s.selected ||
+              (INLINE_KINDS.has(event.artifact.type) ? null : event.artifact),
           };
         case "text.delta":
           return { text: s.text + event.delta };

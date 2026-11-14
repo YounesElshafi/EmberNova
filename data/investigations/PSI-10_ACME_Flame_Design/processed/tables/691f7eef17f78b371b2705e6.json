@@ -1,0 +1,178 @@
+{
+  "source": {
+    "investigation_id": "PSI-10",
+    "file_id": "691f7eef17f78b371b2705e6",
+    "filename": "PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+    "relative_local_path": "investigations/PSI-10_ACME_Flame_Design/raw/datasets/PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7eef17f78b371b2705e6&version=1&studyVersion=1&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+    "doi": "10.60555/w4zy-bt45",
+    "source_version": "1",
+    "file_version": "1",
+    "sha256": "97933ee9ae0b9ebc6b948a67485a0fe2f8218f753253a4f2be93c40d374c44e4",
+    "source_key": "psi-data/PSI-10/Experimental table/PSI-10_Experimental table_Flame Design_Inverse Flame.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 120,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Flame Type",
+            "header_unit": null,
+            "type_counts": {
+              "text": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Day",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test",
+            "header_unit": null,
+            "type_counts": {
+              "text": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "XO2",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 109,
+              "text": 11
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "mO2 (mg/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 112,
+              "text": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "mN2 (mg/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 109,
+              "text": 11
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "mtot (mg/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 109,
+              "text": 11
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "XC2H4 initial",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "XC2H4 final",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "pinit (atm)",
+            "header_unit": "atm",
+            "type_counts": {
+              "numeric": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "pfinal (atm)",
+            "header_unit": "atm",
+            "type_counts": {
+              "numeric": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "pmean (atm)",
+            "header_unit": "atm",
+            "type_counts": {
+              "numeric": 120
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "mean Zst",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 109,
+              "text": 11
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Tad (K)",
+            "header_unit": "K",
+            "type_counts": {
+              "numeric": 109,
+              "text": 11
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

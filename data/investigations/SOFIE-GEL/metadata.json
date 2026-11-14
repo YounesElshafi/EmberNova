@@ -1,0 +1,14 @@
+{
+  "source_id": "SOFIE-GEL",
+  "title": "Solid Fuel Ignition and Extinction – Growth and Extinction Limit",
+  "source_type": "supplemental_investigation",
+  "source_url": "https://science.nasa.gov/biological-physical/investigations/sofie-gel/",
+  "priority": "A",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "ISS investigation. No PSI accession in the search snapshot.",
+  "metadata_path": "investigations/SOFIE-GEL/metadata.json",
+  "research_program": "SoFIE",
+  "platform": "ISS",
+  "hardware": "Combustion Integrated Rack",
+  "scientific_category": "Combustion Science"
+}

@@ -2,13 +2,14 @@ import type { ChartSpec } from "../api/generated/Artifact";
 import type { Data, Layout } from "plotly.js";
 import { unitLabel } from "../format";
 
+// Series palette tuned for the dark EmberNova surfaces: ember, signal blue, amber, lilac, sand, slate.
 const colors = [
-  "#f6b17a",
-  "#71c8ba",
-  "#a7b8ea",
-  "#d4a3d7",
-  "#d4ca82",
-  "#9eabaf",
+  "#ff8d55",
+  "#84b4ff",
+  "#f3b75a",
+  "#c7a6f0",
+  "#e6d3a3",
+  "#9aa6b8",
 ];
 export function toPlotly(chart: ChartSpec): {
   data: Data[];
@@ -45,7 +46,7 @@ export function toPlotly(chart: ChartSpec): {
               : s.style.hollow
                 ? "circle-open"
                 : "circle",
-          line: { width: 0.6, color: "#101414" },
+          line: { width: 0.6, color: "#06080e" },
         },
         line: { width: 2, color: colors[i % colors.length] },
         hovertemplate:
@@ -71,8 +72,8 @@ export function toPlotly(chart: ChartSpec): {
         x1: a.x[1],
         y0: a.y[0],
         y1: a.y[1],
-        fillcolor: "#71c8ba22",
-        line: { color: "#71c8ba", dash: "dot" },
+        fillcolor: "rgba(255,106,43,0.10)",
+        line: { color: "#ff8d55", dash: "dot" },
       });
     if (a.kind === "isoline" && a.slope === 1) {
       const max = Math.max(
@@ -87,19 +88,20 @@ export function toPlotly(chart: ChartSpec): {
         x1: max,
         y0: 0,
         y1: max,
-        line: { color: "#91a09d", dash: "dot" },
+        line: { color: "#959089", dash: "dot" },
       });
     }
   }
   const axis = (a: ChartSpec["x"]) => ({
     title: {
       text: `${a.label}${unitLabel(a.display_unit, a.field) ? ` (${unitLabel(a.display_unit, a.field)})` : ""}`,
-      font: { size: 12, color: "#a9b4af" },
+      font: { size: 12, color: "#c9c2b5" },
     },
     type: a.scale === "category" ? "category" : a.scale,
-    gridcolor: "#29302f",
-    zerolinecolor: "#3b4240",
-    tickfont: { color: "#a9b4af", size: 11 },
+    gridcolor: "rgba(232,222,205,0.07)",
+    zerolinecolor: "rgba(232,222,205,0.18)",
+    linecolor: "rgba(232,222,205,0.18)",
+    tickfont: { color: "#959089", size: 11 },
     automargin: true,
   });
   return {
@@ -108,11 +110,11 @@ export function toPlotly(chart: ChartSpec): {
       autosize: true,
       paper_bgcolor: "transparent",
       plot_bgcolor: "transparent",
-      font: { family: "Inter, Segoe UI, sans-serif", color: "#e1e7e3" },
+      font: { family: "Inter Tight, Inter, Segoe UI, sans-serif", color: "#f1ebe1" },
       margin: { l: 65, r: 25, t: 25, b: 65 },
       xaxis: axis(chart.x) as any,
       yaxis: axis(chart.y) as any,
-      legend: { orientation: "h", y: -0.25, font: { size: 11 } },
+      legend: { orientation: "h", y: -0.25, font: { size: 11, color: "#c9c2b5" } },
       hovermode: "closest",
       shapes,
     },

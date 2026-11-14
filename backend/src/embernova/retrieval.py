@@ -2,12 +2,17 @@ import re
 
 from embernova.dense import dense_scored
 from embernova.evidence import Ledger, source_shape
+from embernova.science.intent import facet_agreement, interpret
 from embernova.storage import Store
 from embernova.tags import with_tags
 
 OUT_OF_SCOPE = re.compile(
     r"\b(rocket|propellants?|thrusters?|launch vehicles?|scramjet|ramjet|afterburners?|"
     r"jet engines?|turbine engines?|solid rocket|rocket motors?)\b",
+    re.IGNORECASE,
+)
+DOMAIN_TERMS = re.compile(
+    r"\b(fire|flam\w*|burn\w*|combust\w*|extinct\w*|ignit\w*|smoke|soot|aerosol|droplet|oxygen|pressure|gravity|spacecraft|habitat|rover|iss|nasa|psi|saffire|flex|bass|cfi|same|spice|soifie|sofie|pmma|kapton|flammab\w*|material\w*|suppression|detector\w*|radiativ\w*|coflow|methanol|heptane|dodecane|ethylene|methane|helium|carbon dioxide|nitrogen|glovebox|precipitator|porous burner)\b",
     re.IGNORECASE,
 )
 
@@ -49,7 +54,14 @@ def fts_query(text: str) -> str:
     return " OR ".join('"' + t + '"' for t in dict.fromkeys(terms))
 
 
-def document_page(store: Store, ledger: Ledger, document_id: str, page: int) -> dict:
+def document_page(
+    store: Store,
+    ledger: Ledger,
+    document_id: str,
+    page: int,
+    offset: int = 0,
+    max_chars: int | None = None,
+) -> dict:
     rows = store.query(
         "SELECT * FROM pages WHERE document_id=? AND page_number=?", (document_id, page)
     )
@@ -78,12 +90,19 @@ def document_page(store: Store, ledger: Ledger, document_id: str, page: int) -> 
         row["text"],
         "reported_in_publication",
     )
-    return {
+    result = {
         **row,
         "evidence_id": ev["evidence_id"],
         "local_pdf_url": pdf,
         "locator_kind": "physical_pdf_page" if pdf else "extracted_part",
     }
+    if max_chars is not None:
+        full_text = row["text"]
+        result["text"] = full_text[offset : offset + max_chars]
+        result["text_offset"] = offset
+        result["text_total_chars"] = len(full_text)
+        result["has_more"] = offset + max_chars < len(full_text)
+    return result
 
 
 def search_documents(
@@ -166,11 +185,45 @@ def scope_notes(query: str) -> list[str]:
     return []
 
 
+def explain(agreement, passages, objectives) -> list[str]:
+    out = []
+    if agreement and agreement["study_type"]:
+        out.append("Study type: " + ", ".join(t.replace("_", " ") for t in agreement["study_type"]))
+    if agreement:
+        by = {"match": [], "partial": [], "differs": [], "unknown": []}
+        for c in agreement["checks"]:
+            by[c["status"]].append(c["detail"])
+        if by["match"]:
+            out.append("Matches: " + "; ".join(by["match"]))
+        if by["partial"]:
+            out.append("Partly matches: " + "; ".join(by["partial"]))
+        if by["differs"]:
+            out.append("Differs: " + "; ".join(by["differs"]))
+        if by["unknown"]:
+            out.append("Not recorded: " + "; ".join(by["unknown"]))
+    if passages:
+        out.append(f"{len(passages)} matching NASA report passage(s) retrieved")
+    if objectives:
+        out.append("Curated fire-safety role: " + ", ".join(objectives))
+    return out or ["Matched on NASA metadata text only"]
+
+
 def search_investigations(
     store: Store, ledger: Ledger, query: str, limit=8, objectives=None, **filters
 ) -> dict:
     previously_registered = set(ledger.items)
     notes = scope_notes(query)
+    intent = interpret(query)
+    if not DOMAIN_TERMS.search(query):
+        return {
+            "results": [],
+            "degraded": "bm25_only",
+            "no_match": True,
+            "notes": notes
+            + [
+                "No combustion or spacecraft fire-safety terms were found; no NASA relevance claim was made."
+            ],
+        }
     q = fts_query(query)
     if not q:
         return {"results": [], "degraded": "bm25_only", "no_match": True, "notes": notes}
@@ -226,6 +279,11 @@ def search_investigations(
         if objectives:
             weights += cfg.retrieval_facet_weight
             total += facet_score * cfg.retrieval_facet_weight
+        agreement = facet_agreement(intent, iid) if intent["requested"] else None
+        if agreement and agreement["score"] is not None:
+            components["scientific_facets"] = agreement["score"]
+            weights += cfg.retrieval_science_weight
+            total += agreement["score"] * cfg.retrieval_science_weight
         final = total / weights if weights else text
         src = {
             "file_id": None,
@@ -248,7 +306,12 @@ def search_investigations(
             {
                 **inv,
                 "score": final,
+                # Displayed 0-100 rank score: query agreement, never a probability or fire risk.
+                "scientific_relevance_score": round(final * 100),
                 "components": components,
+                "facet_checks": agreement["checks"] if agreement else [],
+                "study_type": agreement["study_type"] if agreement else [],
+                "relevance_explanation": explain(agreement, support.get(iid, []), matched),
                 "supporting_passages": support.get(iid, [])[:2],
                 "matched_facets": [
                     {"facet": "fire_safety_objective", "value": o, "evidence_id": ev["evidence_id"]}
@@ -268,11 +331,14 @@ def search_investigations(
     ledger.items = {key: value for key, value in ledger.items.items() if key in exposed}
     return {
         "results": result,
+        "interpretation": intent,
         "degraded": degraded,
         "no_match": not result,
         "notes": notes
         + [
+            "Scientific Relevance Score (0-100) measures agreement with the question's text and curated "
+            "scientific facets. It is not a probability, evidence strength or fire risk.",
             "Ranking uses NASA source metadata and page evidence, fused with semantic retrieval when available. "
-            "Objective filters use curated fire-safety tags. Numeric data availability is shown, not scored."
+            "Objective filters use curated fire-safety tags. Numeric data availability is shown, not scored.",
         ],
     }

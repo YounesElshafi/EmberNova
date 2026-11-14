@@ -1,4 +1,4 @@
-"""Model-ready export: one tidy row per valid measured test, SI units, provenance, data card."""
+"""Model-ready export: one tidy source record per valid table row, SI units and provenance."""
 
 import io
 import zipfile
@@ -87,7 +87,8 @@ def data_card(tools, frame: pd.DataFrame, info: dict, fuel_class: str | None) ->
         f"Scope: {fuel_class or 'all measured tests'}. Rows: {len(frame)}.",
         "",
         "## What a row is",
-        "One measured test from a NASA PSI experiment table, after excluding rows flagged as "
+        "One valid measured source-table record, not necessarily one independent experiment. "
+        "CFI conditions and CFI workbook records may describe the same Flex Number. Rows flagged as "
         "implausible, encoding artifacts or exact duplicates "
         f"({info['excluded']['n']} excluded across the bundle). Design matrices are excluded. "
         "Values are converted to SI units; empty cells are unknown, never zero-filled.",
@@ -127,7 +128,9 @@ def data_card(tools, frame: pd.DataFrame, info: dict, fuel_class: str | None) ->
     lines += [
         "",
         "## Limits",
-        "- All tests are microgravity (ISS or Cygnus). No lunar or Martian gravity test exists in PSI.",
+        "- Flight rows are microgravity records in this local snapshot; Saffire-II columns explicitly named 1-g contain ground comparison measurements and must not be interpreted as microgravity outcomes.",
+        "- Saffire-II oxygen estimates are investigator-derived from CO2, and calculated oxygen partial pressure is derived, not directly measured.",
+        "- No measured lunar or Martian gravity test exists in this local curated snapshot.",
         "- Fuel classes are not interchangeable: droplets, gas flames, solids and smoke sources answer different questions.",
         "- Conditions vary together across tests; fitted relationships are associations within the tested ranges, not fire-safety predictions.",
         "- Burner-stream oxygen (CFI-G inverse flames) is not an ambient atmosphere.",

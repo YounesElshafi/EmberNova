@@ -42,9 +42,14 @@ export function ScientificChart({ chart }: { chart: ChartSpec }) {
           return;
         }
         setReady(true);
-        plot.on("plotly_click", () => {
-          if (chart.provenance.evidence_ids[0])
-            inspect(chart.provenance.evidence_ids[0]);
+        plot.on("plotly_click", (event: { points?: { curveNumber: number; pointNumber: number }[] }) => {
+          const point = event.points?.[0];
+          if (!point) return;
+          const index = chart.series.slice(0, point.curveNumber).reduce((n, series) => n + series.points.x.length, 0) + point.pointNumber;
+          const total = chart.series.reduce((n, series) => n + series.points.x.length, 0);
+          if (chart.provenance.evidence_ids.length === total && chart.provenance.evidence_ids[index])
+            inspect(chart.provenance.evidence_ids[index]);
+          else setError("Point-level source evidence is unavailable for this chart. Use the artifact source list.");
         });
         resize = new ResizeObserver(() => Plotly.Plots.resize(node));
         resize.observe(node);
@@ -198,7 +203,7 @@ function ComparisonTables({ p }: { p: any }) {
                 ))}
                 <td>
                   <span className={d.differs ? "pill warn" : "pill"}>
-                    {d.differs ? "Yes" : "No"}
+                    {d.values.some((v: number | null) => v == null) ? "Unknown" : d.differs ? "Yes" : "No"}
                   </span>
                 </td>
               </tr>

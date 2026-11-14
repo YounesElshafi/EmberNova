@@ -196,6 +196,28 @@ Distance is computed on normalized axes (X_O₂ / 0.05; log10 P / 0.1; flow / 5 
 
 A `media` artifact is created for the top item.
 
+## 12a. `assess_evidence` (added 2026-11-13, full-system audit)
+
+Input: `scenario_label`, `phenomena[]` (facet vocabulary), `fuel_class` (`solid|liquid_droplet|gaseous`), `materials[]` (`PMMA|cotton_fiberglass|Nomex|silicone|Ultem`), `gravity` (`microgravity|lunar|martian|earth`), optional `o2_mole_fraction {min,max}` (mole fraction), `total_pressure`/`flow_velocity {min,max,unit}`, optional `investigation_ids`.
+
+Deterministic (`science/assessment.py`). For every investigation whose curated fuel class or phenomenon relates to the scenario, it reports per-condition status: `match`, `differs`, `unknown`, `simulated` or `planned`. Gravity, fuel class, material and phenomenon come from `curation/investigation_facets.yaml`. Numeric conditions come from measured runs in the Analysis Bundle, and a "Measured outcome" check uses curated outcome quantities.
+
+Classification:
+
+- **direct**: a flight or ground test with matching gravity, fuel/material and phenomenon, a curated outcome measurement, and measured runs inside every requested range.
+- **indirect**: anything related but not direct.
+- Overall **insufficient** when nothing is related.
+
+Simulated partial gravity (aircraft, centrifuge, rotating capsule) and planned lunar experiments are never direct for lunar or Martian scenarios. Microgravity is never treated as planetary gravity. The output carries evidence gaps and the tests needed to close them. Creates an `evidence_assessment` artifact. It is independent of search relevance and never produces a risk score or probability. HTTP: `POST /api/evidence-assessment`.
+
+`search_investigations` additions:
+
+- The response includes an `interpretation` (deterministic facet extraction, `science/intent.py`).
+- Each result carries `scientific_relevance_score` (0–100), `relevance_explanation` (matches / partly matches / differs / not recorded) and `facet_checks`.
+- In agent turns it also creates an `investigation_ranking` artifact rendered as inline cards with NASA source and DOI links.
+
+When agent turns call `find_media`, it creates a `media` artifact. `list_datasets` exposes `descriptor_fields` (e.g. `sample_material`, `flow_direction`).
+
 ## 13. Analysis Lab: `code_interpreter` (hosted, P1)
 
 This is not a function tool. It's the Responses API built-in `{"type":"code_interpreter","container":"<container_id>"}`, included only when the session's Analysis Lab is on. Its contract is the **result-file contract** in [CODE_EXECUTION_SECURITY.md §4](CODE_EXECUTION_SECURITY.md). The backend post-processes container outputs into an `analysis_run` artifact.

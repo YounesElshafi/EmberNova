@@ -1,0 +1,372 @@
+{
+  "source": {
+    "investigation_id": "FM2",
+    "file_id": "NTRS-20260001966-1",
+    "filename": "Ferkul-Lunar and Planetary Science Conf 2026 v2.pdf",
+    "relative_local_path": "investigations/FM2/raw/publications/NTRS-20260001966/Ferkul-Lunar and Planetary Science Conf 2026 v2.pdf",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20260001966/downloads/Ferkul-Lunar%20and%20Planetary%20Science%20Conf%202026%20v2.pdf",
+    "source_record_url": "https://ntrs.nasa.gov/citations/20260001966",
+    "doi": "",
+    "source_version": "",
+    "file_version": "",
+    "sha256": "89c604a71fe33840a79aaad8fdb9942e11b32d88b20af6fa46f3bb48b1b63113",
+    "source_key": ""
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "Material Flammability at Lunar and Martian Gravity\n\n\n\n\n\n                             Paul Ferkul (USRA; NASA GRC)\n                    Nathan Kralik (Case Western Reserve Univ.)\n                         Ya-Ting Liao (Case Western Reserve Univ.)\n                            Michael Johnston (NASA JSC)\n\n\n                        Lunar and Planetary Science Conference\n                              The Woodlands, TX\n                             March 16-20, 2026\n\n\n\n\n\n                                                                                                                                                                      Page 0",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 0"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "                       FM2 Background\n\n\nNASA relies on a 1-g test for screening material flammability for flight.\n•  Material ignited near bottom and flame spreads upward.\n•    If a material passes this test, then it is considered safe for\n   spaceflight.\n•    If material fails, its use is restricted in time, quantity, etc.\n\n\nThis test has been a practical means to assess the great number of\nmaterials that have been screened.\n\n\nHowever, microgravity research has suggested that normal gravity\n                                                                                     Flame Spread in Microgravity over 2.2-cm-wide SIBAL Fabric.\nmay not represent the most flammable condition for a material.\n                                                                                                                     Left: Concurrent flow (comparable to 1-g upward spread).\n                                                                                                         Right: Opposed flow (comparable to 1-g downward spread).\nTheoretical and experimental results have demonstrated that some        In microgravity, both concurrent and opposed-flow flame\nmaterials that will not burn in 1-g will burn in 0-g (with a low-speed       spread are possible, but on Earth, downward flame spread\n                                                                                          (opposed flow) cannot be achieved.\nflow) or in partial gravity (such as Lunar-g).\n                                                                                                        This demonstrates enhanced limits of flammability in\n                                                                                                       microgravity, and suggests similar behavior at partial gravity.\n\n                                                                                                                                                                                                                   Page 1",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 1"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "                  Background Summary\n\n\n\n\n\nThere is mounting evidence that if a material passes the NASA standard test it might fail\nat levels of gravity and flow below 1-g.\n\n\n\nExperiments using drop towers and aircraft have provided valuable information but run\ninto limitations.\n\n\n\nTests on the Moon will resolve some important questions and set the primary\nbenchmark for future tests.\n\n\n\n\n\n                                                                                                                                                                                              Page 2",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 2"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": "                   BPS replanning request\n\n\n\n\nBPS management requested that the FM2 experiment increase alignment with NASA’s\nexploration needs.\n\nBetter alignment with NASA needs was previously identified as an opportunity in the\nScience Concept Review\n\nThe GRC science team agrees that the best opportunity to directly address a stakeholder\nneeds would be to test a material being studied in Phase 3 of the HLS and NESC material\nflammability effort.\n\n\n\n\n\n                                                                                                                                                                                                   Page 3",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 3: BPS replanning request"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "                     Current concept\n\n\n\n\nTest a material with an expected Lunar LOC of 24-26% and an expected oxygen\nconsumption of 0.08 mol fraction\n\n\n\nConduct four tests at 8.2 psi:\n\n     1.  Start at 37% should burn to threshold\n     2.  Start at 33% should burn to threshold\n     3.  Start at 29% should burn to threshold\n     4.  Start at 25% not expected to ignite but would provide a margin of\n        safety if the limit was lower than expected.\n\n\n\n\n\n                                                                                                                                                                                         Page 4",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 4: Current concept"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "Flammability of Materials\non the Moon (FM2)\n\n\n\n\n\n                                                                                          •  Delivered to the Lunar Surface by the\n                                                                    SpaceX uncrewed demo\n                                                                                          •  Atmospheric chamber:\n                                                                                                •   Fill to different oxygen\n                                                                                 concentrations using gas cylinders\n                                                                                                •  Chamber volume 14.4 L\n                                                                                          •  Four 20-cm tall fabric samples burned\n                                                                                       individually; atmosphere is refreshed\n                                                                between burns\n                                                                                          •  Cameras and gas sensors",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 5"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "Flammability of Materials                             FM2 Flight Engineering Model Photographs\non the Moon (FM2)\n\n\n\n\n\n                                                                                                                                                                                                         Page 6",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 6"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "Flammability of Materials                             FM2 Sample card concept\non the Moon (FM2)\n\n\n\n\n\n                                                                                                                                                                                                         Page 7",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 7"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "                    FM2 Objectives\n\n\n\n\nA. Conduct Lunar surface flammability tests that are important to NASA HLS (Human Landing System).\n\nB. Conduct test to assist in validation of the Phase 3 testing in support of HLS and NESC program; Find\n    flammability limit of 1 material per flight at 8.2 psia upward burning.\n\nC. Evaluate the hypothesis that some materials burning in partial-g environments may be more\n    flammable compared to 1-g.\n     1. Obtain data on ignition, flame growth, extinction oxygen levels, and flame spread over solid\n         materials in Lunar gravity and compare to 1-g results.\n     2. Understand how partial gravity changes the solid-gas interactions.\n\nD. Provide a bridge between the current 1-g material screening method and actual behavior in reduced\n     gravity.\n\n\n\n\n\n                                                                                                                                                                                                      Page 8",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 8"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "             FM2 Science Requirements: Chamber and Fuel\n\n\n\n\nInitial Chamber Conditions\n\nEach of the four tests requires its own chamber initial atmosphere as follows with venting to vacuum between tests:\n Test 1: 8.2 psia (+/- 0.3 psi), 37% O2 , balance nitrogen)\n Test 2: 8.2 psia (+/- 0.3 psi), 33% O2 , balance nitrogen)\n Test 3: 8.2 psia (+/- 0.3 psi), 29% O2 , balance nitrogen)\n Test 4: 8.2 psia (+/- 0.3 psi), 25% O2 , balance nitrogen)\n\n\nFuel and mounting\n\n   Fabric sheets (Synergy Pro “Navy”) mounted between thin metal frames\n\n  Expose 2 cm (+/- 0.05 cm) x 20 cm (+/- 0.2 cm) of both sides of the sheet\n\nIgnition\n\n  Hot wire igniter for each individual sample (currently ignites the bottom for upward burns, but could be changed)\n\n\n\n\n\n                                                                                                                                                                                                               Page 9",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 9"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "         FM2 Science Requirements: Imaging and Diagnostics\n\n\n\nTwo Camera views (at least 20 frames/s)\n\n  A camera viewing the front of the samples.\n\n  A camera viewing the back of the samples.\n\nChamber Illumination\n\n  Sample illumination for several frames at a regular interval (e.g.\n  every 5 seconds).\n\nRadiometers\n\n  Two radiometers view the front and back of the samples.\n\nGas sensors\n\n  Oxygen, carbon dioxide, carbon monoxide, humidity\n\n  Record during burn and for one minute (+ 5 s) immediately before\n  and right after.\n\n\n\n\n\n                                                                                                                                                                                                                 Page 10",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 10"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "                       FM2 Summary\n\n\n\n\n\no Normal gravity may not be the most flammable condition.\n\no Drop towers and aircraft are limited by duration and/or\n    Coriolis force effects.\n\no  FM2: First-ever observations and measurements of flame\n   spread on the Moon.\n\no  Provide a bridge between 1-g and future partial-g\n   environments.\n\n\n\n\n\n                                                                          0-g      Lunar-g       1-g\n\n\n\n\n\n                                                                                                                                                                                                             Page 11",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 11"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "2-cm-wide SIBAL fabric burning in Lunar-g\nConditions: Air, 1 atm\n(Playback is at 1/3 speed)\n\n         Upward Spread\n\n\n                                                  Drop Bus\n        Upward Spread\n                                               Chamber\n                                         Dome\n\n\n                                                    Experiment\n                                                        Platform\n                                                            (Turntable)\n\n\n\n    Edge View        Top View\n\n                                     Lunar-g =\n                                    0.165 gE\n                                                                          Normal g\n\n\n      Downward Spread\n\n\n\n\n                                                                                                                                                                                                                 Page 12",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 12"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "                          Suggested Approach\n\n\nIdentify small number of candidate samples\nfrom Phase 3 matrix.\n\nConduct tests at GRC in centrifuge and flow                                                                                Material                Category          Usage        Program   Priority\ntunnel combined with WSTF testing to down       Ortho 116                                     Textile             Suit EPG (outermost layer) EHP/xEVAS EHP 1st\nselect to one material.                                    Rubber, Silicone LT Blue (RTV630)        Elastomer     EMU Boot             EHP/xEVAS EHP 2nd\n                                                                         Natural Synergy Pro                          Textile          CTBs, sleeping bag      HLS/GFP   HLS 1st\n                                                                  Black PBI Max                                Textile          Crew Clothing, sleeping bagHLS/GFP   HLS 2nd\nConduct upward flammability tests with up to 4    Fabric, Teflon, Bleached                     Textile             Suit Glove Back         EHP/xEVAS\n                                                    Nomex                                        Textile        PR Inner walls, etc       EHP/PRsamples\n                                                                       Kevlar Webbing Sturges 34515              Textile              Mobility Aid             HLS/GFP\n                                                                 Rubber, Silicone Conformal Coat RTV3140 Elastomer         Avionics boxes, etc      EHP/PR\nFM2 hardware does not support ignition             Kynar 720 PVDF Film 3 mil               Elastomer      GFP trash bag            Both\n                                                       TC380 Sandwich                      Hard Plastics     Blue Floors            HLS/GFP\napproaches used at WSTF or in Centrifuge. (flow                                                        P212 tape on substrate                Tape           Overwrap Tape           Both\nchange, oxygen change)                                 Kapton with silicone adhesive           Tape           Overwrap Tape           Both\n                                                                M22759/82-22-9 Nickel Plated Copper Wire Wires              Electrical Wiring          Both\n                                                                         with PTFE/Polyimide Insulation\nExpect oxygen concentration to decrease by up   PVC wiring                            Wires              Electrical Wiring          Both\nto 0.08 mol fraction in a test.\n\nThis will enable “scanning” to the limit allowing\neasier ignition since the atmosphere will be\nmore flammable\n\n\n                                                                                                                                                                                                                Page 13",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 13: Suggested Approach"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "Page 14",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 14"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "   Table 2: NASA-STD-6001B Flammability Test 1 Maximum Oxygen Concentration Sample Length Impact\n\n\n\n\n\nFrom \"NASA-STD-6001B Test 1 Upward Flame Propagation; Sample Length Impact on MOC Investigation,\" Susana Tapia Harper, Alfredo Juarez,\nBrenton L. Woods, and Harold D. Beeson, 47th International Conference on Environmental Systems (2017)\n\n\n\n\n                                                                                                                                                                                                               Page 15",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 15"
+        }
+      ],
+      "figure_table_references": [
+        "Table 2"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "                               Flammability Boundary\n\n\n                          % O2\n\n                                                                              1-g Studies                                          QuenchingFlow: Buoyancy, forced convection, or both.\n                                            Branch\nMost experiments: Tests in microgravity but\nwith imposed forced convection.\n\n                                                          Flame           Blowoff\nLunar surface: Unlimited duration to study\n                                                                            Branchflame spread and flammability.\n\n\n\n                                                           No Flame\n\n\n\n                                                        10-4              10-2             1\n   Reference: T’ien, J. S., Diffusion flame extinction at small stretch rates:\n   the mechanism of radiative loss, Combustion and Flame, 1986.        1             4             20\n                                                                                 Gravity Level (g/gEarth) or\n                                                                                     Characteristic Flow Speed (cm/s)                                                                                                                                                                                                                   Page 16",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 16"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": "o  Numerical and experimental evidence suggests that Lunar gravity is nearly the most flammable condition.\no Oxygen concentration for flammability reaches a minimum value in the vicinity of g = gMoon (left; model)\no Downward flame spread rate peaks in partial-g [right, Sacksteder; KC-135 experiments].\n\n\n\n\n\n                                                                                                                                                                                                                    Page 17",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 17"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "         Flammability Boundary for SIBAL fabric from ISS experiments (Zhao et al.)\n\n\n\n\n\nQuenching boundary for SIBAL fabric in concurrent flow in microgravity.\nSolid and dashed lines are the experimental and computational quenching boundaries for the 2.2 cm sample.\n   From: Concurrent flame growth, spread, and quenching over composite fabric samples in low speed purely forced flow in microgravity, Xiaoyang\n   Zhao, Ya-Ting T. Liao, Michael C. Johnston, James S. T'ien, Paul V. Ferkul, Sandra L. Olson, Proc. Comb. Inst. 36 (2017)\n\n\n\n                                                                                                                                                                                                              Page 18",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 18"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "   Flammability Boundary for upward-burning PMMA rods in centrifuge (Olson et al.)\n\n\n\n\n\no  Extinction boundary shaded in green that divides steady flames from extinguished flames in centrifuge drop tests.\n\no Drop tower limits experiment time to ~5 s. Gas phase response time may be short enough, solid time typically too long.\n\n\n                    From: “Partial gravity flammability of cast PMMA rods in concurrent axial stagnation flow,” S.L. Olson, E.S. Neumann, V.M.\n                          Valletta, A.L. Ogorzaly, J.C. Owens, Fire Safety Journal 150 (2024) 104267.\n\n\n                                                                                                                                                                                                               Page 19",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 19"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "               Parabolic Flight Aircraft Testing at Lunar-g\n\n\n          SIBAL, 5 cm wide, Lunar g, 21% O2, 1 atm\n                Day 2, Parabola # 29\n\n\n\n\n\n                0.165gEarth\n\n\n\n\n\nLunar gravity: Steady, downward spread occurs for the entire 20-sec test time.\n\n\n\n                                                                                                                                                                                                Page 20",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 20"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 22,
+      "page_label": null,
+      "text": "                    Parabolic Flight Aircraft Testing at Lunar-g\n\n\n                                                   SIBAL Lunar-g downward burning drop test with centrifuge\n    Test 2-29 5-cm SIBAL downward in Air at\n                                                                  •  Flame base spread rate in air: 0.11 cm/s                   Lunar-g\n   60                                               SIBAL Lunar-g downward burning aircraft test\n(mm)                                                                  •  Flame base spread rate in air: 0.086 cm/s   50\n\n                            Vf = 0.86t + 35.2Length 40                           R² = 0.9969\nFlame 30\nor\n\n   20\nPosition\n   10\nBase\n    0\n      0         5         10        15        20        25Flame                       Time (s)\n\n              Flame base (mm)\n              Flame length (mm)\n                 Linear (Flame base (mm))\n\n\n\n\n\n                                                                                                                                                                                                        Page 21",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 21"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 23,
+      "page_label": null,
+      "text": "  Downward Spread                                     Upward Spread\n\n\n\n\n\n                                                                               0.8\n                                                                           Lunar-g\n\n\n                                                                          0.85\n                                                                           Lunar-g\n\n\n\n0.9                                                                            0.9\nLunar-g                                                                    Lunar-g\n\n\n0.95                                                                      0.95\nLunar-g                                                                    Lunar-g\n\n\n\nLunar-g                                                                    Lunar-g\n\n\n\n\n\n                                                                                                                                                                           Page 22",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 22"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 24,
+      "page_label": null,
+      "text": "              FCoriolis    FLunar-g\n                       FEarth-g\n\n\n\n\n\n       Forces acting on flame\n(Fabric sample shown is 2 cm wide)\n\n\n\n\n                                                                                                                Page 23",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 23"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 25,
+      "page_label": null,
+      "text": "     NASA’s focus on exploration goals will dictate the required cabin atmosphere\n\n\n•  Very frequent EVAs are required to meet mission goals. 100% O2, 4.3 psia (to bend fingers, arms).\n•  HLS, Lunar habitat and pressurized rover will nominally use 8.2 psia / 34% O2, 66% N2 to “engineer-out” risk of\n   decompression sickness.\n•  Control bands are expected to allow up to 37% O2\n\n\n\n\n\n•  Humans respond well to constant oxygen partial pressure (even at reduced total pressure),\n•  Fire responds to total oxygen concentration\n•  Fire risk sets the maximum oxygen boundary\n•  Fire safe materials become increasingly difficult to find as the oxygen concentration increases.\n\n\n\n                                                                                                                                                                                                              Page 24",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 24"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 26,
+      "page_label": null,
+      "text": "                                   Post combustion vent gases for FM2 on CLPs\n\n\nPMMA rod in 34% O2 balance N2 at 8.2 psi (2 tests)         SIBAL fabric in 21% O2 balance N2 at 14.7 psi (2 tests)\n\n         PMMA; 34% O2; 8.2 psi; up to 1.2 g burned                              SIBAL fabric; 21% O2; 14.7 psi; up to 0.54 g burned\n   Final O2 fraction 13% to 21%     Vented Mass O2, g  1.44 to 3.70            Final O2 fraction  17.5% to 21%     Vented Mass O2, g  3.45 to 4.09\n\n   Final N2 fraction 77% to 79%     Vented Mass N2, g  6.3                      Final N2 fraction 78% to 79%       Vented Mass N2, g  13.5\n\n Final CO2 fraction  0 to 7.3%      Vented Mass CO2, g  0 to 2.51              Final CO2 fraction  0 to 3.2%        Vented Mass CO2, g  0 to 0.87\n\n  Final CO fraction  0 to 0.3%       Vented Mass CO, g  0 to 0.080              Final CO fraction  0 to 0.03%       Vented Mass CO, g  0 to 0.0056\n\n Final H2O fraction  0 to 3.1%      Vented Mass H2O, g  0 to 0.86              Final H2O fraction  0 to 1.4%       Vented Mass H2O, g  0 to 0.30\n\n    Soot produced  1 to 12 mg           Soot vented  ~ 0 (filtered)           Soot produced  1 to 5 mg              Soot vented  ~ 0 (filtered)\n\n\n        Totals:     Vented Mass O2, g 10 to 16\n                   Vented Mass N2, g 40\n                  Vented Mass CO2, g Up to 7\n                  Vented Mass CO, g Up to 0.2\n\n                  Vented Mass H2O, g Up to 3\n                         Soot vented ~ 0 (filtered)\n\n\n  (There will be other trace products of combustion, typically in the ppm range or less. )\n\n\n                                                                                                                                                                                                              Page 25",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 25"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 27,
+      "page_label": null,
+      "text": "                 NASA STD-6001 Test 1\n\nNASA currently tests materials for flammability using NASA STD-6001 Test 1, which is\nan upward burning test at the worst-case atmospheric conditions in which the material\nwill be used.  This has historically been 30% O2, 10.2 psia (shuttle pre-EVA atm)\n\n\n\n                                        Sample failing\n                                  NASA Test 1\n                                                  A sample that burns\n                                                      more than 15 cm fails\n                                                                the STD-6001 Test 1.\n\n\n\n\n\n                                                                                                                                   Heat-\n6”                                                                                                       damaged\n                                                                          The “burn length”                                                                                                                                   area\n                                                                                 as defined by the\n                                                                          consumed material\n                                                                                                    length.\n\n\n                                                                                                         Consumed\n                                                                                                                                       material\n\n\n\n                                                                                                                                                             Igniter-\n                                                                                                                                    influenced\n                                                                                                                                      region\n\n\n\n\n                                                                                                                                                                                      Page 26",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Slide 26"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

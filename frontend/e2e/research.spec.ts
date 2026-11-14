@@ -25,12 +25,13 @@ test("verified hosted Python recording renders code and real fuel medians offlin
 test("workspace loads and offers real data tools without a key", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/workspace");
   await expect(
-    page.getByRole("heading", { name: /From flame behavior/ }),
+    page.getByRole("heading", { name: /Ask the evidence/ }),
   ).toBeVisible();
+  await page.getByRole("button", { name: /Explore data/ }).click();
   await expect(
-    page.getByRole("link", { name: "Datasets", exact: true }),
+    page.getByRole("menuitem", { name: /Datasets/ }),
   ).toBeVisible();
   await page.screenshot({
     path: "../build/eval/screens/workspace.png",
@@ -207,7 +208,7 @@ test("disclosures are readable on desktop and mobile", async ({ page }) => {
     "Microgravity results are not measurements at lunar or Martian gravity.",
   );
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
+  await page.goto("/workspace");
   await expect(
     page.getByLabel("Research question", { exact: true }),
   ).toBeVisible();
@@ -220,4 +221,58 @@ test("disclosures are readable on desktop and mobile", async ({ page }) => {
     path: "../build/eval/screens/mobile.png",
     fullPage: true,
   });
+});
+
+test("cinematic intro can be skipped, replayed and never traps the visitor", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const intro = page.getByRole("dialog", { name: "EmberNova introduction" });
+  await expect(intro).toBeVisible();
+  await expect(page.getByRole("button", { name: /Skip intro/ })).toBeFocused();
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowRight");
+  await expect(intro).toContainText("80,000 miles");
+  await expect(intro).toContainText("Aerospace America");
+  await page.keyboard.press("Escape");
+  await expect(intro).toHaveCount(0);
+  await expect(
+    page.getByRole("heading", { name: /In orbit, fire/ }),
+  ).toBeVisible();
+  // The intro plays automatically only once per browser.
+  await page.reload();
+  await expect(intro).toHaveCount(0);
+  await page.getByRole("button", { name: /Replay intro/ }).click();
+  await expect(intro).toBeVisible();
+  await page.getByRole("button", { name: /Skip intro/ }).click();
+  await expect(intro).toHaveCount(0);
+  await page.screenshot({ path: "../build/eval/screens/home.png" });
+});
+test("home question opens the workspace with the question prefilled", async ({
+  page,
+}) => {
+  await page.addInitScript(() =>
+    localStorage.setItem("embernova-intro-seen", "1"),
+  );
+  await page.goto("/");
+  await page.locator("#begin-q").fill("flame spread over fabrics");
+  await page.getByRole("button", { name: /Open in workspace/ }).click();
+  await expect(page).toHaveURL(/\/workspace/);
+  await expect(page.getByLabel("Research question", { exact: true })).toHaveValue(
+    "flame spread over fabrics",
+  );
+});
+test("capabilities page links every capability to a working route", async ({
+  page,
+}) => {
+  await page.goto("/capabilities");
+  await expect(page.locator(".cap-card").first()).toBeVisible();
+  const links = await page.locator(".cap-card a").evaluateAll((as) =>
+    as.map((a) => a.getAttribute("href")),
+  );
+  expect(links.length).toBeGreaterThan(10);
+  for (const href of new Set(links)) {
+    await page.goto(href!);
+    await expect(page.locator(".not-found")).toHaveCount(0);
+  }
 });

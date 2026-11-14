@@ -1,0 +1,93 @@
+{
+  "source": {
+    "investigation_id": "PSI-26",
+    "file_id": "67a3768509ed061032c125fb",
+    "filename": "PSI-26_Experimental table_BASS.csv",
+    "relative_local_path": "investigations/PSI-26_BASS/raw/datasets/PSI-26_Experimental table_BASS.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67a3768509ed061032c125fb&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+    "doi": "10.60555/58h4-dy80",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "ccfc3c54d948b64a1c5d2596a63c7c8019e51df0c91a1d62f039f48fa28c300f",
+    "source_key": "psi-data/PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-26_Experimental table_BASS.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 122,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Date",
+            "header_unit": null,
+            "type_counts": {
+              "text": 122
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "GMT",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 122
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "As Run Test #",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 121
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Test #",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 106,
+              "text": 15
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Sample #",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 121
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Fuel Sample Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 122
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,720 @@
+{
+  "source": {
+    "investigation_id": "PSI-99",
+    "file_id": "6840cdcb4a0e24d624cebd00",
+    "filename": "PSI-99_Raw Data_Saffire Sensor Data Sample 2.xlsx",
+    "relative_local_path": "investigations/PSI-99_SAFFIRE_II/raw/datasets/PSI-99_Raw Data_Saffire Sensor Data Sample 2.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840cdcb4a0e24d624cebd00&version=1&studyVersion=5&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+    "doi": "10.60555/2chp-m469",
+    "source_version": "5",
+    "file_version": "1",
+    "sha256": "9bb089d53193b11b5f6f947a8a1192c7d00e6bf239a83a27b60587b385fc21f0",
+    "source_key": "psi-data/PSI-99/Raw Data/PSI-99_Raw Data_Saffire Sensor Data Sample 2.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "Calibrated Data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 32600,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Elapsed Time (s)",
+            "header_unit": "s",
+            "type_counts": {
+              "integer": 1,
+              "numeric": 16817
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Epoch Time",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Timestamp (ms)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Index",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Average Fan Speed",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "CO2",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "O2",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Anemometer 1",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Anemometer 2",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Ambient Pressure",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "Radiometer 1",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Radiometer 2",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Radiometer 3",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Radiometer 4",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Humidity",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Test Section Inlet Temp",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "Plume Temp 1 (TC1)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "Plume Temp 2 (TC2)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "Plume Temp 3 (TC3)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "Plume Temp 4 (TC4)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "Plume Temp 5 (TC5)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "Plume Temp 6 (TC6)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "Sample Temp 1 (TC7)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "Sample Temp 2 (TC8)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "Sample Temp 3 (TC9)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "Sample Temp 4 (TC10)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "Sample Temp 5 (TC11)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "Sample Temp 6 (TC12)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "Radiometer Temp 1",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "Radiometer Temp 2",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 31,
+            "label_original": "Radiometer Temp 3",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 32,
+            "label_original": "Radiometer Temp 4",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 33,
+            "label_original": "Igniter Current",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 34,
+            "label_original": "Igniter Voltage",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 35,
+            "label_original": "Avionics H&S Temp 1",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 36,
+            "label_original": "Avionics H&S Temp 2",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 37,
+            "label_original": "Avionics H&S Temp 3",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 38,
+            "label_original": "Avionics 24V",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 39,
+            "label_original": "PC104 5V",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 40,
+            "label_original": "PC104 -12V",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 41,
+            "label_original": "PC104 +12V",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16818
+            },
+            "blank_count": 15781,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 42,
+            "label_original": "Igniter Voltage Set Point",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16538,
+              "numeric": 280
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 43,
+            "label_original": "Fan Speed Control",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 16363,
+              "integer": 455
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 44,
+            "label_original": "Igniter Power Enable",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 45,
+            "label_original": "Igniter Select 1",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 46,
+            "label_original": "Igniter Select 2",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 47,
+            "label_original": "Igniter Select 3",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 48,
+            "label_original": "Igniter Select 4",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 49,
+            "label_original": "Igniter Select 5",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 50,
+            "label_original": "Igniter Select 6",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 51,
+            "label_original": "Igniter Select 7",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 52,
+            "label_original": "Igniter Select 8",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 53,
+            "label_original": "Igniter Select 9",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 54,
+            "label_original": "Smoke Wire Select",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 55,
+            "label_original": "LED Power 1",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 56,
+            "label_original": "Camera 1 Trigger",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 57,
+            "label_original": "Camera 2 Trigger",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 58,
+            "label_original": "GSE DIO0",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 59,
+            "label_original": "GSE DIO1",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 60,
+            "label_original": "Camera 1 Power Control",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 61,
+            "label_original": "Camera 2 Power Control",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 62,
+            "label_original": "Anemometer Power Control 1&2",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 63,
+            "label_original": "O2 & CO2 Power Control",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 64,
+            "label_original": "Test Section Fan Power Control",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 65,
+            "label_original": "Fan Tach /100",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 16818
+            },
+            "blank_count": 15782,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

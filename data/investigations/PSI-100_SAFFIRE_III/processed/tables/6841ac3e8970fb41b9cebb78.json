@@ -1,0 +1,1413 @@
+{
+  "source": {
+    "investigation_id": "PSI-100",
+    "file_id": "6841ac3e8970fb41b9cebb78",
+    "filename": "PSI-100_Raw Data_Saffire-III 1 Hz Telemetry Data.xlsx",
+    "relative_local_path": "investigations/PSI-100_SAFFIRE_III/raw/datasets/PSI-100_Raw Data_Saffire-III 1 Hz Telemetry Data.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6841ac3e8970fb41b9cebb78&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+    "doi": "10.60555/040q-4h36",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "a7737c73b8c6fcc5c7598772ee4b367856777fef45e727d68074872e2bdcd161",
+    "source_key": "psi-data/PSI-100/Raw Data/PSI-100_Raw Data_Saffire-III 1 Hz Telemetry Data.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "RawData",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 73462,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "RelativeSeconds",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "CygnusTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "SaffireTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Cyg-Saf TS (ms)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 73462,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Radiometer1Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Radiometer2Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Radiometer3Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Radiometer4Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Anemometer1",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Anemometer2",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "FanTachometer",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "SmokeWireV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "SmokeWireI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Sample1IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Sample1IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Sample2IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "Sample2IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "Sample3IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "Sample3IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "Sample4IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "Sample4IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "Sample5IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "Sample5IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "Sample6IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "Sample6IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "Sample7IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "Sample7IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "Sample8IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "Sample8IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "Sample9IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 31,
+            "label_original": "Sample9IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 32,
+            "label_original": "PCM Air Temp (degC)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10445,
+              "numeric": 1005
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 33,
+            "label_original": "PCM Press EPS1 (psi)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10445,
+              "numeric": 1005
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 34,
+            "label_original": "PCM Press EPS2 (Psi)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1013,
+              "integer": 10437
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 35,
+            "label_original": "PCM Press EPS3 (PSI)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10441,
+              "numeric": 1009
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 36,
+            "label_original": "PCM Press/Temp (psi/K)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 8426,
+              "numeric": 3024
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 37,
+            "label_original": "FIZ1 Smoke Detector Obscuration  (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 38,
+            "label_original": "FIZ 2 Smoke Detector Obscuration (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10442,
+              "numeric": 1008
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 39,
+            "label_original": "FIZ 1 Smoke Detector Scatterometer (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11448,
+              "numeric": 2
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 40,
+            "label_original": "FIZ 2 Smoke Detector Scatterometer (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10440,
+              "numeric": 1010
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 41,
+            "label_original": "FIZ 1 Cabin Fan delta P (Pa)",
+            "header_unit": "Pa",
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 42,
+            "label_original": "FIZ 2 Cabin Fan Delta P (Pa)",
+            "header_unit": "Pa",
+            "type_counts": {
+              "numeric": 1011,
+              "integer": 10439
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 43,
+            "label_original": "body rate x axis (rad/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2021,
+              "integer": 9429
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 44,
+            "label_original": "body rate y axis (rad/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2021,
+              "integer": 9429
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 45,
+            "label_original": "body rate z axis (rad/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2021,
+              "integer": 9429
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 46,
+            "label_original": "acceleration x axis (m/s^2)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 9509,
+              "numeric": 1941
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 47,
+            "label_original": "acceleration y axis (m/s^2)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 9509,
+              "numeric": 1941
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 48,
+            "label_original": "acceleration z axis (m/s^2)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 9509,
+              "numeric": 1941
+            },
+            "blank_count": 62012,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 49,
+            "label_original": "Saffire Repeat?",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 73462,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 50,
+            "label_original": "Row to Row Delta T (ms)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 73462,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "CygnusData",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 69869,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "CygnusTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Relative Time (ms)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Relative Time (s)",
+            "header_unit": "s",
+            "type_counts": {
+              "integer": 46869,
+              "numeric": 11436
+            },
+            "blank_count": 11564,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "PCM Air Temp (degC)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10445,
+              "numeric": 1005
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "PCM Press EPS 1 (psi)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10445,
+              "numeric": 1005
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "PCM Press ECM 2 (psi)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1013,
+              "integer": 10437
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "PCM Press EPS 3 (psi)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10441,
+              "numeric": 1009
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "PCM Press/Temp (psi/K)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 8426,
+              "numeric": 3024
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "FIZ1 Smoke Detector Obscuration  (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "FIZ 2 Smoke Detector Obscuration (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10442,
+              "numeric": 1008
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "FIZ 1 Smoke Detector Scatterometer (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11448,
+              "numeric": 2
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "FIZ 2 Smoke Detector Scatterometer (V)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10440,
+              "numeric": 1010
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "FIZ 1 Cabin Fan delta P (Pa)",
+            "header_unit": "Pa",
+            "type_counts": {
+              "integer": 11450
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "FIZ 2 Cabin Fan Delta P (Pa)",
+            "header_unit": "Pa",
+            "type_counts": {
+              "numeric": 1011,
+              "integer": 10439
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "body rate x axis (rad/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2021,
+              "integer": 9429
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "body rate y axis (rad/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2021,
+              "integer": 9429
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "body rate z axis (rad/s)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2021,
+              "integer": 9429
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "acceleration x axis (m/s^2)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 9509,
+              "numeric": 1941
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "acceleration y axis (m/s^2)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 9509,
+              "numeric": 1941
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "acceleration z axis (m/s^2)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 9509,
+              "numeric": 1941
+            },
+            "blank_count": 58419,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 69869,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "Cygnus-Saffire Time Stamp (ms)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 69869,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 69869,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 69869,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "Saffire timestamp row-to-row delta t (ms)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 69869,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "CygnusSmokeDetectorData",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 58306,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "FIZ 2 Obscuration",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 46870,
+              "numeric": 11435
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 10441,
+              "numeric": 1008
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 58306,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "FIZ 2 Scatter",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 46870,
+              "numeric": 11435
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 10439,
+              "numeric": 1010
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "CygnusPressureData",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 58305,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "CygnusTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Relative Time (ms)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Relative Time (s)",
+            "header_unit": "s",
+            "type_counts": {
+              "integer": 46870,
+              "numeric": 11435
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "PCM EPS 1 Press (psi)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10444,
+              "numeric": 1005
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "PCM EPS 2 Press (psi)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1013,
+              "integer": 10436
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "PCM EPS 3 Press (psi)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10440,
+              "numeric": 1009
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 58305,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Igniter data for line",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1
+            },
+            "blank_count": 58304,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1
+            },
+            "blank_count": 58304,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 58303,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "CygnusTemperatureData",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 58305,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "CygnusTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Relative Time (ms)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11449
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Relative Time (s)",
+            "header_unit": "s",
+            "type_counts": {
+              "integer": 46870,
+              "numeric": 11435
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "PCM Air Temp (degC)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 10444,
+              "numeric": 1005
+            },
+            "blank_count": 46856,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "SaffireData",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 11449,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "SaffireTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "delta timestamp (ms)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 11449,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Relative Time (ms)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Relative Time (s)",
+            "header_unit": "s",
+            "type_counts": {
+              "integer": 14,
+              "numeric": 11435
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Radiometer1Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Radiometer2Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Radiometer3Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Radiometer4Value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Anemometer1",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Anemometer2",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "FanTachometer",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "SmokeWireV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "SmokeWireI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Sample1IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Sample1IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Sample2IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "Sample2IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "Sample3IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "Sample3IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "Sample4IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "Sample4IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "Sample5IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "Sample5IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "Sample6IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "Sample6IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "Sample7IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "Sample7IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "Sample8IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "Sample8IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "Sample9IgniterV",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 31,
+            "label_original": "Sample9IgniterI",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 11449
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 32,
+            "label_original": "Rel-to-Cygnus Time (s)",
+            "header_unit": "s",
+            "type_counts": {
+              "numeric": 19
+            },
+            "blank_count": 11430,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 33,
+            "label_original": "Tach/100",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 19
+            },
+            "blank_count": 11430,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

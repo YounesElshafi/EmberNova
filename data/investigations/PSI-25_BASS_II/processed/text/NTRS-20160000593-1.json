@@ -1,0 +1,187 @@
+{
+  "source": {
+    "investigation_id": "PSI-25",
+    "file_id": "NTRS-20160000593-1",
+    "filename": "20160000593.pdf",
+    "relative_local_path": "investigations/PSI-25_BASS_II/raw/publications/NTRS-20160000593/20160000593.pdf",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20160000593/downloads/20160000593.pdf",
+    "source_record_url": "https://ntrs.nasa.gov/citations/20160000593",
+    "doi": "",
+    "source_version": "",
+    "file_version": "",
+    "sha256": "9f2c89db9e1954c3c44409364ed6764f7e7466250264c28ff2d425350287546c",
+    "source_key": ""
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "   Combustion of Solids in Microgravity: Results from the\n                      BASS-II Experiment\n\n\n\n\n\n                Paul V. Ferkul, National Center for Space Exploration Research\n\n                     Subrata Bhattacharjee, San Diego State University\n\n                   Carlos Fernandez-Pello, University of California at Berkeley\n\n                           Fletcher Miller, San Diego State University\n\n                      Sandra L. Olson, NASA Glenn Research Center\n\n             Fumiaki Takahashi, National Center for Space Exploration Research\n\n                    James S. T’ien, Case Western Reserve University\n\n\n\n*Supported by the NASA Space Life and Physical Sciences Research and Applications Division (SLPSRA)\n\n\n               Poster at the 30th Annual American Society for Gravitational and Space Research Conference, Pasadena, CA; October 22-26, 2014",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "                         Objectives\n\n\n― Study the ignition, flame growth, flame spread, and extinction limits for solid fuels burning in\n   low-velocity forced flows in microgravity.\n\n― Begin to bridge the gap between the normal gravity NASA-STD-6001 Test #1 method,\n   ground-based microgravity tests, and actual material flammability in microgravity.\n\n― Provide SoFIE PIs with preliminary data to refine Science Requirements.\n\n― Practical, realistic (thicker) fuels in typical geometries will be examined, including slabs,\n   cylinders, and spherical sections.\n\n― The primary variables include:\n      •  Forced flow velocity (speed and direction)\n      •  Ambient oxygen concentration (via working volume nitrogen vitiation)\n      •  Sample geometry (rods, spherical section, slabs, films, and fabric sheets)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "                      Approach\n\n\n― Microgravity combustion tests were performed aboard the International Space Station.\n   Active crew support for real-time “lab partner” operations.\n\n― The wind tunnel was installed in the Microgravity Science Glovebox which supplied power,\n   imaging, and a level of containment.\n\n― Fuel samples were mounted inside a small wind tunnel which could impose airflow speeds\n  up to 40 cm/s.\n\n― Main variables are airflow speed and oxygen concentration (oxygen varied below 21% by\n   adding nitrogen).\n\n― Flame appearance, flame growth, and spread rates were determined in both the opposed\n  and concurrent flow.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": "     Why ISS for BASS-II?\n\n\n\n\n― Spacecraft fires are a significant risk factor for human exploration\n\n― Understanding material flammability and suppression in actual spacecraft environments\n   relative to 1g materials screening is needed to mitigate this risk\n\n― Decadal Survey: Required by 2020: “NASA should develop and implement new testing\n   standards to qualify materials for flight. Research is necessary in materials qualification for\n   ignition, flame spread, and generation of toxic and/or corrosive gases in relevant\n   atmospheres and reduced gravity levels.” “Improved methods for screening materials in\n   terms of flammability in space environments will enable safer space missions. Present tests,\n   performed in normal gravity, are not adequate for reduced gravity scenarios.”\n\n― Ground-based drop tower testing provides some data, but long-duration microgravity data is\n  needed to study flammability limits for all but the thinnest films.\n\n― Practical, realistic fuels in typical geometries are examined, including concurrent and\n   opposed-flow flames for the same geometries, which represent fires spreading with the\n   wind, or fires spreading against the wind, or a wake flame burning behind another object.\n\n― Models can be validated and developed.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "                   Science Applications\n\n\n― Understanding of long-duration microgravity solid material burning and extinction\n\n― Improved strategies for NASA spacecraft materials selection; link actual burn behavior in\n   microgravity to Earth-based selection methods\n\n― Improved combustion computational models used in the design of fire detection and\n   suppression systems in microgravity and on Earth\n\n― Validated detailed combustion models in the simpler flow environment of microgravity build\n  more complex combustion models needed to capture the important details of flames\n   burning in normal gravity; models have wide applicability to the general understanding of\n  many terrestrial combustion problems.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "        Hypotheses\n\n\n\n\n                                                                         Typical Flammability Boundary for a Solid Fuel\n― Materials in microgravity, with adequate\n   ventilation, may burn more readily                        0.23\n  compared to normal gravity with other\n                                                                                 0.22\n   conditions being identical (pressure,\n   oxygen concentration, temperature, etc.)              0.21                                                               O2 Mole\n                                                                            Fraction\n― As a result, the 1-g test currently used by               0.20                 Flammable\n  NASA to rate materials for space may                     0.19\n  need to be re-evaluated from a margin-\n                                                                                 0.18\n   of-safety point of view.                                                                                               1-g buoyant                                                                                                                                flow limit\n                                                                                 0.17\n― Testing at constant O2 mole fractions\n                                                                                 0.16   permits studying flame spread and\n                                                                                             Not Flammable\n   extinction at low and high flow speed.                                                                                 0.15\n― We are interested in finding the\n   fundamental limit for a given material.                         1                 10                100\n                                                                                                Flow speed (cm/s)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "         Hardware\n\n                                                                      Sample Images\n\n                                                                               Digital Still            Video\n― BASS-II is a small flow tunnel\n\n― Solid samples were installed, ignited,\n   extinguished, and recorded\n\n― Video and digital still camera provided bulk of\n   the data. Flame appearance, behavior, spread\n   rate, and extinction dynamics were measured\n\n― Main variables\n      •  Airflow speed (0 to 55 cm/s)\n      •  Oxygen concentration (21% and below)\n\n\n\n                                                                           Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "                     Hardware\n\n\n                                   Top Window for BASS-II has a\n                                             bracket used for mounting\n                                         exchangeable samples\n                               Top window                         Air exit\n\n\n\n\n                                      Front window                             Control Box\n\n      Fan section\n\n\n\nPermits variety of solid samples to be mounted, ignited, and burned:    SPICE Hardware\n\n\n\n\n\n  Thin and thick flat            Spherical section      Thick flat           Cylindrical Rods\n      (2-sided)                                          (1-sided)\n\n  (Note: Samples can be flipped 180° if desired for wake ignition)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "Fish-eye view of the inside of the Microgravity Science Glovebox (MSG)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "Microgravity Science Glovebox (MSG)\n\n\n\n\n\n   Astronaut Alex Gerst takes gas\n   species readings after a burn.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "           Residence Time Driven Flame Spread\n\n                     Subrata Bhattacharjee, San Diego State University\n\n\nObjective\n\nExamine how thermal and species fields can diverge and lead to microgravity flame\nextinguishment by varying fuel thickness.\n\n\nStatus\n\n― 22 test points obtained with BASS-II experiments.\n\n― The wealth of data has been catalogued at http://flame.sdsu.edu.\n\n― Samples were 1-cm and 2-cm wide sheets of plastic (PMMA; polymethyl methacrylate).\n\n― Thicknesses were between 0.1 and 0.4 mm.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "           Residence Time Driven Flame Spread\n\n\nComparison of flame extinction at low opposing flow velocity (radiative quenching ) vs. at high\nflow velocities (blow off extinction) for 0.1 mm thick sample.\n\n\n\n\n\n Sequence of top views showing radiative quenching when    Flame nearing blow off extinction as the flow\n flow velocity goes below 2 cm/s.                               velocity crosses 40 cm/s.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "           Material Ignition and Suppression Test\n\n                   Carlos Fernandez-Pello, University of California, Berkeley\n\n\nObjective\n\nUnderstand the effect of space exploration atmospheres (SEA) on the piloted ignition under an\nexternal radiant flux of a representative combustible material, as well as on its fire suppression\ncharacteristics.\n\n\nStatus\n\n― Three different diameters (0.25”, 0.375”, 0.5”) of black and clear PMMA rods were tested.\n\n― Oxygen concentrations between 16% to 21% and flow velocity between 0.4 cm/sec to 4\n   cm/sec were tested. The total set of experiments yielded 54 unique flame spread rates.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "           Material Ignition and Suppression Test\n\n\n\n                                                            3.00E-02\nFlame spread rate as a function of                                                                                  1g Black   1g Clear\nsample diameter for both 1g and μg              2.50E-02\ntests. 1g tests are in natural convection                                                                         μg Black   μg Clear\n                                                            2.00E-02at 21% oxygen environments. Values for                    [cm/sec]\nμg tests are averaged over flow velocity           Rate\nand oxygen concentration.                          1.50E-02\n                                                                                                                                                        SpreadThere is a downward trend in flame               1.00E-02\nspread rate as sample diameter increases                                                                                                                               Flame\nfor both the 1g and μg (microgravity)             5.00E-03\ntests. 1g tests have higher flame spread\nrates than μg.                                        0.00E+00\n                                                                         0.2        0.25         0.3        0.35         0.4        0.45         0.5        0.55\n\n                                                                                        Sample Diameter [in.]\n\n\n\n                                                                                                                                   0.25\" black\n Flame spread rates as a function of oxygen                                                                          0.25\" clear\n concentration for μg tests. All values represent                                                                  0.375\" black\n one percent changes in oxygen concentration                                                                     0.375\" clear                                                                                                                                                                                                                                           [cm/sec]\n binning, and are presented wherever data was         1.00E-02                                                      0.5\" black                                                                                                                     Rate\n collected.\n                                                                                                                                                                                Spread In μg, there is an upward trend in flame spread\n rate as the oxygen concentration is increased                                                                                                                                                   Flame\n when averaging over all tested flow velocities.\n\n                                                                     1.00E-03\n                                                                     16         17         18         19         20         21\n\n                                                                                      Oxygen Concentration",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "              Narrow Channel Validation\n\n                           Fletcher Miller, San Diego State University\n\n\nObjective\n\nObtain microgravity data for flame spread over a thermally thick fuel and use to compare to\ndata from the 1-g Narrow Channel Apparatus (NCA).\n\n\nStatus\n\n― 20 test points obtained with BASS-II experiments.\n\n― Samples were 1-cm and 2-cm wide sheets of plastic (PMMA; polymethyl methacrylate).\n\n― Thicknesses were between 1 and 5 mm.\n\n― Flame are still being analyzed for area covered, brightness, and other factors\n\n\n\n\n\nTwo of the many types of flames observed. Left is more typical of flames at lower opposed flow velocities, with a mostly\nblue flame and a hint of soot formation. Right is somewhat atypical, but flames of this nature were observed during flow\ntransitions and when bubbles in the plastic material burst and disturbed the flow. The high soot concentration glows bright\norange casting a lot of light and makes the bubble layer in the plastic slab easily visible.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "              Narrow Channel Validation\n\n\n\nAll tests were opposed-flow flame spread. The flow speed was varied one or more times\nthroughout each test to see the effect on the flame. The initial oxygen level varied between\n18% and 20%, but dropped somewhat during each test. Video and still images of the flames\nwere used to determine the flame spread rate at each flow rate and within each test.\n\n\n\n\n\nFlame spread rate for single-sided samples, 2 cm wide. Also      Flame spread rate for two-sided samples, 1cm and 2 cm\nshown is one result from the Narrow Channel Apparatus in        wide. Also shown are two results from the Narrow\nnormal gravity.                                             Channel Apparatus in normal gravity.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": " Spacecraft Materials Microgravity Research on Flammability\n\n                       Sandra Olson, NASA Glenn Research Center\n\n\nObjective\n\nObtain microgravity flammability map for two materials to find the minimum oxygen\nconcentration over the range of interest for spacecraft exploration atmospheres.\n\n\nStatus\n\n― 24 plastic rods (PMMA, polymethyl methacrylate) were burned in concurrent (stagnation\n   point) flow obtaining blowoff and quenching extinction limits.\n\n― The 1g blowoff for the ¼” rod is at 16% oxygen, whereas we obtained steady spreading at\n   13.6% oxygen in BASS-II. Thus the material has a negative Oxygen Margin of Safety of 2.4%\n   O2, and the normal gravity flammability limits should be de-rated by at least that much.\n― The minimum in the flammability boundary is at low speed, on the order of diffusive flows.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "Spacecraft Materials Microgravity Research on Flammability\n\n\n\n\n\n                                                                          Flame image very near the\n                                                                         bottom of the flammability\n                                                                                        curve. Near the rod tip the\n                                                                               flame is strongest. The rod is\n                                                                                blackened at the tip, and there\n                                                                                                                      is a clear bubble layer that\n                                                                                 extends along the rod to the\n                                                                        downstream edge of the flame.\n                                                                        Beyond that, there are a few\nPMMA flammability boundary. The minimum in the flammability boundary is at                                                                                     bubbles, but not the dense\nvery low flows, on the order of diffusive flows. This minimum occurs where the flow                                                                                bubbles in the layer beneath\nstill permits enough heat release to sustain the flame but not so strong that it                                                                                 the flame.\nsweeps the fuel out of the hot flame zone before it can react. As ambient O2 is\nreduced, flame temperatures are reduced, which slows down the reaction time.\nThus the flow needed to blow off the flame becomes slower as oxygen decreases\nand the flame temperature is reduced. (Stretch rate = 3/2 U/R)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "              Growth and Extinction Limit\n\n                     James T’ien, Case Western Reserve University\n\n\nObjective\n\nDetermine the flame growth and extinction characteristics for a thick solid fuel as a function of\nflow velocity, oxygen percentage, pressure and the degree of internal heating.\n\n\nStatus\n\n― 29 tests were conducted in total mostly with cotton-fiberglass fabric (SIBAL) and two with a\n   plastic (PMMA; polymethyl methacrylate) spherical section.\n\n― Flame spread and extinction were studied in purely forced concurrent flow in zero-gravity\n   under various oxygen percentages for narrow SIBAL fabric samples. This thin SIBAL composite\n   sample (fabric is woven of 75% cotton, 25% fiberglass) is 1.2-cm or 2.2-cm in width, and 10-\n  cm in length. The samples were ignited at one end by a saw tooth hotwire igniter.\n\n― 6 quenching cases (reducing flow) and 1 blow-off case (increasing flow, 1.2-cm wide sample).",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "              Growth and Extinction Limit\n\n\nLong duration microgravity environment of ISS permits us to (1) carry out a clean experiment to\ndemonstrate the low-speed quenching extinction phenomena and (2) demonstrate that steady\nspread with a limiting flame length can be readily observed in microgravity.\n\nSpread rate, flame shape, flammability limits obtained from the tests will be used to calibrate\nthe detailed 3-D transient numerical model that is under development. The tests give rich\nexperimental data which are very helpful for the validation of the model.\n\n\n\n\n\n              Top view of a typical quenching time sequence. 2.2-cm wide SIBAL fabric sample in\n              1 atm. and 18.7% O2. Ignited at 5 cm/s flow at right end, then reduced to 2.2 cm/s\n                  gradually. Flow is from right to left.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

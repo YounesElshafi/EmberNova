@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-98",
+    "file_id": "683f4a54746db1c87dcebebd",
+    "filename": "PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf",
+    "relative_local_path": "investigations/PSI-98_SAFFIRE_I/raw/documents/PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebebd&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "doi": "10.60555/0t15-1z43",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "c775153b5c68f5aa8bbdcdb455ef9f737f5291da752ce6befe1f5558cf3fd6ce",
+    "source_key": "psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": " SAFFIRE-I Image Directory Nomenclature\n\n\nXn_Raw_CamOriginal    RAW Camera Original - contains 8 byte offset that must be corrected prior\n                           to color interpolation.\n\n\n\nXn_Raw_DistroMaster    RAW Distribution Master - 8 byte offset corrected using ImageJ. Use this\n                                      file set to distribute RAW image files and color interpolation processing.\n\n\n\nXn_Raw2TIFF             RAW_DistroMaster files color interpolated and saved as TIFF, using\n                           IrfanView Batch Conversion process.\n\n\n\nXn_Raw2TIFF_icmad       Raw2TIFF files annotated with ICMAD 'Exposure' and 'Gain' information.\n                         Data is appended to the bottom of each frame using ImageMagick script.\n\n\n\nXn_jpeg                       Flight hardware generated jpeg images, created on-board from the RAW\n                       Camera Original.\n\n\n\nXn_jpeg_corrupt           Jpeg images received corrupted after downlink.\n\n\n\n\nXn_jpeg2png_icmad         Flight hardware generated jpeg images annotated with ICMAD 'Exposure'\n                       and 'Gain' information. Data is appended to the bottom of each frame\n                            using ImageMagick script and re-saved as .png format to prevent\n                             additional compression artifacts.\n\n\n  \"X\" Denotes run type\n  \"n\" Denotes run number",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

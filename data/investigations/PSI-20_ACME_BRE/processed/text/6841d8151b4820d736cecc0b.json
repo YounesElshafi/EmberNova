@@ -1,0 +1,18 @@
+{
+  "source": {
+    "investigation_id": "PSI-20",
+    "file_id": "6841d8151b4820d736cecc0b",
+    "filename": "PSI-20_Science Documents_ACME-BRE_Test_Summary.docx",
+    "relative_local_path": "investigations/PSI-20_ACME_BRE/raw/documents/PSI-20_Science Documents_ACME-BRE_Test_Summary.docx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8151b4820d736cecc0b&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "doi": "10.60555/vb93-3y72",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "c60bcab8c39487114c20936a625db2b705ae53c556442e05dfed2bd599ecc0a6",
+    "source_key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ACME-BRE_Test_Summary.docx"
+  },
+  "method": "OOXML paragraph text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": []
+}

@@ -40,6 +40,8 @@ class Bundle:
                 .df()
                 .rename(columns={"quantity": "name"}),
             ]
+            # Outcome quantities (measurements.parquet) vs controlled conditions.
+            self.measured_quantities = set(frames[1]["name"].dropna().unique())
             self.values = pd.DataFrame.from_records(
                 [record for frame in frames for record in frame.to_dict("records")]
             )

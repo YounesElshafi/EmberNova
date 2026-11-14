@@ -245,6 +245,33 @@ def test_non_extinction_zero_excluded_from_comparison(bundle):
     assert bundle.wide.loc[zeros.index, "extinction_diameter"].eq(0).all()
 
 
+def test_non_extinction_zero_excluded_from_generic_summary(tools, bundle):
+    data, _ = bundle.select([FLEX])
+    expected = int(data.extinction_diameter.gt(0).sum())
+    result = tools.query([FLEX], quantities=["extinction_diameter"], aggregate="summary")
+    measured = next(row for row in result["rows"] if row["value_kind"] == "measured")
+    assert measured["n_runs"] == len(data)
+    assert measured["summary"]["extinction_diameter"]["n"] == expected
+    assert measured["summary"]["extinction_diameter"]["median"] is not None
+
+
+def test_oxygen_only_envelope_with_missing_pressure(bundle):
+    from embernova.science.analyses import envelope
+
+    result = envelope(
+        bundle,
+        {
+            "investigation_ids": ["PSI-25"],
+            "o2_mole_fraction": {"min": 0.2, "max": 0.4},
+            "gravity": "microgravity",
+        },
+        [],
+    )
+    assert result["kind"] == "envelope"
+    assert result["chart"]["series"] == []
+    assert result["o2_only"]
+
+
 def test_d2law_rejects_non_droplet_table(bundle):
     from embernova.science.analyses import d2law
 

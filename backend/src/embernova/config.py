@@ -19,6 +19,8 @@ class Settings(BaseSettings):
     retrieval_facet_weight: float = Field(0.3, ge=0)
     # Data availability is displayed as a badge; scoring it biased relevance toward curated tables.
     retrieval_availability_weight: float = Field(0.0, ge=0)
+    # Curated scientific-facet agreement (curation/investigation_facets.yaml); tuned on dev split.
+    retrieval_science_weight: float = Field(0.5, ge=0)
     # Cosine floors measured on the retrieval benchmark vs unrelated text (2026-11-13).
     retrieval_dense_min_profile_sim: float = Field(0.35, ge=0, le=1)
     retrieval_dense_min_chunk_sim: float = Field(0.45, ge=0, le=1)

@@ -1,0 +1,52 @@
+{
+  "source": {
+    "investigation_id": "PSI-115",
+    "file_id": "683da39bf91ab4427dbf44e6",
+    "filename": "PSI-115_Analyzed Data_8cmGravityNucRate.dat",
+    "relative_local_path": "investigations/PSI-115_Utilization_of_the_Smoke_Aerosol/raw/datasets/PSI-115_Analyzed Data_8cmGravityNucRate.dat",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-115/download?file=683da39bf91ab4427dbf44e6&version=2&studyVersion=3&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-115",
+    "doi": "10.60555/q0v5-1v28",
+    "source_version": "3",
+    "file_version": "2",
+    "sha256": "227c35f727510508c5072f5b80aeee98e67c04a05a0908ab8bdc25de3ccc8c2e",
+    "source_key": "psi-data/PSI-115/Analyzed Data/PSI-115_Analyzed Data_8cmGravityNucRate.dat"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "whitespace numeric tokens",
+    "encoding": "utf-8-sig",
+    "source_header_record": [
+      "960",
+      "240",
+      "1",
+      "1"
+    ],
+    "source_title": null,
+    "nonfinite_tokens": {
+      "-Infinity": 140476
+    },
+    "sheets": [
+      {
+        "name": "PSI-115_Analyzed Data_8cmGravityNucRate.dat",
+        "header_assumption": "source layout profiled without a measurement schema",
+        "header_verified": false,
+        "row_count": 230400,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Column 1 (source unlabeled)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 140476,
+              "numeric": 89924
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

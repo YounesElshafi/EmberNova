@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EmberNova investigation metadata",
+  "type": "object",
+  "required": ["source_id", "title", "source_type", "source_url", "priority", "retrieved_date", "metadata_path"],
+  "properties": {
+    "source_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string"},
+    "source_type": {"enum": ["psi_investigation", "supplemental_investigation"]},
+    "source_url": {"type": "string", "format": "uri"},
+    "priority": {"enum": ["A", "B", "C", "D"]},
+    "retrieved_date": {"type": "string", "format": "date"},
+    "metadata_path": {"type": "string"},
+    "acronym": {"type": ["string", "null"]},
+    "source_version": {"type": ["integer", "string", "null"]},
+    "doi": {"type": ["string", "null"]},
+    "file_count": {"type": ["integer", "null"], "minimum": 0},
+    "inventoried_bytes": {"type": ["integer", "null"], "minimum": 0},
+    "publications": {"type": "array"},
+    "related_investigations": {"type": "array", "items": {"type": "string"}},
+    "inventory_errors": {"type": "object"}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-68",
+    "file_id": "685da234ee20136af5401370",
+    "filename": "PSI-68_Engineering Documents_67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf",
+    "relative_local_path": "investigations/PSI-68_FLEX_2/raw/documents/PSI-68_Engineering Documents_67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da234ee20136af5401370&version=1&studyVersion=6&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "doi": "10.60555/byp8-h018",
+    "source_version": "6",
+    "file_version": "1",
+    "sha256": "653a023fa81938c044ea4799a593648769ce10cae6851564c85de66870d095ff",
+    "source_key": "psi-data/PSI-68/Engineering Documents/PSI-68_Engineering Documents_67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    }
+  ]
+}

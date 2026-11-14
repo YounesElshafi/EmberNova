@@ -1,0 +1,823 @@
+{
+  "source": {
+    "investigation_id": "PSI-101",
+    "file_id": "683dc532b8656d2315bf509f",
+    "filename": "PSI-101_Analyzed Data_94 Kapton aged- results.xlsx",
+    "relative_local_path": "investigations/PSI-101_SAME_R/raw/datasets/PSI-101_Analyzed Data_94 Kapton aged- results.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc532b8656d2315bf509f&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+    "doi": "10.60555/2np7-jv14",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "8950c69bd71977e37e069288a16e4c94b63bb5ea64f22d0ebed38de81d5afba4",
+    "source_key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_94 Kapton aged- results.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "Results94 post-3",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 766,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "XM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "YM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "BX",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "BY",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 766
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Results94 post-4",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 508,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 508
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 508
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "XM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 508
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "YM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 507,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 508
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "BX",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 508
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "BY",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 507,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 508
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 508
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Results 94 post-5",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 484,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 484
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 484
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "XM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 484
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "YM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 483,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 484
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "BX",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 483,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "BY",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 483,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 484
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 484
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Results 94 post-6",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 272,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 272
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 272
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "XM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 272
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "YM",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 271,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 272
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "BX",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 272
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "BY",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 271,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 272
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 272
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "all data big only",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1370,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Summary Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 1367,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 1355,
+              "integer": 1
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9,
+              "numeric": 1356
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 1362
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 7,
+              "numeric": 1357
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 1368,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 1356
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 1355
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1370,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1370,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "all data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 2047,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Summary Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 2044,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 2032
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9,
+              "numeric": 2033
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 2039
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 7,
+              "numeric": 2034
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 2045,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 2033
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 2032
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 2047,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 2047,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Binned data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 63,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Binned Data Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 60,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 1
+            },
+            "blank_count": 59,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 1
+            },
+            "blank_count": 59,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 1
+            },
+            "blank_count": 60,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 60,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 59,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 2
+            },
+            "blank_count": 59,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 1
+            },
+            "blank_count": 60,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 55,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 55,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 2
+            },
+            "blank_count": 59,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 1
+            },
+            "blank_count": 60,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 6
+            },
+            "blank_count": 57,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 59,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 55,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 55,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

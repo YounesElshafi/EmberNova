@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-115",
+    "file_id": "683da39ef91ab4427dbf4512",
+    "filename": "PSI-115_Science Documents_DataOrganizationDocument.pdf",
+    "relative_local_path": "investigations/PSI-115_Utilization_of_the_Smoke_Aerosol/raw/documents/PSI-115_Science Documents_DataOrganizationDocument.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-115/download?file=683da39ef91ab4427dbf4512&version=2&studyVersion=3&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-115",
+    "doi": "10.60555/q0v5-1v28",
+    "source_version": "3",
+    "file_version": "2",
+    "sha256": "754cd3b7e1f1334f7de75abbdc0fac2687bc451c76d36245b66a5315c01d7253",
+    "source_key": "psi-data/PSI-115/Science Documents/PSI-115_Science Documents_DataOrganizationDocument.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "PSI Data Organization Document\nUtilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation\nof Smoke Generation in Micro-Gravity\n\nTo gain an initial understanding of this experiment, refer to the Final Report, located on “Pub and Docs”\ntab of this Investigation Record. The simulation data is organized in PSI in “Experiment Data” on the\n“Data” tab, in two high level categories:\n\n    •   Earth Gravity Figure Data\n    •   Microgravity Figure Data\n\nThe simulation data is further categorized into specific cases:\n\n    •  Case 1 with inlet velocity: Uo = 0:08 m/s\n    •  Case 2 with inlet velocity: Uo = 0:1 m/s\n\nAdditional test parameters and conditions are located in Table 3 of the Final Report:\n\n\n\n\n\nWhere EG = Earth Gravity; MG = Microgravity; Uo = Inlet Velocity; go = Gravitational Acceleration; Re =\nReynolds number; Fr = Froude number.\n\nIn addition to the four base cases listed in Table 3 of the Final Report, and as shown above, the data is\nfurther categorized as the researcher examines the aerosol development sensitivity to:\n\n    •   Particle settling\n    •   Thermophoresis\n    •  The flow geometry\n\n\nFor this purpose, a series of additional cases, defined in Table 3 of the Final Report, and as shown\nabove, are constructed by modifying the setup of Case 1MG and/or Case 1EG.\n\n    •   Case1-Earth Gravity-NS: (where NS stands for “no settling”) is identical to Case1-Earth Gravity\n       except the settling mechanism has been neglected.\n    •   Case1-Earth Gravity-R: (where R stands for “rotated”) is identical to Case1-Earth Gravity except\n        the heated vapor source has been rotated 90o.\n    •   Case1-Microgravity-NT: (where NT stands for “no thermophoresis”) is identical to Case1-\n        Microgrativy except the thermophoresis transport mechanism has been neglected.\n    •   Cases1Microgravity-R: (where R stands for “rotated”) is identical to Case1-Microgrativy except\n        the heated vapor source has been rotated 90o.\n\nIn all cases, data is collected and presented at a time of t = 7 seconds.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

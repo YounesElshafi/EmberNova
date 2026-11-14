@@ -1,0 +1,1928 @@
+{
+  "source": {
+    "investigation_id": "PSI-101",
+    "file_id": "683dc531b8656d2315bf509a",
+    "filename": "PSI-101_Analyzed Data_62 Kapton aged issue with bins.xlsx",
+    "relative_local_path": "investigations/PSI-101_SAME_R/raw/datasets/PSI-101_Analyzed Data_62 Kapton aged issue with bins.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc531b8656d2315bf509a&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+    "doi": "10.60555/2np7-jv14",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "76fb4542d784d39c4ea03849d4d3d913b940ed209611e9fc6a0d0249eeee3355",
+    "source_key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_62 Kapton aged issue with bins.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "Results 64-pre-2 new",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 256,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Diameter",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Volume",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "LN(D)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 256,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Area rect.",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "diameter equiv sphere",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "volume",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "LN(D)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 255,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "AR",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 242,
+              "integer": 2
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Round",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 243,
+              "integer": 1
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Solidity",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 242,
+              "integer": 2
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Results 64-pre-9",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 142,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 131,
+              "text": 2
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 140,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Diameter",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 139,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Volume",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 139,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "LN(D)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 139,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 140,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Circ.",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "AR",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Round",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Solidity",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 142,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Results 64-pre-10",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 112,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Diameter",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Volume",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "LN(D)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Circ.",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "AR",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Round",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Solidity",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 112,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Results 64-pre-11",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 86,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Diameter",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Volume",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "LN(D)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Circ.",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "AR",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Round",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Solidity",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 86,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Results 64-pre-12",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 98,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": " ",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Area",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Diameter",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Volume",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "LN(D)",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Perim.",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Width",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Height",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Circ.",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "AR",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Round",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Solidity",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 98,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "ANOVA results",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 23,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Anova: Single Factor",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Diam data",
+        "row_count": 0,
+        "columns": []
+      },
+      {
+        "name": "all data sort big only",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1968,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Summary Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 16,
+              "integer": 783
+            },
+            "blank_count": 1169,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 798,
+              "integer": 1
+            },
+            "blank_count": 1165,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9,
+              "numeric": 799
+            },
+            "blank_count": 1160,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 805
+            },
+            "blank_count": 1160,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 7,
+              "numeric": 800
+            },
+            "blank_count": 1161,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 1966,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 799
+            },
+            "blank_count": 1165,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 798
+            },
+            "blank_count": 1167,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1968,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1968,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "all data sort",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1989,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Summary Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 16,
+              "integer": 804
+            },
+            "blank_count": 1169,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 819
+            },
+            "blank_count": 1167,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9,
+              "numeric": 820
+            },
+            "blank_count": 1160,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 826
+            },
+            "blank_count": 1160,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 7,
+              "numeric": 821
+            },
+            "blank_count": 1161,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 1987,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 820
+            },
+            "blank_count": 1165,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 819
+            },
+            "blank_count": 1167,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1989,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1989,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "all data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1989,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Summary Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 16,
+              "integer": 804
+            },
+            "blank_count": 1169,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 819
+            },
+            "blank_count": 1167,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9,
+              "numeric": 820
+            },
+            "blank_count": 1160,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 826
+            },
+            "blank_count": 1160,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 7,
+              "numeric": 821
+            },
+            "blank_count": 1161,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 1987,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 820
+            },
+            "blank_count": 1165,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 819
+            },
+            "blank_count": 1167,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1989,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 1989,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "SizeDist",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 56,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 53,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 53,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 54,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 54,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Lognormal Dist. With following parameters",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 52,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2,
+              "text": 2
+            },
+            "blank_count": 52,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 54,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2
+            },
+            "blank_count": 54,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 54,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 2
+            },
+            "blank_count": 54,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1
+            },
+            "blank_count": 55,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 1
+            },
+            "blank_count": 54,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Binned data (2)",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 71,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Binned Data Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 2,
+              "numeric": 55
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 58
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 59
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 58
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 35,
+              "integer": 10
+            },
+            "blank_count": 24,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 36,
+              "integer": 10
+            },
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 45
+            },
+            "blank_count": 24,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 45
+            },
+            "blank_count": 24,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 10
+            },
+            "blank_count": 19,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 10
+            },
+            "blank_count": 19,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 1,
+              "numeric": 45
+            },
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 45
+            },
+            "blank_count": 24,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 37,
+              "integer": 10
+            },
+            "blank_count": 21,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 36,
+              "integer": 10
+            },
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 10
+            },
+            "blank_count": 19,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 10
+            },
+            "blank_count": 19,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Binned data bi g only",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 71,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Binned Data Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 2,
+              "numeric": 55
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 58
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 59
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 43
+            },
+            "blank_count": 26,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 26,
+              "integer": 16
+            },
+            "blank_count": 27,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 27,
+              "integer": 16
+            },
+            "blank_count": 26,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 1,
+              "numeric": 57
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 42
+            },
+            "blank_count": 27,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 29,
+              "integer": 16
+            },
+            "blank_count": 22,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 29,
+              "integer": 16
+            },
+            "blank_count": 22,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 43
+            },
+            "blank_count": 26,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 42
+            },
+            "blank_count": 27,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 5,
+              "numeric": 30,
+              "integer": 16
+            },
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 27,
+              "integer": 16
+            },
+            "blank_count": 26,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 29,
+              "integer": 16
+            },
+            "blank_count": 22,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 29,
+              "integer": 16
+            },
+            "blank_count": 22,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Binned data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 71,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Binned Data Calculations",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 2,
+              "numeric": 55
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 58
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 59
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 58
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 35,
+              "integer": 22
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 36,
+              "integer": 22
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 1,
+              "numeric": 57
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 57
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 22
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 22
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 58
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 57
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "numeric": 37,
+              "integer": 22
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 36,
+              "integer": 22
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 22
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "numeric": 38,
+              "integer": 22
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Comments on binned data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 20,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "comments",
+            "header_unit": null,
+            "type_counts": {
+              "text": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1
+            },
+            "blank_count": 19,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

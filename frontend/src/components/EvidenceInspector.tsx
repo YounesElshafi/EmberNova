@@ -102,7 +102,19 @@ export function EvidenceInspector({ id }: { id: string }) {
         <dt>SHA-256</dt>
         <dd className="hash">{e.source.sha256 || "Unknown"}</dd>
         <dt>DOI</dt>
-        <dd>{e.source.doi || "Unknown"}</dd>
+        <dd>
+          {e.source.doi ? (
+            <a
+              href={`https://doi.org/${e.source.doi}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {e.source.doi}
+            </a>
+          ) : (
+            "Unknown"
+          )}
+        </dd>
         <dt>Transformations</dt>
         <dd>
           {e.transform?.join(" → ") || "Source text; no numerical transform"}

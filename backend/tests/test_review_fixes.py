@@ -66,7 +66,20 @@ def test_scores_are_not_min_max_normalized_and_availability_is_not_scored(tools)
     assert tools.store.cfg.retrieval_availability_weight == 0
     for r in result["results"]:
         assert 0 <= r["components"]["text_rrf"] <= 1
-        assert r["score"] == pytest.approx(r["components"]["text_rrf"])
+        # Final score = weighted mean of text RRF and curated scientific-facet agreement only.
+        cfg = tools.store.cfg
+        sci = r["components"].get("scientific_facets")
+        expected = (
+            r["components"]["text_rrf"]
+            if sci is None
+            else (
+                r["components"]["text_rrf"] * cfg.retrieval_text_weight
+                + sci * cfg.retrieval_science_weight
+            )
+            / (cfg.retrieval_text_weight + cfg.retrieval_science_weight)
+        )
+        assert r["score"] == pytest.approx(expected)
+        assert r["scientific_relevance_score"] == round(r["score"] * 100)
 
 
 # --- B1: newly curated NASA tables -------------------------------------------------------
@@ -258,6 +271,6 @@ def test_numeric_audit_flags_numbers_missing_from_cited_evidence():
     audit = validate(text, ledger, {}, "tests at 30-34% oxygen")["audit"]
     assert audit["ungrounded_numbers"] == 1
     assert "0.91" in audit["details"][0]
-    # A value returned by this turn's deterministic tools is grounded; an invented one is not.
+    # A value in an unrelated tool response cannot support the cited claim.
     grounded = validate(text, ledger, {}, "", ['{"median": 0.912}'])["audit"]
-    assert grounded["ungrounded_numbers"] == 0
+    assert grounded["ungrounded_numbers"] == 1

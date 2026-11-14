@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-22",
+    "file_id": "6851e75d0eb4c0867600557f",
+    "filename": "PSI-22_Science Documents_E-FIELD_Flames_benefits_20200518.pdf",
+    "relative_local_path": "investigations/PSI-22_ACME_E_FIELD_Flames/raw/documents/PSI-22_Science Documents_E-FIELD_Flames_benefits_20200518.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75d0eb4c0867600557f&version=1&studyVersion=7&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "doi": "10.60555/se5a-8c73",
+    "source_version": "7",
+    "file_version": "1",
+    "sha256": "92cd28cb2d5adc508fd8f29950ad98650c50e38f2a55d272c6d9892676f991ae",
+    "source_key": "psi-data/PSI-22/Science Documents/PSI-22_Science Documents_E-FIELD_Flames_benefits_20200518.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "                                                                         18 May 2020\nAdvanced Combustion via Microgravity Experiments (ACME)\nElectric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames)\nACME/E-FIELD Flames - Impacts, Benefits, and Products\n       Prepared by Dennis Stocker, ACME Project Scientist, dennis.p.stocker@nasa.gov, 216-433-2166\n\nImpacts, Benefits, and Products\nThis text is the ‘Impacts, Benefits, and Products’ section from the 2019 version of the final report.\n\nThe impact of this work is, as the original objectives identified, the delivery of a unique data set of chemi-\nion behavior in flames under sufficiently stable and symmetric conditions that models and theories can\nbe evaluated against the results. As an example, the very distinctive shape of the V-I curve in microgravity,\nwhen matched in models, will give a very good indication that the feedback between ion driven wind and\nchanges in flame shape and burning behavior that then further change the ion current is captured\naccurately.\n\nThese results have already garnered the interest of other groups working on electric field effects on\nflames.\n\nThe use of electric field effects on flames can be as sensor (variations of ion current as associated with\ncombustion behavior) or actuator (ion-driven wind changes the flame shape and characteristics).  This\nwork, as was originally planned, provides quantitative evaluation of the sensing and response potential of\nelectric fields in combustion. The applications can include the control of flames.\n\nPatents\nThus far, no patents have resulted from the E-FIELD Flames research.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

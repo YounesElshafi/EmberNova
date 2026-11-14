@@ -1,0 +1,1428 @@
+{
+  "source": {
+    "investigation_id": "PSI-26",
+    "file_id": "67dafcfac3501a37c2c60de0",
+    "filename": "PSI-26_Science Documents_As Run_Test Matrix.xlsx",
+    "relative_local_path": "investigations/PSI-26_BASS/raw/documents/PSI-26_Science Documents_As Run_Test Matrix.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcfac3501a37c2c60de0&version=2&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+    "doi": "10.60555/58h4-dy80",
+    "source_version": "4",
+    "file_version": "2",
+    "sha256": "850910541fc9c802d00aa9de14758205103642184249b419c09868df2fbea6e8",
+    "source_key": "psi-data/PSI-26/Science Documents/PSI-26_Science Documents_As Run_Test Matrix.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "as run matrix",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 133,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "BASS   Test  Matrix as Run",
+            "header_unit": null,
+            "type_counts": {
+              "text": 14,
+              "datetime": 112
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 118,
+              "integer": 1,
+              "timedelta": 6
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9,
+              "integer": 121
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 17,
+              "integer": 106
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 121
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 123
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 123
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {
+              "unknown": 1
+            }
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 121
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 85,
+              "integer": 17
+            },
+            "blank_count": 31,
+            "possible_missing_markers": {
+              "n/a": 1
+            }
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 82,
+              "integer": 39,
+              "numeric": 1
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 64,
+              "integer": 41,
+              "numeric": 5
+            },
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 5,
+              "integer": 117
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18,
+              "numeric": 10
+            },
+            "blank_count": 105,
+            "possible_missing_markers": {
+              "n/a": 1
+            }
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 23,
+              "integer": 77
+            },
+            "blank_count": 33,
+            "possible_missing_markers": {
+              "n/a": 7
+            }
+          },
+          {
+            "index": 15,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 77,
+              "integer": 3
+            },
+            "blank_count": 53,
+            "possible_missing_markers": {
+              "n/a": 71
+            }
+          },
+          {
+            "index": 16,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 123
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 122
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 121
+            },
+            "blank_count": 12,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21,
+              "integer": 101
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 108
+            },
+            "blank_count": 25,
+            "possible_missing_markers": {
+              "n/a": 81,
+              "N/A": 3
+            }
+          },
+          {
+            "index": 21,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18,
+              "integer": 92,
+              "numeric": 5
+            },
+            "blank_count": 18,
+            "possible_missing_markers": {
+              "n/a": 8
+            }
+          },
+          {
+            "index": 22,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 111,
+              "integer": 11
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 121
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 118,
+              "integer": 4
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 121
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 51,
+              "integer": 64
+            },
+            "blank_count": 18,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 123
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 123
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 6,
+              "numeric": 113
+            },
+            "blank_count": 14,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 125
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "2012",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 84,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "BASS   Test  Matrix as Run",
+            "header_unit": null,
+            "type_counts": {
+              "text": 14,
+              "datetime": 69
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 83
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 75,
+              "integer": 1,
+              "timedelta": 6
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 80
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 15,
+              "integer": 67
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 80
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 82
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 81
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 80
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 65,
+              "integer": 15
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 49,
+              "integer": 32,
+              "numeric": 1
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 44,
+              "integer": 31,
+              "numeric": 5
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "integer": 79
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 13,
+              "numeric": 2
+            },
+            "blank_count": 69,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 19,
+              "integer": 62
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {
+              "n/a": 4
+            }
+          },
+          {
+            "index": 16,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 65,
+              "integer": 3
+            },
+            "blank_count": 16,
+            "possible_missing_markers": {
+              "n/a": 59
+            }
+          },
+          {
+            "index": 17,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 82
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 81
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 81
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21,
+              "integer": 60
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 82
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {
+              "n/a": 63,
+              "N/A": 3
+            }
+          },
+          {
+            "index": 22,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 12,
+              "integer": 57,
+              "numeric": 5
+            },
+            "blank_count": 10,
+            "possible_missing_markers": {
+              "n/a": 8
+            }
+          },
+          {
+            "index": 23,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 70,
+              "integer": 11
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 80
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 77,
+              "integer": 4
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 79
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 36,
+              "integer": 39
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 80
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 80
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 6,
+              "numeric": 75
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 31,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 82
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "2013",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 50,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "BASS   Test  Matrix as Run",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "datetime": 43
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "datetime": 43
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 44
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8,
+              "integer": 41
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "integer": 39
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 41
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 42
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 43
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {
+              "unknown": 1
+            }
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 41
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21,
+              "integer": 2
+            },
+            "blank_count": 27,
+            "possible_missing_markers": {
+              "n/a": 1
+            }
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 35,
+              "integer": 7
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21,
+              "integer": 10
+            },
+            "blank_count": 19,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4,
+              "integer": 38
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 6,
+              "numeric": 8
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {
+              "n/a": 1
+            }
+          },
+          {
+            "index": 15,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 5,
+              "integer": 15
+            },
+            "blank_count": 30,
+            "possible_missing_markers": {
+              "n/a": 3
+            }
+          },
+          {
+            "index": 16,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 13
+            },
+            "blank_count": 37,
+            "possible_missing_markers": {
+              "n/a": 12
+            }
+          },
+          {
+            "index": 17,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 43
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 42
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 41
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 41
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 27
+            },
+            "blank_count": 23,
+            "possible_missing_markers": {
+              "n/a": 18
+            }
+          },
+          {
+            "index": 22,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 7,
+              "integer": 35
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 42
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 41
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 42
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "integer": 42
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 16,
+              "integer": 25
+            },
+            "blank_count": 9,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 43
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 43
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 38
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 31,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 44
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Data without TP",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 39,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Data Folder",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 35
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Type of data",
+            "header_unit": null,
+            "type_counts": {
+              "text": 38
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "TP without Data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 9,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Actual Date  (for SPICE Display Date, add 1 for Leap Year)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "datetime": 4
+            },
+            "blank_count": 3,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Approx Start Time ( with GMT)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "As run test no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Test no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Sample no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Igniter",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Sample distance",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Radiometer gain ( 1000, 250, 50, 10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3,
+              "text": 1
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Radiometer display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 7,
+            "possible_missing_markers": {
+              "n/a": 1
+            }
+          },
+          {
+            "index": 14,
+            "label_original": "GN2 Pot",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1
+            },
+            "blank_count": 8,
+            "possible_missing_markers": {
+              "n/a": 1
+            }
+          },
+          {
+            "index": 15,
+            "label_original": "GN2 display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {
+              "n/a": 3
+            }
+          },
+          {
+            "index": 16,
+            "label_original": "Filter y/n",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "Release Mode (CH/CL)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "Exposure Mode (M/A)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "Exposure compensation   (-#EV)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "Bracket frames and exposure bracket (#F/ 1.0)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {
+              "n/a": 1
+            }
+          },
+          {
+            "index": 21,
+            "label_original": "shutter speed (1/s)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3,
+              "integer": 1
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "F stop",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "ISO",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "shutter hold s /cont",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "SD card S/N",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "total frames shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "O2 % by volume",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "pressure, atm",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "CO2, mm Hg",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "Test Observations and Anomalies (ignited, spread, extinguished, burn time, color, etc.) ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 5,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

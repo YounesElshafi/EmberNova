@@ -1,0 +1,19 @@
+{
+  "source_id": "LUCI",
+  "title": "Lunar-g Combustion Investigation",
+  "source_type": "supplemental_investigation",
+  "source_url": "https://www.nasa.gov/centers-and-facilities/glenn/nasa-fire-safety-test-took-on-reduced-gravity/",
+  "priority": "D",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Flew in 2025. NASA published results for simulated lunar gravity. No PSI accession or standalone run-data release located.",
+  "metadata_path": "investigations/LUCI/metadata.json",
+  "scientific_category": "Combustion Science",
+  "acronym": "LUCI",
+  "research_program": "NASA Flight Opportunities",
+  "platform": "Blue Origin New Shepard rotating suborbital capsule",
+  "principal_investigator": null,
+  "references": [
+    "https://ntrs.nasa.gov/citations/20250010653"
+  ],
+  "gravity_context": "Simulated lunar gravity by centrifugal acceleration."
+}

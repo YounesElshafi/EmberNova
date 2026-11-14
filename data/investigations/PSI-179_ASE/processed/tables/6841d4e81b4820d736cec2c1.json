@@ -1,0 +1,90 @@
+{
+  "source": {
+    "investigation_id": "PSI-179",
+    "file_id": "6841d4e81b4820d736cec2c1",
+    "filename": "PSI-179_Analyzed Data_16_PAS K Partition Image Analysis Summary.xlsx",
+    "relative_local_path": "investigations/PSI-179_ASE/raw/datasets/PSI-179_Analyzed Data_16_PAS K Partition Image Analysis Summary.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-179/download?file=6841d4e81b4820d736cec2c1&version=1&studyVersion=1&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-179",
+    "doi": "10.60555/pdgr-c961",
+    "source_version": "1",
+    "file_version": "1",
+    "sha256": "2316830461f96b4cb0360cc850dbf1275e0795409f9eec8d7b993c3270639a3d",
+    "source_key": "psi-data/PSI-179/Analyzed Data/PSI-179_Analyzed Data_16_PAS K Partition Image Analysis Summary.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "Sheet1",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 34,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Sample",
+            "header_unit": null,
+            "type_counts": {
+              "text": 34
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Particle Area (pix)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 34
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Fiber Area(pix)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 34
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Eval Area",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 34
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Fractional (particles)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 34
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Fractional (Fiber)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 34
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

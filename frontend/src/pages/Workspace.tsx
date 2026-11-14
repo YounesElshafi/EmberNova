@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, NavLink, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import {
   ArrowUp,
   Square,
@@ -11,6 +11,11 @@ import {
   FileText,
   X,
   PlayCircle,
+  Plus,
+  MessageSquare,
+  BookOpenText,
+  ListOrdered,
+  Compass,
 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -18,22 +23,34 @@ import { useQuery } from "@tanstack/react-query";
 import { api, stream } from "../api/client";
 import { useWorkspace } from "../state";
 import { ArtifactView } from "../artifacts/ArtifactView";
+import {
+  InlineBlock,
+  StoredBlocks,
+  sortBlocks,
+} from "../artifacts/InlineBlocks";
 import { EvidenceInspector } from "../components/EvidenceInspector";
 
-const questions = [
+const questions: [string, string, typeof BookOpenText][] = [
   [
-    "SUPPRESSION",
+    "Summarize",
     "What do NASA experiments tell us about oxygen concentration and flame extinction near lunar-habitat atmospheric conditions?",
+    BookOpenText,
   ],
   [
-    "PREVENTION",
-    "How does ventilation affect flame spread over solid materials in microgravity?",
-  ],
-  [
-    "DETECTION",
+    "Rank",
     "Which NASA investigations studied smoke detection in spacecraft?",
+    ListOrdered,
   ],
-  ["MEASUREMENTS", "What was the extinction diameter in FLEX test 20CAL10?"],
+  [
+    "Interpret",
+    "How does ventilation affect flame spread over solid materials in microgravity?",
+    Compass,
+  ],
+  [
+    "Measure",
+    "What was the extinction diameter in FLEX test 20CAL10?",
+    FlaskConical,
+  ],
 ];
 
 function Answer({
@@ -60,29 +77,7 @@ function Answer({
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-          li: ({ node, children }) => {
-            const line = node?.position?.start.line || 0;
-            const index =
-              markdown
-                .split("\n")
-                .slice(0, line)
-                .filter((l: string) => l.trimStart().startsWith("- ")).length -
-              1;
-            const strength = answer?.evidence_strength?.[String(index)];
-            return (
-              <li>
-                {children}
-                {strength && (
-                  <span
-                    className="source-chip"
-                    title="Coverage by cited source types and sample count; not a safety score or peer review"
-                  >
-                    {strength} coverage
-                  </span>
-                )}
-              </li>
-            );
-          },
+          li: ({ children }) => <li>{children}</li>,
           a: ({ href, children }) => {
             if (href?.startsWith("#cite-")) {
               const n = Number(href.slice(6));
@@ -130,8 +125,9 @@ function Answer({
         )}
       {answer?.audit && answer.audit.ungrounded_numbers === 0 && (
         <p className="muted audit-ok">
-          Every number in cited sentences was found in the cited NASA evidence
-          (automated check).
+          The automated number scan found no unmatched tokens. It does not
+          verify units, scientific meaning, or whether a citation supports a
+          claim.
         </p>
       )}
     </div>
@@ -142,7 +138,8 @@ export function Workspace() {
   const { sessionId } = useParams();
   const navigate = useNavigate();
   const state = useWorkspace();
-  const [input, setInput] = useState(""),
+  const [params, setParams] = useSearchParams();
+  const [input, setInput] = useState(() => params.get("q") || ""),
     [messages, setMessages] = useState<any[]>([]),
     [toolOpen, setToolOpen] = useState(true);
   const [lab, setLab] = useState(false);
@@ -156,8 +153,18 @@ export function Workspace() {
   const { data: replays } = useQuery({
     queryKey: ["replays"],
     queryFn: () => api("/replays"),
-    enabled: Boolean(replay),
   });
+  const { data: sessions = [] } = useQuery<
+    { session_id: string; title: string; turn_count: number }[]
+  >({
+    queryKey: ["recent-sessions", sessionId],
+    queryFn: () => api("/sessions"),
+    staleTime: 10000,
+  });
+  useEffect(() => {
+    if (params.get("q")) setParams({}, { replace: true });
+    // Only consume the prefill once, on arrival from the home page.
+  }, []);
   const recording = replays?.find(
     (r: any) => `replay:${r.replay_id}` === sessionId,
   );
@@ -272,10 +279,57 @@ export function Workspace() {
   const panel = state.selected || state.evidenceId;
   return (
     <main className={`workspace ${panel ? "with-panel" : ""}`}>
+      <aside className="ws-rail" aria-label="Research threads">
+        <Link to="/workspace" className="new-research">
+          <Plus size={16} /> New research
+        </Link>
+        {sessions.length > 0 && (
+          <>
+            <div className="rail-label">Your threads</div>
+            <nav aria-label="Recent research threads">
+              {sessions.slice(0, 8).map((s) => (
+                <NavLink key={s.session_id} to={`/s/${s.session_id}`} title={s.title}>
+                  <MessageSquare size={13} />
+                  <span>{s.title}</span>
+                </NavLink>
+              ))}
+            </nav>
+          </>
+        )}
+        {replays?.length > 0 && (
+          <>
+            <div className="rail-label">Recorded sessions</div>
+            <nav aria-label="Recorded research sessions">
+              {replays.map((r: any) => (
+                <NavLink key={r.replay_id} to={`/s/replay:${r.replay_id}`} title={r.title}>
+                  <PlayCircle size={13} />
+                  <span>{r.title}</span>
+                </NavLink>
+              ))}
+            </nav>
+          </>
+        )}
+        <div className="rail-foot">
+          <div className="source-status">
+            <span className={`live-dot ${meta?.llm_available ? "" : "off"}`} />
+            <div>
+              {meta?.llm_available ? "Live SI available" : "Offline: data tools only"}
+              <small>{meta?.models?.agent || "No model configured"}</small>
+            </div>
+          </div>
+          <Link to="/how-it-works" className="rail-link">
+            How answers are built <ArrowUpRight size={12} />
+          </Link>
+        </div>
+      </aside>
       <section className="conversation">
         <div className="workspace-top">
-          <span>
-            <span className="live-dot" /> Research workspace
+          <span className="ws-crumb">
+            {replay
+              ? "Recorded session"
+              : sessionId
+                ? "Research thread"
+                : "New research"}
           </span>
           <span className="model-pill">
             {meta?.llm_available ? meta.models.agent : "Data tools available"}
@@ -283,28 +337,24 @@ export function Workspace() {
         </div>
         {!hasContent ? (
           <div className="welcome">
-            <div className="orbit-mark">
-              <FlaskConical size={27} />
-            </div>
-            <div className="eyebrow">
-              NASA COMBUSTION SCIENCE · RESEARCH WORKSPACE
-            </div>
-            <h1>
-              From flame behavior
+            <p className="eyebrow ember">NASA microgravity combustion · research workspace</p>
+            <h1 className="welcome-title">
+              Ask the evidence
               <br />
-              to <em>fire safety insight.</em>
+              <em>about fire in space.</em>
             </h1>
-            <p>
-              Explore NASA’s microgravity experiments.
-              <br />
-              Ask a question. Follow the evidence.
+            <p className="welcome-lede">
+              Ask a question in plain language. EmberNova ranks the relevant NASA investigations, pulls the measured
+              data, and writes a cited answer that you can check down to the source row.
             </p>
             <div className="suggestions">
-              {questions.map(([label, q]) => (
+              {questions.map(([label, q, Icon]) => (
                 <button key={label} onClick={() => void send(q)}>
-                  <span>{label}</span>
+                  <span className="sugg-kind">
+                    <Icon size={14} /> {label}
+                  </span>
                   <p>{q}</p>
-                  <ArrowUpRight size={16} />
+                  <ArrowUpRight size={16} className="sugg-go" />
                 </button>
               ))}
             </div>
@@ -339,10 +389,6 @@ export function Workspace() {
                 </div>
               </div>
             )}
-            <Link to="/featured" className="featured-link">
-              <PlayCircle size={16} /> Explore recorded evidence demonstrations{" "}
-              <ArrowUpRight size={14} />
-            </Link>
           </div>
         ) : (
           <div className="thread">
@@ -364,8 +410,8 @@ export function Workspace() {
                     <>
                       <b>Scripted evidence demonstration</b>
                       <p>
-                        Deterministic NASA data tools only; no SI model was
-                        run for this walkthrough.
+                        Deterministic NASA data tools only; no SI model was run
+                        for this walkthrough.
                       </p>
                     </>
                   )}
@@ -387,21 +433,7 @@ export function Workspace() {
                       onEvidence={state.inspect}
                     />
                     {m.artifacts?.length > 0 && (
-                      <div className="artifact-cards">
-                        {m.artifacts.map((id: string) => (
-                          <button
-                            key={id}
-                            onClick={() =>
-                              api(`/artifacts/${id}`)
-                                .then(state.select)
-                                .catch((e) => state.setError(e.message))
-                            }
-                          >
-                            <FlaskConical size={15} /> Open research artifact{" "}
-                            <ArrowUpRight size={13} />
-                          </button>
-                        ))}
-                      </div>
+                      <StoredBlocks ids={m.artifacts} />
                     )}
                   </div>
                 )}
@@ -409,6 +441,7 @@ export function Workspace() {
             ))}
             {(state.running || state.tools.length > 0) && (
               <div className="tool-activity">
+                <span className="trace-label">Research trace</span>
                 <button
                   onClick={() => setToolOpen((v) => !v)}
                   className="text-button"
@@ -449,25 +482,6 @@ export function Workspace() {
                 )}
               </div>
             )}
-            {state.artifacts.length > 0 && (
-              <div className="artifact-cards">
-                {state.artifacts.map((a) => (
-                  <button
-                    className={
-                      state.selected?.artifact_id === a.artifact_id
-                        ? "active"
-                        : ""
-                    }
-                    key={a.artifact_id}
-                    onClick={() => state.select(a)}
-                  >
-                    <FlaskConical size={15} />
-                    <span>{a.title}</span>
-                    <ArrowUpRight size={13} />
-                  </button>
-                ))}
-              </div>
-            )}
             {state.text && (
               <div className="assistant-message">
                 <div className="assistant-label">
@@ -479,6 +493,13 @@ export function Workspace() {
                   text={state.text}
                   onEvidence={state.inspect}
                 />
+              </div>
+            )}
+            {state.artifacts.length > 0 && (
+              <div className="inline-blocks" aria-live="polite">
+                {sortBlocks(state.artifacts).map((a) => (
+                  <InlineBlock key={a.artifact_id} artifact={a} />
+                ))}
               </div>
             )}
             {state.error && (
@@ -495,6 +516,14 @@ export function Workspace() {
           </div>
         )}
         <div className="composer-area">
+          {!hasContent && state.error && (
+            <div className="error" role="alert">
+              <b>Research unavailable</b>
+              <p>{state.error}</p>
+              <Link to="/featured">Open recorded demonstrations</Link> ·{" "}
+              <Link to="/data/PSI-69:flex_experimental">Explore measurements</Link>
+            </div>
+          )}
           {!meta?.llm_available && (
             <div className="offline-note">
               Live SI needs a local OpenAI key. NASA data tools and recorded

@@ -1,0 +1,225 @@
+{
+  "source_id": "PSI-26",
+  "title": "Burning and Suppression of Solids",
+  "source_type": "psi_investigation",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "priority": "A",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Latest PSI file tree inventoried.",
+  "acronym": "BASS",
+  "scientific_category": "Combustion Science",
+  "subcategory": "Spacecraft Fire Safety",
+  "research_program": null,
+  "objectives": "The two main objectives for BASS are to:\n    1.) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test#1 method, ground-based microgravity tests, and actual material flammability in microgravity. The relation between these can be investigated by observing flames burning for the longer times available in flight. Practical, realistic (thicker) fuels in typical geometries will be examined, including wake flames which have characteristics of a fire burning behind another object (for example, a fire burning in tight area which may not be easily accessible).\n    2.) Assess the effectiveness of an inert, gaseous extinguishing agent (similar to that used on ISS) in putting out flames over different materials, geometries, preheating, and flow.",
+  "approach": "The experiment was conducted aboard the International Space Station (ISS) inside the Microgravity Glove Box (MSG). Custom-made fabric samples consisting of 75% cotton and 25% fiberglass (by mass) measuring were used as a fuel source as well as Nomex fabric and Ultem. A Kanthal wire (29-gage)igniter was used to initiate combustion at one end of the fabric. Airflow was controlled using a variable speed fan, with airflow speeds reaching as high as 40 cm/s. The airflow was directed along the fuel surface in either the opposed or concurrent direction.\n\nThis investigation explored two primary air flow configurations; concurrent-flow and opposed-flow. With concurrent-flow air flows in the same direction as the flame spread and in opposed-flow air flows in the opposite direction of flame spread. Flames were observed in the top and edge profiles and data was collected on flame size, shape, color, spread rate, and potential flame quenching. The samples were placed in a small flow duct (76 mm x 76 mm cross section) that allowed for airflow across the fabric. Other sample shapes were utilized as well including spheres and cylinders.",
+  "platform": "International Space Station (ISS)",
+  "project_type": "Microgravity Investigation",
+  "hardware": "Microgravity Science Glovebox",
+  "hardware_url": "https://www1.grc.nasa.gov/space/iss-research/msg/",
+  "institution": "NASA GRC",
+  "principal_investigator": "Paul Ferkul",
+  "nasa_center": "Glenn Research Center (GRC)",
+  "investigation_start": "10-01-2009",
+  "investigation_end": "06-30-2013",
+  "initial_release_date": "30-Jun-2013",
+  "version_modified_date": "19-Mar-2025",
+  "source_version": 4,
+  "doi": "10.60555/58h4-dy80",
+  "license": "CC0-1.0",
+  "license_url": "https://spdx.org/licenses/CC0-1.0.html",
+  "related_investigations": [
+    "PSI-107",
+    "PSI-25"
+  ],
+  "file_count": 212,
+  "repeated_tree_entries": 0,
+  "inventoried_bytes": 163551372412,
+  "reported_dataset_bytes": 163551372412,
+  "file_types": ".csv;.docx;.mp4;.pdf;.pptx;.xlsx;.zip",
+  "publication_count": 10,
+  "metadata_path": "investigations/PSI-26_BASS/metadata.json",
+  "relevance": "Direct spacecraft fire safety",
+  "version_history_path": "logs/psi/PSI-26-versions.json",
+  "inventory_snapshot_path": "logs/psi/PSI-26-files.json",
+  "principal_investigators": [
+    {
+      "name": "Paul Ferkul",
+      "institution": "NASA GRC"
+    }
+  ],
+  "publications": [
+    {
+      "authorList": "Spivey Reggie, Luz Paul",
+      "comments": [],
+      "doi": "10.2514/6.2006-941",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "The Microgravity Science Glovebox as a Platform for Exploration Research on the International Space Station"
+    },
+    {
+      "authorList": "Bhattacharjee Subrata, Laue Matthew, Carmignani Luca, Ferkul Paul, Olson Sandra",
+      "comments": [],
+      "doi": "10.1016/j.firesaf.2015.11.011",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Opposed-flow flame spread: A comparison of microgravity and normal gravity experiments to establish the thermal regime"
+    },
+    {
+      "authorList": "Takahashi Shuhei, Ebisawa Tomoya, Bhattacharjee Subrata, Ihara Tadayoshi",
+      "comments": [],
+      "doi": "10.1016/j.proci.2014.07.017",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Simplified model for predicting difference between flammability limits of a thin material in normal gravity and microgravity environments"
+    },
+    {
+      "authorList": "S Bhattacharjee, R Nagarkar, Y Nakamura",
+      "comments": [],
+      "doi": "10.1080/00102202.2014.900056",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "A Correlation for an Effective Flow Velocity for Capturing the Boundary Layer Effect in Opposed-Flow Flame Spread over Thin Fuels"
+    },
+    {
+      "authorList": "Bhattacharjee Subrata, Paolini Christopher P., Miller Fletcher, Nagarkar Rohit",
+      "comments": [],
+      "doi": "10.1504/PCFD.2012.048249",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Radiation signature in opposed-flow flame spread"
+    },
+    {
+      "authorList": "Bhattacharjee Subrata, Cartnignani Luca",
+      "comments": [],
+      "doi": "10.1299/jsmeatem.2015.14.289",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "OS24-1 The Effect of Boundary Layer on Blow-Off Extinction in Opposed-Flow Flame Spread: Results of Experiments and Simplified Analysis(invited,Scale modeling on solid combustion,OS24 Scale modeling,FLUID AND THERMODYNAMICS)"
+    },
+    {
+      "authorList": "JR Villaraza, L Carmignani, S Bhattacharjee",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "l87xqHQEQuC4rNfO31zRSVlRomoXfQjaWFyzxZZZ",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": ""
+      },
+      "title": "Role of Gas Radiation in the Mechanism of Opposed-Flow Flame Spread in a Microgravity Environment"
+    },
+    {
+      "authorList": "P Ferkul, SL Olson, F Takahashi, M Endo, MC Johnston, JS Tien",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment"
+    },
+    {
+      "authorList": "S Bhattacharjee, M Bundy, C Paolini, G Patel, W Tran.",
+      "comments": [],
+      "doi": "10.1016/j.proci.2012.05.076",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "A novel apparatus for flame spread study"
+    },
+    {
+      "authorList": "GR Bornand, FJ Miller, JM Pepper, SL Olson, IS Wichman",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "l87xqHQEQuC4rNfO31zRSVlRomoXfQjaWFyzxZZZ",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": ""
+      },
+      "title": "Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets"
+    }
+  ],
+  "representative_media": [],
+  "experimental_tables": [
+    {
+      "_id": {
+        "$oid": "67a3768509ed061032c125fb"
+      },
+      "date_created": {
+        "$date": 1738765957125
+      },
+      "date_modified": {
+        "$date": 1738765957125
+      },
+      "file_name": "PSI-26_Experimental table_BASS.csv",
+      "file_size": 4726,
+      "remote_path": "/Home/psi-data/PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv",
+      "resource_id": {
+        "$oid": "66cf53d46f1142c964b2e0a8"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-26/Experimental table/PSI-26_Experimental table_BASS.csv",
+      "s3_version_id": "R1UsWo0ifZNvvIVOOPLjSGA21CjBoE4I",
+      "study_id": {
+        "$oid": "67dafcfac3501a37c2c60df9"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "experiments": [],
+  "upstream_metadata_path": "logs/psi/PSI-26-detail.json",
+  "inventory_errors": {}
+}

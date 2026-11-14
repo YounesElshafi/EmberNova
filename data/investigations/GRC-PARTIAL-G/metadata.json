@@ -1,0 +1,16 @@
+{
+  "source_id": "GRC-PARTIAL-G",
+  "title": "Solid Fuel Ignition Testing for Lunar Applications",
+  "source_type": "supplemental_investigation",
+  "source_url": "https://ntrs.nasa.gov/citations/20250006779",
+  "priority": "D",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Ground and centrifuge results are available in the NASA report.",
+  "metadata_path": "investigations/GRC-PARTIAL-G/metadata.json",
+  "scientific_category": "Combustion Science",
+  "platform": "NASA GRC drop-tower centrifuge and NASA White Sands Test Facility",
+  "references": [
+    "https://ntrs.nasa.gov/citations/20250006779"
+  ],
+  "gravity_context": "Simulated partial-gravity centrifuge and terrestrial comparison."
+}

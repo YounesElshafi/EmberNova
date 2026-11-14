@@ -1,0 +1,754 @@
+{
+  "source": {
+    "investigation_id": "PSI-100",
+    "file_id": "6841ac428970fb41b9cebb9e",
+    "filename": "PSI-100_Science Documents_SAFFIRE-III_MergeResult-raw_Final.xlsx",
+    "relative_local_path": "investigations/PSI-100_SAFFIRE_III/raw/documents/PSI-100_Science Documents_SAFFIRE-III_MergeResult-raw_Final.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6841ac428970fb41b9cebb9e&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+    "doi": "10.60555/040q-4h36",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "9d3593b9ff87be0bbf623e6bc2e8d46ae286ac78971ad6630ec67a25c19c82d0",
+    "source_key": "psi-data/PSI-100/Science Documents/PSI-100_Science Documents_SAFFIRE-III_MergeResult-raw_Final.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "Requested - RAW",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 26642,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "BIT Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "F1 FV Requested",
+            "header_unit": null,
+            "type_counts": {
+              "text": 32
+            },
+            "blank_count": 26610,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "F2 FV Requested",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 26640,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "S1 Requested",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3384
+            },
+            "blank_count": 23258,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "S2 Requested",
+            "header_unit": null,
+            "type_counts": {
+              "text": 763
+            },
+            "blank_count": 25879,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "S3 Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "S4 Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "S5 Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "S6 Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "S7 Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "S8 Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "S9 Requested",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 26642,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Received - RAW",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 14371,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "BIT Received",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 14371,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "F1 FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 542
+            },
+            "blank_count": 13829,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "F2 FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 14369,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "S1 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3384
+            },
+            "blank_count": 10987,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "S2 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 994
+            },
+            "blank_count": 13377,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "BIT - raw",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 30099,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "EpochTime",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1800
+            },
+            "blank_count": 28299,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time ",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1800
+            },
+            "blank_count": 28299,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1800
+            },
+            "blank_count": 28299,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1800
+            },
+            "blank_count": 28299,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1800
+            },
+            "blank_count": 28299,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Exposure",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1800
+            },
+            "blank_count": 28299,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Gain",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1800
+            },
+            "blank_count": 28299,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "BIT Received",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "PreFlowVis - raw",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 30099,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "EpochTime",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Date / GMT  ",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Exposure",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Gain",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "F1 FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 542
+            },
+            "blank_count": 29557,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "PostFlowVis - raw",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 30099,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "EpochTime",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Date / GMT  ",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Exposure",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Gain",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 28480,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "F2 FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 30097,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Sample1 - raw",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 38051,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "EpochTime",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 38051
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Date / GMT  ",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 38051
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 38051
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 38051
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 38051
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Exposure",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 38051
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Gain",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 38051
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "S1 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3384
+            },
+            "blank_count": 34667,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 38051,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 38051,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 38051,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Sample2 - raw",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 30099,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "EpochTime",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 6275
+            },
+            "blank_count": 23824,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Date / GMT  ",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 6275
+            },
+            "blank_count": 23824,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 6275
+            },
+            "blank_count": 23824,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 6275
+            },
+            "blank_count": 23824,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 6275
+            },
+            "blank_count": 23824,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Exposure",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 6275
+            },
+            "blank_count": 23824,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Gain",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 6275
+            },
+            "blank_count": 23824,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "S2 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 994
+            },
+            "blank_count": 29105,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 30099,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

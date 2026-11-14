@@ -1,0 +1,1090 @@
+{
+  "source": {
+    "investigation_id": "PSI-25",
+    "file_id": "692480587f6aa6a830210601",
+    "filename": "PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx",
+    "relative_local_path": "investigations/PSI-25_BASS_II/raw/documents/PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=692480587f6aa6a830210601&version=2&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "doi": "10.60555/4qc4-de67",
+    "source_version": "4",
+    "file_version": "2",
+    "sha256": "1a3b283dd0adec861793bbc4a454aab64d398cd32d6f37d7a1ad0f642879e686",
+    "source_key": "psi-data/PSI-25/Science Documents/PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "Bhattacharjee",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 22,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 22
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "GMT 2014-",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 22
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test no.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 22
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Sample no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 7,
+              "text": 15
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 22
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 22
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 6,
+              "text": 15,
+              "numeric": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 7,
+              "text": 15
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Radiometer gain   (1000, 250, 50, 10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 22
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "total frames shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "calibrated  initial O2 % by vol ",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 14,
+              "integer": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "calibrated final O2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 21,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Initial CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 21,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Final CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 20,
+              "text": 1
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Initial CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 21,
+              "numeric": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Final CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 19,
+              "numeric": 1,
+              "text": 1
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Ferkul",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 4,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "GMT 2014-",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test no.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Sample no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1,
+              "text": 3
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1,
+              "integer": 2,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Radiometer gain   (1000, 250, 50, 10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "total frames shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "calibrated  initial O2 % by vol ",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 3,
+              "integer": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "calibrated final O2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 2,
+              "integer": 1,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Initial CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Final CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 3,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Initial CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Final CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 3,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Miller",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 20,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "GMT 2014-",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test no.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Sample no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 4,
+              "text": 16
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 19
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Radiometer gain   (1000, 250, 50, 10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 8,
+              "text": 12
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "total frames shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 19,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "calibrated  initial O2 % by vol ",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 15,
+              "integer": 5
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "calibrated final O2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 17,
+              "integer": 3
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Initial CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Final CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Initial CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Final CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 19,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Olson",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 27,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "GMT 2014- (except last 3 tests from 2016)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test no.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Sample no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2,
+              "text": 25
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 24,
+              "numeric": 1
+            },
+            "blank_count": 2,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21,
+              "integer": 2
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Radiometer gain   (1000, 250, 50, 10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 26,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "total frames shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 23,
+              "text": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "calibrated  initial O2 % by vol ",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 23,
+              "integer": 4
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "calibrated final O2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 25,
+              "integer": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Initial CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Final CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Initial CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 26,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Final CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 24,
+              "text": 3
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Fernandez-Pello",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 27,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "GMT 2014-",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test no.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Sample no.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 21,
+              "integer": 2
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "text": 25,
+              "integer": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Radiometer gain   (1000, 250, 50, 10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21,
+              "text": 6
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "total frames shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 27
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "calibrated  initial O2 % by vol ",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 21,
+              "integer": 6
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "calibrated final O2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 24,
+              "integer": 3
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Initial CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 25,
+              "integer": 1,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Final CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 23,
+              "text": 2,
+              "integer": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Initial CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 26,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Final CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 26,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "T'ien",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 29,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "GMT 2014-",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test no.",
+            "header_unit": null,
+            "type_counts": {
+              "text": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Sample no.",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 8,
+              "text": 21
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 6,
+              "text": 17
+            },
+            "blank_count": 6,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 11,
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Radiometer gain   (1000, 250, 50, 10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "total frames shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "calibrated  initial O2 % by vol ",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "calibrated final O2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 27,
+              "integer": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Initial CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 28,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Final CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 28,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Initial CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 28,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Final CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 28,
+              "text": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

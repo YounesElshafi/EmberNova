@@ -1,0 +1,135 @@
+{
+  "source": {
+    "investigation_id": "PSI-47",
+    "file_id": "683dbb3ff91ab4427dbf4574",
+    "filename": "PSI-47_Analyzed Data_ISS_Daft_Aug21_06 urban.xls",
+    "relative_local_path": "investigations/PSI-47_DAFT_DAFT_2/raw/datasets/PSI-47_Analyzed Data_ISS_Daft_Aug21_06 urban.xls",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-47/download?file=683dbb3ff91ab4427dbf4574&version=4&studyVersion=5&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+    "doi": "10.60555/ztgj-d202",
+    "source_version": "5",
+    "file_version": "4",
+    "sha256": "91116542d271d66228c5fe802a9a160acc066a39069c7e2406fbc6524cad3c42",
+    "source_key": "psi-data/PSI-47/Analyzed Data/PSI-47_Analyzed Data_ISS_Daft_Aug21_06 urban.xls"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "xlrd cell values",
+    "sheets": [
+      {
+        "name": "Data",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 37,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Bag #1",
+            "header_unit": null,
+            "type_counts": {
+              "text": 10,
+              "numeric": 16
+            },
+            "blank_count": 11,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 22
+            },
+            "blank_count": 14,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2,
+              "numeric": 15
+            },
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Bag#2",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 20
+            },
+            "blank_count": 16,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 17
+            },
+            "blank_count": 19,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 37,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Bag#3",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 16
+            },
+            "blank_count": 20,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 13
+            },
+            "blank_count": 23,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Sheet2",
+        "row_count": 0,
+        "columns": []
+      },
+      {
+        "name": "Sheet3",
+        "row_count": 0,
+        "columns": []
+      }
+    ]
+  }
+}

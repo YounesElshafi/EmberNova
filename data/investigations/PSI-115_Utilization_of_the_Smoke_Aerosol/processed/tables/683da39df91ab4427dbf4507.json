@@ -1,0 +1,54 @@
+{
+  "source": {
+    "investigation_id": "PSI-115",
+    "file_id": "683da39df91ab4427dbf4507",
+    "filename": "PSI-115_Analyzed Data_10cmGravityPSD.dat",
+    "relative_local_path": "investigations/PSI-115_Utilization_of_the_Smoke_Aerosol/raw/datasets/PSI-115_Analyzed Data_10cmGravityPSD.dat",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-115/download?file=683da39df91ab4427dbf4507&version=2&studyVersion=3&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-115",
+    "doi": "10.60555/q0v5-1v28",
+    "source_version": "3",
+    "file_version": "2",
+    "sha256": "f67f2ff614eff26a3b0e75db967820b55727c889d0d063d05ac289f16af8f0a2",
+    "source_key": "psi-data/PSI-115/Analyzed Data/PSI-115_Analyzed Data_10cmGravityPSD.dat"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "whitespace numeric tokens",
+    "encoding": "utf-8-sig",
+    "source_header_record": null,
+    "source_title": null,
+    "nonfinite_tokens": {},
+    "sheets": [
+      {
+        "name": "PSI-115_Analyzed Data_10cmGravityPSD.dat",
+        "header_assumption": "source layout profiled without a measurement schema",
+        "header_verified": false,
+        "row_count": 44,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Column 1 (source unlabeled)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 44
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Column 2 (source unlabeled)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 44
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

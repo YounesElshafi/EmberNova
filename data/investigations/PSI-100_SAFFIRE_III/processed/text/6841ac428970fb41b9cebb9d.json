@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-100",
+    "file_id": "6841ac428970fb41b9cebb9d",
+    "filename": "PSI-100_Science Documents_SAFFIRE-III Image Directory Nomenclature_v3.0.pdf",
+    "relative_local_path": "investigations/PSI-100_SAFFIRE_III/raw/documents/PSI-100_Science Documents_SAFFIRE-III Image Directory Nomenclature_v3.0.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6841ac428970fb41b9cebb9d&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+    "doi": "10.60555/040q-4h36",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "5dfe4822358df39475a542b79c0424bf4c44bb6c3382fd3f92e3288c0c917ff2",
+    "source_key": "psi-data/PSI-100/Science Documents/PSI-100_Science Documents_SAFFIRE-III Image Directory Nomenclature_v3.0.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "SAFFIRE-III\nImage Directory Nomenclature                                                                  SAFFIRE-III_Image_Data_Package Contents\nVersion 3.0\n\n\n                                                                                                                                  Bit     F1      F2     S1     S2\n\n\n\nXnCn_Raw_CamOriginal    Camera original RAW files recorded on-board and downlinked on command.\n                             Contains 8-byte offset that must be processed prior to color interpolation and\n                                  distribution. This data set is archived at NASA-GRC.\n\n\nXnCn_Raw_DistroMaster  RAW Camara Orginal files processed for 8-byte offset using ImageJ, and resaved\n                              using originial file name. This is the RAW Distribution Master set for Science Team\n                                                                                                    X      X      X      X                                 distribution and color interpolation (demosaicing).\n\n\nXn_Raw2TIFF                TIFF images of the RAW Distribution Master files, color interpolated (demosaiced)\n                              using IrfanView Batch Conversion process.\n                                                                                                    X      X      X      X\n\n\nXn_Raw2TIFF_icmad       Raw2TIFF files annotated with ICMAD 'Exposure' and 'Gain' information. Data is\n                          appended to the bottom of each frame using ImageMagick script and resaved as\n                                  TIFF.                                                                                        X      X\n\n\nXn_jpeg                     Jpeg images created on-board SAFFIRE payload and downlinked by command\n\n                                                                                                    X      X      X      X\n\n\nXn_jpeg_corrupt            Jpeg images received corrupted after downlink.\n\n                                                                                                    X      X      X      X\n\n\nXn_jpeg2png_icmad        Jpeg images annotated with ICMAD 'Exposure' and 'Gain' information. Data is\n                          appended to the bottom of each frame using ImageMagick script and re-saved as                                  X      X\n                              .png format to minimize additional compression artifacts.\n\n\n  \"Xn\" Denotes run type and number\n\n  \"Cn\" Denotes camera number (if sorted separately)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

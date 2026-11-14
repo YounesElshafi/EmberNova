@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-159",
+    "file_id": "691f7ea117f78b371b26f704",
+    "filename": "PSI-159_Raw Data_21242 daily test point log.pdf",
+    "relative_local_path": "investigations/PSI-159_ACME_CFI_G/raw/documents/PSI-159_Raw Data_21242 daily test point log.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-159/download?file=691f7ea117f78b371b26f704&version=1&studyVersion=1&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+    "doi": "10.60555/cyt1-kh64",
+    "source_version": "1",
+    "file_version": "1",
+    "sha256": "84ee620781724d36d0dc506c93a5be034da8da55a923cdd313679b0b2d459725",
+    "source_key": "psi-data/PSI-159/Raw Data/PSI-159_Raw Data_21242 daily test point log.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    }
+  ]
+}

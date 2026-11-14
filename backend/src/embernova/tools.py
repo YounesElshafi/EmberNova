@@ -11,16 +11,33 @@ from embernova.science.analyses import (
     statistics,
     suppression_view,
 )
+from embernova.science.assessment import assess
 from embernova.science.bundle import Bundle
 from embernova.science.charts import make_spec
 from embernova.storage import Store
 from embernova.tags import with_tags
 
+DESCRIPTORS = (
+    "sample_material",
+    "flow_direction",
+    "fuel_canonical",
+    "flame_type",
+    "fan_display_raw",
+    "outcome_raw",
+    "ignition_outcome_canonical",
+    "test_description",
+)
+
 
 class Tools:
-    def __init__(self, store: Store, bundle: Bundle, ledger: Ledger | None = None):
+    def __init__(
+        self, store: Store, bundle: Bundle, ledger: Ledger | None = None, owner: str | None = None
+    ):
         self.store, self.bundle = store, bundle
         self.ledger = ledger or Ledger(store)
+        self.owner = owner
+        # The research agent turns rankings and media into inline workspace blocks.
+        self.emit_blocks = False
 
     def datasets(self, investigation_ids=None, **_) -> dict:
         items = self.store.records("datasets")
@@ -33,6 +50,12 @@ class Tools:
                 if (name := spec.get("variable", spec.get("quantity")))
             ]
             d.pop("mapping", None)
+            # Descriptive per-test text columns (e.g. sample_material, flow_direction) usable as
+            # query_measurements variables; listed only when this table records them.
+            runs = self.bundle.runs[self.bundle.runs.table_id == d["table_id"]]
+            d["descriptor_fields"] = [
+                c for c in DESCRIPTORS if c in runs and runs[c].replace("", None).notna().any()
+            ]
             d["identifier_filter"] = {
                 "field": "test_identifier",
                 "operators": ["eq", "in"],
@@ -77,9 +100,18 @@ class Tools:
                 "query_hash": digest(args or {}),
             },
             source_shape(dataset["source"]),
-            f"{len(rows)} source rows. Raw cells and normalized display values are retained. Design values are not measured outcomes.",
-            "design" if dataset["kind"] == "conditions_design" else "measured",
-            ["Curated source columns", "pint unit normalization"],
+            f"{len(rows)} source rows. Raw cells and normalized display values are retained. Design values are not measured outcomes. Derived oxygen partial pressure is calculated from oxygen fraction and total pressure. Saffire-II 1-g columns describe ground comparisons, not microgravity measurements.",
+            "design"
+            if dataset["kind"] == "conditions_design"
+            else "derived"
+            if "o2_partial_pressure" in fields
+            else "measured",
+            ["Curated source columns", "pint unit normalization"]
+            + (
+                ["oxygen partial pressure = oxygen mole fraction × total pressure"]
+                if "o2_partial_pressure" in fields
+                else []
+            ),
             previews,
         )
 
@@ -141,6 +173,7 @@ class Tools:
             },
         }
         self.store.put("artifacts", aid, art)
+        self.store.set_artifact_owner(aid, self.owner)
         self.ledger.artifacts.append(art)
         return art
 
@@ -159,6 +192,18 @@ class Tools:
         for name, units in self.bundle.units.items():
             if name in data and data[name].notna().any():
                 contributing = data[data[name].notna()]
+                excluded_zero = 0
+                if "extinction_diameter" in name and "outcome_raw" in contributing:
+                    # A zero diameter recorded for a completion/disruption is not an
+                    # extinction measurement; keep the raw row but exclude it from statistics.
+                    outcome = contributing.outcome_raw.fillna("").astype(str).str.lower()
+                    zero_non_ext = (
+                        outcome.ne("")
+                        & ~outcome.str.contains("extinction")
+                        & contributing[name].eq(0)
+                    )
+                    excluded_zero = int(zero_non_ext.sum())
+                    contributing = contributing[~zero_non_ext]
                 display = self.bundle.display(contributing, [name])
                 evidence_ids = [
                     self.rows_evidence(table, contributing, [name])["evidence_id"]
@@ -175,7 +220,14 @@ class Tools:
                             "Exclude missing scalar values",
                             "pint display-unit conversion",
                             "Descriptive count, min, max, median and quartiles across source records",
-                        ],
+                        ]
+                        + (
+                            [
+                                f"Excluded {excluded_zero} zero values recorded for non-extinction outcomes"
+                            ]
+                            if excluded_zero
+                            else []
+                        ),
                     }
                 )
         return {
@@ -231,13 +283,30 @@ class Tools:
             for key, group in data.groupby(keys, dropna=False):
                 key = key if isinstance(key, tuple) else (key,)
                 displays = self.bundle.display(group, quantities or [])
+                outcome = group.outcome_raw.fillna("").astype(str).str.lower()
                 out.append(
                     {
                         **dict(zip(keys, map(str, key), strict=True)),
                         "n_runs": len(group),
                         "summary": {
                             q: {
-                                **statistics([r[q] for r in displays]),
+                                **statistics(
+                                    [
+                                        r[q]
+                                        for r, excluded_outcome in zip(
+                                            displays,
+                                            (
+                                                outcome.ne("")
+                                                & outcome.ne("extinction")
+                                                & group[q].fillna(1).eq(0)
+                                            ).tolist()
+                                            if q in group
+                                            else [False] * len(displays),
+                                            strict=True,
+                                        )
+                                        if not (q == "extinction_diameter" and excluded_outcome)
+                                    ]
+                                ),
                                 "unit": self.bundle.units[q]["display_unit"],
                             }
                             for q in quantities or []
@@ -301,6 +370,15 @@ class Tools:
             args.get("x_scale"),
             args.get("y_scale"),
         )
+        point_ids = [uid for series in spec["series"] for uid in series["points"]["run_uid"]]
+        if len(point_ids) <= 500:
+            by_uid = data.drop_duplicates("run_uid").set_index("run_uid")
+            spec["provenance"]["evidence_ids"] = [
+                self.rows_evidence(
+                    by_uid.loc[uid, "table_id"], data[data.run_uid == uid], fields, args
+                )["evidence_id"]
+                for uid in point_ids
+            ]
         return {
             "artifact": self.artifact(
                 {"kind": "chart", "chart": spec},
@@ -430,11 +508,164 @@ class Tools:
                 "media",
             )
             item["evidence_id"] = ev["evidence_id"]
-        return {"media": items}
+        result = {"media": items}
+        if self.emit_blocks and items:
+            art = self.artifact(
+                {
+                    "kind": "media",
+                    "items": [
+                        {
+                            "media_id": m["media_id"],
+                            "media_type": m["media_type"],
+                            "stream_url": m["stream_url"],
+                            "thumb_url": m.get("thumb_url"),
+                            "association": m.get("association") or "none",
+                            "run_label": m.get("run_label"),
+                            "is_representative": bool(m.get("is_representative")),
+                            "caption": m.get("caption"),
+                            "credit": m.get("credit") or "NASA",
+                            "attribution_note": m.get("attribution_note"),
+                            "investigation_id": m["investigation_id"],
+                            "evidence_id": m["evidence_id"],
+                        }
+                        for m in items
+                    ],
+                },
+                "Original NASA media",
+                {
+                    k: v
+                    for k, v in {
+                        "investigation_ids": investigation_ids,
+                        "run_labels": run_labels,
+                    }.items()
+                    if v
+                },
+                "find_media",
+            )
+            art["labels"]["data_origin"] = "Original NASA media; not SI-generated"
+            self.store.put("artifacts", art["artifact_id"], art)
+            result["artifact"] = art
+        return result
+
+    def investigations_by_id(self) -> dict:
+        return {r["investigation_id"]: r for r in self.store.records("investigations")}
+
+    def ranking(self, args: dict) -> dict:
+        result = search_investigations(self.store, self.ledger, **args)
+        if not self.emit_blocks or not result["results"]:
+            return result
+        items = []
+        for rank, r in enumerate(result["results"], 1):
+            items.append(
+                {
+                    "rank": rank,
+                    "investigation_id": r["investigation_id"],
+                    "acronym": r.get("acronym") or r["investigation_id"],
+                    "title": r["title"],
+                    "scientific_relevance_score": r["scientific_relevance_score"],
+                    "explanation": r["relevance_explanation"],
+                    "facet_checks": r["facet_checks"],
+                    "study_type": r["study_type"],
+                    "is_psi": str(r.get("is_psi")) == "True",
+                    "platform": r.get("platform"),
+                    "source_url": r.get("source_url"),
+                    "doi_url": f"https://doi.org/{r['doi']}" if r.get("doi") else None,
+                    "datasets": r["datasets"],
+                    "evidence_id": r["evidence_id"],
+                    "passages": [
+                        {
+                            "evidence_id": p["evidence_id"],
+                            "document_title": p.get("title") or p["document_id"],
+                            "page": p.get("page"),
+                        }
+                        for p in r["supporting_passages"]
+                    ],
+                }
+            )
+        art = self.artifact(
+            {
+                "kind": "investigation_ranking",
+                "query": args["query"],
+                "interpretation": result["interpretation"]["summary"],
+                "degraded": result["degraded"],
+                "items": items,
+                "score_note": "Scientific Relevance Score (0–100): agreement of NASA text and curated scientific facets with the question. Not a probability, evidence strength or fire risk.",
+            },
+            "Ranked NASA investigations",
+            {k: v for k, v in args.items() if v is not None},
+            "search_investigations",
+        )
+        art["labels"]["data_origin"] = (
+            "NASA investigation metadata and reports; deterministic ranking"
+        )
+        self.store.put("artifacts", art["artifact_id"], art)
+        return {**result, "artifact": art}
+
+    def assess_evidence(self, args: dict) -> dict:
+        invs = self.investigations_by_id()
+        payload = assess(self.bundle, invs, args)
+        for row in payload["investigations"]:
+            inv = invs[row["investigation_id"]]
+            ev = self.ledger.add(
+                "investigation_record",
+                [row["investigation_id"]],
+                inv["title"],
+                {
+                    "type": "record",
+                    "investigation_id": row["investigation_id"],
+                    "field": "objectives",
+                },
+                {
+                    "file_id": None,
+                    "sha256": inv["metadata_sha256"],
+                    "doi": inv.get("doi"),
+                    "ntrs_id": None,
+                    "source_url": inv["source_url"],
+                    "local_url": None,
+                    "is_psi": inv["is_psi"],
+                },
+                inv.get("objectives") or inv["title"],
+            )
+            row["evidence_id"] = ev["evidence_id"]
+        art = self.artifact(
+            payload,
+            args.get("scenario_label") or "Evidence assessment",
+            {k: v for k, v in args.items() if v is not None},
+            "assess_evidence",
+            list(self.bundle.runs.table_id.unique()),
+        )
+        art["labels"]["data_origin"] = (
+            "NASA metadata, curated facets and measured runs; deterministic classification"
+        )
+        self.store.put("artifacts", art["artifact_id"], art)
+        return {
+            "artifact": art,
+            "classification": payload["classification"],
+            "counts": payload["counts"],
+            "investigations": [
+                {
+                    k: r[k]
+                    for k in (
+                        "investigation_id",
+                        "acronym",
+                        "classification",
+                        "limiting_factors",
+                        "evidence_id",
+                        "source_url",
+                    )
+                }
+                for r in payload["investigations"]
+            ],
+            "gaps": payload["gaps"],
+            "note": payload["note"],
+        }
 
     def call(self, name: str, args: dict) -> dict:
         if name == "search_investigations":
-            return search_investigations(self.store, self.ledger, **args)
+            return self.ranking(args)
+        if name == "assess_evidence":
+            return self.assess_evidence(args)
+
         if name == "search_documents":
             return search_documents(self.store, self.ledger, **args)
         if name == "get_document_page":

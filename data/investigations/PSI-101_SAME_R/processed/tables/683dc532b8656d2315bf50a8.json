@@ -1,0 +1,1265 @@
+{
+  "source": {
+    "investigation_id": "PSI-101",
+    "file_id": "683dc532b8656d2315bf50a8",
+    "filename": "PSI-101_Analyzed Data_2010_210_10_lampwick_run57_a.xlsx",
+    "relative_local_path": "investigations/PSI-101_SAME_R/raw/datasets/PSI-101_Analyzed Data_2010_210_10_lampwick_run57_a.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc532b8656d2315bf50a8&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+    "doi": "10.60555/2np7-jv14",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "48cb0a40951855c7d369cba2874a567b0dfe3f5e835a5fdf41a11aeb51bb04d9",
+    "source_key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_2010_210_10_lampwick_run57_a.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "Sheet used to Graph",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 683,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Time",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 683
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "ISSDetectorObscurationMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "ISSDetectorScatterMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "STSDetectorMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 599,
+              "integer": 84
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "IonDetectorAMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 654,
+              "integer": 29
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "IonDetectorBMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "PTrakMeasurement(PtPerCC)/1000 (Right Axis)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 163,
+              "numeric": 520
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "DustTrakAAnalogMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 664,
+              "integer": 19
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "DustTrakBMeasurement(MgPerM3) (Right Axis)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 21,
+              "numeric": 662
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 683,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 1
+            },
+            "blank_count": 682,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 683,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "DustTrakAMeasurement(MgPerM3)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 683
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 683,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "TimeString",
+            "header_unit": null,
+            "type_counts": {
+              "text": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "TestNumber",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "PTrakMeasurement(PtPerCC)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "GN2MainPressure[PN02](PSIA)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "GN2RegulatedPressure[PN12](PSIG)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "SampleSidePressure[AT20](PSIA)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "GN2MainSolenoid[PN03]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "GN2MainPressure[PN02](PSIA)/10",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 376
+            },
+            "blank_count": 307,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Original (cut and paste)",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 703,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "TimeString",
+            "header_unit": null,
+            "type_counts": {
+              "text": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "RunMode",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "TestNumber",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "ElapsedTestTime(Secs)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "SampleNumber",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "CarouselNumber",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "DriveKBRemaining",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "CycleCounter",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "WatchdogReset",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "EnetSelect",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "EnetOverride",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "OKStatus",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "EventSet",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "EventCode",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "TestRunning",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "12VDCHeaterEnable",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "HeatingInProgress",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "SampleHeaterOverride",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "GasPlumeTemperature(DegC)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "text": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "SampleResistance(Ohms)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "ISSDetectorObscurationMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "ISSDetectorScatterMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "STSDetectorMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 599,
+              "integer": 104
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "IonDetectorAMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 654,
+              "integer": 49
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "IonDetectorBMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "PTrakMeasurement(PtPerCC)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "DustTrakAMeasurement(MgPerM3)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "DustTrakBMeasurement(MgPerM3)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 41,
+              "numeric": 662
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "DustTrakAAnalogMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 664,
+              "integer": 39
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 31,
+            "label_original": "DustTrakBAnalogMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 32,
+            "label_original": "LFEFlowRate[AT08](SCCM)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 33,
+            "label_original": "VSOSetpoint[PN23](Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 681,
+              "integer": 22
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 34,
+            "label_original": "ZeroLFE",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 35,
+            "label_original": "MFCSetpoint(LPM)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 424,
+              "numeric": 279
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 36,
+            "label_original": "MFCMassFlowRate(LPM)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 424,
+              "numeric": 279
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 37,
+            "label_original": "MFCTemperature(DegC)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 680,
+              "integer": 23
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 38,
+            "label_original": "MFCPressure(PSIA)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 677,
+              "integer": 26
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 39,
+            "label_original": "MFCAnalogSetpoint[BN19](LPM)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 40,
+            "label_original": "MFCAnalogFlowRate(LPM)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 41,
+            "label_original": "GN2MainPressure[PN02](PSIA)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 42,
+            "label_original": "GN2RegulatedPressure[PN12](PSIG)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 43,
+            "label_original": "VacuumPressure[VR04](PSIA)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 44,
+            "label_original": "DriveSidePressure[BN02](PSIA)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 45,
+            "label_original": "SampleSidePressure[AT20](PSIA)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 46,
+            "label_original": "ThermalPrecipitatorPreAgeChannel",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 47,
+            "label_original": "ThermalPrecipitatorPostAgeChannel",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 48,
+            "label_original": "PTrakState",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 49,
+            "label_original": "PTrakKeySelect",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 50,
+            "label_original": "PTrakPowerMeasurement(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 51,
+            "label_original": "DustTrakAState",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 52,
+            "label_original": "DustTrakAKeySelect",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 53,
+            "label_original": "DustTrakBState",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 54,
+            "label_original": "DustTrakBKeySelect",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 55,
+            "label_original": "ProximitySensor1(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 56,
+            "label_original": "ProximitySensor2(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 57,
+            "label_original": "ProximitySensor4(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 58,
+            "label_original": "CarouselProximitySensor(Volts)",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 683,
+              "integer": 20
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 59,
+            "label_original": "MixingFanPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 60,
+            "label_original": "PTrakPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 61,
+            "label_original": "DustTrakAPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 62,
+            "label_original": "DustTrakBPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 63,
+            "label_original": "STSDetectorPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 64,
+            "label_original": "CarouselPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 65,
+            "label_original": "PositionerEnable",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 66,
+            "label_original": "PositionerDirectionIn",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 67,
+            "label_original": "PositionerClock",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 68,
+            "label_original": "GN2MainSolenoid[PN03]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 69,
+            "label_original": "GateEnableSolenoid[PN07]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 70,
+            "label_original": "InletGateSolenoid[BN08]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 71,
+            "label_original": "OutletGateSolenoid[BN09]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 72,
+            "label_original": "PistonControlSolenoid[BN17]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 73,
+            "label_original": "DynamicDilutorSolenoid[PN15]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 74,
+            "label_original": "PTrakSolenoid[VR06]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 75,
+            "label_original": "CommDiagASolenoid[VR11]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 76,
+            "label_original": "CommDiagBSolenoid[VR12]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 77,
+            "label_original": "CommDiagADilutionSolenoid[PN24]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 78,
+            "label_original": "CommDiagBDilutionSolenoid[PN27]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 79,
+            "label_original": "PurgeSolenoid[VM09]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 80,
+            "label_original": "PistonGN2Solenoid[BN18]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 81,
+            "label_original": "PistonVentSolenoid[BN20]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 82,
+            "label_original": "PistonVacuumSolenoid[BN16]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 83,
+            "label_original": "ThermalPrecipitatorSolenoid[VM06]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 84,
+            "label_original": "ThermalPrecipitatorPreAgeHeater",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 85,
+            "label_original": "ThermalPrecipitatorPostAgeHeater",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 86,
+            "label_original": "ThermalPrecipitatorPreAgeValve",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 87,
+            "label_original": "ThermalPrecipitatorPostAgeValve",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 88,
+            "label_original": "ThermalPrecipitatorPreAgeCableSense",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 89,
+            "label_original": "ThermalPrecipitatorPostAgeCableSense",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 90,
+            "label_original": "STSDetectorSelfTest",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 91,
+            "label_original": "STSDetectorAlarmReset",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 92,
+            "label_original": "STSDetectorAlarm",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 93,
+            "label_original": "ISSDetectorSelfTest",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 94,
+            "label_original": "VideoPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 95,
+            "label_original": "VideoRecording",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 96,
+            "label_original": "VideoPaused",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 97,
+            "label_original": "CameraPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 98,
+            "label_original": "IlluminationLEDPower",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 703
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

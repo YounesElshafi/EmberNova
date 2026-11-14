@@ -15,8 +15,8 @@ from embernova.storage import Store
 from embernova.tools import Tools
 
 
-def retrieval(split="both"):
-    cfg = settings()
+def retrieval(split="both", offline=False):
+    cfg = settings().model_copy(update={"openai_api_key": None}) if offline else settings()
     state = Store(cfg)
     questions = yaml.safe_load((ROOT / "curation/benchmark/retrieval_v1.yaml").read_text())[
         "questions"
@@ -235,8 +235,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("command", choices=["retrieval", "demos"])
     parser.add_argument("--split", choices=["dev", "test", "both"], default="both")
+    parser.add_argument(
+        "--offline",
+        action="store_true",
+        help="Disable paid embeddings even when .env contains a key",
+    )
     args = parser.parse_args()
-    retrieval(args.split) if args.command == "retrieval" else demos()
+    retrieval(args.split, args.offline) if args.command == "retrieval" else demos()
 
 
 if __name__ == "__main__":

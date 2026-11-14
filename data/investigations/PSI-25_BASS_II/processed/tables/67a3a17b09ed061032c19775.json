@@ -1,0 +1,220 @@
+{
+  "source": {
+    "investigation_id": "PSI-25",
+    "file_id": "67a3a17b09ed061032c19775",
+    "filename": "PSI-25_Experimental table_BASS-II.csv",
+    "relative_local_path": "investigations/PSI-25_BASS_II/raw/datasets/PSI-25_Experimental table_BASS-II.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=67a3a17b09ed061032c19775&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "doi": "10.60555/4qc4-de67",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+    "source_key": "psi-data/PSI-25/Experimental table/PSI-25_Experimental table_BASS-II.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-25_Experimental table_BASS-II.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 129,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "PI",
+            "header_unit": null,
+            "type_counts": {
+              "text": 129
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Test #",
+            "header_unit": null,
+            "type_counts": {
+              "text": 129
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Date",
+            "header_unit": null,
+            "type_counts": {
+              "text": 129
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "GMT",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 129
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Sample #",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 22,
+              "text": 107
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Fuel Sample Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 129
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Flow restrictor",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 129
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Fan display",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 17,
+              "text": 97,
+              "numeric": 2
+            },
+            "blank_count": 13,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Air display",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 24,
+              "text": 100,
+              "numeric": 1
+            },
+            "blank_count": 4,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Radiometer gain   (1000   250   50   10)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 110,
+              "text": 19
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "Total Frames Shot",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 123,
+              "text": 6
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Calibrated  initial O2 % by vol ",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 105,
+              "integer": 24
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Calibrated final O2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 116,
+              "text": 2,
+              "integer": 11
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Initial CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 125,
+              "integer": 2,
+              "text": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Final CO2 % by vol",
+            "header_unit": "% by vol",
+            "type_counts": {
+              "numeric": 121,
+              "text": 5,
+              "integer": 2
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "Initial CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 125,
+              "numeric": 1,
+              "text": 3
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "Final CO (ppm)",
+            "header_unit": "ppm",
+            "type_counts": {
+              "integer": 119,
+              "numeric": 1,
+              "text": 8
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

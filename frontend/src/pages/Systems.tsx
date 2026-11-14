@@ -210,7 +210,7 @@ export function EvidenceMap() {
                   <div>
                     <h2>{fc.label}</h2>
                     <p className="muted">
-                      {fc.n_runs} measured tests · {fc.investigations.join(", ")}
+                      {fc.n_runs} measured source records · {fc.investigations.join(", ")}
                     </p>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ export function EvidenceMap() {
                                 {c ? (
                                   <button
                                     onClick={() => setSelected({ ...c, fc: fc.label })}
-                                    aria-label={`${c.n_runs} tests: ${o}, ${p}`}
+                                    aria-label={`${c.n_runs} source records: ${o}, ${p}`}
                                   >
                                     {c.n_runs}
                                   </button>
@@ -257,7 +257,7 @@ export function EvidenceMap() {
                 </div>
                 {fc.burner_oxygen && (
                   <p className="notice">
-                    {fc.burner_oxygen.n_runs} tests report burner-stream oxygen
+                    {fc.burner_oxygen.n_runs} source records report burner-stream oxygen
                     up to {fc.burner_oxygen.max_percent}%.{" "}
                     {fc.burner_oxygen.note}
                   </p>
@@ -268,7 +268,7 @@ export function EvidenceMap() {
           {selected && (
             <section className="content-card">
               <h3>
-                {selected.fc}: {selected.n_runs} tests at {selected.o2_band},{" "}
+                {selected.fc}: {selected.n_runs} source records at {selected.o2_band},{" "}
                 {selected.pressure_band}
               </h3>
               <p>Investigations: {selected.investigations.join(", ")}</p>

@@ -1,0 +1,27 @@
+{
+  "source": {
+    "investigation_id": "PSI-20",
+    "file_id": "6841d8181b4820d736cecc2a",
+    "filename": "PSI-20_Science Documents_ACME_fact_sheet_20180519.pdf",
+    "relative_local_path": "investigations/PSI-20_ACME_BRE/raw/documents/PSI-20_Science Documents_ACME_fact_sheet_20180519.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8181b4820d736cecc2a&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "doi": "10.60555/vb93-3y72",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "39e4cbd2e7985b54a25cee3f8a7f60884eb75881ce9e1a512beeea4128a881c7",
+    "source_key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ACME_fact_sheet_20180519.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "Advanced Combustion via Microgravity Experiments (ACME)\n\nPURPOSE:  ACME  is focused on advanced combustion\ntechnology  via fundamental microgravity research.  The\nprimary goal is to improve efficiency and reduce pollutant\nemission in practical terrestrial combustion.  A secondary\nobjective is fire prevention, especially for spacecraft.\n\nRESEARCH: ACME includes six independent experiments\ninvestigating laminar, gaseous, non-premixed flames. They\nare being conducted with a single set of modular hardware\nin the Combustion Integrated Rack (CIR) on the International\nSpace Station (ISS).\n\n\n\n\n                                                                Paolo Nespoli (ESA) installing the ACME chamber insert\n                                                                        into the Combustion Integrated Rack (CIR)\n\n\n\n\n\n  Example image of a lifted coflow flame from the CLD Flame\n  experiment of Marshall B, Long et al.\n\nSTATUS: ACME set-up and check-out was carried out by the    Joe Acaba (NASA) working on the ACME chamber insert\nISS crew in Sept.-Oct. 2017, where science testing began in\nNovember. The first round of testing for the Coflow Laminar\nDiffusion Flame (CLD Flame) experiment of Marshall B. Long\net  al. was completed in Feb. 2018, where 130 methane\nflames (at a range of concentrations) were ignited. The first\nround of testing for the Electric-Field Effects on Laminar\nDiffusion Flames  (E-FIELD Flames) experiment  of Derek\nDunn-Rankin et al. was completed on May 18, where 120\ncoflow flames were  ignited.  On May 20, burners and\nadditional hardware for the next three ACME experiments\nare scheduled to launch.  The ACME hardware should be\nreconfigured on May 22 by astronaut Ricky Arnold (NASA)\nfor CLD Flame’s second round, where the ethylene flame\ntesting should begin later in the week.                        Anton Shkaplerov (RSA) and Oleg Artemyev (RSA)\n                                                               exchanging a CIR gas bottle for E-FIELD Flames testing\nWEB SITE: http://spaceflightsystems.grc.nasa.gov/acme/\nUPDATES: www.facebook.com/space.flames              CONTACT:\nPHOTOGRAPHS: www.flickr.com/photos/space-flames        Dennis Stocker, ACME Project Scientist\nEDUCATION: https://tinyurl.com/space-flames             NASA Glenn Research Center, Cleveland, OH\n                                                          216-433-2166, dennis.p.stocker@nasa.gov\n19 May 2018",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

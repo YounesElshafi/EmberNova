@@ -1,0 +1,31 @@
+services:
+  embernova:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      BUILD_DIR: /app/build
+      DATA_DIR: /app/data
+      STATE_DIR: /var/lib/embernova
+      SECURE_COOKIES: "true"
+      TRUSTED_PROXY: "true"
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+    volumes:
+      - ../build:/app/build:ro
+      - ../data:/app/data:ro
+      - embernova_state:/var/lib/embernova
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5)"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 30s
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  embernova_state:

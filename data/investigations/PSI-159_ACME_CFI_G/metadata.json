@@ -1,0 +1,192 @@
+{
+  "source_id": "PSI-159",
+  "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases",
+  "source_type": "psi_investigation",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+  "priority": "B",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Latest PSI file tree inventoried.",
+  "acronym": "ACME CFI-G",
+  "scientific_category": "Combustion Science",
+  "subcategory": "Flames of Gaseous Fuels",
+  "research_program": "ACME",
+  "objectives": "1. Plan and support flight testing on the International Space Station (ISS).\n2. Determine the conditions for which cool diffusion flames occur for propane, n-butane, and n-pentane; normal and inverse flames; and a broad range of Zst, Tad, and fluent flow rate.\n3. Support the flight tests with advanced CFD simulations.\n4. Identify or develop a chemical kinetics mechanism that yields good agreement between the CFD predictions and the ISS measurements.\n5. Disseminate the results as widely as possible.",
+  "approach": "Perform spherical diffusion flame tests aboard the International Space Station. Consider multiple fuels, a range of reactant dilutions, flow rates, and pressures for normal and inverse convection directions. Observe the flames with a broad suite of cameras, radiometers, photomultiplier tubes, and thermocouples.",
+  "platform": "International Space Station (ISS)",
+  "project_type": "Microgravity Investigation",
+  "hardware": "ACME, Combustion Integrated Rack (CIR)",
+  "hardware_url": "https://www1.grc.nasa.gov/space/iss-research/iss-fcf/combustion-science/acme/implementation/, https://www1.grc.nasa.gov/space/iss-research/iss-fcf/cir/",
+  "institution": "University of Maryland",
+  "principal_investigator": "Peter B. Sunderland",
+  "nasa_center": "Glenn Research Center (GRC)",
+  "investigation_start": null,
+  "investigation_end": null,
+  "initial_release_date": "20-Nov-2025",
+  "version_modified_date": "20-Nov-2025",
+  "source_version": 1,
+  "doi": "10.60555/cyt1-kh64",
+  "license": "CC0-1.0",
+  "license_url": "https://spdx.org/licenses/CC0-1.0.html",
+  "related_investigations": [],
+  "file_count": 3756,
+  "repeated_tree_entries": 0,
+  "inventoried_bytes": 2085592429259,
+  "reported_dataset_bytes": 2085592429259,
+  "file_types": ".csv;.errors;.jpg;.log;.mdipsug;.mp4;.next;.pdf;.png;.ts;.txt;.xlsx;.zip",
+  "publication_count": 2,
+  "metadata_path": "investigations/PSI-159_ACME_CFI_G/metadata.json",
+  "relevance": "Combustion research related to ignition, extinction, flame behavior, or soot",
+  "version_history_path": "logs/psi/PSI-159-versions.json",
+  "inventory_snapshot_path": "logs/psi/PSI-159-files.json",
+  "principal_investigators": [
+    {
+      "name": "Peter B. Sunderland",
+      "institution": "University of Maryland"
+    }
+  ],
+  "publications": [
+    {
+      "authorList": "Kim Minhyeng, Waddell Kendyl A., Sunderland Peter B., Nayagam Vedha, Stocker Dennis P., Dietrich Daniel L., Ju Yiguang, Williams Forman A., Irace Phillip, Axelbaum Richard L.",
+      "comments": [],
+      "doi": "10.1016/j.proci.2022.07.015",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Spherical gas-fueled cool diffusion flames"
+    },
+    {
+      "authorList": "Waddell Kendyl A., Lee Han Ju, Nayagam Vedha, Axelbaum Richard L., Sunderland Peter B.",
+      "comments": [],
+      "doi": "10.1016/j.combustflame.2023.112852",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Cool diffusion flames in a stably stratified stagnation flow"
+    }
+  ],
+  "representative_media": [
+    {
+      "_id": {
+        "$oid": "691f7ea517f78b371b2705a1"
+      },
+      "date_created": {
+        "$date": 1763671717200
+      },
+      "date_modified": {
+        "$date": 1763671717200
+      },
+      "file_name": "PSI-159_Representative Image(s)_ACME logo.png",
+      "file_size": 127968,
+      "remote_path": "/Home/psi-data/PSI-159/Representative Image(s)/PSI-159_Representative Image(s)_ACME logo.png",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-159/Representative Image(s)/PSI-159_Representative Image(s)_ACME logo.png",
+      "resource_id": {
+        "$oid": "66ec8407c6ad4bdc12fc903b"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-159/Representative Image(s)/PSI-159_Representative Image(s)_ACME logo.png",
+      "s3_version_id": "ad0peHVTywLW06KMGB0qWEvSVAhMAtZP",
+      "study_id": {
+        "$oid": "691f7ea517f78b371b2705dd"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    },
+    {
+      "_id": {
+        "$oid": "691f7ea517f78b371b2705a2"
+      },
+      "date_created": {
+        "$date": 1763671717201
+      },
+      "date_modified": {
+        "$date": 1763671717201
+      },
+      "file_name": "PSI-159_Representative Image(s)_CFI-G_Observation of non-premixed quasi-steady spherical cool flames on porous burners.jpg",
+      "file_size": 9866,
+      "remote_path": "/Home/psi-data/PSI-159/Representative Image(s)/PSI-159_Representative Image(s)_CFI-G_Observation of non-premixed quasi-steady spherical cool flames on porous burners.jpg",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-159/Representative Image(s)/PSI-159_Representative Image(s)_CFI-G_Observation of non-premixed quasi-steady spherical cool flames on porous burners.jpg",
+      "resource_id": {
+        "$oid": "66ec8407c6ad4bdc12fc903b"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-159/Representative Image(s)/PSI-159_Representative Image(s)_CFI-G_Observation of non-premixed quasi-steady spherical cool flames on porous burners.jpg",
+      "s3_version_id": "SIfYm4uKsUi5rarvcfFXWwr45K_SMQe0",
+      "study_id": {
+        "$oid": "691f7ea517f78b371b2705dd"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "experimental_tables": [
+    {
+      "_id": {
+        "$oid": "691f7ea117f78b371b26f6fa"
+      },
+      "date_created": {
+        "$date": 1763671713438
+      },
+      "date_modified": {
+        "$date": 1763671713438
+      },
+      "file_name": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+      "file_size": 22166,
+      "remote_path": "/Home/psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+      "resource_id": {
+        "$oid": "66cf53d46f1142c964b2e0a8"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+      "s3_version_id": "e2yKIZ6mbgJrKJZoJn0VH.iv5SXkad52",
+      "study_id": {
+        "$oid": "691f7ea517f78b371b2705dd"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    },
+    {
+      "_id": {
+        "$oid": "691f7ea117f78b371b26f6fb"
+      },
+      "date_created": {
+        "$date": 1763671713439
+      },
+      "date_modified": {
+        "$date": 1763671713439
+      },
+      "file_name": "PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "file_size": 39422,
+      "remote_path": "/Home/psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "resource_id": {
+        "$oid": "66cf53d46f1142c964b2e0a8"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "s3_version_id": "n3Zpkz..GSnB2jgO4PjIOmXhx_AbOG.5",
+      "study_id": {
+        "$oid": "691f7ea517f78b371b2705dd"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "experiments": [],
+  "upstream_metadata_path": "logs/psi/PSI-159-detail.json",
+  "inventory_errors": {}
+}

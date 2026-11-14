@@ -1,0 +1,519 @@
+{
+  "source": {
+    "investigation_id": "PSI-100",
+    "file_id": "6841ac3f8970fb41b9cebb79",
+    "filename": "PSI-100_Raw Data_Raw telemetry file.csv",
+    "relative_local_path": "investigations/PSI-100_SAFFIRE_III/raw/datasets/PSI-100_Raw Data_Raw telemetry file.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6841ac3f8970fb41b9cebb79&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+    "doi": "10.60555/040q-4h36",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "dfb204ce3bdf8b1749652549afcbad31d180902bc268dfbe782c70fa38d170a2",
+    "source_key": "psi-data/PSI-100/Raw Data/PSI-100_Raw Data_Raw telemetry file.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-100_Raw Data_Raw telemetry file.csv",
+        "header_assumption": "first record",
+        "header_verified": false,
+        "row_count": 3972,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "RelativeSeconds",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3971,
+              "numeric": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "CygnusTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "SaffireTimestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3845,
+              "numeric": 127
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "P@sfsHk.Radiometer1value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "P@sfsHk.Radiometer2value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "P@sfsHk.Radiometer3value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "P@sfsHk.Radiometer4value",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "P@sfsHk.Anemometer1",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "P@sfsHk.Anemometer2",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "P@sfsHk.FanTachometer",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "P@sfsHk.SmokeWireVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "P@sfsHk.SmokeWireCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "P@sfsHk.Sample1IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "P@sfsHk.Sample1IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "P@sfsHk.Sample2IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "P@sfsHk.Sample2IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "P@sfsHk.Sample3IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "P@sfsHk.Sample3IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "P@sfsHk.Sample4IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "P@sfsHk.Sample4IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "P@sfsHk.Sample5IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "P@sfsHk.Sample5IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "P@sfsHk.Sample6IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "P@sfsHk.Sample6IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "P@sfsHk.Sample7IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 26,
+            "label_original": "P@sfsHk.Sample7IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 27,
+            "label_original": "P@sfsHk.Sample8IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 28,
+            "label_original": "P@sfsHk.Sample8IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 29,
+            "label_original": "P@sfsHk.Sample9IgniterVoltage",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 30,
+            "label_original": "P@sfsHk.Sample9IgniterCurrent",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 31,
+            "label_original": "P@PCM_ETS_TEMP_SIG",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 544,
+              "integer": 3428
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 32,
+            "label_original": "P@F1PCM_AIR_PRES_EPS1_SIG_POS",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3428,
+              "numeric": 544
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 33,
+            "label_original": "P@F2PCM_AIR_PRES_EPS2_SIG_POS",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3421,
+              "numeric": 551
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 34,
+            "label_original": "P@F3PCM_AIR_PRES_EPS3_SIG_POS",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3421,
+              "numeric": 551
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 35,
+            "label_original": "P@OPS_PCM_PRES_AVG_BY_TEMP",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2328,
+              "numeric": 1644
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 36,
+            "label_original": "P@CDH_F1PCM_SMK_DET_OBS_SENS_P",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 37,
+            "label_original": "P@CDH_F2PCM_SMK_DET_OBS_SENS_P",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3423,
+              "numeric": 549
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 38,
+            "label_original": "P@CDH_F1PCM_SMK_DET_SCAT_SENS_P",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3971,
+              "numeric": 1
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 39,
+            "label_original": "P@CDH_F2PCM_SMK_DET_SCAT_SENS_P",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3470,
+              "numeric": 502
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 40,
+            "label_original": "P@CDH_F1PCM_ECLS_FAN_PRESSURE_P",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3972
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 41,
+            "label_original": "P@CDH_F2PCM_ECLS_FAN_PRESSURE_P",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 3423,
+              "numeric": 549
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 42,
+            "label_original": "P@GNCAttitudeNavigatorShared.omegaEst_bdy.elements[0]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2873,
+              "numeric": 1099
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 43,
+            "label_original": "P@GNCAttitudeNavigatorShared.omegaEst_bdy.elements[1]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2873,
+              "numeric": 1099
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 44,
+            "label_original": "P@GNCAttitudeNavigatorShared.omegaEst_bdy.elements[2]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2873,
+              "numeric": 1099
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 45,
+            "label_original": "P@GNCImuSensor.imu[0].currentMeas_Bdy.acc.elements[0]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2914,
+              "numeric": 1058
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 46,
+            "label_original": "P@GNCImuSensor.imu[0].currentMeas_Bdy.acc.elements[1]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2914,
+              "numeric": 1058
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 47,
+            "label_original": "P@GNCImuSensor.imu[0].currentMeas_Bdy.acc.elements[2]",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 2914,
+              "numeric": 1058
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

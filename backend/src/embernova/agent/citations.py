@@ -9,8 +9,16 @@ IDENTIFIER = re.compile(
 )
 
 
+# Rank cells ("| **1** |"), list ordinals ("2. ") and "#3"/"rank 3" are positions, not quantities.
+ORDINAL = re.compile(
+    r"^\s*\|\s*\**\s*\d{1,2}\s*\**\s*(?=\|)|^\s*\d{1,2}[.)]\s|#\d{1,2}\b|\brank(?:ed)?\s+\d{1,2}\b"
+    r"|\b(?:physical\s+)?pages?(?:/parts?)?\s+\d{1,4}(?:\s*[-–]\s*\d{1,4})?|\bpp?\.\s*\d{1,4}",
+    re.I,
+)
+
+
 def _numbers(text: str) -> list[str]:
-    cleaned = IDENTIFIER.sub(" ", MARKER.sub(" ", text))
+    cleaned = IDENTIFIER.sub(" ", MARKER.sub(" ", ORDINAL.sub(" ", text)))
     return [m.group().replace("−", "-").replace(",", "") for m in NUMBER.finditer(cleaned)]
 
 
@@ -33,13 +41,12 @@ def _grounded(token: str, values: set[float]) -> bool:
     decimals = len(token.split(".")[1]) if "." in token else 0
     tolerance = 0.5 * 10**-decimals + 1e-12
     # A stated number is grounded when some cited value rounds to it (e.g. 0.4583 -> 0.46).
-    return any(abs(abs(n) - abs(v)) <= tolerance for v in values)
+    return any(abs(n - v) <= tolerance for v in values)
 
 
 def grounding_corpus(item: dict, artifacts: dict) -> list:
-    texts = [item.get("excerpt", ""), json.dumps(item.get("locator", {}))]
+    texts = [item.get("excerpt", "")]
     texts.append(json.dumps(item.get("preview_rows") or []))
-    texts += [str(t) for t in item.get("transform") or []]
     run_uids = item.get("locator", {}).get("run_uids")
     if run_uids:
         texts.append(str(len(run_uids)))
@@ -56,7 +63,8 @@ def numeric_audit(
     evidence that sentence cites or in this turn's deterministic tool outputs. Numbers the
     user supplied are allowed. A number the model computed or invented is flagged. This does
     not prove semantic entailment."""
-    allowed = _value_set([question, *tool_outputs])
+    # User text and unrelated tool output cannot establish a source-backed claim.
+    allowed: set[float] = set()
     unmatched = []
     for line in text.splitlines():
         ids = [m[1] or m[2] for m in MARKER.finditer(line)]
@@ -65,7 +73,61 @@ def numeric_audit(
             continue
         values = allowed | _value_set(t for e in cited for t in grounding_corpus(e, artifacts))
         for token in _numbers(line):
-            if not _grounded(token, values):
+            match = re.search(rf"(?<![\w.]){re.escape(token)}(?![\w])", line)
+            context = (
+                line[max(0, match.start() - 35) : match.end() + 24].lower()
+                if match
+                else line.lower()
+            )
+            topic = next(
+                (
+                    word
+                    for word in (
+                        "pressure",
+                        "diameter",
+                        "temperature",
+                        "velocity",
+                        "burning rate",
+                        "oxygen",
+                    )
+                    if word in context
+                ),
+                None,
+            )
+            matching_values = [
+                v
+                for e in cited
+                for row in e.get("preview_rows") or []
+                for v in row.get("values") or []
+                if v.get("display_value") is not None
+                and _grounded(token, {float(v["display_value"])})
+            ]
+            count_claim = bool(re.search(r"\b(tests?|runs?|rows?|records?)\b", context))
+            if (
+                any(e.get("kind") == "data_rows" and e.get("preview_rows") for e in cited)
+                and not matching_values
+                and not count_claim
+            ):
+                unmatched.append({"number": token, "sentence": MARKER.sub("", line).strip()[:200]})
+                continue
+            declared = re.search(
+                rf"(?<![\w.]){re.escape(token)}\s*(mmHg|mm|cm|km|m|Pa|kPa|psi|%)\b", line, re.I
+            )
+            preview_units = {str(v.get("display_unit", "")).lower() for v in matching_values}
+            wrong_unit = bool(
+                declared and preview_units and declared[1].lower() not in preview_units
+            )
+            aliases = {"oxygen": ("oxygen", "o2_"), "burning rate": ("burning_rate",)}
+            names = aliases.get(topic, (topic.replace(" ", "_"),)) if topic else ()
+            wrong_quantity = bool(
+                topic
+                and matching_values
+                and not any(
+                    any(name in str(v.get("name", "")).lower() for name in names)
+                    for v in matching_values
+                )
+            )
+            if not _grounded(token, values) or wrong_unit or wrong_quantity:
                 unmatched.append({"number": token, "sentence": MARKER.sub("", line).strip()[:200]})
     return {
         "ungrounded_numbers": len(unmatched),

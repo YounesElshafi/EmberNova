@@ -156,6 +156,6 @@ The agent may then report the measured outcomes of the nearest tests as evidence
 
 ## 5. Extensibility hooks (not built now)
 
-- **Experience modules.** The SPA routes are grouped under `/` (research). Future `/learn` and `/play` modules reuse the same API and tools, so no backend refactor is needed.
+- **Experience modules.** `/` is the mission home page with the cinematic introduction ([ADR-015](../decisions/ADR-015-cinematic-frontend.md)). The research workspace is at `/workspace` and `/s/:id`. `/capabilities` and `/how-it-works` explain the system, and the explorers keep their routes (`/systems`, `/evidence-map`, `/investigations`, `/data/:table`, `/compare`, `/envelope`, `/media`, `/featured`, `/about`). Every module reuses the same API and tools.
 - **New PSI investigations.** Add a curation YAML and a parser plugin in `embernova.ingest.tables`, then rebuild.
 - **New data types,** such as future LUCI or FM2 PSI releases. The `gravity_regime` vocabulary already includes `lunar_surface`, `simulated_partial_g` and `martian_surface`.

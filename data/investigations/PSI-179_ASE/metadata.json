@@ -1,0 +1,250 @@
+{
+  "source_id": "PSI-179",
+  "title": "Aerosol Sampling Experiment",
+  "source_type": "psi_investigation",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-179",
+  "priority": "C",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Latest PSI file tree inventoried.",
+  "acronym": "ASE",
+  "scientific_category": "Complex Fluids - Soft Matter",
+  "subcategory": "Multiphase Flow",
+  "research_program": null,
+  "objectives": "Aerosols are small particles suspended in the air, and in Earth’s atmosphere, aerosols include soot, dust, pollen and a wide range of other natural and human-made materials. Smoke does not rise and dust does not settle in microgravity the way they do on Earth, causing aerosols to behave differently and pose hazards for crew members breathing the air. The Aerosol Sampling Experiment (ASE) collects airborne particles in the International Space Station’s (ISS) cabin air, and returns them to Earth for scientists to study.\n\nThe objectives of ASE were:\n1- Characterize airborne particulate matter aboard the ISS to assess air quality for crew health and hardware longevity.\n2- Identify particle sources (e.g., human skin, equipment wear, biological contaminants) in the spacecraft environment.\n3- Improve understanding of particle transport and accumulation in microgravity conditions.\n4- Support design of future spacecraft air filtration systems, ensuring they are appropriately targeted for actual airborne particle profiles.",
+  "approach": "The ASE approach involved passive aerosol sampling in multiple ISS modules using filters placed in air ducts and cabin areas (especially near high-traffic zones and vents) by deploying commercial off-the-shelf (COTS) samplers for long-duration exposure (3 months–1 year).  The sampled filters were returned to Earth for ground-based analysis using: 1- Scanning Electron Microscopy (SEM), 2- Energy-Dispersive X-ray Spectroscopy (EDS) and 3- Gravimetric analysis. The ISS samples were compared to terrestrial cleanroom and indoor environments to assess relative cleanliness and particle source uniqueness.  Data collected was cross-referenced with previous ISS air monitoring efforts (e.g., TOCA, CCAA) to inform models of contaminant accumulation and mitigation.",
+  "platform": "International Space Station (ISS)",
+  "project_type": "Microgravity Investigation",
+  "hardware": "Passive Aerosol Samplers (PAS)",
+  "hardware_url": "https://www1.grc.nasa.gov/space/iss-research/related-experiments/aerosol-samplers/",
+  "institution": "Northrop Grumman Corporation",
+  "principal_investigator": "Marit E. Meyer",
+  "nasa_center": "Glenn Research Center (GRC)",
+  "investigation_start": "09-01-2016",
+  "investigation_end": "10-01-2019",
+  "initial_release_date": "05-Jun-2025",
+  "version_modified_date": "05-Jun-2025",
+  "source_version": 1,
+  "doi": "10.60555/pdgr-c961",
+  "license": "CC0-1.0",
+  "license_url": "https://spdx.org/licenses/CC0-1.0.html",
+  "related_investigations": [],
+  "file_count": 1932,
+  "repeated_tree_entries": 0,
+  "inventoried_bytes": 29117759463,
+  "reported_dataset_bytes": 29117759463,
+  "file_types": ".docx;.jpg;.mp4;.pdf;.png;.ppt;.pptx;.tif;.xlsx;.zip",
+  "publication_count": 12,
+  "metadata_path": "investigations/PSI-179_ASE/metadata.json",
+  "relevance": "ISS cabin aerosol sampling supports particle and dust characterization",
+  "version_history_path": "logs/psi/PSI-179-versions.json",
+  "inventory_snapshot_path": "logs/psi/PSI-179-files.json",
+  "principal_investigators": [
+    {
+      "name": "Marit E. Meyer",
+      "institution": "Northrop Grumman Corporation"
+    }
+  ],
+  "publications": [
+    {
+      "authorList": "Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Aerosol Sampling Experiment on the International Space Station (2017)"
+    },
+    {
+      "authorList": "Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Results of the Aerosol Sampling Experiment on the International Space Station (2018)"
+    },
+    {
+      "authorList": "Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Further Characterization of Aerosols Sampled on the International Space Station (2019)"
+    },
+    {
+      "authorList": "Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Presence of Metal Aerosols on the International Space Station (2022)"
+    },
+    {
+      "authorList": "Marit E. Meyer, Meytar Sorek-Hamer",
+      "comments": [],
+      "doi": "10.1089/space.2020.0018",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Developing a Spacecraft Air Quality Index for Future Missions (2020)"
+    },
+    {
+      "authorList": "Sydonia Manibusan, Gediminas Mainelis",
+      "comments": [],
+      "doi": "10.1016/j.jaerosci.2022.105992",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Passive Bioaerosol Samplers: A Complementary Tool for Bioaerosol Research. A Review"
+    },
+    {
+      "authorList": "Nathalie Tuya, Wenyan Li, and Luz M. Calle, Marit E. Meyer, Meytar Sorek-Hamer, Irina Hallinan",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Demonstration of the International Space Station Particle Database Website"
+    },
+    {
+      "authorList": "Amanda J. Rodell, Wenyan Li, Luz M. Calle, Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Presence of Metal Aerosols on the International Space Station"
+    },
+    {
+      "authorList": "Sarah E. Ley, Wenyan Li, Amanda J. Rodell, Luz M. Calle, Marit E. Meyer, Traci Lersch, Kristin Bunker, Gary Casuccio",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Fate of Silver Biocide on the International Space Station Living Environment (2021)"
+    },
+    {
+      "authorList": "Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Further Characterization of Aerosols Sampled on the International Space Station (2019)"
+    },
+    {
+      "authorList": "Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Results of the Aerosol Sampling Experiment on the International Space Station"
+    },
+    {
+      "authorList": "Marit E. Meyer",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Characterization and Measurement of Spacecraft Airborne Particulate Matter (2019)"
+    }
+  ],
+  "representative_media": [
+    {
+      "_id": {
+        "$oid": "6841d4e81b4820d736cec2fa"
+      },
+      "date_created": {
+        "$date": 1749144808416
+      },
+      "date_modified": {
+        "$date": 1749144808416
+      },
+      "file_name": "PSI-179_Representative Image(s)_ASE_Representative Image.png",
+      "file_size": 9416391,
+      "remote_path": "/Home/psi-data/PSI-179/Representative Image(s)/PSI-179_Representative Image(s)_ASE_Representative Image.png",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-179/Representative Image(s)/PSI-179_Representative Image(s)_ASE_Representative Image.png",
+      "resource_id": {
+        "$oid": "66ec8407c6ad4bdc12fc903b"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-179/Representative Image(s)/PSI-179_Representative Image(s)_ASE_Representative Image.png",
+      "s3_version_id": "NFTElQ5.fSy3h0foZrPkAVkVcNsXyVPJ",
+      "study_id": {
+        "$oid": "6841d4e81b4820d736cec331"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "experimental_tables": [],
+  "experiments": [],
+  "upstream_metadata_path": "logs/psi/PSI-179-detail.json",
+  "inventory_errors": {}
+}

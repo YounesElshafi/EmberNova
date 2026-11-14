@@ -1,0 +1,112 @@
+{
+  "source": {
+    "investigation_id": "PSI-20",
+    "file_id": "67900e38b7b6ff8e6502900c",
+    "filename": "PSI-20_Experimental table_ACME BRE.csv",
+    "relative_local_path": "investigations/PSI-20_ACME_BRE/raw/datasets/PSI-20_Experimental table_ACME BRE.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=67900e38b7b6ff8e6502900c&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "doi": "10.60555/vb93-3y72",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7",
+    "source_key": "psi-data/PSI-20/Experimental table/PSI-20_Experimental table_ACME BRE.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-20_Experimental table_ACME BRE.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 18,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Year",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Month",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Date",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Burner Size (mm)",
+            "header_unit": "mm",
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Fuel Bottle",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Oxygen Conc (percent)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Flames Ignited",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Notes",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 16,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

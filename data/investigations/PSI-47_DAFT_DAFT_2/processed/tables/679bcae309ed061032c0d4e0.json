@@ -1,0 +1,82 @@
+{
+  "source": {
+    "investigation_id": "PSI-47",
+    "file_id": "679bcae309ed061032c0d4e0",
+    "filename": "PSI-47_Experimental table_DAFT.csv",
+    "relative_local_path": "investigations/PSI-47_DAFT_DAFT_2/raw/datasets/PSI-47_Experimental table_DAFT.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-47/download?file=679bcae309ed061032c0d4e0&version=2&studyVersion=5&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+    "doi": "10.60555/ztgj-d202",
+    "source_version": "5",
+    "file_version": "2",
+    "sha256": "d9d1a436c6e7bbc410b433e04575fe7dedaff763b5237d688089929b7393b5c0",
+    "source_key": "psi-data/PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-47_Experimental table_DAFT.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 2,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Session Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Actual Day",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Hardware Description",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Sample Material",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Sampled Location",
+            "header_unit": null,
+            "type_counts": {
+              "text": 2
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

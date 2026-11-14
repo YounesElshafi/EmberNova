@@ -19,6 +19,8 @@ class Store:
             PRAGMA journal_mode=WAL;
             CREATE TABLE IF NOT EXISTS evidence(id TEXT PRIMARY KEY, data TEXT NOT NULL);
             CREATE TABLE IF NOT EXISTS artifacts(id TEXT PRIMARY KEY, data TEXT NOT NULL);
+            CREATE TABLE IF NOT EXISTS artifact_owners(id TEXT PRIMARY KEY, owner TEXT);
+            CREATE TABLE IF NOT EXISTS published_artifacts(id TEXT PRIMARY KEY);
             CREATE TABLE IF NOT EXISTS sessions(id TEXT PRIMARY KEY, data TEXT NOT NULL);
             CREATE TABLE IF NOT EXISTS turns(id TEXT PRIMARY KEY, session_id TEXT, data TEXT NOT NULL);
             CREATE TABLE IF NOT EXISTS events(turn_id TEXT, seq INTEGER, session_id TEXT, data TEXT, PRIMARY KEY(turn_id, seq));
@@ -89,6 +91,30 @@ class Store:
         if row is None:
             raise KeyError(key)
         return json.loads(row["data"])
+
+    def set_artifact_owner(self, artifact_id: str, owner: str | None):
+        with self.app() as db:
+            db.execute("INSERT OR REPLACE INTO artifact_owners VALUES (?, ?)", (artifact_id, owner))
+
+    def artifact_owner(self, artifact_id: str) -> str | None:
+        with self.app() as db:
+            row = db.execute(
+                "SELECT owner FROM artifact_owners WHERE id=?", (artifact_id,)
+            ).fetchone()
+        return row["owner"] if row else None
+
+    def publish_artifact(self, artifact_id: str):
+        with self.app() as db:
+            db.execute("INSERT OR IGNORE INTO published_artifacts VALUES (?)", (artifact_id,))
+
+    def artifact_is_public(self, artifact_id: str) -> bool:
+        with self.app() as db:
+            return (
+                db.execute(
+                    "SELECT 1 FROM published_artifacts WHERE id=?", (artifact_id,)
+                ).fetchone()
+                is not None
+            )
 
     def event(self, session_id, event):
         with self.app() as db:

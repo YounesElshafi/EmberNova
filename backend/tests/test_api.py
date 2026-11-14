@@ -24,6 +24,27 @@ def test_source_flow(client, schemas):
     )
 
 
+def test_irrelevant_query_abstains(client):
+    result = client.post(
+        "/api/search/investigations", json={"query": "best pizza restaurant near me"}
+    )
+    assert result.status_code == 200
+    assert result.json()["no_match"] is True
+    assert result.json()["results"] == []
+
+
+def test_document_page_window(store):
+    from embernova.evidence import Ledger
+    from embernova.retrieval import document_page
+
+    first = document_page(store, Ledger(store), "doc:NTRS-20150023456-1", 26, 0, 500)
+    assert len(first["text"]) == 500
+    assert first["text_total_chars"] > 500
+    assert first["has_more"]
+    second = document_page(store, Ledger(store), "doc:NTRS-20150023456-1", 26, 500, 500)
+    assert first["text"] != second["text"]
+
+
 def test_chart_and_export(client, schemas):
     response = client.post(
         "/api/charts",
@@ -40,6 +61,32 @@ def test_chart_and_export(client, schemas):
     csv = client.get("/api/datasets/PSI-69:flex_experimental/export")
     assert "sha256" in csv.text.splitlines()[0]
     assert "source_row" in csv.text
+
+
+def test_artifact_isolation_and_point_provenance(client):
+    art = client.post(
+        "/api/charts",
+        json={
+            "table_ids": ["PSI-69:flex_experimental"],
+            "x": "o2_mole_fraction",
+            "y": "burning_rate_constant",
+        },
+    ).json()["artifact"]
+    chart = art["payload"]["chart"]
+    point_count = sum(len(series["points"]["x"]) for series in chart["series"])
+    assert len(chart["provenance"]["evidence_ids"]) == point_count
+    assert point_count > 1
+    for series in chart["series"]:
+        for uid in series["points"]["run_uid"][:1]:
+            assert any(
+                uid in client.get("/api/evidence/" + eid).json()["locator"]["run_uids"]
+                for eid in chart["provenance"]["evidence_ids"]
+            )
+    aid = art["artifact_id"]
+    assert client.get(f"/api/artifacts/{aid}/bundle").status_code == 200
+    client.cookies.clear()
+    for suffix in ("", "/data", "/bundle"):
+        assert client.get(f"/api/artifacts/{aid}{suffix}").status_code == 404
 
 
 def test_media_ranges_and_security(client):
@@ -129,3 +176,27 @@ def test_visitor_thread_isolation(client):
         ).status_code
         == 403
     )
+
+
+def test_replay_citations_resolve_on_fresh_state(tmp_path, cfg):
+    """A fresh deployment has an empty state DB; replay citations must still open."""
+    import re
+
+    from fastapi.testclient import TestClient
+
+    from embernova.main import create_app
+
+    fresh = cfg.model_copy(update={"state_dir": tmp_path / "fresh_state"})
+    with TestClient(create_app(fresh)) as client:
+        replays = client.get("/api/replays").json()
+        assert replays, "recorded demonstrations should ship with the build"
+        for meta in replays:
+            body = client.get("/api/replays/" + meta["replay_id"]).text
+            cited = set(re.findall(r"ev_[a-z0-9]{12}", body))
+            assert cited
+            for evidence_id in cited:
+                assert client.get("/api/evidence/" + evidence_id).status_code == 200
+            for match in re.findall(r'"artifact_id":"(art_[A-Z0-9]+)"', body):
+                assert client.get("/api/artifacts/" + match).status_code == 200
+            # Replaying twice must be idempotent.
+            assert client.get("/api/replays/" + meta["replay_id"]).status_code == 200

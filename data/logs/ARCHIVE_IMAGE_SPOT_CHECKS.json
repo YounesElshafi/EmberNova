@@ -1,0 +1,100 @@
+[
+  {
+    "investigation_id": "PSI-98",
+    "archive": "investigations/PSI-98_SAFFIRE_I/raw/archives/PSI-98_Raw Data_SAFFIRE_I_F1C2_Raw2TIFF.zip",
+    "member": "F1C2-1465936980498.jpg",
+    "width": 1280,
+    "height": 920
+  },
+  {
+    "investigation_id": "PSI-98",
+    "archive": "investigations/PSI-98_SAFFIRE_I/raw/archives/PSI-98_Raw Data_S2C1-1465938171811_icmad.zip",
+    "member": "S2C1-1465937797343_icmad.jpg",
+    "width": 1280,
+    "height": 946
+  },
+  {
+    "investigation_id": "PSI-98",
+    "archive": "investigations/PSI-98_SAFFIRE_I/raw/archives/PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Complete_JPEGS.zip",
+    "member": "S2C1-1465937797343.jpg",
+    "width": 1280,
+    "height": 920
+  },
+  {
+    "investigation_id": "PSI-99",
+    "archive": "investigations/PSI-99_SAFFIRE_II/raw/archives/PSI-99_Raw Data_SAFFIRE-II_S1C2_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+    "member": "Mapped_SAFFIRE-II_S1C2_DistortionGrid-30mmBlock_640X140_color.jpg",
+    "width": 691,
+    "height": 152
+  },
+  {
+    "investigation_id": "PSI-99",
+    "archive": "investigations/PSI-99_SAFFIRE_II/raw/archives/PSI-99_Raw Data_SAFFIRE-II_S4C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+    "member": "Mapped_SAFFIRE-II_S4C1_DistortionGrid-30mmBlock_492X160_color.jpg",
+    "width": 681,
+    "height": 143
+  },
+  {
+    "investigation_id": "PSI-99",
+    "archive": "investigations/PSI-99_SAFFIRE_II/raw/archives/PSI-99_Raw Data_SAFFIRE-II_S5C1_DistortionGrids_Sample_ROI_Mapped JPEGS.zip",
+    "member": "Mapped_SAFFIRE-II_S5C1_DistortionGrid-30mmBlock_474X148_color.jpg",
+    "width": 650,
+    "height": 178
+  },
+  {
+    "investigation_id": "PSI-100",
+    "archive": "investigations/PSI-100_SAFFIRE_III/raw/archives/PSI-100_Raw Data_SAFFIRE-III_F1C1_Distortion Grid_1200x920.zip",
+    "member": "SAFFIRE-III_F1C1_DistortionGrid-30mmBlock_1200x920_color.jpg",
+    "width": 1200,
+    "height": 920
+  },
+  {
+    "investigation_id": "PSI-100",
+    "archive": "investigations/PSI-100_SAFFIRE_III/raw/archives/PSI-100_Raw Data_SAFFIRE-III_F1C1_Distortion Grid_1360x1024.zip",
+    "member": "SAFFIRE-III_F1C1_1360x1024_color.jpg",
+    "width": 1360,
+    "height": 1024
+  },
+  {
+    "investigation_id": "PSI-100",
+    "archive": "investigations/PSI-100_SAFFIRE_III/raw/archives/PSI-100_Raw Data_SAFFIRE-III_F1C2_Distortion Grid_1360x1024.zip",
+    "member": "SAFFIRE-III_F1C2_1360x1024_color.jpg",
+    "width": 1360,
+    "height": 1024
+  },
+  {
+    "investigation_id": "PSI-101",
+    "archive": "investigations/PSI-101_SAME_R/raw/archives/PSI-101_Raw Data_#68 21L Lampwick.zip",
+    "member": "68-21L_1 up 1350.jpg",
+    "width": 1024,
+    "height": 1084
+  },
+  {
+    "investigation_id": "PSI-102",
+    "archive": "investigations/PSI-102_SAME/raw/archives/PSI-102_Engineering Documents_SAME OPS images.zip",
+    "member": "ISS015E26252.jpg",
+    "width": 3032,
+    "height": 2064
+  },
+  {
+    "investigation_id": "PSI-106",
+    "archive": "investigations/PSI-106_SLICE/raw/archives/SLICE Flow Duct Cal - 13 mm Station x 19 mm Height, OUTSIDE.zip",
+    "member": "docProps/thumbnail.jpeg",
+    "width": 256,
+    "height": 159
+  },
+  {
+    "investigation_id": "PSI-107",
+    "archive": "investigations/PSI-107_SPICE/raw/archives/PSI-107_Raw Data_Downlink Frame Grabs TP 0101.zip",
+    "member": "062 TP 101 vlcsnap-4261157.png",
+    "width": 640,
+    "height": 480
+  },
+  {
+    "investigation_id": "PSI-179",
+    "archive": "investigations/PSI-179_ASE/raw/archives/PSI-179_Analyzed Data_02-Partition.zip",
+    "member": "Partition/16_PAS K_Day 02_Partition00067.png",
+    "width": 2048,
+    "height": 2048
+  }
+]

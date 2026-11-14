@@ -1,0 +1,477 @@
+{
+  "source": {
+    "investigation_id": "PSI-69",
+    "file_id": "684347449e44646b740289fd",
+    "filename": "PSI-69_Engineering Documents_FLEX Overall Ext File-2.pdf",
+    "relative_local_path": "investigations/PSI-69_FLEX/raw/documents/PSI-69_Engineering Documents_FLEX Overall Ext File-2.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684347449e44646b740289fd&version=1&studyVersion=5&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+    "doi": "10.60555/mbq8-0451",
+    "source_version": "5",
+    "file_version": "1",
+    "sha256": "32b780edb446f5f9134a7138658faa6ea72c529a62ac6c3fd726f7ca049d0999",
+    "source_key": "psi-data/PSI-69/Engineering Documents/PSI-69_Engineering Documents_FLEX Overall Ext File-2.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "Selections from Engineering Documents\n for Flame Extinguishment Experiment\n              (FLEX)\n\n\n\n\n\n                                        Selected by: Gordon Berger 5/21/2015",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Overall FLEX ext title page.pdf"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "Selections from Payload Accomodations\n           Handbook\n  Fluid and Combustion Facility (FCF)\n  Combustion Integrated Rack (CIR)\n                 Final\n          October 1, 2008\n\n         Original prepared by:\n               Bilkis Banu\n         Systems Engineer\n        ZIN Technology, Inc.",
+      "headings": [
+        {
+          "level": 1,
+          "title": "PAH ext title page"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "                                                                      CIR-DOC-4064\n                                                                              October 1, 2008\n\n2.7  Passive Rack Isolation System\nThe Passive Rack Isolation System (PaRIS) hardware is installed on the CIR ISPR structure in\norder to passively isolate the rack from on-orbit vibrations. The combination of integrated rack\nand PaRIS provides vibration isolation in both dynamic load path directions (i.e., attenuating\nvibrations imposed on the rack by the ISS vehicle as well as attenuating vibrations induced on\nthe ISS vehicle by the rack, without consuming any ISS power, thermal, or data/command\nsystem resources.  It will attenuate vibratory accelerations above 1 Hz to the ISPR by suspending\nthe ISPR from the International Space Station (ISS) module structure using passive dampers and\nsprings. The utility umbilical assembly provides a low bias force and spring rate connection\nbetween the module structure and the payload rack structure for utility pass through.\n\nThe PaRIS is composed of the following:\n\n   x  Upper isolation strut adapter/interface assembly\n   x  Upper lock–down/snubbed assembly\n   x  Lower isolation adapter/interface assembly\n   x  Lower lock–down/snubbed assembly\n   x   Utility umbilical assemblies\n   x  Passive isolation units\n   x   Installation/adjustment/maintenance hardware\n\nPaRIS utilizes the spring / dampers to isolate the rack from the ISS module structure at\nfrequencies above 0.5 Hz. Unique utility cables and hoses are designated to all PaRIS\napplications. The utility services have a service loop between the ISS vehicle interface and the\nPaRIS host rack to help in removing the force induced by them. The utility umbilical assembly\ninterfaces with the module at the Utility Interface Panel (UIP) connectors.\n\n\n2.8  Science Acceleration Measurement System (SAMS)\nThe Science Acceleration Measurement System (SAMS) is an ISS based system that collects\nacceleration data and distributes this data to the science community. The distributed architecture\nof SAMS allows many sensors to be deployed at once, each independently collecting\nacceleration data and sending the data to a main control unit. The control unit can handle\ndifferent types of sensors collecting data at different rates at the same time. The control unit then\nstores the data on its hard drive and sends the data to Payload Information Management System\n(PIMS) on the ground. PIMS can then distribute the desired data to the user on the ground. CIR\nincludes a SAMS Tri-axial Sensor Head Ethernet stand alone (SAMS TSH-ES) sensor that\nextends this SAMS system into the rack.\n\nUsers on the ground contact the PIMS or SAMS ground operations to have them issue\ncommands or provide data. Ground controllers issue commands to the sensor include starting\nacceleration data collection, changing the acceleration data’s frequency range, and stopping\nacceleration data collection. Nominally, the CIR TSH begins data telemetry on rack power-up.\nThe SAMS is mounted on the front of CIR Optics Bench allowing it to measure accelerations on\na structure rigidly coupled the combustion chamber.\n\n\n\n                                         24            Payload Accommodations Handbook",
+      "headings": [
+        {
+          "level": 1,
+          "title": "PAH extract"
+        },
+        {
+          "level": 2,
+          "title": "PAH ext title page"
+        },
+        {
+          "level": 2,
+          "title": "PAHandbook extraction.pdf"
+        },
+        {
+          "level": 3,
+          "title": "Banu2008_aaaa 31"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": "                                                                      CIR-DOC-4064\n                                                                              October 1, 2008\n\n3.0        CIR CONFIGURABLE CAPABILITIES AND RESOURCES\nThe CIR provides a set of equipment that provides capabilities above those identified in the base\nconfiguration described in section 2.0. This hardware is launched in a stowage configuration and\ninstalled by the flight crew as required to support a particular science investigation. Consumable\nresources such as pressurized gas bottles, adsorber cartridges and I/O Processor hard disk drives\nare also included as configurable capabilities. Much of this hardware is currently manifested on-\norbit and is available for use. Hardware not currently on-orbit will need to be manifested\n\n\n3.1  Science Diagnostics Packages\nThe CIR science diagnostics are complete avionics packages including software ready for\ninstallation and operation in the CIR. These capabilities include illumination, imaging, image\nacquisition and processing. A summary of capability and specification is provided in TABLE IV\nand 0\n\nThe CIR specific Diagnostics Packages include:\nx  Image Acquisition Modules (IAM)\nx  Diagnostic Packages\nx  High Bit Depth Multispectral Package (HiBMs)\nx  Low Light Level Ultraviolet Package (LLL-UV)\nx   Illumination Package.\n\n\nThe Diagnostic Packages are mounted on the Optics Bench using common interfaces to permit\nmovement of packages to various window locations for maximum science support flexibility.\nThis approach emphasizes packaging modularity for operational flexibility and maintainability.\nStandardized optical interfaces (referred to as the flange mounts) are used between modules.\nThese interfaces permit module arrangements to be reconfigured on orbit if required by science.\n\n\n\n\n\n                                         25            Payload Accommodations Handbook",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Banu2008_aaaa 32.pdf"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "                                                                            CIR-DOC-4064\n                                                                                     October 1, 2008\n\n                      TABLE IV.  Imaging Capabilities\n\n                                            Diagnostic\n CIR Application     Imaging Physics                                Comments\n                                        Package\n\nSoot Volume Fraction   Background absorption\n                                                                              650 - 1050 nm\n                                                                           Selectable via LCTF: 10 nm bandpass; tunable to 1 nm\n  Soot Temperature       Near IR Emissions        HiBMs\n                                                             Allow 100 msec - LCTF switching between wavelengths\n                                                      LCTF is removable for broadband operation\n   Shadowgraph          Density Gradients\n\n\n                                   Low Light Level –                       310 nm\n  OH Emissions       Short Wave Intensified\n                                  UV            via narrow bandpass filter module (can be changed out)\n\n\n                                   Low Light Level –                       430 nm\n  CH Emissions      Long Wave Intensified\n                                                 IR             via narrow bandpass filter module (can be changed out)\n\n                           Non-coherent                                           650 - 660 nm\n    Background                                      Illumination        via Laser Diode used either below lasing threshold (non-\n     Illumination              Coherent                                coherent) or above the lasing threshold current (coherent)\n\n\n                      TABLE V. Imaging Specifications\n\n                                                                         Bit\n    Diagnostic\n                        Pixels       FOV       Resolution  Depth  Frame Rate      Record Time\n    Package\n                                                                              (bits)\n\n\n                     1024 x 1024                                  Up to 30 fps      ~18 min @ 30 fps\n                                         30, 50 & 90 mm   ~ 10 lp/mm\n                               (full frame)                                            (1024 x 1024)        (1024 x 1024)\n                                           diameter       or 0.050 mm\nHiBMs                                                                        12-bit\n                                                        (1024 x\n                      512 x 512                                   Up to 60 fps      ~36 min @ 60 fps\n                                             Telecentric         1024)\n                      (2x2 binning)                                             (512 x 512)          (512 x 512)\n\n\n                     1024 x 1024                                  Up to 30 fps      ~18 min @ 30 fps\n                               (full frame)                   ~ 3.6 lp/mm            (1024 x 1024)        (1024 x 1024)\nLow Light Level –                     50 & 80 mm\n                                                            or 0.138 mm    12-bit\nUV                                       diameter\n                      512 x 512                       (512 x 512)          Up to 54 fps      ~40 min @ 54 fps\n                      (2x2 binning)                                             (512 x 512)          (512 x 512)\n\n                     1024 x 1024                                  Up to 30 fps      ~18 min @ 30 fps\n                               (full frame)                   ~ 4.5 lp/mm            (1024 x 1024)        (1024 x 1024)\nLow Light Level – IR                 50 mm diameter    or 0.110 mm    12-bit\n                      512 x 512                       (512 x 512)          Up to 54 fps      ~40 min @ 54 fps\n                      (2x2 binning)                                             (512 x 512)          (512 x 512)\n\n                                    90 diameter\nIllumination            N/A                       N/A      N/A       N/A             N/A\n                                         Collimated\n\n\n\n\n\n                                               26            Payload Accommodations Handbook",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Banu2008_aaaa 33"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "                                                                      CIR-DOC-4064\n                                                                              October 1, 2008\n\n\n3.1.1        Illumination Package\nThe Illumination Package FIGURE 14 consists of a laser diode source and a collimating optical\nsystem, which is used to provide monochromatic illumination with a center wavelength between\n650 - 660nm.\n\nTwo laser diodes are installed in the Illumination Package. One is the primary laser diode and\nthe second is included as a spare. Both laser diodes are fiber coupled, each with its own FC/PC\ntype fiber-optic connection at the Illumination Control Module (ICM), so the output from both\ncannot be used at the same time. Each laser diode contains a photodiode to provide feedback of\npower output and a temperature transducer to monitor the diode temperature. The laser diode is\noperated below the lasing threshold current and serves as a non-coherent illumination source.\n\nThe Illumination Package can be used together with the HiBMs Package as a uniform\nillumination background source for soot absorption measurements in soot volume fraction\napplications, for shadowgraph measurements or for droplet diameter measurements. The\nmodular design supports future growth considerations.\n\nIllumination Package Specifications and Features:\n\nx  90 mm diameter CW beam\nx  Collimation: 0.339° maximum divergence\nx   8-bit programmable output level (0-255)\nx  Output power < 5 maw typical; used below lasing threshold current\nx  60% Illumination field uniformity\nx  Peak Wavelength: between 650 and 660 nm\nx   Spectral Bandwidth: < 10 nm maximum at 50% points\n\nLaser Diode Characteristics:\nx  300-350 maw max output power\nx  Continuous Wave (CW) operation\nx  Center Wavelength: 650-660 nm\nx  Fiber Pigtailed; 0.22 Numerical Aperture\n\n\n3.1.2      Low Light Level Packages\nThe Low Light Level Ultra-Violet (LLL-UV) Package is based on a 1-megapixel digital,\nmonochrome camera with a 1024x1024, frame transfer CCD array, providing 12 bit digital\nimaging capability. The CCD is directly coupled to an 18 mm Gen-II-UV Micro-channel Plate\nIntensifier to provide maximum response at short wavelengths, including the OH emission line at\n310 nm. The intensifier includes gating control that allows varied exposure times. This function\nis used both to protect the Intensifier from overexposure and as a means to match the intensity of\nthe event being viewed, such as a flame. The package includes fast numerical aperture optics\nwith high UV transmission characteristics and provision for spectral filtering of the transmitted\nillumination (Figure 14). The LLL-UV Package is provided to produce images of events or\nobjects at low radiance levels. The LLL-UV Package can be positioned on the Optics Bench to\n\n\n\n                                         27            Payload Accommodations Handbook",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Banu2008_aaaa 34"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "                                                                      CIR-DOC-4064\n                                                                              October 1, 2008\n\n\n\n\n\n     FIGURE 14. CIR Illumination Package and LLL-UV Imaging Package\n\nLLL-UV Package Specifications/ Features\n\nOptical System Characteristics:\nx   Field of View: 50 mm square (80 mm with additional deferred hardware)\nx  Resolution (2x2 Binning Mode): 3.6 lp/mm (0.14 mm)\nx   Spectral Filter Provided: 310 nm with a 10 nm FWHM bandwidth\nx  Modularity provides option to substitute Spectral Filter with additional hardware\n\n\nIntensified Imager Characteristics\nx   Spectral range: 250-750 nm, with Peak @ 450 nm\nx   Sensitivity: 5x10E-8 ft. candles (in 2x2 Binned Mode)\nx  Gen II Micro Channel Plate (MCP) Intensifier\nx  Gated operation for selectable exposure control\nx   Full Frame Mode: 1024 x 1024 pixel images at up to 30 frames per second (fps)\nx  2x2 Binning Mode: 512 x 512 pixel images at up to 54 fps\nx  Programmable frame rate: 7.5, 15 or 30 fps in full frame; Up to 54 fps with 2x2 Binning\n\n\n\n\n\n                                         28            Payload Accommodations Handbook",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Banu2008_aaaa 35"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 14"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "                                                                      CIR-DOC-4064\n                                                                              October 1, 2008\n\n3.1.3       High Bit-Depth Multispectral (HiBMs) Package\nThe HiBMs Package is based on a telemetric imaging optical system and a high resolution 12-bit\noutput digital camera. The modular package is designed for operational flexibility. The HiBMs\nDiagnostic Package consists of a spectral filter, or filter compensator glass, a Prism Module, a\ntelemetric optical system, a fixed mirror module, a DCM, and a high resolution digital camera\nshown in FIGURE 15.\n\n\n\n\n\n                    FIGURE 15. HiBMS Package\n\nThis diagnostic package has the capability of measuring two characteristics of soot producing\nflames: (1) the soot temperature field and (2) the soot volume fraction. The soot temperature\nfield is determined by measuring the percentage of laser illumination and the soot volume is\nmeasured from the Illumination Package that is absorbed by soot in the flame region. HiBMs is\ntelemetric thereby providing pixel mapping through object space along parallel paths.\n\nThe liquid crystal tunable filter is (LCTF) 10 nm bandpass and can be tuned to any wavelength\nin the near IR between 650 nm and 1050 nm. The filter is removable for selected wavelength\nimaging across a broader spectrum with insertion of a Filter Compensator module.\n\nThe maximum data rate is supported by the direct to disk hardware in the IPSU is 30 fps at full\nresolution and 12 bit depth. The camera can be operated at 30 frames per second with 12 bit per\npixel dynamic range. Binning may be selected to reduce data storage requirements. Sub frame\n\n\n\n\n                                         29            Payload Accommodations Handbook",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Banu2008_aaaa 36"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 15"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "   Selections from Reflight Safety Data Package\nMulti-­‐user Droplet Combustion Apparatus, FLEX2\n                  Revision A\n              October 12, 2010\n\n              Original prepared by:\n                  Jesse Robbins\n              Systems Engineer\n             ZIN Technologies\n\n                   Clarise Shinn\n           Systems Safety Engineer\n             ZIN Technologies",
+      "headings": [
+        {
+          "level": 1,
+          "title": "RSDP ext title page"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n3.0  FCF OVERVIEW\n\n3.1   Fluids and Combustion Facility\n\nThe FCF is a modular, multi-user facility developed by Glenn Research Center (GRC)\nfor permanent installation in the ISS US Lab Module to support technology development\nand validation in support of Space Exploration. This facility establishes an initial\noperational capability for microgravity fluid physics and combustion science on-board\nISS. FCF’s scope started with design and progressed through development,\nproduction, deployment and operation in ISS.\n\nFCF consists of two powered racks and sufficient on-orbit stowage in ISS for FCF and\npayload hardware. The two racks are the Combustion Integrated Rack (CIR) and the\nFluids Integrated Rack (FIR). FCF operates together with payload experiment\nequipment and ground-based operations facilities to perform fluids and combustion\nscience experiments within available FCF and ISS resources.\n\n3.2   Combustion Integrated Rack\n\nThe CIR is designed to support a wide variety of combustion sciences in space. Solid,\nliquid and gas fuels are burned in a Chamber. Diagnostics are used to capture\nimportant attributes of the combustion event such that scientists may better understand\nthe combustion process.\n\nComponents located in the CIR will consist of two (2) types of hardware; permanent\nfacility hardware, designed to serve multiple Principal Investigators (PI), and PI-specific\nhardware, designed to be replaced as part of each experiment to be performed. The\nCIR design is to be installed in a standard Boeing ISPR. A folding door is used over the\nfront of the assembled rack.\n\n\n\n\n\n                                          5\n                                                           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 1,
+          "title": "RSDP extract"
+        },
+        {
+          "level": 2,
+          "title": "RSDP ext title page"
+        },
+        {
+          "level": 2,
+          "title": "Reflight Safety Data Package extract"
+        },
+        {
+          "level": 3,
+          "title": "Selections from Reflight Safety Data Package for Informatics Engineering Documents.pdf"
+        },
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 13"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "                                                                        MDC-DOC-1790A\n                                                                                         October 12, 2010\n\nThree-Tier Solution for a Diverse Complement of Science Requirements\n\n\n\n\n\n                   FIGURE 1  FCF OVERVIEW\n\n\n\n                                    6\n                                                                          Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 14"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 1"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n\n4.0   CIR/MDCA INTERFACE SECTION\n\nCIR and MDCA hardware was launched on STS 126/ULF-2from Kennedy Space Center\nin November 2008. After delivery, CIR was installed in the United States Laboratory\nModule, and MDCA was installed into the CIR.  It is anticipated that FLEX2 hardware\nwill be manifested on ATV2 or ULF5 in 2010, and will be integrated into MDCA by the\ncrew after the completion of FLEX and FLEX-Helium experiments.\n4.1   MDCA/FLEX2 Experiment Overview\n\n4.1.1 Payload Description\n\nMDCA is designed to support experiments that investigate the fundamental\ncombustion/suppression/extinguishment aspects of fuel droplets under different\npressures and ambient oxygen concentrations for a range of fuel droplet sizes. The\nMDCA/FLEX2 experiments include hardware that is based on the design of the\nMDCA/FLEX hardware, with minimal changes made to accommodate droplet array\nexperiments. The most extensive design changes are with regard to the Retractable\nIndex Fiber (RIF), and the igniter tips, as will be described in section 5. The FLEX2\nhardware that has no changes from the FLEX design consists of gas bottles, and an\nadsorber cartridge, both of which are CIR provided. Additional needle assemblies and\nfuel reservoirs are provided by FLEX2 and are also identical to those used in FLEX.\nThe fuels loaded into the reservoirs, however, will differ from those used in FLEX, as is\ndiscussed in section 5.\n\n4.1.2 Experiment objectives\n\nThe objective of MDCA is to provide the apparatus for dispensing, deploying, and\nigniting fuel droplets while the CIR provides the diagnostics, structure, supporting\navionics, and infrastructure for recording, processing, and downlinking the data from the\ncombustion event. The MDCA initial experiments consist of the FLEX investigations.\nFLEX utilizes pure Methanol and pure Heptane as fuels. FLEX2 is a follow-on\nexperiment planned to begin after the completion of FLEX and FLEX-Helium (He), and\nutilizes pure Ethanol and Decane fuels as well as mixtures of fuels, and provides the\nadded capability of igniting arrays of fuel droplets tethered to a beaded fiber.\n\n4.1.3 Experiment Hardware Description\n\nThe MDCA hardware consists of three distinct hardware components. The Chamber\nInsert Assembly (CIA) provides the mechanisms for initiating the combustion event.\nThe Avionics Package is the center of control and power distribution for the MDCA. PI\nSpecific Diagnostic Packages consist of diagnostics provided by CIR that are necessary\nto meet science requirements and are not provided by MDCA. An example of this is the\nadditional Image Processing Unit (IPSU) and High Bit Depth/Multispectral (HiBMs)\ncamera that FLEX2 requires for its operations. CIR will also be responsible for the\nnegotiation of the up-mass of replacement components for MDCA hardware and\nconsumable items that are supplied by CIR as specified in CIR-MDCA Integration\nAgreement (FCF-IA-MV-MDCA). The consumable items required by FLEX2 include an\nadsorber cartridge and gas supply bottles. The safety assessments for these CIR items\n\n                                          7\n                                                           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 15"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n\n\n5.0  MDCA STRUCTURAL/MECHANICAL\n\n5.1   Chamber Insert Assembly\n\nThe MDCA CIA (See FIGURE 3 and FIGURE 4) is a multi-functional apparatus\ndesigned as the major platform used for mounting integral sub-system hardware to\nperform combustion science. The CIA consists of the Internal Apparatus, which is the\nfunctional hardware of the experiment, the Experiment Mounting Structure (EMS), upon\nwhich the Internal Apparatus is structurally based, and electrical and thermal\ninterconnects. The Internal Apparatus is capable of dispensing, deploying and igniting\nfuel droplets with small velocities relative to the field of view of the diagnostic\nequipment. The Internal Apparatus of MDCA consists of two fuel dispensing systems,\ndual needle deployment mechanism, two hot wire igniters, an indexing fiber support\nmechanism, radiometers, pressure-sensitive igniter switch, and thermistors.\n\nDuring the mission, the crew may replace igniters, the fiber support mechanism, fuel\nreservoir, and deployment needles.\n\n\n\n\n\n                FIGURE 3  MDCA WITH SHROUDS REMOVED\n\n\n\n\n\n                                         11\n                                                           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 19"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 3"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n\n\n\n\n                    FIGURE 4  MDCA WITH SHROUDS\n\n5.2    Internal Apparatus\n\n5.2.1  Fuel Dispensing System\n\nThere are two fuel dispenser systems on the CIA. Each fuel dispenser system has two\nsubassemblies; the replaceable fuel reservoir assembly and the dispenser motor\nassembly. The fuel reservoir is composed of a syringe and attached latching solenoid\nvalve, an aluminum housing, and a transparent plate of Lexan F2100. The dispenser\nmotor assembly is composed of a drive screw, a stepper motor, an incremental\nencoder, and structural base. During the software controlled dispensing sequence, fuel\nis dispensed from one syringe, through the latching solenoid valve to its own\ndeployment needle. The solenoid valve is sent a voltage pulse that switches the valve\nto its alternate state. The syringe valve will be closed immediately following the\ndispensing of the fuel droplet.\n\nTwo identical dispenser systems are present for improved reliability when using a single\ntype of fuel. Alternatively, each syringe may contain a mixture of fuels. In addition, the\nentire fuel reservoir assembly may be replaced if necessary by separating the fuel line\nbayonet, the valve power connectors, and loosening the captive fasteners. To monitor\nthe temperature of the fuel, each syringe is outfitted with a thermistor.\n\nFLEX2 requires the use of Ethanol, Decane, and a set of fuel mixtures. Additional 5 ml\nfuel reservoirs will be delivered in the FLEX2 cache of hardware, pre-filled with the\n\n\n                                         12\n                                                           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 20"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 4"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\nratios and amounts of fuels required by the FLEX2 Science Requirements Document\nand combustion analysis. The table below gives an estimate of the mixtures, pending\nthe results of a detonation analysis, and JSC toxicity assessment.\n\n\n\n        TABLE 2 FUELS FOR FLEX AND FLEX2 (5 ML RESERVOIRS)\n\nFLEX Fuels      FLEX2 Fuels                  Mixture Ratio (%)\n\n  Methanol            Ethanol                         100\n\n  Heptane           Decane                         100\n\n               Heptane/Hexadecane          10/90, 80/20, 85/15, 90/10, 95/5\n\n                   Propanol/Glycerol           10/90, 80/20, 85/15, 95/5…, 90/10\n\n                     Octane                         100\n\n                                           10/90, 25/75, 40/60, 50/50, 55/45, 70/30,\n                 Heptane/Octane\n                                                        85/15\n\n              Decane/Propylbenzene     10/90, 25/75, 40/60, 55/45, 70/30, 85/15\n\n\n\n\n\n                                         13\n                                                           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 21"
+        }
+      ],
+      "figure_table_references": [
+        "TABLE 2"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "                                                                                             MDC-DOC-1790A\n                                                                                                                   October 12, 2010\n\n\n                                                                          Dual Fuel Dispenser\n                                                                     System\n                                                                            • Dispenses fuel\n                                                                                                    individually or\nRetractable Indexing Fiber (RIF)                                                         simultaneously\n• Uses 79µm silicon carbide fiber with two crossing\n  fibers to tether a binary array of burning droplets.\n\n\n\n\n\n                                                                              Droplet Deployment System\n                                                                          • Precisely aligns two needles during\n                                                                                     the fuel droplet formation process\n                                                                       and deployment sequence\n\n\n\n\n\n                                                                   Droplet Ignition System\n                                                                • Consists of two opposing independently controlled\n                                                                                    linear actuator assemblies with two dual coil\n                                                                                       ignition wires for igniting droplet arrays.\n\n\n\n\n\n                            FIGURE 5  MDCA/FLEX2 INTERNAL APPARATUS\n\n\n                                                            14\n                                                                                                         Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 22"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 5"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n5.2.2  Fuel Reservoir System\n\nWhile the fuels loaded into the reservoirs differ between FLEX and FLEX2, the fuel\nreservoir design is identical. The fuel reservoir is a gas-tight glass syringe and stainless\nsteel plunger. The plunger tip is covered by Teflon, which forms a dual wiper seal\nagainst the inside of the syringe. The syringe is covered by a tygon sleeve that is\nepoxied to the syringe at its top. The tygon-enshrouded syringe body is lightly clamped\nbetween a transparent cover and the housing. The syringe feeds fuel directly to an\nattached latching solenoid valve.  It is also epoxied to the solenoid valve at its bottom.\nThe fuel is fed from the valve through polytetrafluoroethylene (PTFE) tubing to the\ndispenser needles. A quick disconnect in the tubing is necessary to allow removal of\nthe fuel reservoir.\nEach syringe has two levels of containment. In addition to the tygon sleeve, the syringe\nis enveloped in an aluminum sleeve that is covered by a transparent Lexan 9604 barrier\nto protect against impact. See FIGURE 6.\nEach syringe can contain 5.0 ml of fuel. Nearly all of the fuel in the syringe is capable of\nbeing dispensed.\n\n\n\n\n\n                      FIGURE 6  FUEL RESERVOIR\n\n\n\n\n\n                                     15                Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 23"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 6"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n\n\n\n\n          FIGURE 7  LEFT AND RIGHT FUEL RESERVOIR ASSEMBLY\n\n\n5.2.3 Deployment System\n\nThe FLEX2 deployment mechanism is identical to that of MDCA/FLEX, and consists of\ntwo replaceable deployment needles mounted on brushless servo motors and bi-stable\nbrakes. The deployment needles are flared tubes (See FIGURE 8) connected to the\nDispenser System via .012 inch OD, .01 inch ID, PTFE tubing. The deployment\nneedles are inverted relative to each other and opposed 180 degrees as illustrated in\nFIGURE 9. During deployment, the needles move in a plane common to the igniters\nand fiber. Each needle is moved by a brushless servo motor, which rotates the needles\nto a pre-determined position verified by motor encoder feedback. Just before\ndispensing fuel, the needles are positioned in close proximity to each other. Fuel from\neach of the fuel dispenser systems is routed to its dedicated deployment needle tip to\ncreate a single droplet of a desired size. Upon completion of fuel dispensing, the\ndeployment motors actuate again, rotating to increase the gap between the needles and\nto minimize the needle surface contact with the droplet. Finally, the needles are rapidly\nwithdrawn simultaneously. The rapid synchronized retraction of the needles causes the\nfuel droplet to detach from the deployment needles with little or no residual motion.\nEither deployment needle may be used to dispense the droplet via its fuel dispenser\nsystem. The needles may be replaced by separating the bayonet assembly in the fuel\nline and unfastening the needle fixture on the motor axis. Per the replacement\nprocedure, which is performed at the ISS provided work bench, the deployment needles\nwill be removed only after its cover has been installed. This cover, shown in FIGURE\n10, prevents contact with the needle during removal/installation. Each needle has its\nown cover that remains attached during stowage. Needles will be individually bagged\nupon replacement to contain any residual fuels and broken material.\n\n\n\n\n\n                                     16                Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 24"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 7",
+        "FIGURE 9"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "                                                                          MDC-DOC-1790A\n                                                                                           October 12, 2010\n\n\n\n\n\nFIGURE 8  NEEDLE TIP BEFORE FLARING (LEFT) AND AFTER FLARING (RIGHT)\n\n\n\n\n\n                                    17                                   Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 25"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 8"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "                                                                                                MDC-DOC-1790A\n                                                                                                                      October 12, 2010\n\n\n\n\n\nIgniters                                                                                           Deployment\n                                                                                                   Needles\n\n\n\n\n\n                           FIGURE 9  DROPLET DEPLOYMENT AND IGNITION AREA\n\n\n\n\n\n                                                             18                                   Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 26"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 9"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "                                                                   MDC-DOC-1790A\n                                                                                  October 12, 2010\n\n\n\n\n\nFIGURE 10 VIEWS OF NEEDLE ASSEMBLY AND NEEDLE COVER\n\n\n\n\n\n                           19                                   Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 27"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 10"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 22,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n5.2.4  Ignition System\n\nWhile the MDCA/FLEX igniter tips uses two identical round heating elements with single\nloops, the FLEX2 ignition tips consist of two heating elements with a dual loop\nconfiguration. The elements are Kanthal hot wire igniters mounted on removable\nceramic mounts (See FIGURE 11). The elements have can simultaneously ignite a two\nbead droplet array on the retractable index fiber. The ceramic mount is mounted to a\nbracket on the drive shaft. Each drive shaft is driven by a rotary stepper motor and an\nenclosed drive screw. Each hot wire igniter is positioned opposite the other. The rotary\nstepper motor moves the igniter linearly into the deployment area to a predetermined\nposition just before dispensing of the droplet. Motor encoders automatically verify the\nigniter position. The fuel is dispensed, the droplet is deployed, and a wait period passes\nto allow some fuel vaporization. Then both igniters are pulsed with a brief current to\nheat the igniter and ignite the fuel vapor surrounding the droplet. Finally, the igniters\nrapidly retract out of the field of view of the diagnostic equipment. Each igniter may be\nreplaced by pulling the ceramic mount from the bracket. The electrical connection is\nmade when the ceramic mount is plugged onto the bracket.\n\nThe igniter tips will be stowed in bags. The crew will be required to wear gloves while\nperforming this procedure. Additionally, during this operation, which is performed at the\nISS provided work bench, the covers for the deployment needles will be installed to\nprevent inadvertent contact.\n\n\n\n\n\n          FLEX                       FLEX2\n\n                 FIGURE 11 FLEX AND FLEX2 IGNITER TIPS\n\n\n5.2.5  Fiber Support System\n\nThe FLEX2 fiber support mechanism is based on that of MDCA/FLEX, with the addition\nof crossing fibers for tethering an array of droplets. The FLEX2 experiments employ a\nset of 79 micron diameter, 229 mm long silicon carbon-carbide fibers with an additional\nset of crossing fiber pairs of the same material to suspend fuel droplets in an array of\npredetermined dimension.  The main fibers are supported at both ends by the arms of\na U-shaped bracket. The lower portion of the U- bracket is mounted to an axle. The\naxle is attached to a rotary stepper motor that rotates the bracket and fiber\n\n\n                                         20           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 28"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 11"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 23,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\napproximately 120 degrees about the axle so that the fiber is in the center of the fuel\ndeployment area. Retractable Indexing Fiber (RIF) Sub-Assembly design features\nreplaceable Fiber Arm, both rotational and linear over travel hard stops. Stepper Motors\nare protected by use of slip clutches. See FIGURE 12.\n\nThe droplet may be deployed at various intersections of the crossing fiber pairs with the\nmain fiber. There are 3 pairs of crossing fibers with two pairs 12mm apart, and 1 pair at\n24mm apart. They are attached by epoxy to a cross member that is attached to the U-\nshaped fiber arm bracket. A second rotary stepper motor actuates a rack and pinion\nmechanism. The rack and pinion mechanism allows the fiber to be indexed along the\naxis of the fiber. Deployment onto the fiber is limited to the central 129 mm of the fiber\nbecause using the extreme ends of the fiber would bring the bracket arms close enough\nto interfere with the combustion event.\n\nWhen a tethered droplet array is desired, one of the crossing fibers is moved into\nposition, the droplet is dispensed onto the cross fiber, and the fiber is translated the\ndistance of the cross fiber pair spacing. There are two crossing fiber pairs spaced\n12mm apart, and one pair spaced 24mm apart. The next droplet is then dispensed onto\nthe second cross fiber pair. The deployment needles retract, and the igniters ignite the\ndroplets.\n\nThe hardware-restricted spherical volume around the center of the droplet is called the\nzone of exclusion. When the fiber is not being used, the fiber will be in the retracted\nmode, clear of the deployment area and diagnostic fields of view. Rotational retraction\nspeeds of the RIF are nominally from 2°-6°/sec.\n\nThe fiber support mechanism may be replaced in case of damage with stowed spares\nby unfastening the captive fasteners shown in FIGURE 13. The Fiber Arm is replaced\nat the ISS provided work bench after the CIA is removed from the chamber.  It requires\nno complicated alignment techniques and no electrical power. Included in the Fiber\nArm replacement procedure is the installation of the protective cover for the fiber which\nprevents inadvertent contact. The Fiber Arm is stowed with this cover installed. To\nprevent handling damage, each Fiber Arm Assembly is shipped with a protective cover\n(FIGURE 14).\n\n\n\n\n\n                                         21           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 29"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 24,
+      "page_label": null,
+      "text": "                                              MDC-DOC-1790A\n                                                        October 12, 2010\n\n\n\n\n\nFIGURE 12  RIF ASSEMBLY WITH FLEX FIBER ARM\n\n\n\n\n\n                       22           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 30"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 12"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 25,
+      "page_label": null,
+      "text": "                                                                MDC-DOC-1790A\n                                                                               October 12, 2010\n\n\n\n100 threads per inch fine adjustment\nscrew\n\n\n\n\n\n                                                Crossing Fibers (3\n                                                         pairs: 2 pair at\n                                    12mm apart, and 1\n                                                        pair at 24 mm apart)\n\n\n\n\n\n                                                                        Side View of\n                                                             FLEX2 Fiber Arm\n\n\n\n\n   Captive Fasteners\n\n\n\n\n\n                        Support Cross member for\n                        Crossing Fibers\n\n\n        FIGURE 13  RIF SUB-ASSEMBLY & FLEX2 CROSSING FIBERS FIBER\n                               ARM\n\n\n  In accordance with crew recommendations, the Replaceable Fiber Arm and Fiber Arm\n  Protective cover have been designed for ease of installation and removal. Hand\n adjustment of a captive screw at end of the cover is used to secure the cover to the\n Fiber Arm. These covers remain assembled to the Fiber Arms at all times when not\n  installed on the RIF.\n\n\n\n\n\n                                           23           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 31"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 13"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 26,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n\n\n\n\n           FIGURE 14 FLEX2 FIBER ARM AND PROTECTIVE COVER\n\n\n5.2.6 Water Cooling System\n\nThe details of the water cooling system are unchanged by the FLEX2 operations, and\nare included in the MDCA safety data package MDC-DOC-1679. The CIA will take in\nwater from the CIR Water Thermal Control System through the IRR. CIA intake and\nexhaust lines will connect to the IRR. The CIA water lines provide the interface\nbetween the CIR IRR and the MDCA CIA structure. The coolant system will connect to\nthe CIR IRR with quick disconnects.\n\n\n5.2.7 Pressure Sensitive Igniter Switch\n\nThe details of operation of the pressure sensitive igniter switch are unchanged by the\nFLEX2 operations, and are included in the MDCA safety data package MDC-DOC-\n1679. While the physical and electrical operation of the switch is unchanged, its role no\nlonger functions as a hazard control in FLEX2. The updated detonation analysis shows\nthat the fuel to O2 mixture ratio drops below the flammability limit as pressure\nincreases. Therefore no hazard is associated with high pressure operations.\n\n6.0  MDCA ELECTRICAL/AVIONICS\n\n6.1  MDCA Avionics Package Hardware\n\nThe MDCA Avionics Package is made of aluminum alloy, 6061-T6. Some structural\ncomponents may be composed of corrosion resistant stainless steel, A286.\n\nThe Avionics Package is an aluminum box that provides a physical housing, an EMI\nshield, and connection to the CIR Optics Bench electrical interconnects. The housing\nwill be mounted on the Optics Bench at the Principal Investigator Location (PIL). This\nhousing has inlet and exhaust vents to interface with the CIR Air Thermal Control\nSystem. The housing is illustrated in FIGURE 15 and FIGURE 16.\n\n\n                                         24           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 32"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 14"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 27,
+      "page_label": null,
+      "text": "                                                 MDC-DOC-1790A\n                                                            October 12, 2010\n\n\n\n\n\nAir Thermal\nCooling Inlet                                        Electrical\n(100 mesh screen)                           Connectors\n                                                  (Pin Contacts)\n\n\n\n\n\n   FIGURE 15 MDCA AVIONICS PACKAGE (BOTTOM)\n\n\n\n\n\n     Air Thermal\n     Control\n\n\n     FIGURE 16 MDCA AVIONICS PACKAGE (TOP)\n\n\n\n\n                          25           Reflight Safety Data Package, MDCA/FLEX2",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 33"
+        }
+      ],
+      "figure_table_references": [
+        "FIGURE 15",
+        "FIGURE 16"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 28,
+      "page_label": null,
+      "text": "                                                               MDC-DOC-1790A\n                                                                             October 12, 2010\n\n9.3   MDCA/FLEX2 Test Operations\n\n9.3.1 Number of Test Points\n\nFLEX2 has a test matrix with 550 points, as enumerated in Table 3 of the Science\nRequirements Document (SRD). The test points are distributed among mixed fuel tests\nand pure fuel tests. The pure fuel tests include the fiber droplet array tests and the flow\nvelocity tests, created by the translation of the fiber during the burn event. A preliminary\ntest matrix was constructed to address these requirements, and to keep the number of\nexperiments to a manageable level, resulting in 456 test points.\n\n9.3.2 Resource Estimates\n\nThis section presents the preliminary estimated amount of necessary resources\ndetermined from the experiment science requirements and the preliminary test matrix.\nThe fuel reservoirs have a 5 ml capacity, but the actual volumes are dependent on the\nresults of future detonation analysis.\n\nFLEX2 requires the following items based on 456 test points:\n         23 - 3.8 liter Bottles\n          o  9 - 3.8 liter 30%O2 70%N2 bottles\n          o  7 - 3.8 liter 30%O2 70%He bottles\n          o  7 100%He bottles\n         22 Fuel Reservoirs\no    2 Heptane/Hexadecane\no    2 Propanol/Glycerol\no    6 Heptane/Octane\no    6 Decane/Propylbenzene\no    3 Decane\no    3 Ethanol\n         1 Large Adsorber Cartridge\n         2 Fiber Arms\n\n9.3.3 Chamber Environments\n\nThe following matrices show the chamber atmospheres, pressures, fuels, droplet sizes,\nand flow velocities for the FLEX2 experiments.\n\n\n\n\n\n                                                                    Reflight Safety Data Package, MDCA/FLEX2                                        41",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 49"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 29,
+      "page_label": null,
+      "text": "                                                             MDC-DOC-1790A\n                                                                           October 12, 2010\n\n     TABLE 3 FLEX2 PRELIMINARY TEST MATRIX FOR PURE FUELS\n\n                                       FLEX-2 Pure Fuels\n\n                                                        Matrix Variables                     Permutation\n Investigation Class     States\n                             Drop Diam O2 %   Dil Bead Spacing Pressure Flow Velocity      s\n1- decane - flow         States      2       4     2                  1          3              48\n                                3 mm   17%   N2                1 atm     0.1 cm/sec\n                            Matrix     4 mm   21%   He                              0.3 cm/sec\n                         Values           25%                                    0.5 cm/sec\n                                   30%\n1 - ethanol - flow        States      2       4     2                  1          3              48\n                                3 mm   17%   N2                1 atm     0.1 cm/sec\n                            Matrix     4 mm   21%   He                              0.3 cm/sec\n                         Values           25%                                    0.5 cm/sec\n                                   30%\n1- decane - quiescent  States      2       4     2                  3                 -              48\n                                3 mm   17%   N2                  0.5 atm             -\n                            Matrix     5 mm   21%   He                  1.0 atm\n                         Values           25%                        2.0 arm\n                                   30%\n1 -ethanol -quiescent   States      2       4     2                  3                 -              48\n                                3 mm   17%   N2                  0.5 atm             -\n                            Matrix     5 mm   21%   He                  1.0 atm\n                         Values           25%                        2.0 arm\n                                   30%\n1 - decane - array       States      1       3     2        2          2                 -              24\n                                3 mm   17%   N2       L1        0.5 atm             -\n                            Matrix\n                                   21%   He       L2        1.0 arm\n                         Values\n                                   25%\n1 - ethanol - array       States      1       3     2        2          2                 -              24\n                                3 mm   17%   N2       L1        0.5 atm             -\n                            Matrix\n                                   21%   He       L2        1.0 arm\n                         Values\n                                   25%\n    Pure Fuel Sub-total                                                                   0    240\n\n\n\n\n\n                                                                 Reflight Safety Data Package, MDCA/FLEX2                                      42",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 50"
+        }
+      ],
+      "figure_table_references": [
+        "TABLE 3"
+      ],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 30,
+      "page_label": null,
+      "text": "                                                             MDC-DOC-1790A\n                                                                           October 12, 2010\n\n     TABLE 4 FLEX2 PRELIMINARY TEST MATRIX FOR MIXED FUELS\n\n                                       FLEX-2 Mixed Fuels\n\n                                                       Matrix Variables\n   Investigation Class      States                                                       Permutations\n                               Drop Diam O2 %      Dil    Pressure      Fuel Mix\n1- heptane/hexadecane   States      2       3       1        3            2                   36\n                                  3 mm    17%     He      0.7 atm        F1\n                               Matrix\n                                  4 mm    21%              1.0 atm        F2\n                           Values\n                                    30%              2.5 arm\n1- propanol/glycerol       States      2       3       1        3            2                   36\n                                  3 mm    17%     He      0.7 atm        F1\n                               Matrix\n                                  4 mm    21%              1.0 atm        F2\n                           Values\n                                    30%              2.5 arm\n1- heptane/octane         States      1       3       2        2            6                   72\n                                  3 mm    17%     N2      1.0 atm         10/90\n                                    21%     He      2.0 arm         25/75\n                               Matrix           30%                             40/60\n                           Values                                               55/45\n                                                                                 70/30\n                                                                          8515\n1- decane/propybenzene  States      1       3       2        2            6                   72\n                                  3 mm    17%     N2      1.0 atm         10/90\n                                    21%     He      2.0 arm         25/75\n                               Matrix           30%                             40/60\n                           Values                                               55/45\n                                                                                 70/30\n                                                                          8515\n\n     Mixed Fuel Sub-total                                                               0      216\n\n\n\n\n\n                                                                 Reflight Safety Data Package, MDCA/FLEX2                                      43",
+      "headings": [
+        {
+          "level": 3,
+          "title": "Robbins2010_aaaa 51"
+        }
+      ],
+      "figure_table_references": [
+        "TABLE 4"
+      ],
+      "quality": "embedded_text"
+    }
+  ]
+}

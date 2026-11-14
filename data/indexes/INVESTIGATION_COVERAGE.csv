@@ -1,0 +1,35 @@
+investigation_id,title,priority,local_documents,listed_documents,local_experiment_tables,listed_experiment_tables,local_data_files,listed_data_files,local_images,listed_images,local_videos,listed_videos,local_archives,listed_archives,local_metadata,listed_metadata,local_other,listed_other,image_members_in_local_archives,video_members_in_local_archives,listed_categories_with_no_local_sample,availability_notes
+PSI-25,Burning and Suppression of Solids - II,A,14,136,1,1,2,2,1,1,2,296,1,264,1,1,0,0,0,1,,Latest PSI file tree inventoried.
+PSI-26,Burning and Suppression of Solids,A,11,40,1,1,2,2,0,0,3,114,1,59,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-62,Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography,A,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-68,Flame Extinguishment Experiment - 2,A,9,99,1,1,1,7859,3,6,0,0,1,2111,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-69,Flame Extinguishment Experiment,A,7,696,1,1,5,4154,0,1,2,183,0,1419,1,1,0,0,0,0,images;archives,Latest PSI file tree inventoried.
+PSI-98,Spacecraft Fire Safety Experiment-I,A,4,9,1,1,2,4,0,0,0,0,3,61,1,1,0,0,8,0,,Latest PSI file tree inventoried.
+PSI-99,Spacecraft Fire Experiment-II,A,3,19,1,1,7,11,0,0,0,0,3,186,1,1,0,0,3,0,,Latest PSI file tree inventoried.
+PSI-100,Spacecraft Fire Experiment-III,A,3,10,1,1,7,8,0,0,0,0,3,67,1,1,0,0,6,0,,Latest PSI file tree inventoried.
+PSI-101,Smoke Aerosol Measurement Experiment-Reflight,A,3,119,1,1,10,136,3,3,1,8,1,79,1,1,0,0,8,0,,Latest PSI file tree inventoried.
+PSI-102,Smoke and Aerosol Measurement Experiment,A,2,35,1,1,6,65,0,0,2,2,1,3,1,1,0,0,16,0,,Latest PSI file tree inventoried.
+PSI-115,Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity,A,1,2,0,0,10,44,0,0,0,0,0,0,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-10,Advanced Combustion via Microgravity Experiments / Flame Design,B,4,76,2,2,1,2220,1,7,1,317,0,1183,1,1,0,1,0,0,archives;other,Latest PSI file tree inventoried.
+PSI-20,Advanced Combustion via Microgravity Experiments - Burning Rate Emulator,B,4,61,1,1,1,1049,0,0,0,199,1,1049,1,1,0,1,0,0,videos;other,Latest PSI file tree inventoried.
+PSI-21,Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame,B,1,50,1,1,4,1958,0,0,1,363,1,1754,1,1,0,7,0,1,other,Latest PSI file tree inventoried.
+PSI-22,Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames,B,4,57,1,1,1,1301,1,5,1,221,0,905,1,1,0,87,0,0,archives;other,Latest PSI file tree inventoried.
+PSI-23,Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames,B,4,38,1,1,1,1795,0,0,1,290,1,2037,1,1,0,3,0,0,other,Latest PSI file tree inventoried.
+PSI-39,Cool Flames Investigation,B,1,71,1,1,1,1823,0,0,2,246,1,337,1,1,0,353,0,0,other,Latest PSI file tree inventoried.
+PSI-60,Computational and Experimental Analysis of SPICE Data Sets,B,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-106,Structure and Liftoff In Combustion Experiment,B,1,296,1,1,3,18315,0,6,1,28,1,66,1,1,0,1,1,0,other,Latest PSI file tree inventoried.
+PSI-107,Smoke Point In Co-flow Experiment,B,2,32,1,1,1,35,0,1,1,19,1,100,1,1,0,0,1,0,,Latest PSI file tree inventoried.
+PSI-117,Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis,B,1,5,0,0,3,10,0,0,0,0,0,0,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-142,Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames,B,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-159,Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases,B,1,93,2,2,2,2333,1,2,1,337,0,986,1,1,0,2,0,0,archives;other,Latest PSI file tree inventoried.
+PSI-47,Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2,C,1,13,1,1,1,18,1,1,0,0,0,0,1,1,0,0,0,0,,Latest PSI file tree inventoried.
+PSI-179,Aerosol Sampling Experiment,C,1,131,0,0,2,20,1,1755,1,3,1,22,1,1,0,0,197,0,,Latest PSI file tree inventoried.
+SAFFIRE-IV,Spacecraft Fire Experiment IV,A,3,3,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,,Completed on Cygnus. Public reports located. No PSI accession in the search snapshot.
+SAFFIRE-V,Spacecraft Fire Experiment V,A,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,Completed on Cygnus. Public reports located. No PSI accession in the search snapshot.
+SAFFIRE-VI,Spacecraft Fire Experiment VI,A,4,4,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,,Final flight experiment completed in January 2024. Public reports located. No PSI accession in the search snapshot.
+SOFIE-GEL,Solid Fuel Ignition and Extinction – Growth and Extinction Limit,A,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,ISS investigation. No PSI accession in the search snapshot.
+SOFIE-MIST,Solid Fuel Ignition and Extinction – Material Ignition and Suppression Test,A,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,ISS investigation. No PSI accession in the search snapshot.
+LUCI,Lunar-g Combustion Investigation,D,2,2,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,,Flew in 2025. NASA published results for simulated lunar gravity. No PSI accession or standalone run-data release located.
+FM2,Flammability of Materials on the Moon,D,2,5,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,,NASA documents the experiment and preparatory research. A completed lunar-surface test or public dataset was not verified.
+KC135-PARTIAL-G,Upward Flame Spread Over Thin Solids in Partial Gravity,D,1,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,KC-135 simulated partial gravity study includes simulated lunar and Martian levels. Public paper located.
+GRC-PARTIAL-G,Solid Fuel Ignition Testing for Lunar Applications,D,1,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,Ground and centrifuge results are available in the NASA report.

@@ -1,0 +1,243 @@
+{
+  "source": {
+    "investigation_id": "PSI-22",
+    "file_id": "6851e65e0eb4c08676004cad",
+    "filename": "PSI-22_Raw Data_18102A3_mfcSetpoints.csv",
+    "relative_local_path": "investigations/PSI-22_ACME_E_FIELD_Flames/raw/datasets/PSI-22_Raw Data_18102A3_mfcSetpoints.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e65e0eb4c08676004cad&version=1&studyVersion=7&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "doi": "10.60555/se5a-8c73",
+    "source_version": "7",
+    "file_version": "1",
+    "sha256": "8e8acc1c8ed4335e4de1aebda80648508e38575c84128dca91bb8194770ac9e0",
+    "source_key": "psi-data/PSI-22/Raw Data/PSI-22_Raw Data_18102A3_mfcSetpoints.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-22_Raw Data_18102A3_mfcSetpoints.csv",
+        "header_assumption": "first record",
+        "header_verified": false,
+        "row_count": 25,
+        "ragged_row_count": 25,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "2018-04-12 102 21:03:05:668 ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 25
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Experiment: 3",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 24
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Test Point: 18102A3",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 24
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "MFCA1 Gas: 0",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1,
+              "numeric": 24
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "MFCA1 Full Scale: 20.000000",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "MFCA2 Gas: 0",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "MFCA2 Full Scale: 0.050000",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "MFCA3 Gas: 2",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "MFCA3 Full Scale: 0.100000",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "EField: 1",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "EFieldPol: 2",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Igniter: 1",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Burner: 3",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 14,
+            "label_original": "Thermocouple: 2",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 15,
+            "label_original": "Radiometer: 0",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 16,
+            "label_original": "IPSU 1: 1",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 17,
+            "label_original": "IPSU 2: 0",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 18,
+            "label_original": "IPSU 3: 0",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 19,
+            "label_original": "IPSU 4: 0",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 20,
+            "label_original": "IPSU 5: 1",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 21,
+            "label_original": "IPSU 6: 0",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 22,
+            "label_original": "Fiber: 1",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 23,
+            "label_original": "PMT 1 Gain: 6.500000",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 24,
+            "label_original": "PMT 2 Gain: 7.250000",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 25,
+            "label_original": "PMT 3 Gain: 7.000000",
+            "header_unit": null,
+            "type_counts": {},
+            "blank_count": 25,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

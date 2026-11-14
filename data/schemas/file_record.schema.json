@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EmberNova download manifest CSV record",
+  "type": "object",
+  "required": ["investigation_id", "file_id", "filename", "relative_local_path", "source_url", "origin_status", "download_status", "sha256"],
+  "properties": {
+    "investigation_id": {"type": "string", "minLength": 1},
+    "file_id": {"type": "string", "minLength": 1},
+    "filename": {"type": "string"},
+    "relative_local_path": {"type": "string", "minLength": 1},
+    "source_url": {"type": "string", "format": "uri"},
+    "origin_status": {"enum": ["original", "processed"]},
+    "download_status": {"enum": ["verified", "metadata_only", "deferred_size", "deferred_scope", "pending_email", "access_restricted", "failed", "unavailable"]},
+    "sha256": {"type": "string", "pattern": "^([a-f0-9]{64})?$"},
+    "size_bytes": {"type": "string", "pattern": "^[0-9]*$"},
+    "source_size_bytes": {"type": "string", "pattern": "^[0-9]*$"},
+    "parent_file_id": {"type": "string"}
+  }
+}

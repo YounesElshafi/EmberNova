@@ -33,6 +33,8 @@ class Investigation(Input):
 class Page(Input):
     document_id: str
     page: int = Field(ge=1)
+    offset: int = Field(0, ge=0)
+    max_chars: int = Field(6000, ge=500, le=12000)
 
 
 class Datasets(Input):
@@ -92,6 +94,36 @@ class Envelope(Input):
     investigation_ids: list[str] | None = None
 
 
+PHENOMENA = Literal[
+    "flame_spread",
+    "fire_growth",
+    "ignition",
+    "extinction",
+    "flammability_limit",
+    "suppression",
+    "soot",
+    "smoke_aerosol",
+    "detection",
+    "cool_flame",
+    "burning_rate",
+    "flame_structure",
+]
+
+
+class Assess(Input):
+    scenario_label: str = Field("Engineering scenario", max_length=200)
+    phenomena: list[PHENOMENA] | None = None
+    fuel_class: Literal["solid", "liquid_droplet", "gaseous"] | None = None
+    materials: list[Literal["PMMA", "cotton_fiberglass", "Nomex", "silicone", "Ultem"]] | None = (
+        None
+    )
+    gravity: Literal["microgravity", "lunar", "martian", "earth"] | None = None
+    o2_mole_fraction: Range | None = None
+    total_pressure: UnitRange | None = None
+    flow_velocity: UnitRange | None = None
+    investigation_ids: list[str] | None = Field(None, max_length=20)
+
+
 class D2(Input):
     table_id: str = "PSI-69:flex_experimental"
     filters: list[Filter] | None = None
@@ -123,11 +155,11 @@ REGISTRY = {
     ),
     "get_document_page": (
         Page,
-        "Read a complete retrieved physical PDF page or extracted document part.",
+        "Read a bounded page window. Use offset and max_chars to fetch later text; has_more and text_total_chars show whether more remains.",
     ),
     "list_datasets": (
         Datasets,
-        "List curated measured and design datasets with canonical variable and quantity names and units.",
+        "List curated measured and design datasets with canonical variable and quantity names and units, plus descriptor_fields (per-test text such as sample_material, flow_direction) usable as query_measurements variables.",
     ),
     "query_measurements": (
         Query,
@@ -144,6 +176,10 @@ REGISTRY = {
     "check_applicability_envelope": (
         Envelope,
         "Check environmental coverage, nearest NASA tests and gaps. Atmosphere overlap does not imply gravity match or safety.",
+    ),
+    "assess_evidence": (
+        Assess,
+        "Classify NASA evidence for an engineering scenario as direct, indirect or insufficient, per investigation and condition (gravity, fuel/material, phenomenon, O2 mole fraction, pressure, flow), with evidence gaps and NASA source links. Independent of search relevance; never a risk score. Use for habitat/spacecraft design questions. O2 is a mole fraction in [0,1].",
     ),
     "check_d2_law": (
         D2,

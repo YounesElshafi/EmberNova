@@ -1,0 +1,140 @@
+{
+  "source_id": "PSI-47",
+  "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+  "source_type": "psi_investigation",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+  "priority": "C",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Latest PSI file tree inventoried.",
+  "acronym": "DAFT / DAFT-2",
+  "scientific_category": "Combustion Science",
+  "subcategory": "Spacecraft Fire Safety",
+  "research_program": null,
+  "objectives": "The focus of DAFT / DAFT-2 was to mitigate the risk for the Smoke Aerosol Measurement Experiment (SAME). SAME relied on a commercially available condensate nuclei counter, the TSI P-Trak,  to quantify smoke aerosols in a microgravity environment, however there were concerns that th P-Trak would not be reliable in microgravity as it relies on gravity to recycle isopropyl alcohol used in the measurement process.\nDAFT / DAFT-2 tests that a modified P-Trak particulate counter would be accurate in microgravity.\n\nSummarized objectives include:\n    1) Demonstrate the Functionality of the Modified TSI P-Trak in Microgravity\n    2) Compare the TSI P-Trak Performance against the DustTrak control\n    3) Create and Analyze Aerosol Standards in Microgravity\n    4) Ensure the reliability of future aerosol experiments",
+  "approach": "The experimental approach consists of the following components:\n\n    1) Modification of Instrumentation: TSI P-Trak was modified for use in microgravity by redesigning the condenser tube to use capillary forces for recycling isopropyl alcohol and removing the mercury switch responsible for detecting instrument orientation.\n    2) Aerosol Generation: Arizona Red Dust (ARD) was chosen as an aerosol standard due to its ease of dispersion. The ARD was aerosolized with GN2 to create particle samples. The aerosol was contained within 15-liter Mylar bags.\n    3) On-Orbit Testing: The modified P-Trak gathered data from counting aerosol particles and these data were compared to the DustTrak CNC specifically designed to work in microgravity.",
+  "platform": "International Space Station (ISS)",
+  "project_type": "Microgravity Investigation",
+  "hardware": "TSI P-Trak",
+  "hardware_url": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+  "institution": "NASA GRC",
+  "principal_investigator": "David L Urban",
+  "nasa_center": "Glenn Research Center (GRC)",
+  "investigation_start": "03-01-2003",
+  "investigation_end": "06-01-2009",
+  "initial_release_date": "01-Jun-2009",
+  "version_modified_date": "02-Jun-2025",
+  "source_version": 5,
+  "doi": "10.60555/ztgj-d202",
+  "license": "CC0-1.0",
+  "license_url": "https://spdx.org/licenses/CC0-1.0.html",
+  "related_investigations": [
+    "PSI-102"
+  ],
+  "file_count": 33,
+  "repeated_tree_entries": 0,
+  "inventoried_bytes": 41765333,
+  "reported_dataset_bytes": 41765333,
+  "file_types": ".csv;.doc;.jpg;.pdf;.ppt;.txt;.xls;.zip",
+  "publication_count": 2,
+  "metadata_path": "investigations/PSI-47_DAFT_DAFT_2/metadata.json",
+  "relevance": "Supporting aerosol or dust measurements",
+  "version_history_path": "logs/psi/PSI-47-versions.json",
+  "inventory_snapshot_path": "logs/psi/PSI-47-files.json",
+  "principal_investigators": [
+    {
+      "name": "David L Urban",
+      "institution": "NASA GRC"
+    }
+  ],
+  "publications": [
+    {
+      "authorList": "Ruff Gary, Urban David, King Merrill",
+      "comments": [],
+      "doi": "10.2514/6.2005-341",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "A Research Plan for Fire Prevention, Detection and Suppression in Crewed Exploration Systems"
+    },
+    {
+      "authorList": "Urban David, Griffin DeVon, Ruff Gary, Cleary Thomas, Yang Jiann, Mulholland George, Yuan Zeng-guang",
+      "comments": [],
+      "doi": "10.4271/2005-01-2930",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Detection of Smoke from Microgravity Fires"
+    }
+  ],
+  "representative_media": [
+    {
+      "_id": {
+        "$oid": "683dbb40f91ab4427dbf4580"
+      },
+      "date_created": {
+        "$date": 1748876096219
+      },
+      "date_modified": {
+        "$date": 1748876096219
+      },
+      "file_name": "PSI-47_Representative Image(s)_DAFT on ISS.jpg",
+      "file_size": 1312134,
+      "remote_path": "/Home/psi-data/PSI-47/Representative Image(s)/PSI-47_Representative Image(s)_DAFT on ISS.jpg",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-47/Representative Image(s)/PSI-47_Representative Image(s)_DAFT on ISS.jpg",
+      "resource_id": {
+        "$oid": "66ec8407c6ad4bdc12fc903b"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-47/Representative Image(s)/PSI-47_Representative Image(s)_DAFT on ISS.jpg",
+      "s3_version_id": "78G1OKxtz3_EpNEqxc2.72Q3ukiZWQvB",
+      "study_id": {
+        "$oid": "683dbb40f91ab4427dbf4628"
+      },
+      "subcategory": "",
+      "version": 4,
+      "visible": true
+    }
+  ],
+  "experimental_tables": [
+    {
+      "_id": {
+        "$oid": "679bcae309ed061032c0d4e0"
+      },
+      "date_created": {
+        "$date": 1738263267022
+      },
+      "date_modified": {
+        "$date": 1738263267022
+      },
+      "file_name": "PSI-47_Experimental table_DAFT.csv",
+      "file_size": 518,
+      "remote_path": "/Home/psi-data/PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv",
+      "resource_id": {
+        "$oid": "66cf53d46f1142c964b2e0a8"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-47/Experimental table/PSI-47_Experimental table_DAFT.csv",
+      "s3_version_id": "O29jpvz.2oan3.Tf0_roWQeK9uZf5Tgx",
+      "study_id": {
+        "$oid": "683dbb40f91ab4427dbf4628"
+      },
+      "subcategory": "",
+      "version": 2,
+      "visible": true
+    }
+  ],
+  "experiments": [],
+  "upstream_metadata_path": "logs/psi/PSI-47-detail.json",
+  "inventory_errors": {}
+}

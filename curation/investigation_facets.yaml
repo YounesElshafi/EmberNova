@@ -1,0 +1,221 @@
+# Scientific facets of each investigation, used for query-aware ranking explanations and the
+# deterministic evidence assessment (backend/src/embernova/science/assessment.py).
+#
+# Format: facet -> {value: basis_keyword}. The basis keyword MUST occur (case-insensitive) in
+# that investigation's NASA title/objectives/approach/hardware/platform metadata or in its own
+# ingested NASA document text. backend/tests/test_facets.py enforces this. A facet that is absent
+# means "not recorded in curated metadata" (unknown), never "confirmed absent".
+#
+# environment: microgravity (orbital flight), simulated_partial_gravity (aircraft, centrifuge,
+#   rotating capsule), normal_gravity (1-g ground tests/comparisons), numerical_model, planned_lunar
+# study_type: flight_experiment, ground_test, modeling, planned, sampling
+# Curated by Claude Code (architect), 2026-11-13. Reviewed curation, not SI output at runtime.
+
+PSI-25:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {solid: "solid fuels"}
+  materials: {PMMA: "PMMA"}
+  phenomena: {ignition: "ignition", flame_spread: "flame spread", extinction: "extinction limits", flammability_limit: "flammability"}
+  parameters: {airflow: "Forced flow velocity", oxygen: "oxygen concentration", geometry: "Sample geometry"}
+PSI-26:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {solid: "fabric"}
+  materials: {cotton_fiberglass: "75% cotton and 25% fiberglass", Nomex: "Nomex", Ultem: "Ultem", PMMA: "PMMA"}
+  phenomena: {flame_spread: "flame spread", extinction: "extinguish", suppression: "extinguishing agent"}
+  parameters: {airflow: "airflow speeds", flow_direction: "opposed or concurrent"}
+PSI-62:
+  study_type: {modeling: "modeling"}
+  environment: {numerical_model: "simulations", microgravity: "microgravity"}
+  fuel_classes: {solid: "solid fuel"}
+  materials: {PMMA: "PMMA"}
+  phenomena: {flame_spread: "flame spread", soot: "soot"}
+  parameters: {airflow: "concurrent", geometry: "geometries"}
+PSI-68:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {liquid_droplet: "droplet"}
+  phenomena: {extinction: "extinction", soot: "soot", burning_rate: "burning"}
+  parameters: {oxygen: "O2 concentration", pressure: "pressure", diluent: "diluent", droplet_size: "droplet size"}
+PSI-69:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {liquid_droplet: "droplets"}
+  phenomena: {extinction: "extinction", suppression: "suppressant", burning_rate: "burning rates", flammability_limit: "flammability limits", cool_flame: "cool flame"}
+  parameters: {oxygen: "oxygen mole fraction", pressure: "pressure", diluent: "CO2", droplet_size: "droplet size"}
+PSI-98:
+  study_type: {flight_experiment: "Cygnus"}
+  environment: {microgravity: "low-gravity"}
+  fuel_classes: {solid: "fabric"}
+  materials: {cotton_fiberglass: "75% cotton, 25% fiberglass"}
+  phenomena: {flame_spread: "flame", fire_growth: "fire grows", flammability_limit: "flammability limits"}
+  parameters: {airflow: "air flow velocity"}
+PSI-99:
+  study_type: {flight_experiment: "Cygnus"}
+  environment: {microgravity: "low-g", normal_gravity: "normal gravity"}
+  fuel_classes: {solid: "PMMA"}
+  materials: {cotton_fiberglass: "SIBAL", PMMA: "PMMA", silicone: "silicone", Nomex: "Nomex"}
+  phenomena: {flame_spread: "flame", fire_growth: "fire grows", flammability_limit: "flammability limits"}
+  parameters: {airflow: "air flow velocity", flow_direction: "concurrent or opposed"}
+PSI-100:
+  study_type: {flight_experiment: "Cygnus"}
+  environment: {microgravity: "low-gravity"}
+  fuel_classes: {solid: "SIBAL"}
+  materials: {cotton_fiberglass: "SIBAL"}
+  phenomena: {flame_spread: "flame", fire_growth: "fire grows", flammability_limit: "flammability limits"}
+  parameters: {airflow: "flow velocity", flow_direction: "concurrent or opposed"}
+PSI-101:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "low gravity"}
+  phenomena: {smoke_aerosol: "smoke", detection: "detector"}
+  parameters: {heating: "heating temperatures", airflow: "no-flow"}
+PSI-102:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "low gravity", normal_gravity: "1-g"}
+  phenomena: {smoke_aerosol: "smoke", detection: "smoke detectors"}
+  parameters: {airflow: "flow environment"}
+PSI-115:
+  study_type: {modeling: "numerical simulation"}
+  environment: {numerical_model: "simulation", microgravity: "microgravity", normal_gravity: "Earth gravity"}
+  phenomena: {smoke_aerosol: "smoke"}
+  parameters: {airflow: "cross-flow velocities", gravity_level: "influence of gravity"}
+PSI-10:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "drop towers and aboard the International Space Station"}
+  fuel_classes: {gaseous: "C2H4"}
+  phenomena: {soot: "soot", extinction: "extinction limits", flame_structure: "flame temperature"}
+  parameters: {oxygen: "Zst", pressure: "pressure", diluent: "inert", fuel_flow: "flow rate"}
+PSI-20:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {gaseous: "CH4/N2"}
+  phenomena: {burning_rate: "burning", extinction: "extinction limits", flammability_limit: "flammability map"}
+  parameters: {oxygen: "O2 concentrations", pressure: "pressures", diluent: "diluent", fuel_flow: "fuel flow"}
+PSI-21:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {gaseous: "methane"}
+  phenomena: {flame_structure: "flame shape", soot: "soot", extinction: "extinction limits"}
+  parameters: {airflow: "coflow", diluent: "fuel dilution", fuel_flow: "velocity"}
+PSI-22:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {gaseous: "gas-fueled"}
+  phenomena: {flame_structure: "lifted flames", soot: "soot"}
+  parameters: {electric_field: "electric field", airflow: "coflow"}
+PSI-23:
+  study_type: {flight_experiment: "spherical porous burner"}
+  environment: {microgravity: "acceleration levels"}
+  fuel_classes: {gaseous: "gaseous fuels"}
+  phenomena: {extinction: "extinction limits", flame_structure: "flame structures", soot: "sooty"}
+  parameters: {diluent: "diluent", fuel_flow: "flow rates", pressure: "pressures"}
+PSI-39:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "Combustion Integrated Rack"}
+  fuel_classes: {liquid_droplet: "droplet"}
+  phenomena: {cool_flame: "cool flame", extinction: "extinction", soot: "soot"}
+  parameters: {pressure: "pressures", diluent: "helium dilution", droplet_size: "droplet size", oxygen: "molecular oxygen"}
+PSI-60:
+  study_type: {modeling: "computational"}
+  environment: {numerical_model: "Simulations", microgravity: "microgravity", normal_gravity: "normal gravity"}
+  fuel_classes: {gaseous: "flames"}
+  phenomena: {soot: "soot", flame_structure: "temperature distributions"}
+  parameters: {airflow: "Coflow"}
+PSI-106:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {gaseous: "methane"}
+  phenomena: {flame_structure: "flame length", soot: "soot", extinction: "liftoff"}
+  parameters: {airflow: "coflow air", diluent: "nitrogen-diluted", fuel_flow: "liftoff velocity"}
+PSI-107:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {gaseous: "ethylene"}
+  phenomena: {soot: "smoke point", flame_structure: "flame lengths"}
+  parameters: {airflow: "co-flow velocit", fuel_flow: "fuel flow rate"}
+PSI-117:
+  study_type: {modeling: "CFD"}
+  environment: {numerical_model: "simulations", microgravity: "microgravity"}
+  fuel_classes: {liquid_droplet: "droplet"}
+  phenomena: {cool_flame: "cool flame", extinction: "extinction", ignition: "ignition"}
+  parameters: {airflow: "convection", heating: "heat flux", pressure: "pressure"}
+PSI-142:
+  study_type: {ground_test: "ground-based experiments", modeling: "simulations"}
+  environment: {normal_gravity: "ground-based", numerical_model: "numerical modeling"}
+  fuel_classes: {gaseous: "counterflow flames"}
+  phenomena: {cool_flame: "cool flame", extinction: "extinction limit", flammability_limit: "flammability limits"}
+  parameters: {oxygen: "oxygen concentration", pressure: "pressure"}
+PSI-159:
+  study_type: {flight_experiment: "International Space Station"}
+  environment: {microgravity: "International Space Station"}
+  fuel_classes: {gaseous: "propane"}
+  phenomena: {cool_flame: "cool diffusion flames", flame_structure: "flames"}
+  parameters: {oxygen: "Zst", pressure: "pressures", fuel_flow: "flow rate", diluent: "dilutions"}
+PSI-47:
+  study_type: {flight_experiment: "On-Orbit Testing"}
+  environment: {microgravity: "microgravity"}
+  phenomena: {smoke_aerosol: "aerosol", detection: "particulate counter"}
+PSI-179:
+  study_type: {sampling: "passive aerosol sampling"}
+  environment: {microgravity: "microgravity"}
+  phenomena: {smoke_aerosol: "aerosol"}
+SAFFIRE-IV:
+  study_type: {flight_experiment: "Cygnus"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {solid: "PMMA"}
+  materials: {PMMA: "PMMA", cotton_fiberglass: "cotton", Nomex: "Nomex"}
+  phenomena: {flame_spread: "flame spread", fire_growth: "fire", smoke_aerosol: "smoke", ignition: "ignition"}
+  parameters: {airflow: "flow", oxygen: "oxygen", flow_direction: "concurrent"}
+SAFFIRE-V:
+  study_type: {flight_experiment: "Cygnus"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {solid: "PMMA"}
+  materials: {PMMA: "PMMA", cotton_fiberglass: "cotton"}
+  phenomena: {flame_spread: "flame spread", fire_growth: "fire", smoke_aerosol: "smoke"}
+  parameters: {airflow: "flow"}
+SAFFIRE-VI:
+  study_type: {flight_experiment: "Cygnus"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {solid: "PMMA"}
+  materials: {PMMA: "PMMA", cotton_fiberglass: "cotton", Nomex: "Nomex"}
+  phenomena: {flame_spread: "flame spread", fire_growth: "fire", smoke_aerosol: "smoke", ignition: "ignition"}
+  parameters: {airflow: "flow", oxygen: "oxygen", pressure: "pressure"}
+SOFIE-GEL:
+  study_type: {flight_experiment: "Combustion Integrated Rack"}
+  environment: {microgravity: "microgravity"}
+  fuel_classes: {solid: "Solid Fuel"}
+  materials: {PMMA: "PMMA"}
+  phenomena: {ignition: "Ignition", extinction: "Extinction", flame_spread: "flame spread", flammability_limit: "Extinction Limit"}
+  parameters: {airflow: "flow", oxygen: "oxygen", pressure: "pressure"}
+SOFIE-MIST:
+  study_type: {flight_experiment: "Combustion Integrated Rack"}
+  fuel_classes: {solid: "Solid Fuel"}
+  phenomena: {ignition: "Ignition", suppression: "Suppression"}
+LUCI:
+  study_type: {flight_experiment: "New Shepard"}
+  environment: {simulated_partial_gravity: "Lunar-g"}
+  fuel_classes: {solid: "PMMA"}
+  materials: {PMMA: "PMMA"}
+  phenomena: {flame_spread: "flame spread", extinction: "extinction"}
+  parameters: {gravity_level: "partial", oxygen: "oxygen", pressure: "pressure"}
+FM2:
+  study_type: {planned: "Planned lunar-surface experiment"}
+  environment: {planned_lunar: "lunar"}
+  fuel_classes: {solid: "PMMA"}
+  materials: {PMMA: "PMMA", silicone: "silicone"}
+  phenomena: {flame_spread: "flame spread", extinction: "extinction", ignition: "ignition", flammability_limit: "Flammability"}
+  parameters: {oxygen: "oxygen", airflow: "flow", gravity_level: "lunar"}
+KC135-PARTIAL-G:
+  study_type: {ground_test: "KC-135"}
+  environment: {simulated_partial_gravity: "partial gravity", normal_gravity: "normal-gravity"}
+  fuel_classes: {solid: "Thin Solids"}
+  phenomena: {flame_spread: "Flame Spread", extinction: "extinction"}
+  parameters: {gravity_level: "Partial Gravity", pressure: "pressure", oxygen: "oxygen"}
+GRC-PARTIAL-G:
+  study_type: {ground_test: "drop-tower centrifuge"}
+  environment: {simulated_partial_gravity: "centrifuge", normal_gravity: "White Sands"}
+  fuel_classes: {solid: "Solid Fuel"}
+  materials: {PMMA: "PMMA", Nomex: "Nomex", cotton_fiberglass: "cotton"}
+  phenomena: {ignition: "Ignition", flame_spread: "flame spread"}
+  parameters: {gravity_level: "Lunar", oxygen: "oxygen", airflow: "flow"}

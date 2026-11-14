@@ -1,0 +1,187 @@
+{
+  "source": {
+    "investigation_id": "SOFIE-GEL",
+    "file_id": "NTRS-20200000361-1",
+    "filename": "20200000361.pdf",
+    "relative_local_path": "investigations/SOFIE-GEL/raw/publications/NTRS-20200000361/20200000361.pdf",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20200000361/downloads/20200000361.pdf",
+    "source_record_url": "https://ntrs.nasa.gov/citations/20200000361",
+    "doi": "",
+    "source_version": "",
+    "file_version": "",
+    "sha256": "dc42805d92fb9073cda48d76b9aa3fdf9fd26b7780d537a9e8e1b73ac433e7b0",
+    "source_key": ""
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "Solid Fuel Ignition and Extinction (SoFIE) Project on ISS\n\n\n                          Paul Ferkul (Presenter), USRA\n                  Lauren Brown, NASA Glenn Research Center\n                   Christopher Mroczka, ZIN Technologies, Inc.\n                         Subrata Bhattacharjee, SDSU\n              Carlos Fernandez-Pello, University of California Berkeley\n                     Fletcher Miller, San Diego State University\n                  Sandra Olson, NASA Glenn Research Center\n                James T'ien, Case Western Reserve University\nIndrek Wichman, Department of Mechanical Engineering, Michigan State University",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "                      SoFIE — Solid Fuel Ignition and Extinction\n\n\n\nTheme:\n\n  Ignition and flammability of solid spacecraft materials in practical geometries and realistic atmospheric conditions\n\nRelevance/Impact:\n\n   • Improve EVA spacesuit design\n   • Safer selection of cabin materials and validate NASA materials flammability selection 1-g test protocols for low-gravity fires\n   • Understanding of early fire growth behavior\n   •  Validate material flammability numerical models\n   • Suppression techniques for burning materials by diluents, flow reduction, and venting\n\nApproach:\n   • SoFIE facility (CIR insert and avionics) supports multiple solid-material\n    combustion studies\n   •  Utilize Combustion Integrated Rack (CIR)\n   • Common infrastructure",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "    Previous and Current Combustion Integrated Rack (CIR) Experiments\n\n\n\n\n\n                                   ACME (Advanced Combustion via Microgravity Experiments)FLEX (Droplet combustion)\n\n                                                    Laminar, gaseous, non-premixed flames.\n\n\n\n\n\n                                                                                                                                                      3",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": " SoFIE — Solid Fuel Ignition and Extinction\n\n\n\n\nMaterial Ignition and Suppression Test (MIST); Carlos Fernandez-Pello: UC Berkeley\n\nFuel: acrylic cylinders (PMMA)\n\n\nSpacecraft Materials Microgravity Research on Flammability (SMμRF); Sandra Olson: NASA GRC\n\nAcrylic cylinders (PMMA) and engineering materials (sheets)\n\n\nNarrow Channel Apparatus (NCA); Fletcher Miller: San Diego State University\n\nThick acrylic (PMMA)\n\n\nResidence Time Driven Flame Spread (RTDFS); Subrata Bhattacharjee: San Diego State University\n\nThin acrylic sheets (PMMA)\n\n\nGrowth and Extinction Limit (GEL); James T’ien: Case Western Reserve University\n\nAcrylic spheres (PMMA\n\n\n\n\n\n                                                                                                                                4",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "                 Material Ignition and Suppression Test (MIST)\n\n\n\n              PI: Carlos Fernandez-Pello, University of California at Berkeley\n             Co-I: Michael Gollner, University of California at Berkeley\n             International Co-I: Nickolay Smirnov, M.V. Lomonosov State University, Moscow, Russia\n\n\n\nObjectives:\n\n   •  Ignition and extinction maps of a solid fuel (PMMA cylinder) as a flow, O2, and external radiant flux.\n\n   • Flammability of materials in space exploration atmospheres.\n\n   • Guide interpretation of NASA testing procedures to non-Earth environments.\n\n   • Develop ground-based apparatus for application to environments in space-based facilities.\n\n   • Theoretical modeling and normal gravity data.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "                Spacecraft Materials μg Research on Flammability (SMμRF)\n\n\n                                                 PI: Sandra Olson, NASA Glenn Research Center\nObjectives:\n\n• Flammability map for two materials over the range of interest for spacecraft exploration atmospheres.\n\n• Refine materials fire screening: Tests are g, but materials are more flammable in 0g.\n\n•  In the 1-g screening tests, flames extinguish by blowoff.\n\n•  In reduced gravity (0g, Lunar g, Martian g), a flame can be sustained at lower O2.\n• Negative Oxygen Margin of Safety to de-rate materials. PMMA rods: NOMS = 1.4% O2\n• Thin fuel sheets: few materials rated even in 1g at 34% O2, 8.2 psia (exploration atmosphere).\n\n\n       Blowoff in 0g: flame strengthens but then\n      blows off when flow is increased                                                                                                                                                                                                                                                                                                                       Quenching                                                                                                                                                                                                                                                                                                                                                                                                                         Blowoff\n\n\n\n\n\n                                                            Astronauts Tim Kopra and Scott Kelly\n                                                           are amazed at a BASS-II blowoff test.\n\n          ~15% O2       FLOW",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "                        Narrow Channel Apparatus (NCA)\n\n\n                                     PI: Professor Fletcher Miller, San Diego State University\n                                  Co-I: Sandra Olson, NASA GRC and Indrek Wichman, Michigan State University\n\nObjectives:\n\n   • 1-g “narrow channel” controls the effect of buoyancy. This will allow microgravity\n   opposed-flow flame spread rate and (possibly) extinction limits to be determined on\n   Earth in the apparatus.\n\n   • Flame spread rate across a thick solid fuel (PMMA slabs) as a function of forced\n   opposed flow velocity, oxygen concentration, and pressure (along the normoxic curve).\n\n   • Opposed flow extinction limits for thick solid fuel by lowering the velocity until the flame\n    extinguishes at a given oxygen concentration and pressure.\n\n   • Compare to a numerical model of the flame spread process.\n\n\n\n\n\n                                                                                                                       FlamesFlames inin gg fromfrom BASSBASS experiments.experiments.\n\n                                                                                                                                                                        Left:Left: FlamesFlames atat lowerlower opposedopposed flowflow velocitiesvelocities appearappear mostlymostly blueblue\n\n                                                                                                                                                      Right:Right: FlamesFlames ofof thisthis naturenature werewere observedobserved duringduring flowflow transitionstransitions andand whenwhen\n                                                                                                                                  bubblesbubbles inin thethe plasticplastic materialmaterial burstburst andand disturbeddisturbed thethe flow.flow. TheThe highhigh sootsoot\n                                                                                                                                             concentrationconcentration glowsglows brightbright orangeorange castingcasting aa lotlot ofof lightlight andand makesmakes thethe bubblebubble\n                                                                                                                                                       layerlayer inin thethe plasticplastic slabslab easilyeasily visible.visible.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "                 Residence Time Driven Flame Spread (RTDFS)\n\n\n\n                        PI: Subrata (Sooby) Bhattacharjee, San Diego State University, San Diego, CA\n                      International Co-I: S. Takahashi and K. Wakai (Japan)\n\nObjectives:\n\n  •  Radiative quenching in terms of the critical flow velocity of the oxidizer and critical thickness of fuel (PMMA sheets) in a microgravity\n   environment using experiments, theory, and computational model.\n\n  •  Delineating the thermal and concentration fields through microgravity experiment and numerical results.\n\n  • Complementary 1-g tests.\n\n\n\n\n\n                                                                                                                                                 SideSide viewsviews ofof thethe computationalcomputational\n                                                                                                                                                   flamesflames overover aa thinthin PMMAPMMA sheetsheet inin\n                    Left: radiative quenching when flow velocity goes below 2 cm/s. Right: Flame nearing blow                                                                                                                                  gg inin air.air.\n                   off extinction as the flow velocity crosses 40 cm/s. (0.1-mm-thick PMMA)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "                     Growth and Extinction Limit of Solid Fuels (GEL)\n\n\n\n   PI: James S. T’ien, Case Western Reserve University, Cleveland, Ohio\n   Co-Is: Paul Ferkul, USRA/NASA GRC; Sandra Olson, NASA GRC\n   International Co-I: Oleg Korobeinichev, Inst. of Chem. Kinetics and Comb., Siberian Branch Russian Academy of Sciences, Novosibirsk, Russia\n\nObjectives:\n\n  • Flame growth characteristics over PMMA spheres as a function\n    of flow velocity, oxygen percentage, pressure and the degree of\n    internal heating.\n\n  • Flame extinction characteristics (quenching and blowoff limits)\n   over a thick solid fuel as a function of flow velocity, oxygen\n   percentage, pressure and the degree of internal heating.\n\n  • Detailed numerical model that can be compared with the\n   microgravity results to connecting normal gravity and 1-g.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "SoFIE Concept (Semi-transparent)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "                       Internal Recirculation Fans (Current Concept)\n\n\n\n\nPush air through the duct\n\nFilters installed on all fan inlets to help with soot contamination issues\n\nRecirculation ducts on the outlet end to aid mixing and minimize inlet flow disruption",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "                                        Igniter Positioning/Control\n\n\n\n\nIgniter deployment motors are used to place igniter\nelement in the correct location\n\nCameras will be used to verify placement\n\n24 AWG Kanthal, with a variety of shapes\n\nIgniter current is specified and controlled.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "                                         Internal Camera(s)\n\n\n\n\n\nTwo internal and one external camera image the entire\nflow tube and sample",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "                      Experiment Samples\n\n\n\n\n\n                                           SMuRF (30 cm rods)\n\n\n\n\nNCA (10 cm x 5 cm x 1 cm block)\n\n\n\n                                         RTDFS, SMuRF (30 cm x 5 cm flat thin)\n\n\n\n\n\n    MIST 15 cm rods\n\n                               GEL (40 cm-dia sphere)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "                       SoFIE Sample Resources\n\n\n\n•  RTDFS\n                                                                       •  SMµRF    –  24 samples – thin sheets\n                                                 –  43 samples    –  3 samples in chamber\n                                                     – 10 rods    –  1 test per sample\n                                                     – 33 sheets    –  8 chamber accesses\n                                                 –  3 samples in chamber    – No flow tube\n                                                 –  2 tests per rod, 1 test per sheet•  MIST\n                                                 –  15 chamber accesses    –  22 samples – rods\n                                                                       •  GEL    –  3 samples in chamber\n                                                 –  15 samples – spherical    –  1 test per sample\n                                                 –  1 sample in chamber    –  8 chamber accesses\n                                                 –  3 tests per sample•  NCA\n                                                 –  15 chamber accesses    –  20 samples – slabs\n    –  3 samples in chamber\n    –  1 test per sample\n    –  7 chamber accesses",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "                              Sample Heaters\n\n\n\n\n•  Ceramic radiant heaters, max 800W\n\n•  Heater power and temperature adjustable",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "                                            Igniter System\n\n\n\n\n•  The Igniter System has two positioning motors\n\n•  Haydon-Kerk G4 Motor (similar to ACME) provides rotation into position\n\n•  Velmex XN-10 linear slide moves the igniter in and out of the flow duct",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": "        GRC ISS Physical Sciences Research\nCombustion Integrated Rack (CIR) Payload Utilization Schedule",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "                    Pre-Test Crew Setup\n\n\n\n\n•  Open doors. Translate the Optics Bench\n   out and rotate the bench down.\n\n•   Install CIR and/or PI specific diagnostics\n   along with SoFIE Avionics Package\n\n•  Rotate Optics Bench up and translate\n    into the rack\n\n•  Open chamber, replace fan, install the\n   configured SoFIE insert, close chamber\n\n•   Install gas bottles and adsorber\n   cartridge, open gas valves\n\n•  Close rack doors",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "                          SoFIE Nominal Powered Ops\n\n\n\n\n1. CIR undergoes a self-test\n\n2. Chamber is evacuated and filled with nitrogen to test for leaks\n\n3. Test points are run (details on next slide)\n\n     a. Chamber is evacuated and filled with mix of gases for test point operations\n\n     b. SoFIE specific hardware is powered\n\n     c.  Test point ignited / data captured\n\n     d. Chamber contents are analyzed, processed and vented\n\n     e. High-resolution video images are downlinked for analysis\n\n4. Crew changes test samples or other hardware as needed\n\n5. Test points are repeated until science matrix is complete",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "                               General Test Point Sequence\n\n\n\n•   Fill chamber per specific test point requirement\n\n•  Sample atmosphere using CIR Gas Chromatograph (GC)\n\n•  Configure CIR and SoFIE cameras and illumination\n\n•   Start SoFIE circulation fan (wait period to allow flow to establish)\n\n•  Preheat sample if needed (radiant heaters)\n\n•   Ignite sample and run SoFIE test sequence with data acquisition\n\n•  Monitor CIR systems (digital data storage, cameras, gas fill and scrub, chamber)\n\n•  Add O2; filter chamber contents during test as needed\n\n•  Flame extinguishes\n\n•  Close any and all flow paths open\n\n•  Sample atmosphere (GC)\n\n•  Turn off circulation fan",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

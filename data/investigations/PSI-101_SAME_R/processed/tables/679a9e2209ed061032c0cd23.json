@@ -1,0 +1,137 @@
+{
+  "source": {
+    "investigation_id": "PSI-101",
+    "file_id": "679a9e2209ed061032c0cd23",
+    "filename": "PSI-101_Experimental table_SAME-R.csv",
+    "relative_local_path": "investigations/PSI-101_SAME_R/raw/datasets/PSI-101_Experimental table_SAME-R.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=679a9e2209ed061032c0cd23&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+    "doi": "10.60555/2np7-jv14",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "87164b7dc9168a4273c159f7a9f23699afbd06ad97b77974377e79b9bf8a3bef",
+    "source_key": "psi-data/PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-101_Experimental table_SAME-R.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 109,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Sample Type",
+            "header_unit": null,
+            "type_counts": {
+              "text": 109
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "SAME Test #",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 67,
+              "text": 42
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Description",
+            "header_unit": null,
+            "type_counts": {
+              "text": 109
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Date",
+            "header_unit": null,
+            "type_counts": {
+              "text": 109
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Inlet velocity (cm/s)",
+            "header_unit": "cm/s",
+            "type_counts": {
+              "numeric": 74,
+              "integer": 35
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Rt/R0",
+            "header_unit": null,
+            "type_counts": {
+              "numeric": 109
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Duration (sec)",
+            "header_unit": "sec",
+            "type_counts": {
+              "integer": 68
+            },
+            "blank_count": 41,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Primary aging time (sec)",
+            "header_unit": "sec",
+            "type_counts": {
+              "integer": 67
+            },
+            "blank_count": 42,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Primary mixing time (sec)",
+            "header_unit": "sec",
+            "type_counts": {
+              "integer": 67
+            },
+            "blank_count": 42,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Net aging time (sec)",
+            "header_unit": "sec",
+            "type_counts": {
+              "integer": 104,
+              "text": 5
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {
+              "n/a": 5
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

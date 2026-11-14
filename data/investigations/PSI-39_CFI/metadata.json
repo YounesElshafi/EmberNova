@@ -1,0 +1,182 @@
+{
+  "source_id": "PSI-39",
+  "title": "Cool Flames Investigation",
+  "source_type": "psi_investigation",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "priority": "B",
+  "retrieved_date": "2026-11-13",
+  "availability_notes": "Latest PSI file tree inventoried.",
+  "acronym": "CFI",
+  "scientific_category": "Combustion Science",
+  "subcategory": "Droplets",
+  "research_program": null,
+  "objectives": "The objectives of this investigation are to:\n    1) Examine the combustion behavior of n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm.\n    2) Analyze the effects of helium dilution on cool flame behavior.\n    3) Examine the behavior of combustion characteristics.\n    4) Investigate the relationship between droplet size, pressure, and flame extinction, and (5) understand the consequence of soot formation during cool flame combustion.",
+  "approach": "The Combustion Integrated Rack (CIR) contains the Multi-User Droplet Combustion Apparatus (MDCA) which facilitates the controlled combustion of fuel droplets. A system of gas bottles and fuel syringes delivers the desired gas mixture to the combustion chamber ranging from 0.25 to 0.5 atm. Droplets of fuel are dispensed and suspended between hypodermic needles or tethered using silicon-carbide fibers. A hot-wire igniter is positioned near the droplet for ignition. After ignition the wire is retracted. Fuels observed include n-dodecane, farnesane, and mixtures of n-dodecane/iso-dodecane. Fuels diluted with molecular oxygen, atomic nitrogen, and helium to study the influence on flame extinction and dynamics. Flames were observed with a black-and-white camera for droplet size measurements. A UV camera was used for capturing the OH* radical emissions and flame size. Other high resolution cameras were used for monitoring and documentation. Narrow-band and wide-band radiometers for analyzed flame radiation.",
+  "platform": "International Space Station (ISS)",
+  "project_type": "Microgravity Investigation",
+  "hardware": "Multi-User Droplet Combustion Apparatus (MDCA), Combustion Integrated Rack (CIR)",
+  "hardware_url": "https://www1.grc.nasa.gov/space/iss-research/iss-fcf/combustion-science/mdca/, https://www1.grc.nasa.gov/space/iss-research/iss-fcf/cir/",
+  "institution": "University of California, San Diego",
+  "principal_investigator": "Forman Williams",
+  "nasa_center": "Glenn Research Center (GRC)",
+  "investigation_start": "10-01-2020",
+  "investigation_end": "10-20-2021",
+  "initial_release_date": "18-Sep-2024",
+  "version_modified_date": "03-Jun-2025",
+  "source_version": 4,
+  "doi": "10.60555/m6pj-a914",
+  "license": "CC0-1.0",
+  "license_url": "https://spdx.org/licenses/CC0-1.0.html",
+  "related_investigations": [
+    "PSI-69"
+  ],
+  "file_count": 2832,
+  "repeated_tree_entries": 0,
+  "inventoried_bytes": 718889568684,
+  "reported_dataset_bytes": 718889568684,
+  "file_types": ".csv;.meta;.metadata;.mp4;.pdf;.pptx;.pxp;.rtf;.ts;.txt;.xlsx;.zip",
+  "publication_count": 7,
+  "metadata_path": "investigations/PSI-39_CFI/metadata.json",
+  "relevance": "Combustion research related to ignition, extinction, flame behavior, or soot",
+  "version_history_path": "logs/psi/PSI-39-versions.json",
+  "inventory_snapshot_path": "logs/psi/PSI-39-files.json",
+  "principal_investigators": [
+    {
+      "name": "Forman Williams",
+      "institution": "University of California, San Diego"
+    }
+  ],
+  "publications": [
+    {
+      "authorList": "V Nayagam, DL Dietrich, PV Ferkul, MC Hicks, FA Williams",
+      "comments": [],
+      "doi": "10.1016/j.combustflame.2012.07.012",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Can cool flames support quasi-steady alkane droplet burning?"
+    },
+    {
+      "authorList": "V Nayagam, DL Dietrich, MC Hicks, FA Williams",
+      "comments": [],
+      "doi": "10.1016/j.combustflame.2015.01.012",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Cool-flame extinction during n-alkane droplet combustion in microgravity"
+    },
+    {
+      "authorList": "Nayagam Vedha, Dietrich Daniel L., Williams Forman A.",
+      "comments": [],
+      "doi": "10.2514/1.J054437",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Partial-Burning Regime for Quasi-Steady Droplet Combustion Supported by Cool Flames"
+    },
+    {
+      "authorList": "Paczko Guenter, Peters Norbert, Seshadri Kalyanasundaram, Williams Forman Arthur",
+      "comments": [],
+      "doi": "10.1080/13647830.2014.934296",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "The role of cool-flame chemistry in quasi-steady combustion and extinction of n-heptane droplets"
+    },
+    {
+      "authorList": "Seshadri Kalyanasundaram, Peters Norbert, Williams Forman A., Nayagam Vedha, Paczko Guenter",
+      "comments": [],
+      "doi": "10.1080/13647830.2016.1248494",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Asymptotic analysis of quasi-steady n-heptane droplet combustion supported by cool-flame chemistry"
+    },
+    {
+      "authorList": "Rachel Barry",
+      "comments": [],
+      "doi": "",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Science in Short: Cool Flames"
+    },
+    {
+      "authorList": "Dietrich Daniel, Krause Timmothy, Nayagam Vedha, Farouk Tanvir, Dryer Frederick, Williams Forman",
+      "comments": [],
+      "doi": "10.1007/s12217-024-10115-x",
+      "pubMedID": "",
+      "status": {
+        "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+        "annotationValue": "published",
+        "comments": [],
+        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+        "termSource": "EFO"
+      },
+      "title": "Low Temperature n-Dodecane Droplet Combustion Experiments Aboard the International Space Station"
+    }
+  ],
+  "representative_media": [],
+  "experimental_tables": [
+    {
+      "_id": {
+        "$oid": "67a24ba209ed061032c107a6"
+      },
+      "date_created": {
+        "$date": 1738689442189
+      },
+      "date_modified": {
+        "$date": 1738689442189
+      },
+      "file_name": "PSI-39_Experimental table_CFI.csv",
+      "file_size": 7792,
+      "remote_path": "/Home/psi-data/PSI-39/Experimental table/PSI-39_Experimental table_CFI.csv",
+      "remote_url": "/datamanager/file/Home/psi-data/PSI-39/Experimental table/PSI-39_Experimental table_CFI.csv",
+      "resource_id": {
+        "$oid": "66cf53d46f1142c964b2e0a8"
+      },
+      "restricted": false,
+      "s3_path": "psi-data/PSI-39/Experimental table/PSI-39_Experimental table_CFI.csv",
+      "s3_version_id": "E_iUBOjB_qxKZQyxK_aWDFFXbyNUvntW",
+      "study_id": {
+        "$oid": "683f4b87da33c6f4c4cecf8c"
+      },
+      "subcategory": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "experiments": [],
+  "upstream_metadata_path": "logs/psi/PSI-39-detail.json",
+  "inventory_errors": {}
+}

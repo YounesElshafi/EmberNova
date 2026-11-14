@@ -46,6 +46,10 @@ The base path is `/api`. All responses are JSON (UTF-8) unless noted. There is n
 | `GET /api/replays` | — | `[{replay_id, title, question, recorded_at, model, scenario}]` |
 | `GET /api/replays/{replay_id}` | `Accept: text/event-stream` | The recorded SSE stream (same event schema; `meta.replay=true`) |
 
+| `POST /api/evidence-assessment` | `Assess` body (see AGENT_TOOLS §12a) | `{artifact (evidence_assessment), classification, counts, investigations[], gaps[], note}`; 422 on invalid enums/ranges |
+
+New artifact payload kinds (2026-11-13): `investigation_ranking` and `evidence_assessment`; see `contracts/artifact.schema.json`. Session history turns additionally store `context`, a deterministic ordered summary of cited investigations, ranking order and assessment classes. It is replayed to the model so that follow-ups like "the first two" resolve.
+
 ## 3. Session and agent endpoints
 
 | Method and path | Request | Response |

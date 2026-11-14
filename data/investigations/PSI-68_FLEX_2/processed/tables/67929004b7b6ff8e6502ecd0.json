@@ -1,0 +1,102 @@
+{
+  "source": {
+    "investigation_id": "PSI-68",
+    "file_id": "67929004b7b6ff8e6502ecd0",
+    "filename": "PSI-68_Experimental table_Flex2.csv",
+    "relative_local_path": "investigations/PSI-68_FLEX_2/raw/datasets/PSI-68_Experimental table_Flex2.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=67929004b7b6ff8e6502ecd0&version=1&studyVersion=6&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "doi": "10.60555/byp8-h018",
+    "source_version": "6",
+    "file_version": "1",
+    "sha256": "cc57ad1bd9977aa13e7ac6c3aa618303012686e232b36c052c6a9f1a74e5f528",
+    "source_key": "psi-data/PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-68_Experimental table_Flex2.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 8,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Sample (Fuel Type)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Initial Droplet Diameter (mm)",
+            "header_unit": "mm",
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Ambient Gas Mixture ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Oxygen Mole Fraction",
+            "header_unit": null,
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Ambient Pressure (atm)",
+            "header_unit": "atm",
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": " Ambient Temperature (C)",
+            "header_unit": "C",
+            "type_counts": {
+              "integer": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Flow Velocity (cm/s)",
+            "header_unit": "cm/s",
+            "type_counts": {
+              "text": 8
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

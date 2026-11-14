@@ -1,0 +1,35 @@
+{
+  "source": {
+    "investigation_id": "PSI-99",
+    "file_id": "6840cdd64a0e24d624cebd81",
+    "filename": "PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+    "relative_local_path": "investigations/PSI-99_SAFFIRE_II/raw/documents/PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840cdd64a0e24d624cebd81&version=1&studyVersion=5&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+    "doi": "10.60555/2chp-m469",
+    "source_version": "5",
+    "file_version": "1",
+    "sha256": "edb5b6f4ebc7c32bd26f45f728902d766affa395677d818e9ef932c704321dbe",
+    "source_key": "psi-data/PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf"
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "SAFFIRE-II\nImage Directory Nomenclature\nVersion 3.0\n\n\n\n\n\nXnCn_Raw_CamOriginal    Camera original RAW files recorded on-board and downlinked on command.\n                              Contains 8-byte offset that must be processed prior to color interpolation and\n                                  distribution. This data set is archived at NASA-GRC.\n\n\nXnCn_Raw_DistroMaster  RAW Camara Orginal files processed for 8-byte offset using ImageJ, and resaved\n                               using originial file name. This is the RAW Distribution Master set for Science Team\n                                 distribution and color interpolation (demosaicing).\n\n\nXn_Raw2TIFF                 TIFF images of the RAW Distribution Master files, color interpolated (demosaiced)\n                               using IrfanView Batch Conversion process.\n\n\n\nXn_Raw2TIFF_icmad       Raw2TIFF files annotated with ICMAD 'Exposure' and 'Gain' information. Data is\n                          appended to the bottom of each frame using ImageMagick script and resaved as\n                                  TIFF.\n\n\nXn_jpeg                     Jpeg images created on-board SAFFIRE payload and downlinked by command\n\n\n\n\nXn_jpeg_corrupt            Jpeg images received corrupted after downlink.\n\n\n\n\nXn_jpeg2png_icmad        Jpeg images annotated with ICMAD 'Exposure' and 'Gain' information. Data is\n                          appended to the bottom of each frame using ImageMagick script and re-saved as\n                             .png format to minimize additional compression artifacts.\n\n\n\n  \"Xn\" Denotes run type and number\n\n  \"Cn\" Denotes camera number (if sorted separately)\n\n\n\n\n\n                                                            Page 1 of 2",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "                          SAFFIRE-II_Image_Data_Package Contents\n\n\n\nBit     F1      F2      S1     S2      S3      S4      S5      S6      S7      S8      S9\n\n\n\n\n\n        X      X      X      X      X      X      X      X      X      X      X\n\n\n\n\n        X      X      X      X      X      X      X      X      X      X      X\n\n\n\n\n                      X      X      X      X      X      X      X      X      X\n\n\n\n\n        X      X      X      X      X      X      X      X      X      X      X\n\n\n\n\n        X      X      X      X      X      X      X      X      X      X      X\n\n\n\n\n                      X      X      X      X      X      X      X      X      X\n\n\n\n\n\n                                                         Page 2 of 2",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

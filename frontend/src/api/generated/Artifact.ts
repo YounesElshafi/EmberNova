@@ -10,7 +10,9 @@ export interface Artifact {
     | "envelope"
     | "media"
     | "analysis_run"
-    | "si_illustration";
+    | "si_illustration"
+    | "investigation_ranking"
+    | "evidence_assessment";
   title: string;
   status: "ok" | "partial" | "invalid_result" | "timeout" | "error";
   created_at: string;
@@ -37,6 +39,8 @@ export interface Artifact {
     | EnvelopePayload
     | MediaPayload
     | AnalysisRunPayload
+    | RankingPayload
+    | AssessmentPayload
     | IllustrationPayload;
   reproducibility: {
     created_at: string;
@@ -233,6 +237,72 @@ export interface AnalysisRunPayload {
     bundle_sha256?: string;
     [k: string]: unknown;
   };
+  [k: string]: unknown;
+}
+export interface RankingPayload {
+  kind: "investigation_ranking";
+  query: string;
+  interpretation: string;
+  degraded?: string | null;
+  score_note: string;
+  items: {
+    rank: number;
+    investigation_id: string;
+    acronym?: string;
+    title: string;
+    scientific_relevance_score: number;
+    explanation: string[];
+    facet_checks?: unknown[];
+    study_type?: unknown[];
+    is_psi?: boolean;
+    platform?: string | null;
+    source_url: string | null;
+    doi_url: string | null;
+    datasets?: unknown[];
+    evidence_id: string;
+    passages?: {
+      [k: string]: unknown;
+    }[];
+    [k: string]: unknown;
+  }[];
+  [k: string]: unknown;
+}
+export interface AssessmentPayload {
+  kind: "evidence_assessment";
+  scenario: {
+    [k: string]: unknown;
+  };
+  classification: "direct" | "indirect" | "insufficient";
+  definitions: {
+    [k: string]: unknown;
+  };
+  counts?: {
+    [k: string]: unknown;
+  };
+  investigations: {
+    investigation_id: string;
+    title: string;
+    classification: "direct" | "indirect";
+    checks: {
+      condition: string;
+      status:
+        | "match"
+        | "differs"
+        | "unknown"
+        | "simulated"
+        | "planned"
+        | "not_requested";
+      detail: string;
+      [k: string]: unknown;
+    }[];
+    limiting_factors: string[];
+    source_url: string | null;
+    doi_url?: string | null;
+    evidence_id?: string;
+    [k: string]: unknown;
+  }[];
+  gaps: string[];
+  note: string;
   [k: string]: unknown;
 }
 export interface IllustrationPayload {

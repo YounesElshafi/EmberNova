@@ -61,19 +61,61 @@ def compact(data):
             }
         return out
     if isinstance(data, str):
-        return data[:1600]
+        return data[:6000]
     return data
+
+
+def research_context(artifacts: list[dict], answer: dict | None = None, ledger=None) -> str:
+    """Ordered, deterministic summary of what this turn showed, so 'the first two' resolves."""
+    parts = []
+    if answer and ledger is not None:
+        # The investigations this answer actually discussed, in order of first citation.
+        focus = []
+        for c in answer.get("citations", []):
+            for iid in ledger.get(c["evidence_id"], {}).get("investigation_ids", []):
+                if iid not in focus:
+                    focus.append(iid)
+        if focus:
+            parts.append("investigations cited in this answer, in order: " + ", ".join(focus))
+    for art in artifacts:
+        p = art["payload"]
+        if p["kind"] == "investigation_ranking":
+            parts.append(
+                "ranked investigations shown to the user, in order: "
+                + "; ".join(
+                    f"{i['rank']}. {i['acronym']} ({i['investigation_id']})" for i in p["items"]
+                )
+            )
+        elif p["kind"] == "evidence_assessment":
+            parts.append(
+                f"evidence assessment '{art['title']}': overall {p['classification']}; "
+                + "; ".join(
+                    f"{i['investigation_id']}={i['classification']}"
+                    for i in p["investigations"][:8]
+                )
+            )
+        elif p["kind"] == "comparison":
+            parts.append(
+                "comparison of groups "
+                + ", ".join(g["label"] for g in p["groups"])
+                + f" (verdict {p['validity']['verdict']})"
+            )
+        elif p["kind"] in {"chart", "envelope", "table", "media"}:
+            parts.append(f"{p['kind']} '{art['title']}'")
+    return " | ".join(parts)[:2000]
 
 
 async def run_agent(
     cfg: Settings, store, bundle, session_id, turn_id, text, cancel: asyncio.Event, client=None
 ):
     ledger = Ledger(store)
-    tools = Tools(store, bundle, ledger)
+    tools = Tools(store, bundle, ledger, owner=store.get("sessions", session_id).get("owner"))
+    tools.emit_blocks = True
     budget = Budget(cfg, store)
     start = time.monotonic()
     seq = 0
     usage = {"input_tokens": 0, "cached_tokens": 0, "output_tokens": 0}
+    last_context = 0  # tokens the next request re-reads via previous_response_id
     cost = 0.0
 
     def event(name, **data):
@@ -103,7 +145,17 @@ async def run_agent(
         transcript.extend(
             [
                 {"role": "user", "content": turn["user_text"]},
-                {"role": "assistant", "content": turn["answer"]["validated_markdown"]},
+                {
+                    "role": "assistant",
+                    "content": turn["answer"]["validated_markdown"]
+                    + (
+                        "\n\n[Research context recorded by EmberNova for follow-up references: "
+                        + turn["context"]
+                        + "]"
+                        if turn.get("context")
+                        else ""
+                    ),
+                },
             ]
         )
     inputs = transcript + [{"role": "user", "content": text}]
@@ -163,7 +215,12 @@ async def run_agent(
                 )
                 worst_next = budget.cost(
                     {
-                        "input_tokens": max(estimated_input, usage["input_tokens"]),
+                        # The next request re-reads the previous context (last call's input and
+                        # output) plus new tool outputs. Using the cumulative turn total here
+                        # over-reserved and aborted affordable multi-tool turns.
+                        "input_tokens": max(
+                            estimated_input, last_context + len(canonical(inputs).encode())
+                        ),
                         "output_tokens": cfg.max_output_tokens,
                     }
                 )
@@ -265,6 +322,7 @@ async def run_agent(
                     }
                     for key in usage:
                         usage[key] += call_usage[key]
+                    last_context = u.input_tokens + u.output_tokens
                     cost += budget.cost(call_usage)
                 calls = [item for item in response.output if item.type == "function_call"]
                 previous = response.id
@@ -337,6 +395,7 @@ async def run_agent(
                             "answer": answer,
                             "si_generated": True,
                             "artifacts": [a["artifact_id"] for a in ledger.artifacts],
+                            "context": research_context(ledger.artifacts, answer, ledger.items),
                         }
                     )
                     store.put("sessions", session_id, session)
@@ -350,7 +409,7 @@ async def run_agent(
                     failed = False
                     return
                 inputs = []
-                for call in calls[:10]:
+                for call in calls:
                     before_evs = set(ledger.items)
                     before_arts = len(ledger.artifacts)
                     tick = time.monotonic()
@@ -362,6 +421,8 @@ async def run_agent(
                         args_summary="Read-only NASA evidence tool",
                     )
                     try:
+                        if len(inputs) >= 10:
+                            raise ValueError("Tool-call limit reached; narrow the request")
                         model = REGISTRY[call.name][0]
                         args = model.model_validate_json(call.arguments).model_dump()
                         result = await asyncio.wait_for(

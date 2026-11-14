@@ -1,0 +1,1229 @@
+{
+  "source": {
+    "investigation_id": "PSI-98",
+    "file_id": "683f4a54746db1c87dcebebe",
+    "filename": "PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx",
+    "relative_local_path": "investigations/PSI-98_SAFFIRE_I/raw/documents/PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebebe&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "doi": "10.60555/0t15-1z43",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "9bfeb80f921d966932e9f903b713148a5f5ec5b13e79564e527f268cc0709536",
+    "source_key": "psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "openpyxl cached cell values",
+    "sheets": [
+      {
+        "name": "PreFlowVis - TimeSort",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1619,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1618
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Pre FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1418
+            },
+            "blank_count": 201,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Pre FV Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 111
+            },
+            "blank_count": 1508,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1565,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 52
+            },
+            "blank_count": 1567,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 54
+            },
+            "blank_count": 1565,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "PostFlowVis - jpeg TimeSort",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1655,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1618
+            },
+            "blank_count": 37,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Post FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1556
+            },
+            "blank_count": 99,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Post FV Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 63
+            },
+            "blank_count": 1592,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Sample1 - jpeg TimeSort",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 36499,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 36232
+            },
+            "blank_count": 267,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "S1 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 28941
+            },
+            "blank_count": 7558,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "S1 Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 97
+            },
+            "blank_count": 36402,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1208
+            },
+            "blank_count": 35291,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 969
+            },
+            "blank_count": 35530,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1208
+            },
+            "blank_count": 35291,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Sample2 - jpeg TimeSort",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 36496,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 36299
+            },
+            "blank_count": 197,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "S2 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9164
+            },
+            "blank_count": 27332,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "S2 Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 76
+            },
+            "blank_count": 36420,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1210
+            },
+            "blank_count": 35286,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 308
+            },
+            "blank_count": 36188,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1210
+            },
+            "blank_count": 35286,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "BIT - jpeg",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1800,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1800
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1799
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1800
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Jpeg File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1800
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1800
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1800
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Zip File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 60
+            },
+            "blank_count": 1740,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Zip File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 60
+            },
+            "blank_count": 1740,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 60
+            },
+            "blank_count": 1740,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 60
+            },
+            "blank_count": 1740,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "PreFlowVis - jpeg",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1619,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1618
+            },
+            "blank_count": 1,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Jpeg File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Pre FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1418
+            },
+            "blank_count": 201,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Pre FV Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 111
+            },
+            "blank_count": 1508,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1565,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Zip File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 54
+            },
+            "blank_count": 1565,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1565,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 52
+            },
+            "blank_count": 1567,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 54
+            },
+            "blank_count": 1565,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "PostFlowVis - jpeg",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 1655,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 1618
+            },
+            "blank_count": 37,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Jpeg File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Post FV Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1556
+            },
+            "blank_count": 99,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Post FV Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 63
+            },
+            "blank_count": 1592,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1619
+            },
+            "blank_count": 36,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Zip File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 54
+            },
+            "blank_count": 1601,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Sample1 - jpeg",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 36499,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 36232
+            },
+            "blank_count": 267,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Jpeg File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "S1 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 28941
+            },
+            "blank_count": 7558,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "S1 Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 97
+            },
+            "blank_count": 36402,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36233
+            },
+            "blank_count": 266,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1208
+            },
+            "blank_count": 35291,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Zip File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1208
+            },
+            "blank_count": 35291,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1208
+            },
+            "blank_count": 35291,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 969
+            },
+            "blank_count": 35530,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1208
+            },
+            "blank_count": 35291,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Sample2 - jpeg",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 36496,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Timestamp",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Time delta",
+            "header_unit": null,
+            "type_counts": {
+              "datetime": 36299
+            },
+            "blank_count": 197,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Jpeg File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Jpeg File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Jpeg File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "S2 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9164
+            },
+            "blank_count": 27332,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "S2 Rec'd Corrupt",
+            "header_unit": null,
+            "type_counts": {
+              "text": 76
+            },
+            "blank_count": 36420,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Jpeg File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 36300
+            },
+            "blank_count": 196,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Zip File ID (hex)",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1210
+            },
+            "blank_count": 35286,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 10,
+            "label_original": "Zip File ID (decimal)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1210
+            },
+            "blank_count": 35286,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 11,
+            "label_original": "Zip File Name",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1210
+            },
+            "blank_count": 35286,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 12,
+            "label_original": "Zips Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 308
+            },
+            "blank_count": 36188,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 13,
+            "label_original": "Zip File size (bytes)",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 1210
+            },
+            "blank_count": 35286,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Received - jpeg",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 29010,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "S1 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 28941
+            },
+            "blank_count": 69,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "S2 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 9164
+            },
+            "blank_count": 19846,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "F1 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1418
+            },
+            "blank_count": 27592,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "F2 Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 1556
+            },
+            "blank_count": 27454,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Received - jpeg Corrupted",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 28515,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "S1 Received Corrupted",
+            "header_unit": null,
+            "type_counts": {
+              "text": 97
+            },
+            "blank_count": 28418,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "S2 Received Corrupted",
+            "header_unit": null,
+            "type_counts": {
+              "text": 76
+            },
+            "blank_count": 28439,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "F1 Received Corrupted",
+            "header_unit": null,
+            "type_counts": {
+              "text": 111
+            },
+            "blank_count": 28404,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "F2 Received Corrupted",
+            "header_unit": null,
+            "type_counts": {
+              "text": 63
+            },
+            "blank_count": 28452,
+            "possible_missing_markers": {}
+          }
+        ]
+      },
+      {
+        "name": "Received - jpeg Zips",
+        "header_assumption": "first worksheet row",
+        "header_verified": false,
+        "row_count": 28516,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "S1-zip Received ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 969
+            },
+            "blank_count": 27547,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "S2-zip Received ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 308
+            },
+            "blank_count": 28208,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "F1-zip Received ",
+            "header_unit": null,
+            "type_counts": {
+              "text": 52
+            },
+            "blank_count": 28464,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "F2-zip Received",
+            "header_unit": null,
+            "type_counts": {
+              "text": 54
+            },
+            "blank_count": 28462,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

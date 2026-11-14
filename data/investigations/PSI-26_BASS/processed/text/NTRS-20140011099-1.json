@@ -1,0 +1,488 @@
+{
+  "source": {
+    "investigation_id": "PSI-26",
+    "file_id": "NTRS-20140011099-1",
+    "filename": "20140011099.pdf",
+    "relative_local_path": "investigations/PSI-26_BASS/raw/publications/NTRS-20140011099/20140011099.pdf",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20140011099/downloads/20140011099.pdf",
+    "source_record_url": "https://ntrs.nasa.gov/citations/20140011099",
+    "doi": "",
+    "source_version": "",
+    "file_version": "",
+    "sha256": "fd5e89467bddd426e40081311f0b36541aac6a29236b2d3fc3758a901bc8c072",
+    "source_key": ""
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "  Thickness and Fuel Preheating Effects\n  on Material Flammability in Microgravity\n  from the BASS Experiment\n\n\n\n\n\n                   Paul V. Ferkul, National Center for Space Exploration Research\n                 Sandra L. Olson, NASA Glenn Research Center\n                   Fumiaki Takahashi, National Center for Space Exploration Research\n                 Makoto Endo, Case Western Reserve University\n                   Michael C. Johnston, Case Western Reserve University\n                James S. T’ien, Case Western Reserve University\n\n\n\nThis work was supported by the NASA Space Life and Physical Sciences Research and\nApplications Division (SLPSRA).\n\n\n\n                  Presented at the American Society for Gravitational and Space Research 2013 Annual Meeting\n                                                                                           Orlando, Florida",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "Approach:\n\n♦Microgravity combustion tests were performed\n  aboard the International Space Station using the\n  BASS (Burning and Suppression of Solids)\n   hardware.\n\n♦The wind tunnel was installed in the Microgravity\n  Science Glovebox which supplied power, imaging,\n  and a level of containment.\n\n♦Fuel samples were mounted inside a small wind\n   tunnel which could impose airflow speeds up to\n  40 cm/s.\n\n♦The effects of airflow speed on flame appearance,\n   flame growth, and extinction were determined in\n   both the opposed and concurrent flow.\n\n♦Ambient oxygen atmospheres 17% to 21.5%\n   (cabin air).",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": "Science Applications:\n\n\nUnderstanding of long-duration microgravity solid material burning and extinction\n\nImproved strategies for NASA spacecraft materials selection; link actual burn\n  behavior in microgravity to Earth-based selection methods\n\nImproved combustion computational models used in the design of fire detection\n  and suppression systems in microgravity and on Earth\n\nValidated detailed combustion models in the simpler flow environment of\n  microgravity build more complex combustion models needed to capture the\n  important details of flames burning in normal gravity; models have wide\n   applicability to the general understanding of many terrestrial combustion\n  problems.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "Microgravity Science\nGlovebox (MSG)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "Fish-eye view of the inside of the Microgravity Science Glovebox (MSG)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "Hardware Details\n\n                                 Top window\n\n\n\n\n\n                              Top window                     Air exit\n\n\n\n\n                                       Front window\n\n       Fan section\n\n\nPermits variety of solid samples to be mounted, ignited, and burned:\n\n\n\n\n\n Thin, flat (17)                 Spheres (12)              Thick, flat (4)      Candles (8)\n\n (Note: samples are not to scale; samples can be flipped 180 degrees if desired)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "Hardware Summary:\n                                                             Sample Images\nBASS utilized the on-orbit SPICE hardware;         Digital Still              Video\n  minor modifications were made to burn solid\n  samples\n\nSmall flow tunnel\n\nSolid samples were installed, ignited,\n  extinguished, and recorded\n\nVideo and digital still camera provided bulk\n  of the data. Flame appearance, behavior,\n  spread rate, and extinction dynamics were\n  measured\n\nAirflow speed was the main variable\n                                                                     Flow\n41 samples, 115 burns completed",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "                                            Top Window and\nExperiment Operation:                                             Sample Holder\n\n\n\n\n    Flow Duct",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n                                         Fuel Sample Installed",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n      Nitrogen Vitiation\n           (if desired)\n     Down to 16% O2",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n                                          Igniter On\n\n\n\n      Air Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n                                     Flame\n\n\n\n\n      Air Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n                                          Flame Spread\n\n\n\n\n      Air Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n                                        Flame Responds\n                                                     to Higher Flow\n\n\n\n      Air Flow\n    Changes",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n                                    Flame Extinction\n                                         (Flow reduced too far\n                                             or fuel consumed)\n\n      Air Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "Experiment Operation:\n\n\n\n\n\n                Nitrogen\n               Suppression\n      Air Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": "                                                                 5 cm/s Flow\n10 cm/s Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "10 cm/s\n\n\n                                                                                                6 cm/s\n\n\n Flow\n\n\n\n\n\n                                              4 cm/s\n                                                                                                            2 cm/s\n\n\n\n\n\n                                                       1.5 cm/s\n                                                                                                      1 cm/s\n\n\n  Digital still camera images showing a flame burning a 2-cm wide cotton-fiberglass\n  fabric in opposed flow. Images are taken every 1.25 sec (starting at top and moving\n  from left to right). The flow is decreased in discrete steps from 10 cm/s all the way\n down to about 1 cm/s. The flame response to flow changes is very rapid, and the flow\n  effects on the flame and its spread rate are dramatic. Total burn time is 90 sec. Flow\n changes are indicated by numbers.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "Concurrent and Opposed Spread at ~ 10 cm/s\n        2.55 mm/s versus 1.21 mm/s\n\n\n\n\n\n                       10 cm/s Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "Comparison of 0-g and 1-g Opposed Flow Flames\n\n\n\n\n\n      0-g with flow (10 cm/s)                1-g\n     Steady flame size and spread        Flame does not propagate downward\n     Convex base\n     Extended blue zone",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 22,
+      "page_label": null,
+      "text": "Results: Thin Fuel Flame Spread and Extinction\n\n\n♦Opposed flow:\n      •  flame quickly reached steady spread\n      •  spread rate was fastest at an intermediate value of flow speed\n\n♦Concurrent flow:\n      •  Flame spread rate increased linearly with increasing flow.\n      •  Quenching extinction was observed (around 1 cm/s)\n\n♦This is the first time that detailed transient flame growth data was obtained in\n   purely forced flows in microgravity.\n\n♦Long-duration experiments validate a number of theoretical predictions and\n   also provide the data for a transient flame growth model under development.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 23,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 24,
+      "page_label": null,
+      "text": "                    Fuels tested\n\n•   Ultem® 1000  C37H24O6N2\n      Fire retarded polyetherimide (PEI) in 10 mil thick film is\n      inherently flame-retarding, with charring characteristics, a\n     very low smoke signature, very low smoke toxicity, and a low\n      heat-release rate.\n          ULOI: 23.5% O2\n\n\n\n\n\n•  Nomex®  (C14H12O2N2)n\n     HT90-40 fabric is a 12 mil thick fire retarded aromatic nylon\n      fabric which does not melt or drip as it burns. When\n     exposed to a heat source, the Nomex fibers swell and seal\n      the spaces between the fibers, stopping air movement\n     through the fabric and thus inhibiting heat transfer through the\n       fabric.\n          ULOI: 23.5% O2\n                                                                                                                                                      Fuel\n                                                                                                                    2 cm                                                                                                                                    Igniter\n•   Nomex-III ®\n          ULOI: 22% O2",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 25,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 26,
+      "page_label": null,
+      "text": "Results: Material Flammability\n\nUltem and Nomex HT90-40 samples did not burn on ISS atmosphere\n\n      21% to 22% O2\n        Flow speeds around 15 cm/s\n\n         Similar to 1-g (Note: samples narrower on ISS)\n\n\n\n\nNomex-III sample did burn",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 27,
+      "page_label": null,
+      "text": "NOMEX – III, 22% O2, 1 atm 14 cm/s (0g)\n\n            2 cm wide sample\n\n\n                  At 1g ULOI, but narrower sample\n\n              Nomex III sample residue after nearly complete\n                  concurrent propagation at 15 cm/s on ISS.\n               Flame was shrinking in width until it extinguished\n                    within 1 cm of the end of the sample, as its width\n               became smaller than ~ 1 cm, which is on the\n                  scale of a fingering flamelet.\n\n\n\n\n\n                               Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 28,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 29,
+      "page_label": null,
+      "text": "                                                        Flow\n\nFlame sequence of a burning 2-cm diameter PMMA sphere at 17% oxygen and 12 cm/s\nflow. The images are about 1.5 sec. apart. The high resolution images allow model\ncomparison of flame growth rate, flame-to-fuel distance, and the solid regression rate.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 30,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 31,
+      "page_label": null,
+      "text": "Flame sequence of a burning\nPMMA sphere (1-cm\ndiameter) at 17% oxygen and\nless than 1 cm/s.\n\n(Images are 1.3 sec. apart)\n\nThe fuel itself is clearly visible\nin this contrast-enhanced\nmontage. This enables us to\nget an accurate measure of\nthe fuel burning rate which is\nan important parameter to\ncharacterize the system for\ncomparison to the model.\n\n\n\n\n\n                                                                             Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 32,
+      "page_label": null,
+      "text": "Mesh\n\n\n\n\n\n   Having 33930 points total, Using quad-core CPU (4 processors) with 16GB\n  memory, it takes 2.7 hours to compute one second in the computation (with\n   capability of shape change due to solid surface regression).",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 33,
+      "page_label": null,
+      "text": "Flame spread (10sec.)\n\n\nJET velocity:      20 cm/s              Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:   ON\n\n\n\n\n\n              Flow\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 34,
+      "page_label": null,
+      "text": "Flame spread (20sec.)\n\n\nJET velocity:      20 cm/s              Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:   ON\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 35,
+      "page_label": null,
+      "text": "Flame spread (30sec.)\n\n\nJET velocity:      20 cm/s              Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:   ON\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 36,
+      "page_label": null,
+      "text": "Flame spread (40sec.)\n\n\nJET velocity:      20 cm/s              Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:   ON\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 37,
+      "page_label": null,
+      "text": "Flame spread (50sec.)\n\n\nJET velocity:      20 cm/s              Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:   ON\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 38,
+      "page_label": null,
+      "text": "Flame spread (60sec.)\n\n\nJET velocity:      20 cm/s              Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:   ON\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 39,
+      "page_label": null,
+      "text": "Flame spread (70sec.)\n\n\nJET velocity:      20 cm/s            Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:    OFF\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 40,
+      "page_label": null,
+      "text": "Flame spread (80sec.)\n\n\nJET velocity:      20 cm/s            Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:    OFF\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 41,
+      "page_label": null,
+      "text": "Flame spread (90sec.)\n\n\nJET velocity:      20 cm/s            Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:    OFF\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 42,
+      "page_label": null,
+      "text": "Flame spread (100sec.)\n\n\nJET velocity:      20 cm/s            Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:    OFF\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 43,
+      "page_label": null,
+      "text": "Flame spread (110sec.)\n\n\nJET velocity:      20 cm/s            Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:    OFF\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 44,
+      "page_label": null,
+      "text": "Flame spread (120sec.)\n\n\nJET velocity:      20 cm/s          Gas phase Reaction rate [kg mol/m3/s]\n\nIgniter:    OFF\n\n\n\n\n\n                                    Solid\n                              Temperature [K]",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 45,
+      "page_label": null,
+      "text": "         Flame spread graph\n\n\n\n\n\n                                                              (c)\n                                                                90 [s]\n\n\n                                                                           q=51.68 [deg.]\n\n                                                                  q\n\n\n\nBurning angle q is defined by the solid surface temperature (570K).",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 46,
+      "page_label": null,
+      "text": " Surface energy balance:          =         + mL +      4                          λg(∂T/∂n)g  λs(∂T/∂n)s      𝜺𝝈TS\n\n\n              Symmetry boundary condition\n\n                                                       Zero gradient boundaryUniform\ninlet boundary\n\n\n  Parameter F was introduced to the interfacial energy balance boundary\n   condition to complete the description for the quasi-steady gas-phase\n   system.                  T\n        \n                                     s n     heat flux into the solid\n        F              s \n                  T     heat flux from the gas        \n                             g n                                    g\n\n  Ф is assumed to have an uniform value (independent of angle) and is\n   treated as a parameter for successive quasi-static gas phase flames\n\n        large F     More heat loss to the solid from the gas phase.         46",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 47,
+      "page_label": null,
+      "text": "Flame burning an acrylic sphere (top) from is compared to model computation (bottom).\nThe comprehensive model even includes solid phase shape change effects.  Adjusted\nsolid phase chemical kinetic parameters will improve the prediction of the flame standoff\ndistance.\n\nFuel: Acrylic sphere; Atmosphere: 17% O2/N2; 1 atm; Flow speed: 12 cm/s (left to right)",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 48,
+      "page_label": null,
+      "text": "Dynamic flow change effects\n\n\n\n\n\n                                                  Flow",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 49,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 50,
+      "page_label": null,
+      "text": "                                                                                                                 Flow\n\n\n\n\n\nTop view image montage for a 1-cm wide flat acrylic sample burning in air at low flow speed\n(around 9 cm/s). Images progress from left to right then top to bottom (1.3 seconds between\nimages). The air flow direction is from right to left. The flame is about 1 cm in size and can\npersist for a very long time at this low air flow speed. The flame goes out only in the last two\nframes when the air flow is completely shut off.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 51,
+      "page_label": null,
+      "text": "",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "no_embedded_text"
+    },
+    {
+      "page_number": 52,
+      "page_label": null,
+      "text": "                                                                                                                 Flow\n\nFlow of less than 1 cm/s. Near the end of the burn, a jet of nitrogen is imposed but it\nfails to extinguish the flame. (Solid is very warm.) Finally after a series of flow\nreductions, the flame goes out when the flow speed is zero.\n\nFuel: PMMA; 15-mm initial diameter; 17% O2/N2; 1 atm; Time between images: 1.3 sec",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 53,
+      "page_label": null,
+      "text": "Nitrogen on\n\n\n\n\n\n                                                                          Flow\n\n\n\n        Flame Minimum\n\n\n\n                               PMMA sphere burning in wake\n                                                    configuration in air.\n\n                                            Flow is from right to left\n\n\nNitrogen off                                                 Nitrogen flow of 500 cc/min\n                                         weakens but does not\n                                            Flame extinguishes  extinguish the flame",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 54,
+      "page_label": null,
+      "text": "Summary\n\n♦Microgravity flames were found to be especially sensitive to air flow speed in\n   the range 0 to 5 cm/s.\n\n♦The gas phase response is much faster compared to the solid and so as the\n   flow speed is changed, the flame responds with almost no delay.\n\n♦At the lowest speeds examined (less than 1 cm/s) all the flames tended to\n  become dim blue and very stable. However, heat loss at these very low\n   convective rates is small so the flames can burn for a long time.",
+      "headings": [
+        {
+          "level": null,
+          "title": "Summary\n"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 55,
+      "page_label": null,
+      "text": "Summary (continued)\n\n♦At moderate flow speeds (between about 1 and 5 cm/s) the flame continually\n   heats the solid fuel resulting in an increasing fuel temperature, higher rate of\n   fuel vaporization, and a stronger, more luminous flame as time progresses.\n\n♦Thicker solids can store a great deal of heat even with only a small flame. One\n   result is that extinction with the nitrogen jet was not possible for the given flow\n   rate.\n\n♦Only the smallest flames burning acrylic slabs appeared to be adversely\n   influenced by solid conductive heat loss, but even these burned for over 5\n   minutes before self-extinguishing.\n      •  This has implications for spacecraft fire safety since a tiny flame might be\n       undetected for a long time.\n      •  While the small flame is not particularly hazardous if it remains small, the\n      danger is that it might flare up if the air convection is suddenly increased\n       or if the flame spreads into another fuel source.",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 56,
+      "page_label": null,
+      "text": "Acknowledgments:\n\n\n\n  Fumiaki Takahashi, National Center for Space Exploration Research\n\n  Bob Hawersaat, NASA Glenn Research Center\n\n  Jay Owens, National Center for Space Exploration Research\n\n  Tibor Lorik, ZIN Technologies\n\n  Chuck Bunnell, ZIN Technologies\n\n  Dennis Siedlak, Georgia Institute of Technology\n\n  Carol Reynolds, NASA Marshall Space Flight Center\n\n  Don Pettit, NASA Johnson Space Center\n\n  Joe Acaba, NASA Johnson Space Center\n\n  Suni Williams, NASA Johnson Space Center\n\n  Chris Cassidy, NASA Johnson Space Center",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 57,
+      "page_label": null,
+      "text": "Astronauts Don Pettit, Joe Acaba, Suni Williams, and Chris Cassidy return to Earth,\nKazakhstan, 2012-2013",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 58,
+      "page_label": null,
+      "text": "Questions?\n\n\n\n\n\n       PMMA sphere burning in 17% O2 with occasional vapor jetting",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

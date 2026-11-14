@@ -1,0 +1,288 @@
+{
+  "source": {
+    "investigation_id": "PSI-101",
+    "file_id": "NTRS-20150010172-1",
+    "filename": "20150010172.pdf",
+    "relative_local_path": "investigations/PSI-101_SAME_R/raw/publications/NTRS-20150010172/20150010172.pdf",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20150010172/downloads/20150010172.pdf",
+    "source_record_url": "https://ntrs.nasa.gov/citations/20150010172",
+    "doi": "",
+    "source_version": "",
+    "file_version": "",
+    "sha256": "acfd0804de1805a458239b2a04ff93287cce662280101cd88f7f76f4ad3dd47e",
+    "source_key": ""
+  },
+  "method": "PyMuPDF embedded text",
+  "limitation": "No OCR or inferred layout. Use the original for figures, tables, visual headings and mathematical typography.",
+  "parts": [
+    {
+      "page_number": 1,
+      "page_label": null,
+      "text": "NationalParticleAeronautics andMorphologySpace Administration    Results from the Smoke Aerosol\n Measurement Experiment-Reflight\n\n\n\n\n\n January 12, 2012\n\n\n\n\n\n49th AIAA Aerospace Sciences Meeting, January 2011                                                     www.nasa.gov    1",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 2,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n\n       Particle Morphology Results from the\n   Smoke Aerosol Measurement Experiment-\n                      Reflight\n\n\n\n   David Urban, Gary Ruff, Paul Greenberg, Marit Meyer: NASA Glenn\n   Research Center\n\n  Thomas Cleary, Jiann Yang: National Institute of Standards and\n   Technology\n\n   George Mulholland: University of Maryland\n\n   Zeng-guang Yuan, Victoria Bryg: National Center for Space\n   Exploration Research\n\n\n\n\n\n                                                                                                     www.nasa.gov    2",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 3,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n               Smoke Detection:\n     Destiny Smoke Detection Simulation-25% Soot\n                             effect of gravity\n\n\n\n\n\n                            Low-gravity\n\n\n\n\n\n                          Normal-gravity\n\n\n                                                                                                     www.nasa.gov    3",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 4,
+      "page_label": null,
+      "text": "   National Aeronautics and Space Administration\n          Background: Spacecraft Fire Detection\n\n                  STS Detector: sensitive < 1 micron\n                                 •dual-chamber ionization with inertial separator\n                              which rejects particles larger than 1-2 microns.\n                                            •fairly large power consumption (9 Watts)\n                                       •Installed in avionics air returns\n                                •Developed in the late 70’s when Ionization detectors\n                              were prevalent\n                               •Decades of service with very few false alarms and\n                            no alarms.\nISS detector: sensitive > 0.5 micron\n\n•2-pass IR laser-diode forward-scattering detector (30\ndegrees) minimum reported sensitivity is 0.3 μm.\n\n•Low power (1.5 W)\n\n•Installed in air ducts and in cabin area (with light shroud)\n\n•Developed in the 90’s and took advantage of the\navailability of stable diode light sources.\n\n•Years of continuous ISS service with some false alarms\nand no alarms.\n\n                                                                                                        www.nasa.gov    4",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 5,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n         Background: Types of Smoke\n\n\n “Smoke” encompasses several types of particulate:\n  • Condensed steam/vapor\n  • Ash\n  • Soot\n  • Recondensed polymer solids\n  • Recondensed polymer liquids\n\n\n\n\n\n                                                                                                     www.nasa.gov    5",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 6,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n           Log-Normal Distribution\n\n                                                                                                                                     2                     N                                                            ln D  ln Dg                                                                                        t                                                                                             f  ( D )               exp                      N               1 / 2                             2                                                                                                  ( 2) D ln          2 ln                                                         g                        g                                                                 \n\n Number is dominated by the smaller particles\n\n Mass is dominated by the larger particles (tail)\n\n\n\n\n\n                                        Log-normal distribution σg =\n                                                                1.6, Dg= 1\n\n                                                                                                     www.nasa.gov    6",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 7,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n    SAME Experimental Diagnostic Measurements\n\n                  All measure moments of the particle size distribution\n\n        M  D i f ( D )dD                                                          i       N                       \n\n\n\n\n\n                                    First Moment:\n                                                                Third Moment:Zeroth Moment:                  First Alert™\n                                                              TSI Dust Trak™TSI PTrak™               Smoke Detector\n\n\n                                                                                                     www.nasa.gov    7",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 8,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n            SAME Sample Carousel\n\n\n\n\n\n                                Sample Materials:\n\n                                        Silicone\n                                       Teflon\n                                 Kapton\n                               LampWick\n                                          Pyrell\n                           DBP\n\n\n\n\n\n                                                                                                     www.nasa.gov    8",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 9,
+      "page_label": null,
+      "text": "   National Aeronautics and Space Administration\n          SAME in MSG (mockup)\n\n\n\nData\n                                                                               AgingAcquisition and\n                                                                       ChamberControl Unit\n\n\n\n\n        Fluids                                                               Sample\n        Control                                                                                 Diluter\n        Unit\n\n                                                                            Commercial\n                                                                                     Diagnostics\n\n\n                                                                           Hose\n                                                                                 Bundle\n\n\n\n\n\n      Experiment                  Sample                                P-Trak                                                  Thermal\n      Support                      Carousel                             Enclosure                                                            Precipitator\n       Plate\n\n                                                                                                        www.nasa.gov    9",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 10,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n         SAME Particle Capture\n\n\n\n\n\n                                                         Stereolithography                              Handle for quick\n                                                       manifold                                                installation and\n                                                                                                  removal\n\n\n                                                                                                                      X-valve\n                                                              Hot-wire                                               solenoid bank\n                                                      Leads\n\n\n\n\n\n                                                                   Electrical\n                                                      Connection\n\n\n\n                                                                                              Vacuum\n                                                                                                              Connection\n\n\n\n                                                                    Cover\n\n\n\n\n\n                                                                                                     www.nasa.gov   10",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 11,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n\n\n\n           Overview image showing deposition boundary\n\n\n                                                                                                     www.nasa.gov   11",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 12,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n         SAME Hardware on orbit\n\n\n\n\n\n                                                                                                     www.nasa.gov   12",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 13,
+      "page_label": null,
+      "text": "   National Aeronautics and Space Administration\n            SAME Raw Data\n\n                                         Two Dust Traks were used one with a 10\n                                             Silicone Run 24 GMT 267         ISSDetectorScatterMeasurement(Volts)\n                                                                                        STSDetectorMeasurement(Volts)        micron cut off and one with a 1 micron cutoff.\n7                                                                                         IonDetectorBMeasurement(Volts)           80                                              The difference between the two gives an\n                                                                                    PTrakMeasurement(PtPerCC)/1000                                                                                                                                                                   (right)\n\n                                                                                 DustTrakAMeasurement(MgPerM3) (right)                                                                                                                      70   indication of the particle size distribution.\n6\n                                                                                 DustTrakBMeasurement(MgPerM3) (right)\n\n\n                                                                                                                      60\n5                                                 Teflon:\n\n                                                                                                                      50        Note similarity in Dust Traks\n4\n                                                                         indicating smaller particles\n                                                                                                                      40\n\n3\n                                                                                                                      30                                                           ISSDetectorScatterMeasurement(Volts)\n                                                                                                   Teflon Test 25 GMT 268                         STSDetectorMeasurement(Volts)\n2                                                                            7                                                                                     IonDetectorBMeasurement(Volts)              80\n                                                                                                                      20                                                       PTrakMeasurement(PtPerCC/1000) (right)\n                                                                                                                                                            DustTrakAMeasurement(MgPerM3) (right)\n1                                                                                                                                                           DustTrakBMeasurement(MgPerM3) (right)       70\n                                                                             6                          10\n\n\n                                                                                                                                                                                                   60\n0                                                                                                                     0\n 75                 125                175                225                275          5    325                375\n\n                                                                                                                                                                                                   50\n\n\n                                                                             4  Silicone Rubber:                                                                                                                                                      40\n\n  Note difference in Dust Traks                                                                                                                                                30\n   indicating large particles                                 3\n\n                                                                                                                                                                                                   20\n\n                                                                             2\n\n                                                                                                                                                                                                   10\n\n\n                                                                             1\n                                                                                                                                                                                                   0\n\n\n\n                                                                             0                                                                                                                                      -10\n                                                                             73975              74025              74075              74125              74175              74225              74275\n\n                                                                                                                           Time (Seconds)\n\n                                                                                                        www.nasa.gov   13",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 14,
+      "page_label": null,
+      "text": "   National Aeronautics and Space Administration\n            SAME Raw Data\n\n\n\n\n                                             Silicone Run 24 GMT 267         ISSDetectorScatterMeasurement(Volts)\n\n                                                                                        STSDetectorMeasurement(Volts)\n7                                                                                         IonDetectorBMeasurement(Volts)           80\n\n                                                                                    PTrakMeasurement(PtPerCC)/1000 (right)\n\n                                                                                 DustTrakAMeasurement(MgPerM3) (right)    70\n6\n                                                                                 DustTrakBMeasurement(MgPerM3) (right)\n\n\n                                                                                                                      60\n5                                                 Teflon:\n\n                                                                                                                      50        Note weak scattering (ISS) detector\n4\n                                                                        signal but ionization (STS) is still\n                                                                                                                      40\n                                                                   strong\n3\n                                                                                                                      30                                                           ISSDetectorScatterMeasurement(Volts)\n                                                                                                   Teflon Test 25 GMT 268                         STSDetectorMeasurement(Volts)\n2                                                                            7                                                                                     IonDetectorBMeasurement(Volts)              80\n                                                                                                                      20                                                       PTrakMeasurement(PtPerCC/1000) (right)\n                                                                                                                                                            DustTrakAMeasurement(MgPerM3) (right)\n1                                                                                                                                                           DustTrakBMeasurement(MgPerM3) (right)       70\n                                                                             6                          10\n\n\n                                                                                                                                                                                                   60\n0                                                                                                                     0\n 75                 125                175                225                275          5    325                375\n\n                                                                                                                                                                                                   50\n\n\n                                                                             4  Silicone Rubber:                                                                                                                                                      40\n\n  Note strong signal on both smoke                                                                                                                                        30\n  detectors                                                          3\n\n                                                                                                                                                                                                   20\n\n                                                                             2\n\n                                                                                                                                                                                                   10\n\n\n                                                                             1\n                                                                                                                                                                                                   0\n\n\n\n                                                                             0                                                                                                                                      -10\n                                                                             73975              74025              74075              74125              74175              74225              74275\n\n                                                                                                                           Time (Seconds)\n\n                                                                                                        www.nasa.gov   14",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 15,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n\n\n\n                                                             2 microns                   5 microns\n\n                    Baseline Temperature Pyrell (Run 74)\n\n\n\n                                                                                                     www.nasa.gov   15",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 16,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n\n\n\n                   5 microns\n                                                              2 microns\n                   High Temperature Pyrell (Run 64)\n\n\n                                                                                                     www.nasa.gov   16",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 17,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n\n\n\n                    5 microns\n   Pre aging                          Post aging       5 microns\n\n       High Temperature Pyrell: 480 second aging run (Run 84)\n\n\n\n                                                                                                     www.nasa.gov   17",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 18,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n\n\n\n   Pre aging                      2 microns             Post aging      2 microns\n\n       High Temperature Pyrell: 480 second aging run (Run 84)\n\n\n\n                                                                                                     www.nasa.gov   18",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 19,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n\n\n\n                    5 microns                                     5 microns\n\n               Baseline Temp Teflon (Run 56)\n\n\n                                                                                                     www.nasa.gov   19",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 20,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n\n\n\n\n                                                                1 micron                   1 micron\n          Baseline Temp Teflon (Run 56)\n         Note evidence of electron beam interaction in right\n         hand image\n\n                                                                                                     www.nasa.gov   20",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 21,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n\n\n\n                      2 microns\n                                                               2 microns\n                                       High Temperature Kapton      Mid Temp Kapton (Run 75)\n                                      (Run 62)\n\n                                                                                                     www.nasa.gov   21",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 22,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n\n\n\n\n                    2 microns\n                                                                   2 microns\n\n              High Temperature Kapton (Run 62)\n\n\n\n\n                                                                                                     www.nasa.gov   22",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 23,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n             TEM Results\n\n\n\n\n\n                                      High Temperature Lamp wick\n                                     (Run 54)\n\n\n\n\n\n                       5 microns\n\n\n                                                                                                     www.nasa.gov   23",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 24,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n\n\n\n\n                     5 microns                                   5 microns\n\n                   High Temperature Lamp wick\n                  (Run 54)\n\n\n\n                                                                                                     www.nasa.gov   24",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 25,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n\n\n\n\n                    2 microns\n                                                                 2 microns\n\n                   High Temperature Lamp wick\n                   (Run 54)\n\n\n\n                                                                                                     www.nasa.gov   25",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 26,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n             TEM Results\n\n\n   TEM revealed several particle morphologies\n\n    Teflon and Pyrell: Aggregates\n           Teflon aggregates: numerous primaries of same\n                dimension\n            Pyrell Aggregates: Primaries widely distributed in size\n\n   Kapton: single particles\n        Low temperature: produced very small and low TEM\n                  density particles\n          High temperature: TEM density increased\n\n    Silicone: No Tem visible particles\n\n   Lamp wick: Single particles, typically large\n\n   Aging showed a distinct elimination of the smallest particles\n\n\n                                                                                                     www.nasa.gov   26",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 27,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n\n            SAME-1&R Results\n\n\n                      Geometric                   Diam. of\n                     Mean       Arithmetic      Average\n                                                               σg                         Diam.     Mean Diam.    Mass (nm)\n                         (nm)         (nm)\n    Kapton               47           62           106        2.07\n\n    Kapton aged          102          121           169        1.79\n   Lamp wick            103          142           271        2.23\n   Lamp wick aged       269          308           401        1.67\n\n     Silicone              152          221           468        2.38\n     Silicone aged         320          400           628        1.96\n     Teflon                93           111           173        2.08\n     Teflon aged            80           115           237        2.34\n     Pyrell                177          227           377        2.03\n     Pyrell aged           348          400           529        1.70\n\n                                                                                                     www.nasa.gov   27",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 28,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n          SAME Aging Results\n\n\n       Comparison of measured and predicted concentration\n              after aging for lampwick and silicone smokes\n             6\n     4 10\n                                               N78\n                                                        Nth   Theory: Dashed line, Solid\n                                               N82  points\n             6                                            Nth   -3  3 10                                               N60\n  cm                                                  Nth                                                   Experimental: Solid Line, Open\n                                 silicone          N66\n                                                        Nth   points\n\n     2 106               concentration,                   lampwick\n       Number\n\n\n       106\n          1           10          100         1000\n                              time, s\n\n\n                                                                                               www.nasa.gov                                                                                                                       28 / 38",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 29,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n          SAME Aging Results\n         Effect of coagulation on D   for Lampwick\n                                   am\n          and Silicone - Theory dashed lines\n    0.8\n\n    0.7\nm\n    0.6\n                                                        Dam(78)                                       Silicone\n                                                      Damth Mass,    0.5                                                  Dam(82)\n                                                      Damth\n                                                        Dam(60)\n    0.4                                                      Damth  Average\n                                                        Dam(66) of\n                                                             Dam(th)\n\n    0.3  Diamter                  Lampwick                  Theory: Dashed line, Solid\n                                                      points\n\n                                                   Experimental: Solid Line, Open    0.2\n      1                        2             3   points\n                          N0/N\n\n\n\n                                                                                               www.nasa.gov                                                                                                                       29 / 38",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 30,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n          SAME Aging Results\n\n    Effect of coagulation on g for lampwick and silcone\n   smoke - prediction values indicated by dashed lines\n\n    2.3\n\n    2.2\n\n    2.1deviation\n                                       lampwick     2\n                                          blue symbols\n\n    1.9           sigma(78)standard\n                  sigmath                                                 Theory: Dashed line, Solid\n                   sigma(82)\n    1.8                                                points                  sigmath                                      silicone\n                   sigma(60)                                 red symbolsgeometric                  sigmath                               Experimental: Solid Line, Open    1.7\n                   sigma(66)                               points\n                  sigmath\n    1.6\n      1                       2             3\n                 N0//N\n\n\n                                                                                               www.nasa.gov                                                                                                                       30 / 38",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 31,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n          SAME Aging Results\n\n\n   •    For spacecraft materials, number counts decreased by a\n        factor of 1.7 to 2.7 over 800 seconds.\n\n   •    The measured and predicted number decreases agree within\n       about 20 %.\n\n   •    The best agreement between experiment and prediction is\n       Davm - agree within 4 %.\n   •    The decrease in the geometric standard deviation is typically\n      more than a factor of two greater than the predicted change.\n\n   •    Aging results are relevant to partially sealed volumes and\n       low air flow conditions.\n\n   •     In all cases, aging resulted in approximately a factor of two\n       decrease in number concentration and a factor of two\n       increase in the number mean diameter with the exception of\n        teflon\n\n\n\n                                                                                               www.nasa.gov                                                                                                                       31 / 38",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 32,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n                 Conclusions\n\n\n     • For the conditions tested, the materials emit most\n      of their particulate in the submicron range.\n\n     • The ISS detector showed a relatively weak signal\n      for some Teflon runs doubtless a result of the\n      particle size.\n\n     •  Particle morphology varies widely across the\n     range of expected sample materials. Dependence\n     on a single angle scattering device will be\n       difficult.\n\n     • Aging results consistent with theory for number\n     count and Davm but not for σg\n\n\n\n                                                                                                     www.nasa.gov   32",
+      "headings": [
+        {
+          "level": null,
+          "title": "                 Conclusions\n\n"
+        }
+      ],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    },
+    {
+      "page_number": 33,
+      "page_label": null,
+      "text": "National Aeronautics and Space Administration\n          Implications and Future Work\n\n\n     • Dust rejection may be achievable by detecting at\n      the sub-micron level.\n\n     • Given the effects of aging and the slow mixing\n     seen in spacecraft, it is probably unwise to focus\n      entirely on small particle sizes for fire detection\n\n     •  Size selective smoke detection will improve\n       reliability and false alarm rejection. Either by\n      classifying the particles or by measuring multiple\n     moments.\n\n\n\n\n\n                                                                                                     www.nasa.gov   33",
+      "headings": [],
+      "figure_table_references": [],
+      "quality": "embedded_text"
+    }
+  ]
+}

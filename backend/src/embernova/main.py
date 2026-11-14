@@ -18,7 +18,7 @@ from pydantic import Field
 
 from embernova.agent.budget import Budget, BudgetError
 from embernova.agent.loop import run_agent
-from embernova.agent.registry import D2, Chart, Compare, Documents, Envelope, Input, Search
+from embernova.agent.registry import D2, Assess, Chart, Compare, Documents, Envelope, Input, Search
 from embernova.agent.registry import Query as MeasurementQuery
 from embernova.config import ROOT, Settings, settings
 from embernova.export import model_ready_zip
@@ -194,23 +194,30 @@ def create_app(cfg: Settings | None = None) -> FastAPI:
     def tools(request: Request, state: Store = Depends(store)):
         if request.app.state.bundle is None:
             raise HTTPException(503, "Build the NASA corpus before using research tools")
-        return Tools(state, request.app.state.bundle)
+        return Tools(state, request.app.state.bundle, owner=request.state.owner)
 
     @app.get("/api/health")
     def health():
-        ready = (cfg.build_dir / "knowledge.db").exists() and (
-            cfg.build_dir / "bundle/bundle_manifest.json"
-        ).exists()
-        return {
-            "status": "ok" if ready else "not_ready",
-            "checks": {
-                "knowledge_db": (cfg.build_dir / "knowledge.db").exists(),
-                "bundle": (cfg.build_dir / "bundle/bundle_manifest.json").exists(),
-                "embeddings": "ready"
-                if (cfg.build_dir / "embeddings.json").exists()
-                else "not_built_optional",
+        knowledge = (cfg.build_dir / "knowledge.db").is_file()
+        bundle = (cfg.build_dir / "bundle/bundle_manifest.json").is_file()
+        frontend = (ROOT / "frontend/dist/index.html").is_file() and (
+            ROOT / "frontend/dist/assets"
+        ).is_dir()
+        ready = knowledge and bundle and frontend
+        return JSONResponse(
+            {
+                "status": "ok" if ready else "not_ready",
+                "checks": {
+                    "knowledge_db": knowledge,
+                    "bundle": bundle,
+                    "frontend": frontend,
+                    "embeddings": "ready"
+                    if (cfg.build_dir / "embeddings.json").exists()
+                    else "not_built_optional",
+                },
             },
-        }
+            status_code=200 if ready else 503,
+        )
 
     @app.get("/api/meta")
     def meta(t: Tools = Depends(tools)):
@@ -428,6 +435,10 @@ def create_app(cfg: Settings | None = None) -> FastAPI:
     def envelopes(args: Envelope, t: Tools = Depends(tools)):
         return t.analyze("check_applicability_envelope", args.model_dump())
 
+    @app.post("/api/evidence-assessment")
+    def evidence_assessment(args: Assess, t: Tools = Depends(tools)):
+        return t.assess_evidence(args.model_dump())
+
     @app.post("/api/checks/d2law")
     def d2(args: D2, t: Tools = Depends(tools)):
         return t.analyze("check_d2_law", args.model_dump())
@@ -492,17 +503,26 @@ def create_app(cfg: Settings | None = None) -> FastAPI:
         return state.get("evidence", evidence_id)
 
     @app.get("/api/artifacts/{artifact_id}")
-    def artifact(artifact_id: str, state: Store = Depends(store)):
-        return state.get("artifacts", artifact_id)
+    def artifact(artifact_id: str, request: Request, state: Store = Depends(store)):
+        return owned_artifact(artifact_id, request, state)
+
+    def owned_artifact(artifact_id: str, request: Request, state: Store):
+        art = state.get("artifacts", artifact_id)
+        if (
+            not state.artifact_is_public(artifact_id)
+            and state.artifact_owner(artifact_id) != request.state.owner
+        ):
+            raise HTTPException(404, "Artifact not found")
+        return art
 
     @app.get("/api/artifacts/{artifact_id}/data")
-    def artifact_data(artifact_id: str, state: Store = Depends(store)):
-        art = state.get("artifacts", artifact_id)
+    def artifact_data(artifact_id: str, request: Request, state: Store = Depends(store)):
+        art = owned_artifact(artifact_id, request, state)
         return art["payload"]
 
     @app.get("/api/artifacts/{artifact_id}/bundle")
-    def artifact_bundle(artifact_id: str, state: Store = Depends(store)):
-        art = state.get("artifacts", artifact_id)
+    def artifact_bundle(artifact_id: str, request: Request, state: Store = Depends(store)):
+        art = owned_artifact(artifact_id, request, state)
         output = io.BytesIO()
         with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as archive:
             archive.writestr("artifact.json", canonical(art))
@@ -690,10 +710,28 @@ def create_app(cfg: Settings | None = None) -> FastAPI:
         return [r["meta"] for r in replay_records()]
 
     @app.get("/api/replays/{replay_id}")
-    async def replay(replay_id: str):
+    async def replay(replay_id: str, state: Store = Depends(store)):
         item = next((r for r in replay_records() if r["meta"]["replay_id"] == replay_id), None)
         if not item:
             raise KeyError(replay_id)
+        # Replay files carry the full evidence and artifact records they cite, so a fresh
+        # deployment (empty state DB) can still open every citation. Existing records win.
+        for evt in item["events"]:
+            if evt.get("event") == "evidence.added":
+                record = evt.get("evidence") or {}
+                if record.get("evidence_id"):
+                    state.put("evidence", record["evidence_id"], record)
+            if evt.get("event") == "artifact.created":
+                record = evt.get("artifact") or {}
+                artifact_id = record.get("artifact_id")
+                if artifact_id:
+                    try:
+                        state.get("artifacts", artifact_id)
+                    except KeyError:
+                        if "payload" not in record:
+                            continue
+                        state.put("artifacts", artifact_id, record)
+                    state.publish_artifact(artifact_id)
 
         async def stream():
             for evt in item["events"]:
@@ -720,6 +758,11 @@ def create_app(cfg: Settings | None = None) -> FastAPI:
         for evt in evts:
             if evt["event"] == "turn.started":
                 evt["replay"] = True
+            if evt["event"] == "artifact.created":
+                artifact_id = evt.get("artifact", {}).get("artifact_id")
+                if artifact_id:
+                    state.get("artifacts", artifact_id)
+                    state.publish_artifact(artifact_id)
         meta = {
             "replay_id": rid,
             "title": str(args.get("title", "Recorded research"))[:200],

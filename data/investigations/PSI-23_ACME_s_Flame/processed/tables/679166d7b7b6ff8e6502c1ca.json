@@ -1,0 +1,122 @@
+{
+  "source": {
+    "investigation_id": "PSI-23",
+    "file_id": "679166d7b7b6ff8e6502c1ca",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "relative_local_path": "investigations/PSI-23_ACME_s_Flame/raw/datasets/PSI-23_Experimental table_ACME s-Flame.csv",
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=679166d7b7b6ff8e6502c1ca&version=1&studyVersion=4&redirect=false",
+    "source_record_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "doi": "10.60555/k57n-p030",
+    "source_version": "4",
+    "file_version": "1",
+    "sha256": "16cd10f50bd2e962887c8eb4077e5a9b3e790c78de8e0361c0b77e19300be7cf",
+    "source_key": "psi-data/PSI-23/Experimental table/PSI-23_Experimental table_ACME s-Flame.csv"
+  },
+  "measurement_conventions": "Header units are literal labels. Blank cells and possible sentinel strings are recorded without imputation. Workbook first rows are provisional headers.",
+  "profile": {
+    "method": "csv.reader",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "sheets": [
+      {
+        "name": "PSI-23_Experimental table_ACME s-Flame.csv",
+        "header_assumption": "first record",
+        "header_verified": true,
+        "row_count": 18,
+        "ragged_row_count": 0,
+        "columns": [
+          {
+            "index": 1,
+            "label_original": "Test Type",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 2,
+            "label_original": "Test Day*",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 3,
+            "label_original": "Year",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 4,
+            "label_original": "Month",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 5,
+            "label_original": "Date",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 6,
+            "label_original": "Atmosphere*",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 7,
+            "label_original": "Fuel Bottle",
+            "header_unit": null,
+            "type_counts": {
+              "text": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 8,
+            "label_original": "Flames Ignited*",
+            "header_unit": null,
+            "type_counts": {
+              "integer": 18
+            },
+            "blank_count": 0,
+            "possible_missing_markers": {}
+          },
+          {
+            "index": 9,
+            "label_original": "Notes",
+            "header_unit": null,
+            "type_counts": {
+              "text": 3
+            },
+            "blank_count": 15,
+            "possible_missing_markers": {}
+          }
+        ]
+      }
+    ]
+  }
+}

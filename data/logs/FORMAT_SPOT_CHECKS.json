@@ -1,0 +1,86 @@
+{
+  "csv": {
+    "file_id": "66eb9841c6ad4bdc12fc8550",
+    "path": "investigations/PSI-106_SLICE/raw/datasets/SLICE_vel.csv",
+    "check": "http_payload; text prefix readable",
+    "files_of_type": 40
+  },
+  "dat": {
+    "file_id": "683da39ef91ab4427dbf450f",
+    "path": "investigations/PSI-115_Utilization_of_the_Smoke_Aerosol/raw/datasets/PSI-115_Analyzed Data_nodeDiameters.dat",
+    "check": "http_payload; text prefix readable",
+    "files_of_type": 10
+  },
+  "docx": {
+    "file_id": "684347459e44646b74028a00",
+    "path": "investigations/PSI-69_FLEX/raw/documents/PSI-69_Science Documents_FLEX DoD.docx",
+    "check": "zip_member_crc",
+    "files_of_type": 9
+  },
+  "jpg": {
+    "file_id": "691f7ea517f78b371b2705a2",
+    "path": "investigations/PSI-159_ACME_CFI_G/raw/images/PSI-159_Representative Image(s)_CFI-G_Observation of non-premixed quasi-steady spherical coo_9ef331fe.jpg",
+    "check": "image_structure",
+    "files_of_type": 9
+  },
+  "mp4": {
+    "file_id": "683f4b2dda33c6f4c4cec2a8",
+    "path": "investigations/PSI-39_CFI/raw/videos/PSI-39_Raw Data_FLEX-1270_2017-05-26-16h52m57s_F146A05.mp4",
+    "check": "media_stream_probe",
+    "files_of_type": 18
+  },
+  "pdf": {
+    "file_id": "66eb9831c6ad4bdc12fc3a25",
+    "path": "investigations/PSI-106_SLICE/raw/documents/3193_3195.pdf",
+    "check": "pdf_structure",
+    "files_of_type": 83
+  },
+  "png": {
+    "file_id": "6841d4e71b4820d736cebfef",
+    "path": "investigations/PSI-179_ASE/raw/images/PSI-179_Analyzed Data_16_PAS B_08 Day_03-EDS.png",
+    "check": "image_structure",
+    "files_of_type": 6
+  },
+  "pptx": {
+    "file_id": "6924803a7f6aa6a8302103cb",
+    "path": "investigations/PSI-25_BASS_II/raw/documents/PSI-25_Engineering Documents_BASS-II_Engineering Requirements.pptx",
+    "check": "zip_member_crc",
+    "files_of_type": 1
+  },
+  "tif": {
+    "file_id": "683dc538b8656d2315bf50eb",
+    "path": "investigations/PSI-101_SAME_R/raw/images/PSI-101_Raw Data_4K-K01-4 -6x-1y 1350.tif",
+    "check": "image_structure",
+    "files_of_type": 3
+  },
+  "ts": {
+    "file_id": "683f4b2dda33c6f4c4cec2ab",
+    "path": "investigations/PSI-39_CFI/raw/videos/PSI-39_Raw Data_FLEX-1270_2017-05-26-16h52m57s_F146A05.ts",
+    "check": "media_stream_probe",
+    "files_of_type": 3
+  },
+  "txt": {
+    "file_id": "6843470e9e44646b740287d9",
+    "path": "investigations/PSI-69_FLEX/raw/datasets/PSI-69_Raw Data_C049H02_Comments.txt",
+    "check": "http_payload; text prefix readable",
+    "files_of_type": 5
+  },
+  "xls": {
+    "file_id": "683da126b8656d2315bf4492",
+    "path": "investigations/PSI-107_SPICE/raw/datasets/PSI-107_Raw Data_Spice_Flight_Flamelength.xls",
+    "check": "xls_structure",
+    "files_of_type": 4
+  },
+  "xlsx": {
+    "file_id": "6841d4e81b4820d736cec2c9",
+    "path": "investigations/PSI-179_ASE/raw/datasets/PSI-179_Analyzed Data_16_PAS K_Day 16_FieldMap.xlsx",
+    "check": "zip_member_crc",
+    "files_of_type": 37
+  },
+  "zip": {
+    "file_id": "67dafcf4c3501a37c2c60d99",
+    "path": "investigations/PSI-26_BASS/raw/archives/PSI-26_Raw Data_2013_07_09_txt.zip",
+    "check": "zip_member_crc",
+    "files_of_type": 46
+  }
+}
