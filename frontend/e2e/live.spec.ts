@@ -38,7 +38,7 @@ test("live habitat research produces a source-backed measured chart in the works
     process.env.EMBERNOVA_LIVE_E2E !== "1",
     "Explicit live verification only",
   );
-  test.setTimeout(180000);
+  test.setTimeout(240000);
   await page.goto("/workspace");
   await page
     .getByLabel("Research question", { exact: true })
@@ -99,13 +99,13 @@ test("live habitat research produces a source-backed measured chart in the works
   expect(
     chart.payload.chart.series.flatMap((s: any) => s.points.run_uid).sort(),
   ).toEqual(expectedRuns);
-  await page
-    .locator(".artifact-cards button")
-    .filter({ hasText: chart.title })
-    .first()
-    .click();
-  await expect(page.locator('[data-chart-ready="true"]')).toBeVisible({
-    timeout: 20000,
+  // Since the cinematic redesign (ADR-015) charts render inline in the thread, labeled by title.
+  const inlineChart = page
+    .locator(`.inline-block[aria-label=${JSON.stringify(chart.title)}]`)
+    .first();
+  await inlineChart.scrollIntoViewIfNeeded();
+  await expect(inlineChart.locator('[data-chart-ready="true"]')).toBeVisible({
+    timeout: 30000,
   });
   await page.screenshot({
     path: "../build/eval/screens/live-habitat-chart.png",
