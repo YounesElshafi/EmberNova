@@ -18,13 +18,6 @@ import { PILLARS } from "../content/capabilities";
 import { Reveal } from "../components/Reveal";
 
 const SEEN = "embernova-intro-seen";
-const read = (k: string) => {
-  try {
-    return localStorage.getItem(k);
-  } catch {
-    return null;
-  }
-};
 const write = (k: string, v: string) => {
   try {
     localStorage.setItem(k, v);
@@ -58,8 +51,8 @@ const STARTERS = [
 export function Home() {
   const navigate = useNavigate();
   const [params, setParams] = useSearchParams();
-  const reduce = useMemo(() => window.matchMedia("(prefers-reduced-motion: reduce)").matches, []);
-  const [intro, setIntro] = useState(() => params.get("intro") === "1" || (!read(SEEN) && !reduce));
+
+  const [intro, setIntro] = useState(() => params.get("intro") === "1");
   const [gIndex, setGIndex] = useState(0);
   const [draft, setDraft] = useState("");
   const { data: meta, isError: metaError } = useQuery({ queryKey: ["meta"], queryFn: () => api("/meta") });
@@ -143,6 +136,14 @@ export function Home() {
         </dl>
       </section>
 
+      <section className="research-launchpad band" aria-labelledby="launchpad-title">
+        <div><p className="eyebrow">Your next discovery</p><h2 id="launchpad-title" className="section-title">Choose a starting point.</h2><p className="muted">Follow a question, inspect the measurements, or see a complete investigation.</p></div>
+        <div className="launchpad-links">
+          <Link to="/workspace"><span className="eyebrow">Ask</span><h3>Follow the evidence.</h3><p>Ask a research question and inspect the sources behind the answer.</p><ArrowUpRight aria-hidden="true" /></Link>
+          <Link to="/investigations"><span className="eyebrow">Explore</span><h3>Go to the source.</h3><p>Search NASA investigations, open reports, and examine original data.</p><ArrowUpRight aria-hidden="true" /></Link>
+          <Link to="/featured"><span className="eyebrow">Watch</span><h3>See research in action.</h3><p>Replay a recorded investigation with its analysis and citations.</p><ArrowUpRight aria-hidden="true" /></Link>
+        </div>
+      </section>
       {/* HISTORY */}
       <section className="band history" aria-labelledby="history-title">
         <Reveal className="band-head">

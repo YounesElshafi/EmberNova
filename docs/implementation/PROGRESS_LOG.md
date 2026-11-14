@@ -116,3 +116,20 @@ Implemented anonymous 256-bit visitor credentials in HttpOnly SameSite=Strict co
 Verification: 40 backend tests passed in 7.83 s, including two visitor contexts, guessed thread IDs, event retrieval, cancellation, mutation, listing, cookie persistence and cross-origin rejection. Ruff import ordering corrected after initial lint failure; formatting passed.
 
 A4 remains IN_PROGRESS: artifact/evidence download ownership and browser end-to-end behavior still require audit. This is not a claim of complete privacy remediation. Budget accounting and retrieval remain unchanged. No publication, commits or original NASA data changes.
+
+## Frontend experience refresh — partial implementation (2026-11-13)
+
+Implemented research entry links on the home page, opt-in cinematic introduction, and shared observatory surface/typography/interaction refinements. Preserved backend contracts and corpus. This is an initial pass, not completion of the requested full transformation.
+
+Validation: initial production build, lint, typecheck and 9 unit tests passed. Browser suite: 14 passed, 1 failed (obsolete automatic-intro expectation), 4 live-provider tests skipped. Updated intro expectation; targeted browser test passed. Build retry required escalation after esbuild filesystem permission denial. Large bundle warning remains.
+
+Deployment discovery: documented SSH alias vps succeeds; current release /var/www/embernova/releases/67a617d. Direct root IP authentication fails. No production files changed. No commit or push performed, respecting requested deployment-before-commit order.
+
+Outstanding: complete route-by-route visual review and redesign, accessibility/performance verification, final production build verification, safe deployment with rollback, public verification, commit and push.
+
+## Frontend refresh deployment — 2026-11-14 UTC
+
+Published the current frontend build at the user's explicit request. Created rollback archive `/var/www/embernova/shared/backups/frontend-20261114T052858Z.tar.gz`. Uploaded hashed assets first (preserving old assets for existing clients), then atomically replaced index.html in release 67a617d. No backend restart, environment edits, or database/corpus changes.
+
+Public HTTPS index SHA-256 matches local build: a4bd4aa032c6c3c26bcb4db380662e71542bbe43bf422320af918769b4b166e9. Public /api/health reports status ok with knowledge_db, bundle and frontend true. Final production build passed after permission escalation. Full redesign and comprehensive accessibility/performance review remain outside this initial pass.
+`nProduction browser verification: npm exec playwright -- test -c playwright.prod.config.ts e2e/research.spec.ts — 15 passed (1.5m). Live-model tests were not run. Desktop/mobile disclosure checks, original-media byte ranges, citations, intro, dataset charts, comparison and envelope flows passed.
