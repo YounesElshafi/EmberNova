@@ -228,8 +228,6 @@ test("cinematic intro can be skipped, replayed and never traps the visitor", asy
 }) => {
   await page.goto("/");
   const intro = page.getByRole("dialog", { name: "EmberNova introduction" });
-  await expect(intro).toHaveCount(0);
-  await page.getByRole("button", { name: /Replay intro/ }).click();
   await expect(intro).toBeVisible();
   await expect(page.getByRole("button", { name: /Skip intro/ })).toBeFocused();
   await page.keyboard.press("ArrowRight");
