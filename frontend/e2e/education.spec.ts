@@ -1,10 +1,21 @@
-﻿import { test, expect } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 test("three audiences and learning experiment work", async ({ page }) => {
+  await page.addInitScript(() =>
+    localStorage.setItem("embernova-intro-seen", "1"),
+  );
   await page.goto("/");
   await expect(
-    page.getByRole("heading", {
-      name: "What happens when fire behaves differently in space?",
-    }),
+    page.getByRole("heading", { name: /In orbit, fire/ }),
+  ).toBeVisible();
+  await expect(
+    page
+      .getByRole("navigation", { name: "Main navigation", exact: true })
+      .getByRole("link", { name: "Learn", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page
+      .getByRole("navigation", { name: "Main navigation", exact: true })
+      .getByRole("link", { name: "Play", exact: true }),
   ).toBeVisible();
   await page.goto("/learn/lab");
   await page.getByLabel("Your prediction").selectOption("round");

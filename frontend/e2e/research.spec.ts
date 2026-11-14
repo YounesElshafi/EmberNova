@@ -226,7 +226,7 @@ test("disclosures are readable on desktop and mobile", async ({ page }) => {
 test("cinematic intro can be skipped, replayed and never traps the visitor", async ({
   page,
 }) => {
-  await page.goto("/research-overview");
+  await page.goto("/");
   const intro = page.getByRole("dialog", { name: "EmberNova introduction" });
   await expect(intro).toBeVisible();
   await expect(page.getByRole("button", { name: /Skip intro/ })).toBeFocused();
@@ -254,7 +254,7 @@ test("home question opens the workspace with the question prefilled", async ({
   await page.addInitScript(() =>
     localStorage.setItem("embernova-intro-seen", "1"),
   );
-  await page.goto("/research-overview");
+  await page.goto("/");
   await page.locator("#begin-q").fill("flame spread over fabrics");
   await page.getByRole("button", { name: /Open in workspace/ }).click();
   await expect(page).toHaveURL(/\/workspace/);

@@ -28,9 +28,6 @@ import { Capabilities } from "./pages/Capabilities";
 import { HowItWorks } from "./pages/HowItWorks";
 
 import { ExperienceBoundary } from "./education/ExperienceBoundary";
-const Universe = lazy(() =>
-  import("./education/Experiences").then((m) => ({ default: m.Universe })),
-);
 const Learn = lazy(() =>
   import("./education/Experiences").then((m) => ({ default: m.Learn })),
 );
@@ -336,16 +333,7 @@ export default function App() {
             }
           >
             <Routes>
-              <Route
-                path="/"
-                element={
-                  new URLSearchParams(location.search).get("intro") === "1" ? (
-                    <Home />
-                  ) : (
-                    <Universe />
-                  )
-                }
-              />
+              <Route path="/" element={<Home />} />
               <Route path="/research-overview" element={<Home />} />
               <Route path="/research" element={<Workspace />} />
               <Route path="/learn" element={<Learn />} />
