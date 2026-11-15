@@ -4,26 +4,36 @@
 
 NASA Space Apps Challenge 2026 · Challenge: [Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data](https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/) · Team **EmberNova**
 
-**Live demo: https://embernova.khedmetak.com** · Judges: start with the [Judging Guide](docs/JUDGING_GUIDE.md).
+[Launch EmberNova](https://embernova.khedmetak.com/) · [Watch the 30-second demo](https://www.youtube.com/watch?v=rQv62s8560s)
 
 ---
 
 ## The problem
 
-Fire behaves differently without gravity. There is no buoyant convection, so flames are slower, cooler and longer-lived, and some materials burn in microgravity under conditions where they would self-extinguish on Earth. NASA has flown decades of combustion experiments on the ISS and other platforms (FLEX, CFI, BASS, Saffire, SAME, ACME and others) and published the data through the [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/) system and the NASA Technical Reports Server.
+Fire behaves differently in microgravity. With much weaker buoyancy, airflow and diffusion play a larger role in supplying oxygen and moving heat and smoke. Some materials can continue to burn under conditions where they would self-extinguish on Earth. NASA has flown decades of combustion experiments on the ISS and other platforms (FLEX, CFI, BASS, Saffire, SAME, ACME and others) and published the data through the [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/) system and the NASA Technical Reports Server.
 
 That evidence is hard to use. It is spread over hundreds of spreadsheets, PDFs and videos with inconsistent units and column conventions. Burning rate is K in mm²/s. "O/N/CO" means O₂/N₂/CO₂ mole fractions. Pressure appears in mmHg, atm or psi. An engineer asking *"What do NASA experiments say about fire in a 34% O₂, ~10 psi lunar-habitat atmosphere?"* must find the right investigations, read the right tables correctly, and avoid the classic mistakes: treating microgravity as lunar gravity, confusing design matrices with measurements, or mixing up O₂ fraction and O₂ partial pressure.
 
 ## The solution
 
-EmberNova lets a researcher ask that question in plain language. A single OpenAI agent plans the research, but **every number comes from deterministic backend tools** that query a curated, unit-normalized copy of the NASA data. Each claim is cited back to a NASA page, table row or video:
+EmberNova lets a researcher ask that question in plain language. The OpenAI agent plans the research and summarizes the results. Deterministic backend tools retrieve measurements from curated NASA data, and citations let readers trace the evidence to original reports, table rows and media:
 
 1. **Find:** hybrid retrieval ranks the 34 relevant NASA investigations and explains each match (study type, matching and differing conditions, unrecorded parameters).
-2. **Measure:** typed tools query 1,161 curated test runs from 13 NASA tables, with raw and SI values side by side, and build charts only from source rows.
+2. **Measure:** typed tools query 1,161 curated rows from 13 NASA tables, with raw and SI values side by side, and build charts only from source rows.
 3. **Check:** comparisons name their confounders, the *Applicability Envelope* shows which NASA tests bracket a target atmosphere, and evidence is classified as direct, indirect or insufficient.
 4. **Cite:** citation markers resolve to an evidence ledger holding the NASA file SHA-256, page or row locator and transformation. Invalid citations are removed visibly, and unsupported numbers are flagged.
 
 It deliberately does **not** produce fire-risk scores or lunar or Martian predictions. PSI contains no partial-gravity run data, and the app says so.
+
+## Research workspace
+
+Ask a question in plain language to get a cited summary, a ranking of relevant NASA investigations with reasons for each match, and an explanation of what the evidence supports. In this live example, EmberNova ranks three smoke-detection investigations, explains how airflow affects smoke transport and particle behavior, and identifies gaps in the measured evidence.
+
+![A live EmberNova research question about spacecraft smoke detection and the cited answer ranking the three most relevant NASA investigations](docs/images/research-workspace.jpg)
+
+![The top-ranked SAME investigation card showing relevance, matching test conditions, and links to NASA sources](docs/images/research-ranking.jpg)
+
+[Open the research workspace](https://embernova.khedmetak.com/workspace) · [Replay a recorded smoke-detection example](https://embernova.khedmetak.com/s/replay:detection)
 
 ## Main features
 
@@ -32,7 +42,7 @@ All of the following are implemented and running on the live site:
 | Feature | Where |
 | --- | --- |
 | SI research chat with streaming tool activity, inline ranking cards, charts, comparisons and page-level citations | `/workspace` |
-| Recorded demonstrations that replay without any API call (three deterministic, two recorded live) | `/featured` |
+| Recorded demonstrations that replay without a live model call (three deterministic, two recorded live) | `/featured` |
 | Investigation explorer (34 investigations) with NASA PSI and DOI links | `/investigations` |
 | Dataset explorer: raw ⇄ normalized toggle, source rows, CSV export with file hashes | `/data/PSI-69:flex_experimental` |
 | Run comparison with named confounders | `/compare` |
@@ -124,7 +134,7 @@ Configuration is read from environment variables or a root `.env` file. See [.en
 ```bash
 cd backend && uv run pytest -q && uv run ruff check . && uv run ruff format --check .
 cd frontend && npm run test && npm run lint && npm run typecheck && npm run build
-cd frontend && npx playwright test                       # 15 judge-flow browser tests, local server
+cd frontend && npx playwright test                       # browser tests against the local server
 cd frontend && npx playwright test -c playwright.prod.config.ts e2e/research.spec.ts   # against the live site
 ```
 
