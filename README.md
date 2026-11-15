@@ -42,6 +42,24 @@ All of the following are implemented and running on the live site:
 | Evidence inspector: source excerpt, full PDF page text, SHA-256, link to the original source | Any citation |
 | Analysis Lab: SI-written Python run only in an OpenAI-hosted, network-disabled container, never on the server | Composer toggle |
 | d²-law consistency check, suppression overview, model-ready data export | Tools and API |
+| Learning Laboratory: guided modules, quizzes and a virtual combustion chamber | [Learn](https://embernova.khedmetak.com/learn) |
+| Space Fire Academy: a space-station adventure for children | [Play](https://embernova.khedmetak.com/kids) |
+
+## Learn and play
+
+We originally built EmberNova for researchers, aerospace engineers and astronauts who need to understand what NASA experiments can tell us about fire safety in spacecraft. We added two experiences so students and children can start with the same questions, build confidence with the science and imagine themselves contributing to safer space missions. We want to help prepare the next generation of space researchers, engineers and explorers.
+
+### Learning Laboratory
+
+Students work through five guided modules, from combustion on Earth to NASA microgravity experiments and spacecraft fire detection. In the virtual lab, they predict how a flame might behave, vary gravity, airflow or oxygen, and compare their prediction with a conceptual illustration. Links connect the lessons to NASA sources and the underlying research evidence.
+
+[![EmberNova Learning Laboratory showing the guided modules and the Fire on Earth quiz](docs/images/learning-laboratory.jpg)](https://embernova.khedmetak.com/learn)
+
+### Space Fire Academy
+
+Children play as an astronaut alongside Pip, a robot guide, and explore five rooms aboard a space station. The missions turn ideas about airflow and fire detection into actions, such as clearing a blocked vent, inspecting a sensor and resetting a beacon. The game uses pretend experiments and conceptual visuals.
+
+[![Space Fire Academy gameplay showing the astronaut and Pip on the station's Safety Deck](docs/images/space-fire-academy.jpg)](https://embernova.khedmetak.com/kids)
 
 ## Architecture
 
