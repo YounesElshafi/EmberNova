@@ -10,7 +10,15 @@ NASA Space Apps Challenge 2026 · Challenge: [Flame in Freefall: SI-Powered Fire
 
 ## The problem
 
-In 1997, a fire aboard the Mir space station filled modules with smoke and blocked access to one of the crew’s two escape spacecraft. What can decades of NASA experiments tell us about how smoke moves in microgravity and how crews can detect it? We built EmberNova to help answer questions like this. It ranks relevant investigations, summarizes their findings, and links readers to the original evidence so they can see what the experiments established and where questions remain. [NASA’s account of the Mir fire](https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/)
+In 1912, the Titanic struck an iceberg. Some passengers hesitated to leave even as the ship took on water.
+
+But we’re not here to tell the story of the Titanic. We’re here to talk about other ships. Ships that carry people thousands of kilometers from Earth, and could one day take crews millions of kilometers from home. If a fire breaks out that far from Earth, the crew has to act with what they have on board.
+
+In 1997, a fire aboard the Mir space station filled modules with smoke and blocked access to one of the crew’s two escape spacecraft. In space, the difference between having time to act and running out of it can come down to what we learned before launch.
+
+That’s why we built EmberNova. It helps researchers find and rank NASA experiments, see what they reveal about how fire and smoke behave in microgravity, and trace each result back to the original evidence.
+
+[UK Marine Accident Investigation Branch historical account](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/876411/2001-SD1-MAIBSafetyDigest.pdf) · [NASA’s account of the Mir fire](https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/)
 
 Fire behaves differently in microgravity. With much weaker buoyancy, airflow and diffusion play a larger role in supplying oxygen and moving heat and smoke. Some materials can continue to burn under conditions where they would self-extinguish on Earth. NASA has flown decades of combustion experiments on the ISS and other platforms (FLEX, CFI, BASS, Saffire, SAME, ACME and others) and published the data through the [Physical Sciences Informatics (PSI)](https://psi.nasa.gov/) system and the NASA Technical Reports Server.
 
